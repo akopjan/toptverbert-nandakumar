@@ -1,59 +1,86 @@
-# Sixfold Tverberg Counterexamples and Convex Equipartition Obstructions
+# TopTverberg — формализация в Lean 4.35
 
-We construct a counterexample to the generalized Nandakumar--Ramana Rao problem: in every dimension $d \ge 24$, there are $d - 1$ continuous functionals on convex bodies and a probability measure such that there is no convex partition of the unit ball into six parts of equal measure on which all these functionals are equalized.
+Проект доказывает две теоремы с интерфейсами, зафиксированными в `Challenge.lean` и
+`comparator.json`.
 
-We also show that the topological Tverberg conjecture fails for sixfold intersections already in $\mathbb{R}^6$: we construct a continuous map $\Delta^{35} \to \mathbb{R}^6$ whose images of six pairwise disjoint faces never meet.
+**Теорема A.** Существует непрерывное на симплексе отображение
+`(Fin 36 → ℝ) → (Fin 6 → ℝ)`, при котором никакие шесть точек с попарно
+непересекающимися барицентрическими носителями не имеют общего образа.
 
-This repository formalizes Theorems A and B from [*Sixfold Tverberg counterexamples and convex equipartition obstructions*](paper/manuscript.tex) by Arseniy Akopyan in Lean 4, developed with the assistance of Aristotle and Gemini.
+**Теорема B.** Для каждого `d ≥ 36` существуют `d − 1` непрерывных
+функционалов на выпуклых телах в `ℝ^d` и абсолютно непрерывная
+вероятностная мера, не допускающие описанного в `Challenge.lean`
+равномерного выравнивания по шести выпуклым частям единичного шара.
 
----
+## Где находятся доказательства
 
-## Challenge Theorems
+- `Solution.lean` — обе окончательные теоремы и теоремы о соединениях,
+  блокирующих точках и переносе на выпуклые тела.
+- `RequestProject/Solution.lean` и `RequestProject/Construction/Assembly.lean` —
+  сведение теоремы A к высотной таблице и её построение.
+- `RequestProject/Surgery/` — удаление нулей с сохранением условий на границе.
+- `AkopyanResearch/` — дополнительные результаты и альтернативные,
+  иногда условные, конструкции. Не все эти результаты используются в
+  доказательстве теорем A и B.
+- `Challenge.lean` — **независимый шаблон спецификации**: два `sorry`
+  относятся только к формулировкам задачи. Он намеренно не импортирует
+  `Solution.lean`, чтобы проверка совпадения утверждений оставалась независимой.
+- `Audit.lean` — независимо повторяет полные типы двух утверждений и
+  проверяет их транзитивные аксиоматические зависимости.
 
-The challenge is specified in `Challenge.lean` and checked by the Palomar Comparator against `Solution.lean`:
+Модуль `Solution.lean` импортирует только необходимый
+`AkopyanResearch.SafeQuadraticRealization`, а не весь экспериментальный
+агрегатор `AkopyanResearch.lean`. Прочие модули доступны для отдельной сборки.
 
-1. **Theorem A (`AkopyanSixfold.tverberg_counterexample`)**:
-   There exists a continuous map $\Delta^{35} \to \mathbb{R}^6$ whose images of six pairwise disjoint faces never meet:
-   ```lean
-   theorem tverberg_counterexample :
-       ∃ f : (Fin 36 → ℝ) → (Fin 6 → ℝ),
-         IsAlmostSixEmbedding f
-   ```
+Полный перечень изменений приведён в `CHANGES.md`; структура
+математических доказательств — в `FORMALIZATION_STATUS.md`.
 
-2. **Theorem B (`AkopyanSixfold.convex_partition_counterexample`)**:
-   Unconditionally in every dimension $d \ge 36$, there exist $d - 1$ continuous functionals on convex bodies and an absolutely continuous probability measure such that no convex six-partition of the unit ball into six equal-measure parts equalizes all these functionals:
-   ```lean
-   theorem convex_partition_counterexample (d : ℕ) (hd : 36 ≤ d) :
-       ∃ (Phi : Body d → (Fin (d - 1) → ℝ)) (mu : Measure (Ambient d)),
-         Continuous Phi ∧
-         IsProbabilityMeasure mu ∧
-         mu.AbsolutelyContinuous volume ∧
-         ∀ C : Fin 6 → Body d,
-           IsSixPartition C →
-           (∀ i, mu (C i : Set (Ambient d)) = mu (unitBall d) / 6) →
-           ∃ i, Phi (C i) ≠ Phi (C 0)
-   ```
+## Воспроизводимая проверка
 
----
+Требуются Lean 4.35.0, Lake, Python 3.11+ и доступ к зависимостям Mathlib.
+В каталоге проекта можно выполнить `scripts/verify.sh` (полная проверка),
+или вручную:
 
-## Verification
-
-### Prerequisites
-- Lean 4 toolchain `leanprover/lean4:v4.35.0`
-- Mathlib `v4.35.0`
-
-### Build & Check
-```bash
-# Build the challenge and solution
+```sh
+python3 scripts/check_structure.py
+lake update
+lake exe cache get
+lake build Solution
+lake build Audit
 lake build
-
-# Run Palomar comparator check
-lake env comparator comparator.json
 ```
 
-When verified with `comparator`, the solution is exported and replayed through the Lean default kernel:
-```text
-Running Lean default kernel on solution.
-Lean default kernel accepts the solution
-Your solution is okay!
-```
+`lake exe cache get` — необязательный шаг для получения предварительно
+скомпилированных зависимостей Mathlib; если кэш недоступен, пропустите
+его и выполните `lake build` с компиляцией из исходников.
+В `scripts/verify.sh` кэш можно отключить, задав `SKIP_MATHLIB_CACHE=1`.
+
+`Audit.lean` при успешной компиляции проверяет следующее:
+
+1. Оба утверждения имеют исходные типы из `Challenge.lean`.
+2. Оба имени обозначают настоящие объявления `theorem`.
+3. `Lean.collectAxioms` у обеих теорем и пяти ключевых промежуточных
+   результатов не обнаруживает аксиом вне списка
+   `propext`, `Classical.choice`, `Quot.sound`, заданного в `comparator.json`.
+
+В частности, `sorryAx` и любые пользовательские аксиомы вызывают ошибку.
+
+Для автоматической проверки на GitHub добавлен workflow
+`.github/workflows/verify.yml`. Он запускает те же статические тесты,
+устанавливает закреплённый Lean, получает кэш Mathlib, компилирует
+Lake-цели (включая `Audit`) и явно повторяет аксиоматическую проверку.
+Workflow подготовлен, **но из этой среды не запускался**.
+
+`python3 scripts/check_structure.py` — только **статическая** проверка
+импортов, синтаксических заполнителей и совпадения сигнатур. Её успешный
+результат **не доказывает**, что Lean принимает исходники. Требуется
+успешное выполнение `lake build Audit` в полноценном окружении Lean.
+
+## Состояние проверки при подготовке архива
+
+Содержание исходного ZIP исследовано и проверено статически. В
+использованном изолированном окружении не были установлены `lean`, `lake`,
+`elan` и Mathlib, а внешняя сеть недоступна. Поэтому сборка в этом окружении
+не выполнена: отсутствие ошибок компиляции и аксиоматическая чистота не
+сертифицированы. В архив не добавлены доказательства на основе `sorry` или
+пользовательских аксиом.

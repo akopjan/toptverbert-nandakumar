@@ -1,6 +1,6 @@
 name = "TopTverberg"
 version = "0.1.0"
-defaultTargets = ["RequestProject", "Challenge", "Solution"]
+defaultTargets = ["RequestProject", "AkopyanResearch", "Challenge", "Solution", "Audit"]
 
 [[require]]
 name = "mathlib"
@@ -12,9 +12,17 @@ name = "RequestProject"
 globs = ["RequestProject.+"]
 
 [[lean_lib]]
+name = "AkopyanResearch"
+globs = ["AkopyanResearch.*"]
+
+[[lean_lib]]
 name = "Challenge"
 roots = ["Challenge"]
 
 [[lean_lib]]
 name = "Solution"
 roots = ["Solution"]
+
+[[lean_lib]]
+name = "Audit"
+roots = ["Audit"]

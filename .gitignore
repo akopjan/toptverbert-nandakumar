@@ -1,10 +1,7 @@
 .lake/
-build/
+lake-manifest.json.tmp
 *.olean
 *.ilean
 *.trace
-.DS_Store
-._*
-*.swp
-*.swo
-*~
+__pycache__/
+.pytest_cache/

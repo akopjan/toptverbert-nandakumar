@@ -1,0 +1,33 @@
+name: Lean formalization verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the sources
+        uses: actions/checkout@v4
+
+      - name: Check the comparator interface and proof modules
+        run: |
+          python3 scripts/check_structure.py
+          python3 -m unittest discover -s tests -q
+
+      - name: Install pinned Lean and compile the default targets
+        uses: leanprover/lean-action@v1
+        with:
+          auto-config: false
+          build: true
+          test: false
+          lint: false
+          use-mathlib-cache: true
+
+      - name: Recheck the two theorem statements and their axioms
+        run: lake build Audit
