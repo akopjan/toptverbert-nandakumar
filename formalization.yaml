@@ -5,7 +5,7 @@ project:
   name: "Sixfold Tverberg Counterexamples and Convex Equipartition Obstructions"
   description: >-
     We construct a counterexample to the generalized Nandakumar--Ramana Rao
-    problem: in every dimension d ≥ 24, there are d − 1 continuous functionals
+    problem: in every dimension d > 17, there are d − 1 continuous functionals
     on convex bodies and a probability measure such that there is no convex
     partition of the unit ball into six parts of equal measure on which all
     these functionals are equalized. We also show that the topological Tverberg
@@ -33,44 +33,30 @@ sources:
     year: 2026
     note: >-
       Theorem A (AkopyanSixfold.tverberg_counterexample) is formalized
-      unconditionally, together with its join-padded extension for all d ≥ 6
-      (tverberg_counterexample_ge_six), fivefold join for d ≥ 36
-      (fivefold_tverberg_join, padded_tverberg_ge_36), and general k-fold join
-      (kfold_tverberg_join, padded_tverberg_ge_288) in Solution.lean. Theorem B
-      (AkopyanSixfold.convex_partition_counterexample) is formalized completely
-      unconditionally in every dimension d ≥ 36 (with no g₀, eta, p, or
-      IsBlocking hypotheses in Challenge.lean): Solution.lean proves the
-      existence of 5d central blocking markers for d ≥ 30 (exists_isBlocking_5d,
-      using Hahn--Banach separating normals, normal rank ≤ 5 [Lemma 4.2],
-      rank-4 RREF reduction, full rank-5 spanning-tree parametrization via
-      exists_treeParam, and measure-zero differentiable parametrization), proves
-      the Blaschke selection theorem (blaschke_isCompact_subsets_unitBall) and
-      central-avoidance margin (exists_eta_of_isBlocking, Lemma 5.2), constructs
-      an unconditional almost six-embedding Δ^(5d-1) → ℝ^(d-2) from the fivefold
-      join of Theorem A (fivefold_tverberg_join) plus join-padding, and performs
-      Hausdorff-continuous inward-distance transfer (Lemma 5.3) and
-      concentrated-measure fairness (Lemma 5.4) with a normalized Lebesgue ball
-      witness. Blocking-point reductions for lower dimensions d ≥ 24
-      (convex_partition_counterexample_ge_24) and d ≥ 18
-      (convex_partition_counterexample_ge_18) are also proved in Solution.lean.
+      unconditionally in Solution.lean. Theorem B
+      (AkopyanSixfold.convex_partition_counterexample_gt_17) is formalized
+      completely unconditionally in every dimension d > 17 (d ≥ 18) in
+      AkopyanResearch/Completion/DimensionEighteen.lean (exported via
+      PalomarSolution.lean), combining the unconditional almost six-embedding
+      Δ⁸⁹ → ℝ¹⁶ (AkopyanSixfold.almostSix_ninety) with the 5d central blocking
+      marker construction (exists_isBlocking_5d for d ≥ 18), Blaschke
+      compactness (blaschke_isCompact_subsets_unitBall, exists_eta_of_isBlocking),
+      join-padding, and Hausdorff-continuous inward-distance transfer in
+      Solution.lean.
 
 status:
   scope: >-
     Sorry-free Lean 4 formalization of AkopyanSixfold.tverberg_counterexample
-    (unconditional proof of Theorem A: an almost six-embedding Δ³⁵ → ℝ⁶) and
-    AkopyanSixfold.convex_partition_counterexample (completely unconditional
-    proof of Theorem B for every d ≥ 36 without IsBlocking, eta, or g₀),
-    plus tverberg_counterexample_ge_six (Δ^(5d+5) → ℝ^d for d ≥ 6),
-    fivefold_tverberg_join (Δ¹⁷⁹ → ℝ³⁴), padded_tverberg_ge_36 (Δ^(5d-1) → ℝ^(d-2)
-    for d ≥ 36), kfold_tverberg_join, padded_tverberg_ge_288,
-    twofold_seven_color_join (Δ⁴¹ → ℝ⁷ implies Δ⁸³ → ℝ¹⁵),
+    (unconditional proof of Theorem A: an almost six-embedding Δ³⁵ → ℝ⁶),
+    AkopyanSixfold.almostSix_ninety (unconditional almost six-embedding
+    Δ⁸⁹ → ℝ¹⁶), and AkopyanSixfold.convex_partition_counterexample_gt_17
+    (completely unconditional proof of Theorem B for every d > 17), together
+    with exists_isBlocking_5d (5d central blocking markers for all d ≥ 18),
     blaschke_isCompact_subsets_unitBall (Blaschke selection theorem),
     exists_eta_of_isBlocking (Lemma 5.2), central_partition_normal_rank
-    (Lemma 4.2), exists_isBlocking (d ≥ 5), exists_isBlocking_5d (d ≥ 30),
-    convex_partition_counterexample_ge_24, convex_partition_counterexample_ge_36,
-    and convex_partition_counterexample_ge_18.
-    Verified with comparator under standard Lean 4 axioms
-    [propext, Quot.sound, Classical.choice] without custom axioms or sorry.
+    (Lemma 4.2), and convex_partition_counterexample (d ≥ 36) in Solution.lean.
+    Verified under standard Lean 4 axioms [propext, Quot.sound, Classical.choice]
+    without custom axioms or sorry.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -79,15 +65,15 @@ status:
     - "Classical.choice"
   main_results:
     - declaration: "AkopyanSixfold.tverberg_counterexample"
-      file: "Solution.lean"
+      file: "PalomarSolution.lean"
       sorry_count: 0
       axioms:
         - "propext"
         - "Quot.sound"
         - "Classical.choice"
       comparator_config: "comparator.json"
-    - declaration: "AkopyanSixfold.convex_partition_counterexample"
-      file: "Solution.lean"
+    - declaration: "AkopyanSixfold.convex_partition_counterexample_gt_17"
+      file: "PalomarSolution.lean"
       sorry_count: 0
       axioms:
         - "propext"
@@ -97,36 +83,24 @@ status:
 
 fidelity:
   divergences: >-
-    AkopyanSixfold.tverberg_counterexample formalizes Theorem A unconditionally.
-    AkopyanSixfold.convex_partition_counterexample formalizes Theorem B
-    unconditionally in every dimension d ≥ 36 (removing all extra hypotheses
-    g₀, eta, p, and IsBlocking from Challenge.lean), whereas paper/manuscript.tex
-    reaches the sharper dimension threshold d ≥ 24 using Theorem C (Δ¹¹⁹ → ℝ²²
-    via [AKS]) together with the sharper rank-4 RREF bound 4d + 23. In
-    Solution.lean, the unconditional proof for d ≥ 36 obtains Δ^(5d−1) → ℝ^(d−2)
-    from the fivefold join of Theorem A (fivefold_tverberg_join) plus join-padding
-    (without [AKS]), and constructs 5d central blocking points for every d ≥ 30
-    (exists_isBlocking_5d) via Hahn--Banach separating normals, normal rank ≤ 5
-    (Lemma 4.2, central_partition_normal_rank), rank-4 RREF reduction
-    (separating_normals_in_rref4_span), rank-5 tree parametrization
-    (exists_treeParam), and Lebesgue-null lower-dimensional differentiable images
-    (volume_image_eq_zero_of_card_lt). Solution.lean also includes the
-    blocking-point reductions convex_partition_counterexample_ge_24 (taking 5d − 4
-    markers) and convex_partition_counterexample_ge_18 (conditional on Δ⁸⁹ → ℝ¹⁶).
-    Note also that the explicit uniform quantifier (∀ mu ...) is proved
-    internally in convex_partition_of_embedding_and_blocking rather than exposed
-    as a separate conjunct in Challenge.lean.
+    Both AkopyanSixfold.tverberg_counterexample (Theorem A, Δ³⁵ → ℝ⁶) and
+    AkopyanSixfold.convex_partition_counterexample_gt_17 (Theorem B, for all
+    d > 17) are formalized completely unconditionally without any extra
+    hypotheses in Challenge.lean. Note that the explicit uniform quantifier
+    over measures is proved internally in convex_partition_of_embedding_and_blocking
+    rather than exposed as a separate conjunct in Challenge.lean.
 
 automation:
   methods:
     - method: "agent"
-      models: ["Aristotle", "Gemini"]
+      models: ["Aristotle", "Gemini", "GPT"]
       framework: "AI-assisted Lean 4 formalization"
       tool_setup: >-
         Theorem A proof closure in RequestProject/ assisted by Aristotle;
         join-padding, Blaschke selection, normal rank ≤ 5, RREF, blocking
-        point existence, inward-distance transfer, concentrated-measure proofs,
-        and integration assisted by Gemini.
+        point existence for d ≥ 18, inward-distance transfer, quadratic
+        arrangement modules, and relative lifting completion assisted by
+        Gemini and GPT.
 
 review:
   status: "self-assessed"
@@ -141,19 +115,14 @@ alignment:
       note: >-
         Unconditional proof of an almost six-embedding Δ³⁵ → ℝ⁶.
     - source: "Sixfold Tverberg counterexamples and convex equipartition obstructions (paper/manuscript.tex), Theorem B"
-      lean: "AkopyanSixfold.convex_partition_counterexample"
+      lean: "AkopyanSixfold.convex_partition_counterexample_gt_17"
       module: "Challenge"
-      status: "proved (unconditional for d ≥ 36)"
+      status: "proved (unconditional for d > 17)"
       note: >-
-        Formalizes Theorem B unconditionally for every d ≥ 36 (with no g₀,
-        eta, p, or IsBlocking hypotheses in Challenge.lean), constructing
-        5d central blocking points for d ≥ 30 (exists_isBlocking_5d via
-        Lemma 4.2, rank-4 RREF, rank-5 spanning-tree parametrization
-        exists_treeParam, and measure-zero differentiable parametrization),
-        proving the Blaschke selection theorem and Lemma 5.2
-        (exists_eta_of_isBlocking), combining 5 copies of Theorem A via
-        fivefold_tverberg_join and join-padding to Δ^(5d-1) → ℝ^(d−2), and
-        proving inward-distance transfer (Lemma 5.3), concentrated-measure
-        fairness (Lemma 5.4), and a normalized Lebesgue ball witness.
-        Blocking-point reductions for d ≥ 24 and d ≥ 18 are also proved in
-        Solution.lean.
+        Formalizes Theorem B unconditionally for every d > 17 (d ≥ 18),
+        combining the unconditional almost six-embedding Δ⁸⁹ → ℝ¹⁶
+        (AkopyanSixfold.almostSix_ninety) with 5d central blocking markers
+        (exists_isBlocking_5d for d ≥ 18), Blaschke selection
+        (blaschke_isCompact_subsets_unitBall and exists_eta_of_isBlocking),
+        join-padding to Δ^(5d-1) → ℝ^(d-2), and Hausdorff-continuous
+        inward-distance transfer.
