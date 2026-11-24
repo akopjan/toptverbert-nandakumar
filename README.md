@@ -19,12 +19,13 @@ The challenge is specified in `Challenge.lean` and checked by the Palomar Compar
    ```
 
 2. **Theorem B (`AkopyanSixfold.convex_partition_counterexample_gt_17`, adapting and strengthening Theorem B of the manuscript from $d \ge 24$ to $d > 17$)**:
-   Unconditionally in every dimension $d > 17$, there exist $d - 1$ continuous functionals on convex bodies and an absolutely continuous probability measure such that no convex six-partition of the unit ball into six equal-measure parts equalizes all these functionals:
+   Unconditionally in every dimension $d > 17$, there exist $d - 1$ continuous functionals on convex bodies and an absolutely continuous probability measure with full mass on the unit ball such that no convex six-partition of the unit ball into six equal-measure parts equalizes all these functionals:
    ```lean
    theorem convex_partition_counterexample_gt_17 (d : ℕ) (hd : 17 < d) :
        ∃ (Phi : Body d → (Fin (d - 1) → ℝ)) (mu : Measure (Ambient d)),
          Continuous Phi ∧
          IsProbabilityMeasure mu ∧
+         mu (unitBall d) = 1 ∧
          mu.AbsolutelyContinuous volume ∧
          ∀ C : Fin 6 → Body d,
            IsSixPartition C →

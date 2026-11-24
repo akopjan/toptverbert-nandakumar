@@ -72,12 +72,14 @@ def IsSixPartition {d : ℕ} (C : Fin 6 → Body d) : Prop :=
 
 /-- **Theorem B**: Unconditionally in every dimension `d > 17`, there exist
 `d - 1` continuous functionals on convex bodies and an absolutely continuous
-probability measure such that no convex six-partition of the unit ball into
-six parts of equal measure equalizes all these functionals. -/
+probability measure with full mass on the unit ball such that no convex
+six-partition of the unit ball into six parts of equal measure equalizes all
+these functionals. -/
 theorem convex_partition_counterexample_gt_17 (d : ℕ) (hd : 17 < d) :
     ∃ (Phi : Body d → (Fin (d - 1) → ℝ)) (mu : Measure (Ambient d)),
       Continuous Phi ∧
       IsProbabilityMeasure mu ∧
+      mu (unitBall d) = 1 ∧
       mu.AbsolutelyContinuous volume ∧
       ∀ C : Fin 6 → Body d,
         IsSixPartition C →

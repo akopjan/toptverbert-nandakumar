@@ -928,6 +928,20 @@ example (d : ℕ) (hd : 36 ≤ d) :
         ∃ i, Phi (C i) ≠ Phi (C 0) :=
   AkopyanSixfold.convex_partition_counterexample d hd
 
+example (d : ℕ) (hd : 17 < d) :
+    ∃ (Phi : AkopyanSixfold.Body d → (Fin (d - 1) → ℝ))
+      (mu : Measure (AkopyanSixfold.Ambient d)),
+      Continuous Phi ∧
+      IsProbabilityMeasure mu ∧
+      mu (AkopyanSixfold.unitBall d) = 1 ∧
+      mu.AbsolutelyContinuous volume ∧
+      ∀ C : Fin 6 → AkopyanSixfold.Body d,
+        AkopyanSixfold.IsSixPartition C →
+        (∀ i, mu (C i : Set (AkopyanSixfold.Ambient d)) =
+          mu (AkopyanSixfold.unitBall d) / 6) →
+        ∃ i, Phi (C i) ≠ Phi (C 0) :=
+  AkopyanSixfold.convex_partition_counterexample_gt_17 d hd
+
 set_option maxHeartbeats 4000000 in
 open Lean Elab Command in
 run_cmd do

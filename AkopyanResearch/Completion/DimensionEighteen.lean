@@ -26,12 +26,13 @@ theorem almostSix_ninety :
     AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting
 
 /-- In every dimension strictly larger than seventeen, a continuous
-functional and an absolutely continuous probability measure obstruct
-simultaneous convex six-equipartition. -/
+functional and an absolutely continuous probability measure with full mass
+on the unit ball obstruct simultaneous convex six-equipartition. -/
 theorem convex_partition_counterexample_gt_17 (d : ℕ) (hd : 17 < d) :
     ∃ (Phi : Body d → (Fin (d - 1) → ℝ)) (mu : Measure (Ambient d)),
       Continuous Phi ∧
       IsProbabilityMeasure mu ∧
+      mu (unitBall d) = 1 ∧
       mu.AbsolutelyContinuous volume ∧
       ∀ C : Fin 6 → Body d,
         IsSixPartition C →
