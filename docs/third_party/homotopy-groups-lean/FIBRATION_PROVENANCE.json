@@ -1,0 +1,56 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_lean": "4.32.2",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "recorded_utc": "2026-11-24T08:26:57.527749+00:00",
+  "files": [
+    {
+      "module": "Submission.Homotopy.CubePair",
+      "upstream_path": "Submission/Homotopy/CubePair.lean",
+      "upstream_sha256": "35e2cecbd7c9aa08dd7cdf14a91d0c63a43a8a23f55b00b8d1c1d22982ee2ea3",
+      "port_sha256": "7df4ea97ad680edb757e77197ed1b67e4ab84d6096238482e383c4f0fe55aeb4",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Adapted the existing cubical lifting and relative exact-sequence proofs to the pinned Mathlib APIs."
+      ],
+      "line_count": 555
+    },
+    {
+      "module": "Submission.Homotopy.FibrationLES",
+      "upstream_path": "Submission/Homotopy/FibrationLES.lean",
+      "upstream_sha256": "40e54461230384cbe8d0522e1cd279932859c75235b5a0016a8e6878a646fc87",
+      "port_sha256": "894aaddf7665f454fbb1fa2442256f29b07d14ffabfa33db12ecb4ebc88ec838",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Adapted the existing cubical lifting and relative exact-sequence proofs to the pinned Mathlib APIs."
+      ],
+      "line_count": 407
+    },
+    {
+      "module": "Submission.Homotopy.Fibration",
+      "upstream_path": "Submission/Homotopy/Fibration.lean",
+      "upstream_sha256": "db264b85d961b01942a79a0f755348d7b02beeefeb6a8f6168dbe51d69b7c552",
+      "port_sha256": "59b8810ec109872b394cf5e030f3145d39666068487b0f76861b35a09f66bde4",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Adapted the existing cubical lifting and relative exact-sequence proofs to the pinned Mathlib APIs."
+      ],
+      "line_count": 216
+    },
+    {
+      "module": "Submission.Homotopy.PathFibration",
+      "upstream_path": "Submission/Homotopy/PathFibration.lean",
+      "upstream_sha256": "33b08485ace4f418bbec5ffdb399bab83c5379a22495a43f95a6ade6778de935",
+      "port_sha256": "7ea0fda275c3577462606a7f951f350ed455b9cf7de1f6b53c587019d5235297",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Adapted the existing cubical lifting and relative exact-sequence proofs to the pinned Mathlib APIs."
+      ],
+      "line_count": 228
+    }
+  ],
+  "audit_note": "These modules are included in the final all-owner project audit; no audit success is inferred from this provenance manifest."
+}

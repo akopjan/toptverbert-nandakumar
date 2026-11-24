@@ -1,0 +1,47 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Submission.ForMathlib.SimplexModel",
+      "origin": "local_proved_adapter_or_generalization",
+      "port_sha256": "466ddefdc2cef589608aac351cc1e5852942bc048a184433c9bf58c3f1a357b8",
+      "description": "New actual homeomorphism and naturality proof between the finite-coordinate real simplex used by the source and Mathlib 4.35 Finsupp standard simplices.",
+      "changes": [
+        "New proved supporting module; no theorem-specific assumption or axiom is introduced."
+      ]
+    },
+    {
+      "module": "Submission.Homology.SmallSimplices",
+      "origin": "local_proved_adapter_or_generalization",
+      "port_sha256": "50160e27a0c7c2a063686bd32fec03eb98bd80da3ecc8b73ecb4970c2d0ac81c",
+      "description": "New transparent adapter to the independently audited Hatcher small singular-chain subcomplexes and chain homotopy equivalence; includes a proved degreewise monicity instance.",
+      "changes": [
+        "New proved supporting module; no theorem-specific assumption or axiom is introduced."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.RelativeNormalization",
+      "origin": "local_proved_adapter_or_generalization",
+      "port_sha256": "0e2c947641ece36b25ffd6dec23fe919467fb371210b5ce530cf4272aea9f8fb",
+      "description": "New arbitrary-subspace generalization of the source coherent pointed normalization, retaining genuine homotopies of pairs and actual singular relative chains.",
+      "changes": [
+        "New proved supporting module; no theorem-specific assumption or axiom is introduced."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.RelativeRepresentatives",
+      "origin": "local_proved_adapter_or_generalization",
+      "port_sha256": "cc1bde631692117b28601667446fcdbcbcd7e90a5fe189fcb095d9182ded2239",
+      "description": "New arbitrary-subspace representative and homology-evaluation proofs using the source cube fundamental class and actual pair homotopy invariance.",
+      "changes": [
+        "New proved supporting module; no theorem-specific assumption or axiom is introduced."
+      ]
+    }
+  ],
+  "audit_reference": "These modules are included in the original VANISHING, RELATIVEDESCENT, or ABSOLUTESURJECTIVITY full owner audits."
+}

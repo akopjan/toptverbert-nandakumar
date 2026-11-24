@@ -1,0 +1,63 @@
+{
+  "recorded_utc": "2026-11-24T08:46:50.275346+00:00",
+  "result": "pass",
+  "workflow": ".github/workflows/palomar-preflight.yml",
+  "workflow_sha256": "5c32ed3a0a5d42e64d3876787e28ad9dbacc60014a7bc30eeca1d9b47251f22e",
+  "pipeline_commit": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "trigger": "workflow_dispatch only",
+  "remote_jobs_started": false,
+  "all_inputs_in_pinned_workflow_contract": true,
+  "required_inputs_present": true,
+  "uses_sha_equals_pipeline_commit": true,
+  "repository_and_commit_from_runtime_context": true,
+  "execution_profile": "palomar-standard-v1",
+  "permissions": {
+    "contents": "read"
+  },
+  "main_verify_workflow_unchanged_since_static_snapshot": true,
+  "request_encoder_cases": [
+    {
+      "mode": "preflight",
+      "relationship": "I am a responsible author or maintainer",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "pass"
+    },
+    {
+      "mode": "full",
+      "relationship": "I am a responsible author or maintainer",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "pass"
+    },
+    {
+      "mode": "preflight",
+      "relationship": "I have approval from a responsible author or maintainer",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "pass"
+    },
+    {
+      "mode": "full",
+      "relationship": "I have approval from a responsible author or maintainer",
+      "expected_exit": 0,
+      "actual_exit": 0,
+      "result": "pass"
+    },
+    {
+      "mode": "preflight",
+      "relationship": "Unconfirmed",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "pass"
+    },
+    {
+      "mode": "unsupported",
+      "relationship": "I am a responsible author or maintainer",
+      "expected_exit": 1,
+      "actual_exit": 1,
+      "result": "pass"
+    }
+  ],
+  "qualification": "Local static and request-encoding checks only; no GitHub-hosted run or Palomar mechanical result."
+}

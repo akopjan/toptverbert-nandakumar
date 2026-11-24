@@ -1,0 +1,65 @@
+# Draft: copy to .github/workflows/verify.yml after final integration.
+# The compared mathematical statements are exactly those in Challenge.lean.
+name: Pinned Lean and Comparator verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Check out the exact submitted sources
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+
+      - name: Verify committed dependency pins
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import pathlib
+          import re
+          root = pathlib.Path('.')
+          assert (root / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.35.0'
+          manifest = json.loads((root / 'lake-manifest.json').read_text())
+          packages = manifest['packages']
+          mathlib = next(p for p in packages if p['name'] == 'mathlib')
+          assert mathlib['rev'] == '56a005855ea17e0b0958f73ec801ae140b0a1679'
+          for package in packages:
+              assert package['type'] == 'git', package
+              assert re.fullmatch('[0-9a-f]{40}', package['rev']), package
+          PY
+          python3 scripts/check_structure.py
+          python3 -m unittest discover -s tests -q
+
+      - name: Install pinned Lean and fetch pinned Mathlib cache
+        uses: leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee # v1 resolved 2026-11-24 UTC
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-mathlib-cache: true
+          use-github-cache: false
+
+      - name: Build every configured proof target and audit exact statements
+        shell: bash
+        run: |
+          lake build
+          lake build Audit
+          git diff --exit-code -- lean-toolchain lake-manifest.json
+
+      - name: Install the official Comparator sandbox dependency
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes bubblewrap
+
+      - name: Run official Comparator and bundled independent kernels
+        shell: bash
+        run: bash scripts/verify-comparator.sh

@@ -23,6 +23,12 @@ class DimensionArithmeticTests(unittest.TestCase):
             self.assertEqual(180 + 5 * k, 5 * d)
             self.assertEqual(34 + k, d - 2)
 
+    def test_padding_every_dimension_above_17(self):
+        for d in range(18, 500):
+            k = d - 18
+            self.assertEqual(90 + 5 * k, 5 * d)
+            self.assertEqual(16 + k, d - 2)
+
     def test_rank_four_parameter_bound(self):
         for d in range(18, 500):
             m = 5 * d

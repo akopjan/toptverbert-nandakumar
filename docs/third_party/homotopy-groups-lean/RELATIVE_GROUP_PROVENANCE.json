@@ -1,0 +1,41 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "delegated_modules": [
+    "Submission.Homotopy.ContractionData",
+    "Submission.Model.Sphere",
+    "Submission.Model.SuspSphere",
+    "Submission.Model.Suspension"
+  ],
+  "files": [
+    {
+      "module": "Submission.Homotopy.RelGroup",
+      "upstream_path": "Submission/Homotopy/RelGroup.lean",
+      "upstream_sha256": "b9c8e41dbcf5ef6f6a719df9c1f33fc41eab44b6bd552400a85fe261b90d1c2a",
+      "port_sha256": "adebd072d37270a777a0b922198a1a1cf00200c9e3474154579f5f6363b70134",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Imported Mathlib.Algebra.Group.Ext explicitly. Localized reducibility of actual relative homotopy quotient and loop models for Lean 4.35 elaboration. Composed the quotient path equivalence with CategoryTheory.End.homEquiv to match Mathlib fundamental-group End packaging."
+      ]
+    }
+  ],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 1,
+    "declarations": 184,
+    "theorems": 155,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "Submission.Homotopy.RelGroup"
+    ]
+  },
+  "license": "Apache-2.0"
+}

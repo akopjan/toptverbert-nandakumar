@@ -1,0 +1,1 @@
+CONTRACTIBLEHUREWICZ AUDIT OK: 120 declarations, 86 theorems, 6 modules; only propext, Classical.choice, Quot.sound

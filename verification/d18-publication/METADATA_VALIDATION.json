@@ -1,0 +1,304 @@
+{
+  "recorded_utc": "2026-11-24T10:31:44.177868+00:00",
+  "result": "metadata-invalid-or-incomplete",
+  "exit_code": 1,
+  "scope": "Offline schema and stated profile checks only; existing gate reports are read and hashed, never executed or assigned inferred pending statuses.",
+  "metadata_path": "verification/d18-publication/formalization.yaml.draft",
+  "draft_sha256": "58ba403a1303b36b6249190cd72b5f65a313bfc439d6f73d3e88dad3f319016e",
+  "draft_bytes": 16482,
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "reference_inputs": {
+    "formalization-v0.4.schema.json": {
+      "path": "verification/d18-publication/official-references/formalization-v0.4.schema.json",
+      "sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+      "bytes": 12694,
+      "url": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json"
+    },
+    "arxiv-categories.json": {
+      "path": "verification/d18-publication/official-references/arxiv-categories.json",
+      "sha256": "3b339cf140a914c50bab39b1c44df2437ce3984bd09bb2150fcb0edd60eda776",
+      "bytes": 6093,
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/main/taxonomies/arxiv-categories.json"
+    },
+    "msc2020-codes.json": {
+      "path": "verification/d18-publication/official-references/msc2020-codes.json",
+      "sha256": "b4de69f1f562da01e0f4580cecc0ab36098f5297bb7cdd669c8ec3b0d3606060",
+      "bytes": 390964,
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/main/taxonomies/msc2020-codes.json"
+    }
+  },
+  "reference_manifest_sha256": "001de2393fbce53649c1993545e162f0b5c879f78bab9bc5663f825554e7c732",
+  "validator_sha256": "18dd8d71b29a71c5bb37cd9b180b10056b7c15c8feb179d74bfb156a9e0d97f2",
+  "requirements_sha256": "c738f47acc9dd204a07f93c493c903455620d49f09d206b5f6ac93a260e54381",
+  "runtime": {
+    "python": "3.12.14",
+    "PyYAML": "6.0.3",
+    "jsonschema": "4.26.0"
+  },
+  "schema_errors": [
+    {
+      "path": "project.authors",
+      "validator": "minItems",
+      "message": "[] should be non-empty"
+    },
+    {
+      "path": "project.license",
+      "validator": "minLength",
+      "message": "'' should be non-empty"
+    }
+  ],
+  "profile_errors": [
+    {
+      "path": "project.authors",
+      "message": "A nonempty list of confirmed human name strings is required; identity is not verified by this script."
+    },
+    {
+      "path": "project.responsible_maintainers",
+      "message": "A nonempty list of confirmed human name strings is required; identity is not verified by this script."
+    },
+    {
+      "path": "project.license",
+      "message": "An exact, nonempty project SPDX identifier is required."
+    },
+    {
+      "path": "root_license_file",
+      "message": "Exactly one conventional root licence file is required."
+    }
+  ],
+  "classification": {
+    "arxiv": {
+      "math.MG": "Metric Geometry",
+      "math.AT": "Algebraic Topology"
+    },
+    "msc2020": {
+      "52C35": "Arrangements of points, flats, hyperplanes (aspects of discrete geometry)",
+      "55S91": "Equivariant operations and obstructions in algebraic topology",
+      "52A20": "Convex sets in \\(n\\) dimensions (including convex hypersurfaces)"
+    }
+  },
+  "derived_result_origin": "source-based",
+  "root_license_files": [],
+  "project_alignment": {
+    "comparator_sha256": "a4f9bd30fbdd7cffa6ece2beed49bcb14fd908b58f436de535f3324f5d3d22ee",
+    "comparator_theorems": [
+      "AkopyanSixfold.tverberg_counterexample",
+      "AkopyanSixfold.convex_partition_counterexample_gt_17"
+    ],
+    "metadata_main_results": [
+      "AkopyanSixfold.tverberg_counterexample",
+      "AkopyanSixfold.convex_partition_counterexample_gt_17"
+    ],
+    "main_results_exactly_match_comparator": true,
+    "qualification": "Main results are optional in the official schema; this reports alignment without imposing a new Palomar rule."
+  },
+  "gates": {
+    "main_build_and_owner_audit": {
+      "path": "verification/d18-final-retry/results.json",
+      "record_available": true,
+      "sha256": "7de2a730fbfca4b547ddfb5aeba695e302f87e726b761a63821696e374aa6a74",
+      "reported": {
+        "outcome": "build-and-project-owner-audit-passed",
+        "finished_utc": "2026-11-24T08:56:01.442291+00:00",
+        "stage_exit_codes": {
+          "structure": 0,
+          "provenance": 0,
+          "unit-tests": 0,
+          "build": 0,
+          "statement-audit": 0,
+          "audit": 0
+        },
+        "audit_summary": "PROJECT AUDIT OK: 16765 declarations from 438 proof-module owners; 14244 public, 2521 private; 12586 theorems, 3975 definitions, 0 opaque declarations; every kind checked against the axiom whitelist",
+        "sources_unchanged": true,
+        "full_palomar_workflow": false,
+        "input_sha256_count": 472
+      }
+    },
+    "cumulative_source_rebuild": {
+      "path": "verification/d18-clean-final/results.json",
+      "record_available": true,
+      "sha256": "80e083c8538d77a4b1c64b43151dbf3d3c8c79af9a5f95e1603f12d292942937",
+      "reported": {
+        "outcome": "build-and-project-owner-audit-passed",
+        "finished_utc": "2026-11-24T09:01:10.288112+00:00",
+        "stage_exit_codes": {
+          "structure": 0,
+          "provenance": 0,
+          "unit-tests": 0,
+          "build": 0,
+          "statement-audit": 0,
+          "audit": 0
+        },
+        "audit_summary": "PROJECT AUDIT OK: 16765 declarations from 438 proof-module owners; 14244 public, 2521 private; 12586 theorems, 3975 definitions, 0 opaque declarations; every kind checked against the axiom whitelist",
+        "sources_unchanged": true,
+        "full_palomar_workflow": false,
+        "input_sha256_count": 472
+      }
+    },
+    "compiled_interface": {
+      "path": "verification/d18-compiled-interface/results.json",
+      "record_available": true,
+      "sha256": "18fe4c5706c9a5f4f0349176bb2b91f5fea2885d0c6a9c4b4683bcd38fe511ae",
+      "reported": {
+        "outcome": "compiled-interfaces-identical",
+        "started_utc": "2026-11-24T08:58:12.931950+00:00",
+        "finished_utc": "2026-11-24T08:59:09.782285+00:00",
+        "input_bytes_unchanged": true,
+        "types_compared": 9,
+        "definition_values_compared": 7,
+        "source_module_count": 419,
+        "official_comparator": false,
+        "theorem_proof_bodies_compared": false,
+        "declarations_sha256": {
+          "Challenge": "0da75f6ec67460498e6f5a13890e8d06a76dd9dad1739c7f433af31e0b51c3d2",
+          "PalomarSolution": "0da75f6ec67460498e6f5a13890e8d06a76dd9dad1739c7f433af31e0b51c3d2"
+        },
+        "input_sha256_before_count": 1681
+      }
+    },
+    "independent_kernels": {
+      "path": "verification/d18-kernels/results.json",
+      "record_available": true,
+      "sha256": "7587d60175e14da6f6427624e2ff9d909b9b04f20f6b85eb33695fc347ae6c9b",
+      "reported": {
+        "outcome": "all-components-accepted",
+        "component_outcome": "all-components-accepted",
+        "started_utc": "2026-11-24T08:56:28.279306+00:00",
+        "finished_utc": "2026-11-24T09:15:21.091603+00:00",
+        "driver_exit_code": 0,
+        "proof_inputs_unchanged": true,
+        "export_unchanged_during_kernel_checks": true,
+        "export_sha256": "978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be",
+        "export_size_bytes": 700996206,
+        "permitted_axioms": [
+          "propext",
+          "Classical.choice",
+          "Quot.sound"
+        ],
+        "full_palomar_workflow": false,
+        "steps": [
+          {
+            "label": "build",
+            "exit_code": 0,
+            "elapsed_seconds": 15.713
+          },
+          {
+            "label": "declaration-audit",
+            "exit_code": 0,
+            "elapsed_seconds": 23.871
+          },
+          {
+            "label": "export",
+            "exit_code": 0,
+            "elapsed_seconds": 224.553
+          },
+          {
+            "label": "leanchecker",
+            "exit_code": 0,
+            "elapsed_seconds": 319.695
+          },
+          {
+            "label": "nanoda",
+            "exit_code": 0,
+            "elapsed_seconds": 54.125
+          },
+          {
+            "label": "con-ron",
+            "exit_code": 0,
+            "elapsed_seconds": 33.578
+          }
+        ],
+        "selected_declarations": [
+          "AkopyanSixfold.tverberg_counterexample",
+          "AkopyanSixfold.almostSix_ninety",
+          "AkopyanSixfold.convex_partition_counterexample_gt_17",
+          "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting"
+        ],
+        "export_counts": {
+          "inductive": 1381,
+          "def": 17008,
+          "thm": 58974,
+          "axiom": 3,
+          "quot": 4,
+          "opaque": 38
+        },
+        "input_sha256_count": 1756
+      }
+    },
+    "approved_con_ron_replay": {
+      "path": "verification/d18-approved-con-ron/results.json",
+      "record_available": true,
+      "sha256": "ad214f3de796b105a8cdc27c29adb39147e68b9f4ab8fc03e0c32934101b67d1",
+      "reported": {
+        "outcome": "approved-con-ron-accepted-same-final-export",
+        "started_utc": "2026-11-24T09:15:54.720816+00:00",
+        "finished_utc": "2026-11-24T09:18:19.626259+00:00",
+        "driver_exit_code": 0,
+        "checker_exit_code": 0,
+        "checker_elapsed_seconds": 109.273,
+        "export_sha256": "978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be",
+        "export_size_bytes": 700996206,
+        "permitted_axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ],
+        "export_unchanged": true,
+        "checker_unchanged": true,
+        "same_export_and_declaration_records": true,
+        "approved_release": "v4.36.0-rc1",
+        "approved_release_commit": "c9afcddf514a6772bd4d649f7cfc04eff0b9f15e",
+        "approved_binary_sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+        "full_palomar_workflow": false,
+        "registry_acceptance": false,
+        "official_positive_negative_controls_run": false,
+        "selected_declarations": [
+          "AkopyanSixfold.tverberg_counterexample",
+          "AkopyanSixfold.almostSix_ninety",
+          "AkopyanSixfold.convex_partition_counterexample_gt_17",
+          "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting"
+        ],
+        "export_counts": {
+          "inductive": 1381,
+          "def": 17008,
+          "thm": 58974,
+          "axiom": 3,
+          "quot": 4,
+          "opaque": 38
+        }
+      }
+    },
+    "local_sandboxed_comparator": {
+      "path": "verification/d18-comparator/results.json",
+      "record_available": true,
+      "sha256": "1e5c4c254890e6f97a947abfb29d9f280cd41763e7273cd4ebe6253f8f0319c7",
+      "reported": {
+        "outcome": "local-sandboxed-comparator-unsuccessful",
+        "started_utc": "2026-11-24T08:56:49.681563+00:00",
+        "finished_utc": "2026-11-24T08:56:57.450268+00:00",
+        "exit_code": 1,
+        "elapsed_seconds": 7.683,
+        "inputs_unchanged": true,
+        "full_palomar_workflow": false,
+        "local_sandboxed_comparator_passed": false,
+        "bwrap_mount_failure_observed": true,
+        "sandbox_bypassed": false,
+        "input_sha256_before_count": 444
+      }
+    },
+    "dependency_integrity": {
+      "path": "verification/d18-dependencies/results.json",
+      "record_available": true,
+      "sha256": "f29689d145bdcd30b3a6308b108e79dbafc176a2d8868c4cbd641309287183cf",
+      "reported": {
+        "outcome": "pinned-dependency-sources-clean"
+      }
+    }
+  },
+  "not_verified": [
+    "Human identities, authorship and submission authority",
+    "Project licence ownership and official SPDX-content detection",
+    "Bibliographic adequacy, priority and external peer review",
+    "Public repository permissions or registry acceptance"
+  ],
+  "official_policy_coverage": "This bounded offline check does not replace the official Palomar verifier or editorial review."
+}

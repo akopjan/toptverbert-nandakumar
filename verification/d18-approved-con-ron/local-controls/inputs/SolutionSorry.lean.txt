@@ -1,0 +1,8 @@
+module
+
+/-! Deliberately invalid proof, used only to test rejection. -/
+
+public theorem Fixture.successorWitness (n : Nat) : ∃ m : Nat, m = n + 1 := by
+  sorry
+
+#print axioms Fixture.successorWitness

@@ -1,0 +1,14 @@
+Starting build
+Finished build: exit 0
+Reused Lean dependency discovery after checking every source and dependency-pin hash
+Starting declaration-audit
+Finished declaration-audit: exit 0
+Starting export
+Finished export: exit 0
+Starting leanchecker
+Finished leanchecker: exit 0
+Starting nanoda
+Finished nanoda: exit 0
+Starting con-ron
+Finished con-ron: exit 0
+all-components-accepted

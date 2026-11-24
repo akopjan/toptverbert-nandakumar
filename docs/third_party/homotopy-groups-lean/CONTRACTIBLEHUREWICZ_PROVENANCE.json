@@ -1,0 +1,92 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "upstream_lean": "4.32.2",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Submission.Hurewicz.RelativeBoundary",
+      "upstream_path": "Submission/Hurewicz/RelativeBoundary.lean",
+      "upstream_sha256": "596f98277f06e19bea2ae0c525a87aaca6b13d71b27b22e1b48bcd3c16593c5f",
+      "port_sha256": "1d43eb940d5d61e7c3154cb5c27f5c91aad39b0deac7a20726b67b9d9b931783",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; exposed private proof helpers for compatibility with the module system."
+      ]
+    },
+    {
+      "module": "Submission.WhiteheadTheorem.Shapes.CubeBoundaryMap",
+      "upstream_path": "Submission/WhiteheadTheorem/Shapes/CubeBoundaryMap.lean",
+      "upstream_sha256": "2073f941075dff2281dcacc1fcfd3813a4521669e34fe76e8d1946be316437cc",
+      "port_sha256": "447be30c9773590d58ec02bc2d067306ea7016a9184d4bdf3ed01a59c6c471b1",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; exposed private proof helpers for compatibility with the module system.",
+        "Replaced automated TopCat coercion continuity search by explicit compositions of the same continuous coordinate projections, ULift maps, and continuous TopCat morphisms.",
+        "Localized reducibility of the explicit cube and boundary models; made the compatibility proof use the same explicit boundary point instead of nested coercion metavariables."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.CubicalBoundary",
+      "upstream_path": "Submission/Hurewicz/CubicalBoundary.lean",
+      "upstream_sha256": "b1124c03c703c7c69797129724d4ecae392350e0a79cd07fa86a73de5bffd242",
+      "port_sha256": "4647b010498d1633b49becad7b7ebc3645e31983f45ea8e0caf35e5a28b128b5",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; exposed private proof helpers for compatibility with the module system.",
+        "Localized reducibility of the explicit cube, boundary and relative-homotopy models; adjusted backward definitional-equality transparency."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.AbsoluteNaturality",
+      "upstream_path": "Submission/Hurewicz/AbsoluteNaturality.lean",
+      "upstream_sha256": "4f0c2b4c5c931ff8d65a1c155d1ce79a3e9ee15c8b0540a5573f61ded330104f",
+      "port_sha256": "9effe223bfb3a784e4febca185e4979edc8684ad1c24dc52b847aa387661c082",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "The initial comparison/naturality lemmas are imported from the extracted AbsoluteComparison module; retained the final contractible-subspace bijectivity theorem."
+      ]
+    },
+    {
+      "module": "Submission.SphereHomologicalDegree",
+      "upstream_path": "Submission/SphereHomologicalDegree.lean",
+      "upstream_sha256": "dfb426a7ca75fa0162012e88ca549958ae8808455ffd21f0816442b6fc8822e1",
+      "port_sha256": "2efdaca4f106171cbef9f5abfaafdc883763b80db335d7f33a0feb7ad84c8b51",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; exposed private proof helpers for compatibility with the module system."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.CubicalCollapse",
+      "upstream_path": "Submission/Hurewicz/CubicalCollapse.lean",
+      "upstream_sha256": "e8d76fa6499d9d8351ad3ca87276e46574fe25d7d896713a4f6d40bb9bc7cffd",
+      "port_sha256": "1e44cab50073348061a2a91e99c2555ce7c7b7bd8b9478442981fb322e0899cd",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; exposed private proof helpers for compatibility with the module system."
+      ]
+    }
+  ],
+  "local_support": [],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 6,
+    "declarations": 120,
+    "theorems": 86,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "Submission.Hurewicz.RelativeBoundary",
+      "Submission.WhiteheadTheorem.Shapes.CubeBoundaryMap",
+      "Submission.Hurewicz.CubicalBoundary",
+      "Submission.Hurewicz.AbsoluteNaturality",
+      "Submission.SphereHomologicalDegree",
+      "Submission.Hurewicz.CubicalCollapse"
+    ]
+  }
+}

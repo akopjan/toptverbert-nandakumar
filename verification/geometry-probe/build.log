@@ -1,0 +1,202 @@
+verification/geometry-probe/GeometryProbe.lean:117:43: warning: `isCompact_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.compactSpace` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type u_1) (M : Type u_2) [inst : Ring R] [inst_1 : TopologicalSpace R] [IsTopologicalRing R]
+    [inst_3 : PartialOrder R] [inst_4 : IsStrictOrderedRing R] [CompactIccSpace R] [OrderClosedTopology R] [Finite M],
+    CompactSpace (Convexity.StdSimplex R M)
+instead of
+  ∀ (𝕜 : Type u_1) (ι : Type u_2) [inst : Fintype ι] [inst_1 : TopologicalSpace 𝕜] [inst_2 : Semiring 𝕜]
+    [inst_3 : PartialOrder 𝕜] [OrderClosedTopology 𝕜] [ContinuousAdd 𝕜] [CompactIccSpace 𝕜] [IsOrderedAddMonoid 𝕜],
+    IsCompact (stdSimplex 𝕜 ι)
+verification/geometry-probe/GeometryProbe.lean:3093:12: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:2988:53: warning: This simp argument is unused:
+  real_inner_eq_re_inner
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inner_add_left, real_inner_smul_left, RCLike.inner_apply, conj_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+verification/geometry-probe/GeometryProbe.lean:2989:6: warning: This simp argument is unused:
+  RCLike.inner_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inner_add_left, real_inner_smul_left, real_inner_eq_re_inner, conj_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+verification/geometry-probe/GeometryProbe.lean:2592:65: warning: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:2600:60: warning: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3136:41: warning: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+verification/geometry-probe/GeometryProbe.lean:3345:6: warning: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+verification/geometry-probe/GeometryProbe.lean:3414:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+verification/geometry-probe/GeometryProbe.lean:3415:6: warning: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+verification/geometry-probe/GeometryProbe.lean:3526:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3533:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3556:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3569:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3577:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3582:55: warning: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+verification/geometry-probe/GeometryProbe.lean:3526:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+verification/geometry-probe/GeometryProbe.lean:3556:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+verification/geometry-probe/GeometryProbe.lean:3569:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+verification/geometry-probe/GeometryProbe.lean:3577:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+verification/geometry-probe/GeometryProbe.lean:3582:37: warning: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+verification/geometry-probe/GeometryProbe.lean:3526:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3526:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3533:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3556:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3556:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3569:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3569:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3577:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3577:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3582:37: warning: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:3582:55: warning: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+verification/geometry-probe/GeometryProbe.lean:4163:18: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4169:64: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4170:70: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4177:72: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4178:66: warning: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4190:72: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4191:72: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4250:18: warning: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4926:25: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4934:18: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4940:18: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4963:25: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4963:39: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4965:27: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:4985:27: warning: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+verification/geometry-probe/GeometryProbe.lean:4985:41: warning: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+verification/geometry-probe/GeometryProbe.lean:5099:5: warning: Variable name `hS_univ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hS_univ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+'AkopyanSixfold.blaschke_isCompact_subsets_unitBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.exists_eta_of_isBlocking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.exists_isBlocking_5d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.convex_partition_of_embedding_and_blocking' depends on axioms: [propext, Classical.choice, Quot.sound]

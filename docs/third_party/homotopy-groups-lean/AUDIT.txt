@@ -1,0 +1,2 @@
+TOPOLOGY AUDIT OK: 303 declarations, 270 theorems, 12 modules; only propext, Classical.choice, Quot.sound
+The audit enumerates declarations by owner module, imports private declarations, rejects new axioms, and recursively checks dependencies for every declaration kind.

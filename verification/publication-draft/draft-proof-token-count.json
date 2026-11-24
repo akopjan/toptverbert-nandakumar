@@ -1,0 +1,1877 @@
+{
+  "recorded_utc": "2026-11-24T06:13:07.128140+00:00",
+  "scope": "Project proof-source inventory from scripts/check_structure.py; independent Challenge recorded separately; verification/tests and dependency directories excluded.",
+  "method": "Lexical token counts after blanking nested Lean comments and quoted strings. This is not a replacement for the transitive kernel axiom audit.",
+  "source_snapshot": "verification/final-delivery/source-after.json",
+  "source_snapshot_sha256": "4a139566950ae159cb278b711d1a3eaf59540ac3c0c7ff323de2388a6b1a0ccb",
+  "lexer_source": "scripts/check_structure.py",
+  "lexer_source_sha256": "a23d664df6b84b3b0bce85de66137a022cc5a3b9f4089aa8b0abb2f2b515f73c",
+  "source_module_count": 132,
+  "proof_module_count": 131,
+  "proof_sorry_count": 0,
+  "proof_axiom_count": 0,
+  "proof_token_counts": {
+    "sorry": 0,
+    "admit": 0,
+    "axiom": 0,
+    "constant": 0,
+    "opaque": 0,
+    "unsafe": 0,
+    "native_decide": 0,
+    "run_tac": 0
+  },
+  "challenge_sorry_count": 2,
+  "nonzero": {
+    "Challenge": 2
+  },
+  "proof_modules": {
+    "AkopyanResearch": {
+      "path": "AkopyanResearch.lean",
+      "sha256": "ccc49c7d44cb63d456dc14cfe0dd2f8e4ebf829bb996c3dbf3e0f90c6b7824da",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.BeltTrickSO": {
+      "path": "AkopyanResearch/BeltTrickSO.lean",
+      "sha256": "42cb305f0238504df0b30a482e0691542b861bea3006b9613b22d42b9b95ea2a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.BoundaryRegularization": {
+      "path": "AkopyanResearch/BoundaryRegularization.lean",
+      "sha256": "979321396f3e312a98854c560b014a450630f5ba5588135c529b3f1c5aa17811",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.BranchPinch": {
+      "path": "AkopyanResearch/BranchPinch.lean",
+      "sha256": "14e8eefb2bd6b0a293348eb5854465cf32d1caf4ae10f00e374f4511fa876b61",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.CanonicalExtraction": {
+      "path": "AkopyanResearch/CanonicalExtraction.lean",
+      "sha256": "3f502e849dcad5a649862995f953f208fcc5f4b438e85bc4885f261967d29338",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.CanonicalQuadratic": {
+      "path": "AkopyanResearch/CanonicalQuadratic.lean",
+      "sha256": "ac61e310a4da64e99b800f54d3e775b73b69b637e27971f347ec0e66454befe9",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.ChainTelescoping": {
+      "path": "AkopyanResearch/ChainTelescoping.lean",
+      "sha256": "c8d0b39583482d47910ff589d090eefc31d97e29c965f7445db3cdd873372cc6",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.CochainAnnihilator": {
+      "path": "AkopyanResearch/CochainAnnihilator.lean",
+      "sha256": "9232471e5fdd4276ed9c4b18a70ca4a6f02b9e491874e1d3082bca7c0fa35c74",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.ColoredChainContraction": {
+      "path": "AkopyanResearch/ColoredChainContraction.lean",
+      "sha256": "d4646e569dca695cd665f7de10c23e0aa59bc61632025669c13642a75240b16a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion": {
+      "path": "AkopyanResearch/Completion.lean",
+      "sha256": "c5afad41bdd25eacd5be7c1ce53444c82db1fd00cbffb734d6d42c049768688e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ArrangementLink": {
+      "path": "AkopyanResearch/Completion/ArrangementLink.lean",
+      "sha256": "8ded9c750872b82aaee31ae066b9285af654ed6dfc15d3c7ffe03a33af4b0512",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ChosenTargetSections": {
+      "path": "AkopyanResearch/Completion/ChosenTargetSections.lean",
+      "sha256": "c6dd655beb5713ead4a91aed67a10e89acee8c16cbafc8b679039107e252f166",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ComparisonContract": {
+      "path": "AkopyanResearch/Completion/ComparisonContract.lean",
+      "sha256": "5fe6624e59c2430982b011b9dd3188bd327b46b3ed1a2c607edd23a6ff9e68a0",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ConcreteComparison": {
+      "path": "AkopyanResearch/Completion/ConcreteComparison.lean",
+      "sha256": "fdf8594851a2a260bcb44f35a24341b97d3be127527bc71788a4590001540c2f",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ConcreteComparisonTarget": {
+      "path": "AkopyanResearch/Completion/ConcreteComparisonTarget.lean",
+      "sha256": "24e4269766c831e97bb9880e6a8cd26af31dd34c7bdb5f07ccbe37df7867ea12",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ConcreteReduction": {
+      "path": "AkopyanResearch/Completion/ConcreteReduction.lean",
+      "sha256": "4816ad12074c872c5bd18de095c55cb30c671d2e824723324f6ee1752cd68625",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.EquivariantJoinIteration": {
+      "path": "AkopyanResearch/Completion/EquivariantJoinIteration.lean",
+      "sha256": "29ed3b76946d15886c1a53cadb7103aa5105c21de4ae567c519ba6487e9c0373",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.EquivariantJoinStep": {
+      "path": "AkopyanResearch/Completion/EquivariantJoinStep.lean",
+      "sha256": "77bb628ef301a8c0589bf0eba0ceef7694aee8467142387144a9e4d042bfc9c4",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.GeneralTableBridge": {
+      "path": "AkopyanResearch/Completion/GeneralTableBridge.lean",
+      "sha256": "2dbf70983e6ed4e27e734c88916997ce061783cd0b0da40333e068c930503c99",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.IteratedJoinCoordinates": {
+      "path": "AkopyanResearch/Completion/IteratedJoinCoordinates.lean",
+      "sha256": "3d6ab03a87051be3b88edcb650b5039c1ffad4ef9c4afdadd7474ea6bb8e2431",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinCoordinates": {
+      "path": "AkopyanResearch/Completion/JoinCoordinates.lean",
+      "sha256": "27a7bb7bbe0efc75d009aa89eb1a63029478ea487ef6e45e3efab249d751e2c1",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinMassCoordinates": {
+      "path": "AkopyanResearch/Completion/JoinMassCoordinates.lean",
+      "sha256": "a90aa7cc6b2ae5b646a0942bb300c415ba61148f40ef23d1ef3ad968ce79f9da",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinNullIteration": {
+      "path": "AkopyanResearch/Completion/JoinNullIteration.lean",
+      "sha256": "b325b0773d0bb81866d30a793319690af0f91da794fbb7d3e85a1ccdba75c2ae",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinNullhomotopy": {
+      "path": "AkopyanResearch/Completion/JoinNullhomotopy.lean",
+      "sha256": "c91af24cfc5bd38f5b0ec15184a6ad650283ede40bbd9d57e40af0ecfb1d6b21",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinRowAction": {
+      "path": "AkopyanResearch/Completion/JoinRowAction.lean",
+      "sha256": "6b8e4e64e32da22df000e98e2a29f4c0f413cf8242ba6fc6913de5144938ea75",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.JoinVertexMap": {
+      "path": "AkopyanResearch/Completion/JoinVertexMap.lean",
+      "sha256": "860198014d40537aba50b9ea5330c980ea9749b868829557edbf7a11f4aae0f9",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.LocalLink": {
+      "path": "AkopyanResearch/Completion/LocalLink.lean",
+      "sha256": "a1e3b536b324eab30b1d8b74bd434eca6e91e8a8fa96611c5dfc3367cf5d69f3",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.MatchingExtraction": {
+      "path": "AkopyanResearch/Completion/MatchingExtraction.lean",
+      "sha256": "886bf586428331c08b34fcc5a12436e9fad62f33de82049beeb7e99a1df9b18c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.MatchingPairCollapse": {
+      "path": "AkopyanResearch/Completion/MatchingPairCollapse.lean",
+      "sha256": "6f916388102efa1cd8321647ad021a0ece2d40ede76831f6769bca356fdd5a39",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.MatchingSphereMap": {
+      "path": "AkopyanResearch/Completion/MatchingSphereMap.lean",
+      "sha256": "3c448eba85bcd766ce5e06985ff097decf1c1afc8d40b7e791715109f5f3ec69",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.OriginalJoinBridge": {
+      "path": "AkopyanResearch/Completion/OriginalJoinBridge.lean",
+      "sha256": "6c10b69e170e597422ab09e6ee373a990783dc3c79356d9b7f00a5aff7130955",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.OriginalJoinCoordinates": {
+      "path": "AkopyanResearch/Completion/OriginalJoinCoordinates.lean",
+      "sha256": "35f18867cd4f320fe43b2b086429d123d3af9587f5cf6e60a10c9df923a4a778",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.OriginalPairPath": {
+      "path": "AkopyanResearch/Completion/OriginalPairPath.lean",
+      "sha256": "8172735562ec8045e75cb2c36ed32df94e465c24c90bb057123e1bc3a804b643",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairCollapsedLocus": {
+      "path": "AkopyanResearch/Completion/PairCollapsedLocus.lean",
+      "sha256": "9f35d8fdce2869b8d643ce80c88c9341642e3333c7952032f666dd4a0f1c277f",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairDeformation": {
+      "path": "AkopyanResearch/Completion/PairDeformation.lean",
+      "sha256": "4b5c4ba4b44eb87a440f1ed2388e06b02399140812c83358ae67f8f992771fd8",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairIntersection": {
+      "path": "AkopyanResearch/Completion/PairIntersection.lean",
+      "sha256": "fd0c1b1159114ef4b6257eeb5daeb22a6b03173be3c1cac2ee8fee4b7c228300",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairL2Deformation": {
+      "path": "AkopyanResearch/Completion/PairL2Deformation.lean",
+      "sha256": "c08ba43cbd5cabd4212a04fab2aa84ddbeec95099fcc265ea91a8feaa2cbb86d",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairNormalModel": {
+      "path": "AkopyanResearch/Completion/PairNormalModel.lean",
+      "sha256": "74c000e4f6dc29a3a9c28a238d13f542e0334dd253c21a4d5af250b313f369e2",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairOrbit": {
+      "path": "AkopyanResearch/Completion/PairOrbit.lean",
+      "sha256": "c3972fd1b1ee77e3926db4aaca393196d45a3c605fb8a5251804a4994b9d416e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairPathCoordinates": {
+      "path": "AkopyanResearch/Completion/PairPathCoordinates.lean",
+      "sha256": "44689a2dd0d74cb0af4ca3f28aabd662c3275ca743779ae63ad56df5284ced1c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairRepresentation": {
+      "path": "AkopyanResearch/Completion/PairRepresentation.lean",
+      "sha256": "b2861cf19751de2cb6b8f84ce14e5c8bbc719d4bfc011e482f9c03e69ad6c70b",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairSourceProjections": {
+      "path": "AkopyanResearch/Completion/PairSourceProjections.lean",
+      "sha256": "b7c59f89aeb5f9119ff6ad9eba91ecd9dc956920f3d85c18325115908aec561e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PairSphereAction": {
+      "path": "AkopyanResearch/Completion/PairSphereAction.lean",
+      "sha256": "0f8b5820eb0a813aa0328eaea52f5c99d25c2417a1f7f7e40cd8aaddd459e953",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PhaseExtension": {
+      "path": "AkopyanResearch/Completion/PhaseExtension.lean",
+      "sha256": "7e68c8080f3fc9e7816d13a181a9ece0abee5c0de3ba2186ac0a2e64977b07dd",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.ProductExpectation": {
+      "path": "AkopyanResearch/Completion/ProductExpectation.lean",
+      "sha256": "f0db1e576b71583c86d82ab2d7f4f763745f2bff8c703bfabbb6f2aa347008b2",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.PurePhaseCoordinates": {
+      "path": "AkopyanResearch/Completion/PurePhaseCoordinates.lean",
+      "sha256": "4043767789af9bcc4cae827dd108d41d9462147b385184bee2ee7418b98af561",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.QuadraticFlatRank": {
+      "path": "AkopyanResearch/Completion/QuadraticFlatRank.lean",
+      "sha256": "18333eaf1fd5ea13bacbcc1d6d9da12bb8e3339f9cd18fb117b0fb312244cf0d",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.QuadraticLink": {
+      "path": "AkopyanResearch/Completion/QuadraticLink.lean",
+      "sha256": "0242bf505dd407a4a3dca1433af2331a197fc5c1afd516c75793e6d264dbd4d8",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.QuadraticPairRank": {
+      "path": "AkopyanResearch/Completion/QuadraticPairRank.lean",
+      "sha256": "d56a58ea9a4835c2be7a2f090c9df19d8e74cf7d1291a7ea8c29825fd801c14d",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.RelativeComparison": {
+      "path": "AkopyanResearch/Completion/RelativeComparison.lean",
+      "sha256": "3a821696db36b2344ea34e7fe6a0c58b4004c0b7a9f35b7b4ce87045e5d1c1f4",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.RelativeFaceDiagram": {
+      "path": "AkopyanResearch/Completion/RelativeFaceDiagram.lean",
+      "sha256": "e0bc32d76c0f707308589cb2abf348477b2bcb46ca7660f11be9f1bea64377f3",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.SimplexEmbedding": {
+      "path": "AkopyanResearch/Completion/SimplexEmbedding.lean",
+      "sha256": "0bb4e725e3d02b2f2855160d6b1f61402916a39f003d1a54fcec5e9241031f97",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.SingleCoordinateModel": {
+      "path": "AkopyanResearch/Completion/SingleCoordinateModel.lean",
+      "sha256": "93a4204adcb6727208266c8690c36532a86a0f9c39793885e7f4fe2aea23f339",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.TableRealization": {
+      "path": "AkopyanResearch/Completion/TableRealization.lean",
+      "sha256": "973d4e87aebd499c642bec42142182039126e7a68b48efc74a6f8ee7b0ad3c3a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.TableToEmbedding": {
+      "path": "AkopyanResearch/Completion/TableToEmbedding.lean",
+      "sha256": "9a2d613aadf0b9ac0635921def0e3af425a761bb74f4a8bce2112091812f0c40",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.TargetCollapseModel": {
+      "path": "AkopyanResearch/Completion/TargetCollapseModel.lean",
+      "sha256": "b06517bf465c6e4f8f0fc519ce0d00980a55ecc615618c6abd50ce63f7a3da5b",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.Completion.TargetFiberModel": {
+      "path": "AkopyanResearch/Completion/TargetFiberModel.lean",
+      "sha256": "f428e590e14a81fbbdf4d8dd88d16b5eb360763f89ae820009aeca8c92912f23",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.CoxeterChamber": {
+      "path": "AkopyanResearch/CoxeterChamber.lean",
+      "sha256": "8f3a2c8c3654a1203b6a07491b0774358491ef08a3ee16f29bc99af803864a33",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.CoxeterTriangulation": {
+      "path": "AkopyanResearch/CoxeterTriangulation.lean",
+      "sha256": "a008c1869e17be7d5d2b5c428bf60e9179c8ed9d6d9c34c0c9fc4ae21a60d2c9",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.DiskCylinderRetraction": {
+      "path": "AkopyanResearch/DiskCylinderRetraction.lean",
+      "sha256": "75ce0e417c27006a570668772c8f1cae9192d41175705013db72fc90e1ab6d7e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.EquivariantPinch64": {
+      "path": "AkopyanResearch/EquivariantPinch64.lean",
+      "sha256": "645c62b3db1a134065c4b883e371d2291e487dfa37008be5e7b193d78f968ee6",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.FiniteGenericity": {
+      "path": "AkopyanResearch/FiniteGenericity.lean",
+      "sha256": "384243ecb6806e6bc20d51dc175f44a90688ca05ffd0f626fb137980e210a51c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.FiniteRegularization": {
+      "path": "AkopyanResearch/FiniteRegularization.lean",
+      "sha256": "1cbba31568c36ce001c93b5406a37b005ee71b3dfca2d650002eba98b048cf1c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.FrameTransport": {
+      "path": "AkopyanResearch/FrameTransport.lean",
+      "sha256": "761d2640c200f1758f9d196927990387c4b520bb319ada881e448db5bd7862ee",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.FramedAnnulus": {
+      "path": "AkopyanResearch/FramedAnnulus.lean",
+      "sha256": "f5c940330f3af43fd0d1fa720bb0e65730d99728440f18d457ba5f370e464879",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.InvariantCaps": {
+      "path": "AkopyanResearch/InvariantCaps.lean",
+      "sha256": "d7d5289cf7ee7ba835c3e273706cfd95fa1f56c78acb9d466efa86fccc78cb24",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.MarksArithmetic": {
+      "path": "AkopyanResearch/MarksArithmetic.lean",
+      "sha256": "1c1a68a59c08d096a24460eb0157ace924bf6b3581e78720af5ee4c346262ed5",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.MatchingCombinatorics": {
+      "path": "AkopyanResearch/MatchingCombinatorics.lean",
+      "sha256": "e3233545a058388522e5131926190edb52317acca8aaaad5763530f6d76db380",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.MatchingProjection": {
+      "path": "AkopyanResearch/MatchingProjection.lean",
+      "sha256": "34dcdc1438bdec795fff24973c4ac86007b15b8dd9fcf8957a220ae9f66759a4",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.NormalBundleTrivialization": {
+      "path": "AkopyanResearch/NormalBundleTrivialization.lean",
+      "sha256": "7b948075439e7c61c2d5f66a55ca3b47d03441f0ab76b8e97443471773223e9b",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairCollapse": {
+      "path": "AkopyanResearch/PairCollapse.lean",
+      "sha256": "a0e8c043e621298e5662f448bb52e9d33416048098c65509eae61a91e6c2c3f9",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairCollapseEquivariant": {
+      "path": "AkopyanResearch/PairCollapseEquivariant.lean",
+      "sha256": "62bbfbc534ffe30e29dfee649de42d4cd5cd9b67bcfdb989a40e55ca8b6647ba",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairGeometry": {
+      "path": "AkopyanResearch/PairGeometry.lean",
+      "sha256": "4d3a23c51d85c4ed41b2a6bab2f1d613b40b1fbc15a119b1c360dcc86548cc69",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairNormalChart": {
+      "path": "AkopyanResearch/PairNormalChart.lean",
+      "sha256": "117750b6af078fa75068c26487582a7e8157d22c33d1cdcd7f6f00cddace98b3",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairNormalFrame": {
+      "path": "AkopyanResearch/PairNormalFrame.lean",
+      "sha256": "6b7de6ae50873276ea7e267c42779357669746b0f3fa4b05d16c6dfbf8cfb603",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PairUniversalSource": {
+      "path": "AkopyanResearch/PairUniversalSource.lean",
+      "sha256": "94d18711d4500465e58b4cbe5abfae6dcd9ae31f9aeeef419e6eff3e31380142",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PlanarTestGlobal": {
+      "path": "AkopyanResearch/PlanarTestGlobal.lean",
+      "sha256": "db71abdd28efc4fd7b79f5c5cf60d560850f13d0c95ebae0cb6a626ab89dda95",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PlanarTestJoin": {
+      "path": "AkopyanResearch/PlanarTestJoin.lean",
+      "sha256": "647af1c4312a0fdf42cb7cb7165386e0b0c15515b8d649019f5e02ad034397bc",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.PlanarTestLocal": {
+      "path": "AkopyanResearch/PlanarTestLocal.lean",
+      "sha256": "9db3cd03a71e98d168bbe5f84c8278eb8724f08ea5c4816bcce48651fc34d112",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.ProperCollapse": {
+      "path": "AkopyanResearch/ProperCollapse.lean",
+      "sha256": "6bda1248aeb4c9fc608091be12a113c92361d81a0ffa4327a9e15a8f9272a395",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuadraticArrangement": {
+      "path": "AkopyanResearch/QuadraticArrangement.lean",
+      "sha256": "5bcb373bc38a94faa28f3b3713d83d0bf3297642222b4e38987551fc231b8cdb",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuadraticInterpolation": {
+      "path": "AkopyanResearch/QuadraticInterpolation.lean",
+      "sha256": "08d35f858a999822dc108cf1d57393a53cdfbd1f06b4fc72918020ec330fd65c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuadraticNaturality": {
+      "path": "AkopyanResearch/QuadraticNaturality.lean",
+      "sha256": "82d4e2908568649531e221d427e7e2435cfd0dcee9711d7a10ae903af7f91c6a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuadraticRank": {
+      "path": "AkopyanResearch/QuadraticRank.lean",
+      "sha256": "3c02399bce12a296005be25165ef90d92f11adcc74f742e93e750fd7f2358a4b",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuadraticRealization": {
+      "path": "AkopyanResearch/QuadraticRealization.lean",
+      "sha256": "ae51af09d1ec438352c4a6db424656ca6e01e56823a61abb6825478d0bd6dd70",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.QuaternionBelt": {
+      "path": "AkopyanResearch/QuaternionBelt.lean",
+      "sha256": "9d57c09039fe95ebb1b50d8537f79210ef1cf1b70e89f42fd2b995084fed7b3f",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.RowSylowGeometry": {
+      "path": "AkopyanResearch/RowSylowGeometry.lean",
+      "sha256": "1ee719d614a021990afcc46068097d76b4144f8de8f9bdf303f3d5484f4d35fd",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.SafeQuadraticBridge": {
+      "path": "AkopyanResearch/SafeQuadraticBridge.lean",
+      "sha256": "b27f0647fbbd6d6b2425e58fc9ea82ffdff9ae96d3d2b536090b671e09d87544",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.SafeQuadraticRealization": {
+      "path": "AkopyanResearch/SafeQuadraticRealization.lean",
+      "sha256": "083ed7f3e19660a667f33a613aee89a8a39cf0b38fefa7ec4b297665b4088a50",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.SplitSphereChart": {
+      "path": "AkopyanResearch/SplitSphereChart.lean",
+      "sha256": "287fcf87051b87120e89cdaec64efb101e8cdcadb535987fc4a1b8f3933b3662",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "AkopyanResearch.TransferArithmetic": {
+      "path": "AkopyanResearch/TransferArithmetic.lean",
+      "sha256": "6aff4bdf3b9cadb89948db9e8eba153729a2061957890a419839d79f632ba268",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "Audit": {
+      "path": "Audit.lean",
+      "sha256": "4f45dee70db2c834f71b9f859b3b3afdabcfb617c03c8a10915ccdcabbbd9d6c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Balance": {
+      "path": "RequestProject/Balance.lean",
+      "sha256": "bc9f9255a1bc62492cb7f001e57c7ee928d5999dbfbc6e39e30a8f56b0ccb65c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Boundary": {
+      "path": "RequestProject/Boundary.lean",
+      "sha256": "1bbea3b7640691248b7d407a58d4fb214ba9e6de0f48c2b5d059394dc5c2cfbe",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Cochain": {
+      "path": "RequestProject/Cochain.lean",
+      "sha256": "de5174099971555266ed4c7b61693ad4927444938931c3135e0be35d263e7ce6",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Assembly": {
+      "path": "RequestProject/Construction/Assembly.lean",
+      "sha256": "fd2390ca67f8ac59fc3893e69f923984648d0cc2c3d8054787ffd22adb6d563a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.CellCount": {
+      "path": "RequestProject/Construction/CellCount.lean",
+      "sha256": "5fcfa00409e54a2b813353e9639c247b1fb8a6949e5ef5548e9fec10f4017be1",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Chart": {
+      "path": "RequestProject/Construction/Chart.lean",
+      "sha256": "8a949caba8e4297d767c32a63c79b9bc7f8259eee793b4aa12176027878b39d1",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.DetLemmas": {
+      "path": "RequestProject/Construction/DetLemmas.lean",
+      "sha256": "49e09f6c243340bb926fb25970d17c0d77913b44a22a74b8640e27548a660f5e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Frames": {
+      "path": "RequestProject/Construction/Frames.lean",
+      "sha256": "2b7cd30fe9cd984fe92a72e859551c00e7dcdd12143c9d21b7ac442572f3ea92",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Good": {
+      "path": "RequestProject/Construction/Good.lean",
+      "sha256": "5b90898cb69616d82cb3bd96d8886cd2f2a4b4819ba80c140dcef7ef528eeb3c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Indep": {
+      "path": "RequestProject/Construction/Indep.lean",
+      "sha256": "0561ef01fc23e1e2532fbe61da7ca210f9982e5142adffb6d587404f5e1c661a",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.InnerCell": {
+      "path": "RequestProject/Construction/InnerCell.lean",
+      "sha256": "fbd8e72c32d786e8e29aeac9a11c0383724cee10a24aab437deef5df8947fed3",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Layout": {
+      "path": "RequestProject/Construction/Layout.lean",
+      "sha256": "b95a49c0973632c7a84fff1a97e5454a86f96cbbb3eabef6d873d9c80a475523",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Local": {
+      "path": "RequestProject/Construction/Local.lean",
+      "sha256": "61ecc909996d8633c4bcb4fd4af40a997d53874177cb2149c0cdf731ddffe067",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Map": {
+      "path": "RequestProject/Construction/Map.lean",
+      "sha256": "df6d19a56794a4e2bf0dd092b0b8eb07560632d9c141fe6af7830b4935cce957",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Obstacles": {
+      "path": "RequestProject/Construction/Obstacles.lean",
+      "sha256": "d3f709ee7135d81e3c5c263ae3a54eb4b426db21e515ad8d3c94744292f50b61",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.PyrAlg": {
+      "path": "RequestProject/Construction/PyrAlg.lean",
+      "sha256": "34b006b7a9affa2dade42589b0d9f8e4d35ee170e9e9a5941ffd32146484f9a8",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.PyrCell": {
+      "path": "RequestProject/Construction/PyrCell.lean",
+      "sha256": "6d10e9c07d294d3656aec7cdd8bca29ad47d8bba318907583b36c31df009038e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.PyrDet": {
+      "path": "RequestProject/Construction/PyrDet.lean",
+      "sha256": "a82a09696ecc964b33a4ec1c3f2534420b7bfa1e3a2c3f15f3775bfe32505f52",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Construction.Safety": {
+      "path": "RequestProject/Construction/Safety.lean",
+      "sha256": "4ed02ee36b5cf073ce0b20e8e0ad012b96aa3bb917bc756b1059af636406829e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Generic": {
+      "path": "RequestProject/Generic.lean",
+      "sha256": "711314399b804219a25c55fb0472b09ff5db4b41e8d0c79401beb74f7941ae6c",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Reduction": {
+      "path": "RequestProject/Reduction.lean",
+      "sha256": "b403a35928c808eb7fa9fda4a8fb890755bf99b037b8adea2d26bd91327c4794",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Solution": {
+      "path": "RequestProject/Solution.lean",
+      "sha256": "21a44423bd69b613010d1b935e054ddcc6883aaaaeef80f0ae0fa56699465930",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Avoid": {
+      "path": "RequestProject/Surgery/Avoid.lean",
+      "sha256": "41a786506e38ada8bb35eff92b292fd8f3abe1da03ccd5f7a66f0f0b575f1dba",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.CancelGood": {
+      "path": "RequestProject/Surgery/CancelGood.lean",
+      "sha256": "71897114df6299e980ae28bb24b69e30957aff4ee0d2f3e90b363fdd805994c9",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Clear": {
+      "path": "RequestProject/Surgery/Clear.lean",
+      "sha256": "c1c6bcbe47fc236eca74bae0456a04c758541ea22e8efc19c7ac9484cfe020dd",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Core": {
+      "path": "RequestProject/Surgery/Core.lean",
+      "sha256": "11e0eb3c14515214a6c60914744cd8403950c798affb7a691ae19f6a9702e8ea",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Cutoff": {
+      "path": "RequestProject/Surgery/Cutoff.lean",
+      "sha256": "9f746d079dd25d6e0bd3dd383002aa6055e81463e7bdc119394ab7c5b726137b",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Frame": {
+      "path": "RequestProject/Surgery/Frame.lean",
+      "sha256": "20ac565cef04550314fb3bae5c4258d3b4c53bcf02ea3ee7d96e5840230f2914",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.GLPath": {
+      "path": "RequestProject/Surgery/GLPath.lean",
+      "sha256": "268f9226af29f990a2728fa2e668db39c79e5396262408830b0a72ebcc1415bf",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Good": {
+      "path": "RequestProject/Surgery/Good.lean",
+      "sha256": "4d18d71a74c08ba4ecc753f07968949be028dfacb1c89699a9a9c11e1ae7543e",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Main": {
+      "path": "RequestProject/Surgery/Main.lean",
+      "sha256": "d2dc0e07bda30f3e2b7365caaca643628df76ff6964373120d47b8225a0129fc",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.PairCancel": {
+      "path": "RequestProject/Surgery/PairCancel.lean",
+      "sha256": "4e06d1cb832f2b7eaa2023d3bda83573f42e3bc95530004da8c1f7363b149e87",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.PathHomotopy": {
+      "path": "RequestProject/Surgery/PathHomotopy.lean",
+      "sha256": "48bf6f149a4822a303d38ebda37189ed84063f487fdcb7067f75144a815e5d00",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Separate": {
+      "path": "RequestProject/Surgery/Separate.lean",
+      "sha256": "3aa766f46450f55992c702d4395fe3f4f26ca7b750d7c731f3dd5c21c04f9d58",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Shift": {
+      "path": "RequestProject/Surgery/Shift.lean",
+      "sha256": "a09d24f3acc57fd00bb268b6b5fa10aa6e52e71a16259dc068a96eea812b4dac",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.ShiftGood": {
+      "path": "RequestProject/Surgery/ShiftGood.lean",
+      "sha256": "c8bdeae38ce46e531a09e11a27322d14db90351106f05b9d87088177bc9f6524",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.Transport": {
+      "path": "RequestProject/Surgery/Transport.lean",
+      "sha256": "4836655b8f0b9abc262995aa18adfcfa815c0cb2a937c9cbd9b82f0a724fd20f",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "RequestProject.Surgery.ZeroSet": {
+      "path": "RequestProject/Surgery/ZeroSet.lean",
+      "sha256": "d8ba85d3686bd1e86e2f34716d0a5f7f3d6533de288b7d8cf317a53e38c6a1e1",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    },
+    "Solution": {
+      "path": "Solution.lean",
+      "sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+      "token_counts": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0,
+        "constant": 0,
+        "opaque": 0,
+        "unsafe": 0,
+        "native_decide": 0,
+        "run_tac": 0
+      }
+    }
+  },
+  "independent_challenge": {
+    "path": "Challenge.lean",
+    "sha256": "cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05",
+    "token_counts": {
+      "sorry": 2,
+      "admit": 0,
+      "axiom": 0,
+      "constant": 0,
+      "opaque": 0,
+      "unsafe": 0,
+      "native_decide": 0,
+      "run_tac": 0
+    }
+  }
+}

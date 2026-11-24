@@ -1,0 +1,14 @@
+module
+
+public import AkopyanResearch.Completion.GeneralTableBridge
+public import AkopyanResearch.Completion.ConcreteReduction
+public import AkopyanResearch.Completion.QuadraticFlatRank
+
+/-!
+# Verified additions toward the dimension-eighteen result
+
+This module imports the analytic table realization, the concrete relative
+comparison reduction, and the arrangement rank and linking-sphere results.
+The dimension-eighteen conclusion still has the explicit hypothesis
+`ConcreteComparison.RequiredRelativeLifting`; this module does not assert it.
+-/

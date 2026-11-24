@@ -1,0 +1,18 @@
+{
+  "recorded_utc": "2026-11-24T10:21:33.300390+00:00",
+  "driver_exit_code": 2,
+  "outcome": "first-gate-stopped-after-successful-full-build",
+  "stage_exit_codes": {
+    "structure": 0,
+    "provenance": 0,
+    "unit-tests": 0,
+    "statement-audit": 2,
+    "build": 0
+  },
+  "build_completed": true,
+  "all_frozen_inputs_unchanged": true,
+  "reason": "The statement-audit output path was outside the extracted project verification directory; its existing path guard correctly rejected that location.",
+  "correction": "Run the unchanged verifier with output inside the extracted checkout, retaining the already completed one-pass compilation. Copy final evidence back only after completion.",
+  "initial_results_preserved": true,
+  "proof_sources_modified": false
+}

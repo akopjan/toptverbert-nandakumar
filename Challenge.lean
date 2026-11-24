@@ -11,8 +11,8 @@ Arseniy Akopyan
 
 * Theorem A (`AkopyanSixfold.tverberg_counterexample`):
   An almost six-embedding of the 35-simplex `Δ³⁵` into `ℝ⁶`.
-* Theorem B (`AkopyanSixfold.convex_partition_counterexample`):
-  Unconditionally in every dimension `d ≥ 36`, there exist `d - 1` continuous
+* Theorem B (`AkopyanSixfold.convex_partition_counterexample_gt_17`):
+  Unconditionally in every dimension `d > 17`, there exist `d - 1` continuous
   functionals on convex bodies and an absolutely continuous probability measure
   such that no convex six-partition of the unit ball into six equal-measure
   parts equalizes all these functionals.
@@ -70,11 +70,11 @@ def IsSixPartition {d : ℕ} (C : Fin 6 → Body d) : Prop :=
     Disjoint (interior (C i : Set (Ambient d)))
              (interior (C j : Set (Ambient d)))
 
-/-- **Theorem B**: Unconditionally in every dimension `d ≥ 36`, there exist
+/-- **Theorem B**: Unconditionally in every dimension `d > 17`, there exist
 `d - 1` continuous functionals on convex bodies and an absolutely continuous
 probability measure such that no convex six-partition of the unit ball into
 six parts of equal measure equalizes all these functionals. -/
-theorem convex_partition_counterexample (d : ℕ) (hd : 36 ≤ d) :
+theorem convex_partition_counterexample_gt_17 (d : ℕ) (hd : 17 < d) :
     ∃ (Phi : Body d → (Fin (d - 1) → ℝ)) (mu : Measure (Ambient d)),
       Continuous Phi ∧
       IsProbabilityMeasure mu ∧

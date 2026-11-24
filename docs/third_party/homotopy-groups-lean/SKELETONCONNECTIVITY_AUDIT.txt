@@ -1,0 +1,1 @@
+SKELETONCONNECTIVITY AUDIT OK: 56 declarations, 44 theorems, 2 modules; only propext, Classical.choice, Quot.sound

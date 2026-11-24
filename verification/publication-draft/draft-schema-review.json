@@ -1,0 +1,18 @@
+{
+  "draft_file": "verification/publication-draft/formalization.yaml.draft",
+  "draft_sha256": "bb62085421c7017b37f0f90bc09a001a6028cfc4de9c7e5cf88093e842e7456a",
+  "schema_url": "https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/v0.4.schema.json",
+  "schema_sha256": "25ff6b25ca4511635aff4443cf20480c15e59dddf19591c730950b442ea54fce",
+  "yaml_parsed": true,
+  "intentionally_non_submittable": true,
+  "schema_errors": [
+    {
+      "path": "project.authors",
+      "message": "[] should be non-empty"
+    },
+    {
+      "path": "project.license",
+      "message": "'' should be non-empty"
+    }
+  ]
+}

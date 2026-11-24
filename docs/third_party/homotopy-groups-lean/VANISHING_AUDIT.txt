@@ -1,0 +1,6 @@
+VANISHING AUDIT OK: 2302 declarations, 1602 theorems, 59 modules; only propext, Classical.choice, Quot.sound
+'Submission.IsNConnected.isZero_homology' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanResearch.ArrangementConnectivity.isZero_homology_complement' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AkopyanResearch.isZero_homology_quadComplement' depends on axioms: [propext, Classical.choice, Quot.sound]

@@ -1,0 +1,204 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "upstream_lean": "4.32.2",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Submission.Hurewicz.SphereLoopBridge",
+      "upstream_path": "Submission/Hurewicz/SphereLoopBridge.lean",
+      "upstream_sha256": "583b2aa02bce05518e1d8821eeb11c059d85aea765a6d968864d6d2c3c9b72f2",
+      "port_sha256": "009a0d126049cb3d8a619cb77bfdf7bfc9a0dea7303bbac063757ca752c19c7d",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Adjusted backward definitional-equality transparency for the actual cubical quotient and based sphere-map classes."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.StickSimplex",
+      "upstream_path": "Submission/Hurewicz/StickSimplex.lean",
+      "upstream_sha256": "c68921b0aea1299160bdad69f71ef18fab325a663f19ca193640a2d3ef7d65c3",
+      "port_sha256": "f8a6c770bbb35ea8f5b9c2d5c137fc3df5257d7276978c53c533f35c1be854fa",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Proved uniqueness of the legacy finite-coordinate zero-simplex directly from its coordinate sum, replacing an obsolete inferred Subsingleton instance."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.CubicalShell",
+      "upstream_path": "Submission/Hurewicz/CubicalShell.lean",
+      "upstream_sha256": "dde9e3a0a2f62792c87fae332d2372b8960a33c58fbfbb7a18916a408e487dd1",
+      "port_sha256": "f22fe7921ef420e3233d6d4938788cd1d4c823867cbb9915de7cbeef8d75734b",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Replaced an obsolete dependent insertNth simplification with the exact succAbove coordinate identity in the same cubical-face calculation."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.NormalizedBoundary",
+      "upstream_path": "Submission/Hurewicz/NormalizedBoundary.lean",
+      "upstream_sha256": "d486b67c60676e399b788968b7e3db76ded53cd3e679b2d7f31575b06b114b0e",
+      "port_sha256": "09dfb17f2a430c6d3e746b89e3e990cc59ef0f9c6caf5477a59cb00e4e17146d",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.StickBoundary",
+      "upstream_path": "Submission/Hurewicz/StickBoundary.lean",
+      "upstream_sha256": "8ad56f063623569a38cfbd99eb65dbafbab73b17747f79b5fb6cf8ea5e40fab5",
+      "port_sha256": "4fbdf30082abf819b5352da92a5209d39acc5925fc19b74d3953997d23a6fc66",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.StickSphere",
+      "upstream_path": "Submission/Hurewicz/StickSphere.lean",
+      "upstream_sha256": "8edf2a139ae24c3aee33342e446147b612b07bed663b0aed198608e2491f14ef",
+      "port_sha256": "91c59dedb8c4766c7852ce741d8acb631bcccaea23457c82ae68c680eddee81f",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.DeformationClass",
+      "upstream_path": "Submission/Hurewicz/DeformationClass.lean",
+      "upstream_sha256": "9e7f22a8daf569c5d9aa4310264fc0653703fb891101b51d1f4971ed27544b11",
+      "port_sha256": "5013c9f98a39a4ee175601fd45782508b2f43a733f9ce34da30eb3003cd54443",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplexHorn",
+      "upstream_path": "Submission/Hurewicz/SimplexHorn.lean",
+      "upstream_sha256": "ec2d819867a50e08d3d86cc460ffa5189770432689b72544983d099f2ea5d824",
+      "port_sha256": "5e0822ae2f1d0acdf03bc46ab6e7007a4adb88be612fa75ca6c65270c7c1810c",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SingularKan",
+      "upstream_path": "Submission/Hurewicz/SingularKan.lean",
+      "upstream_sha256": "37b23a13a8c4a1bc7218816a1ab355c2762903475f3c060f10f98f12f6089aef",
+      "port_sha256": "93fae7ab700ee37ea5f0c32f2c0b549c6a3b8acb7c15d602b821861c771974a9",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Updated continuousOn_iff_continuous_restrict and restrict to the Mathlib 4.35 domRestrict API."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialAddition",
+      "upstream_path": "Submission/Hurewicz/SimplicialAddition.lean",
+      "upstream_sha256": "d637a7e5be4a83a8ebe8d2d5a018f54f1d65e524818d5b6fdf9b768b272adcdb",
+      "port_sha256": "2f0595767a0cb0a86d61a5d18a2128b08cc181d5a230e91cd17b215f6bceca0d",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialRelation",
+      "upstream_path": "Submission/Hurewicz/SimplicialRelation.lean",
+      "upstream_sha256": "360ff96812fa2196758c9515121d478a9b821d0dd4d5e562e7872b78c70f8e59",
+      "port_sha256": "fe108c406c014380d5439d0abe2d67a4fb1951de21beb32333b9e49d6e9aeda3",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialIndexShift",
+      "upstream_path": "Submission/Hurewicz/SimplicialIndexShift.lean",
+      "upstream_sha256": "58060c0b2b77c31ea763d25cb1f8a5ef2515abbef7c4accde1601dcb6f98a781",
+      "port_sha256": "bdefa57323d17f3d8b6cd525818c781a95f77fd2744caf6e2485f0504857f2f5",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Qualified Opposite.op explicitly to avoid the new SSet.PtSimplex.op name shadowing; all simplicial index-shift proofs retained."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialTelescope",
+      "upstream_path": "Submission/Hurewicz/SimplicialTelescope.lean",
+      "upstream_sha256": "83e87a1fe3ed2e8f9034447da4f1f0c73e734269acce5ba23d8c5c223c2adbd1",
+      "port_sha256": "eef6f76333ff289b8f4c4ad10225a401735fb1e01781f2ebf1e13d78d8fa3aa8",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialDescent",
+      "upstream_path": "Submission/Hurewicz/SimplicialDescent.lean",
+      "upstream_sha256": "dd5ba65338115bf5fa2ac22c98d220afa7344985bc5274fe3d2aa2455b6eb68d",
+      "port_sha256": "7303614c336f51eadb020cafcc0455425a51f897a4352ab0240b63eff7e087bf",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Supplied explicit additive-group objects when applying the unchanged free-chain generator/evaluation lemmas, avoiding Lean 4.35 reducibility ambiguity."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplicialRelationAt",
+      "upstream_path": "Submission/Hurewicz/SimplicialRelationAt.lean",
+      "upstream_sha256": "3e34cb28bdcd6b69805648553373cf4399250fd28fc0b5c9d9531d059593c5da",
+      "port_sha256": "245aaa6f2da40d5431dd37f6499ae7a16951cf703e86daec605948a15f6ddb72",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.RelativeSimplicialDescent",
+      "upstream_path": "Submission/Hurewicz/RelativeSimplicialDescent.lean",
+      "upstream_sha256": "1aa76856dd69e6344624abdf437ce2d81361a7229756c101ea26c32983ce5d4b",
+      "port_sha256": "e9497f5714183034a9cb9c97fa5cefa994c6fdf8356ec8c393c107cb4243e3a6",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.AbsoluteIsomorphism",
+      "upstream_path": "Submission/Hurewicz/AbsoluteIsomorphism.lean",
+      "upstream_sha256": "feb8b9916db09f25735f101ced11e3d147ec66d2035b181d13c4051dfbfbae6f",
+      "port_sha256": "38593b4be1b755c3a8df8b927833e5b5fea7cf4808d90f62644e2b6ba9b41481",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    }
+  ],
+  "local_support": [],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 17,
+    "declarations": 906,
+    "theorems": 743,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "Submission.Hurewicz.SphereLoopBridge",
+      "Submission.Hurewicz.StickSimplex",
+      "Submission.Hurewicz.CubicalShell",
+      "Submission.Hurewicz.NormalizedBoundary",
+      "Submission.Hurewicz.StickBoundary",
+      "Submission.Hurewicz.StickSphere",
+      "Submission.Hurewicz.DeformationClass",
+      "Submission.Hurewicz.SimplexHorn",
+      "Submission.Hurewicz.SingularKan",
+      "Submission.Hurewicz.SimplicialAddition",
+      "Submission.Hurewicz.SimplicialRelation",
+      "Submission.Hurewicz.SimplicialIndexShift",
+      "Submission.Hurewicz.SimplicialTelescope",
+      "Submission.Hurewicz.SimplicialDescent",
+      "Submission.Hurewicz.SimplicialRelationAt",
+      "Submission.Hurewicz.RelativeSimplicialDescent",
+      "Submission.Hurewicz.AbsoluteIsomorphism"
+    ]
+  }
+}

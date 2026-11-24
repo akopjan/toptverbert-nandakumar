@@ -1,0 +1,1 @@
+ABSOLUTEISOMORPHISM AUDIT OK: 906 declarations, 743 theorems, 17 modules; only propext, Classical.choice, Quot.sound

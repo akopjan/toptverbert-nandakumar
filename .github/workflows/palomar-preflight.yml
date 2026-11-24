@@ -1,0 +1,82 @@
+# Optional advisory use of Palomar's official reusable verifier.
+# This workflow does not submit to or register a result with Palomar.
+# The pipeline pin and exact input contract are recorded under
+# verification/d18-publication/palomar-workflow-reference/.
+name: Optional Palomar predictive preflight
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Preparation only, or full mechanical verification
+        required: true
+        default: preflight
+        type: choice
+        options:
+          - preflight
+          - full
+      authorization_relationship:
+        description: Select the truthful relationship required by Palomar
+        required: true
+        default: Unconfirmed
+        type: choice
+        options:
+          - Unconfirmed
+          - I am a responsible author or maintainer
+          - I have approval from a responsible author or maintainer
+
+permissions:
+  contents: read
+
+jobs:
+  request:
+    name: Validate the manual request
+    runs-on: ubuntu-24.04
+    outputs:
+      request_id: ${{ steps.request.outputs.request_id }}
+      options: ${{ steps.request.outputs.options }}
+    steps:
+      - name: Encode the supported request inputs
+        id: request
+        env:
+          PALOMAR_AUTHORIZATION_RELATIONSHIP: ${{ inputs.authorization_relationship }}
+          PALOMAR_PREFLIGHT_MODE: ${{ inputs.mode }}
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import secrets
+          import sys
+
+          relationship = os.environ['PALOMAR_AUTHORIZATION_RELATIONSHIP']
+          supported = {
+              'I am a responsible author or maintainer',
+              'I have approval from a responsible author or maintainer',
+          }
+          if relationship not in supported:
+              sys.exit('Select a truthful authorization relationship before running the Palomar preflight.')
+          if os.environ['PALOMAR_PREFLIGHT_MODE'] not in {'preflight', 'full'}:
+              sys.exit('Mode must be preflight or full.')
+
+          options = {
+              'comparator_config_path': 'comparator.json',
+              'authorization_relationship': relationship,
+          }
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as output:
+              output.write('request_id=' + secrets.token_hex(6) + '\n')
+              output.write('options=' + json.dumps(options, separators=(',', ':')) + '\n')
+          PY
+
+  palomar-preflight:
+    name: Official predictive verifier
+    needs: request
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ github.sha }}
+      pipeline_commit: 14aa8d6b3c2f14a8540605e37144560b9a00e7e7
+      request_id: ${{ needs.request.outputs.request_id }}
+      mode: ${{ inputs.mode }}
+      execution_profile: palomar-standard-v1
+      options: ${{ needs.request.outputs.options }}

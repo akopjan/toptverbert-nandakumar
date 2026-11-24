@@ -1,0 +1,454 @@
+# Palomar Submission
+
+Mechanical verification for the Palomar registry.
+
+The new-submission toolchain minimum does not prevent rendering an already
+verified historical edition. Registration rendering supports Lean 4.28 and later,
+still binding the exact source, paths, Challenge hash and reviewed comparison.
+It does not admit an older toolchain for a new mechanical verification.
+
+When a Solution-only dependency conflicts with Verso, rendering isolates the
+canonical Challenge libraries and their exact pinned manifest closures in its
+separate workspace. It does not change the accepted Challenge, Solution,
+comparator configuration, or any dependency required by those libraries.
+Conflicts inside the Challenge closure remain errors. Render reports identify
+excluded proof-only packages. Contained parent-relative dependencies in nested
+projects keep the repository layout; only the three source-identical Plausible
+revisions explicitly listed in the renderer may share a package pin.
+
+For Challenge rendering on Lean 4.35.0-rc4, 4.35.0, and 4.36.0-rc1, Palomar backports
+[Verso #1043](https://github.com/leanprover/verso/pull/1043) to the exact released
+Verso sources. The complete source digest is checked before applying the
+conditional server/private import-level fix. The same authenticated source also
+gets a Palomar fix to docstring attribution: Verso missed the definition site of a
+structure or class with a dotted name (such as `structure A.B`), gave its docstring
+to the first documented field, and then failed with `Duplicate document ID`. Render
+reports record the upstream fix, the Palomar `fixes`, and before/after source
+digests in `verso_backport`; `verso_commit` identifies the unpatched release, and
+`renderer_commit` identifies the backport implementation.
+
+[**Submit a Lean-verified result →**](https://submit.palomar-registry.org)
+
+The form asks for a public GitHub repository, an immutable commit, the
+repository-relative path of exactly one Comparator configuration, and a
+declaration of the submitter's relationship to the substantive formalization,
+which is a claim about a person rather than about the code and is recorded
+permanently. The repository itself carries the metadata. One configuration
+becomes one Palomar entry; several configurations at the same repository and
+commit are submitted separately, while one configuration selecting several
+declarations is verified and reviewed as a whole. CI then:
+
+1. validates the required root files and pinned commit, including parsing
+   `formalization.yaml` and enforcing Palomar's documented metadata minimum;
+2. installs the submitted Lean toolchain, which brings its own `lake
+   comparator`, `leanexport`, `leanchecker` and the bundled independent
+   kernels;
+3. compiles the Challenge against frozen, canonical Mathlib, Tau Ceti, or
+   CSLib output;
+4. computes the transitive source closure of the Challenge and verifies every
+   byte in it;
+5. builds the Solution under Palomar's own bubblewrap sandbox, exports the
+   canonical Challenge and the built Solution with the toolchain's exporter,
+   and has `lake comparator` judge the two exports, permitting at most the
+   three standard axioms and running the Solution through Lean's kernel and
+   the toolchain's bundled NanoDa kernel, then independently attempts con-ron replay;
+6. publishes a machine-readable report as a run artifact.
+
+Verification is dispatched by the submission server, not started from this
+repository. The run carries the submission identifier in its name, and the
+report leaves as an artifact rather than as a comment, so nothing here needs a
+credential that can write anywhere.
+
+The complete job is also a reusable workflow. A public repository may call it
+at an exact PalomarSubmission commit as a predictive mechanical preflight. It
+runs the same verifier under the checked-in `palomar-standard-v1` profile, but
+has no Palomar state or credentials and is not itself a registry submission.
+Every mechanical report records the profile id and digest.
+
+Production normally uses `palomar-namespace-16x32-v1` (16 CPU / 32 GiB).
+The approved `palomar-namespace-32x64-v1` profile provides 32 CPU / 64 GiB
+with the same execution budget. PalomarServer may authorize one automatic retry
+on that tier for an allowlisted authenticated GitHub account after Reviewer has
+validated an OOM or timeout. Accounts without access are told to contact Kim
+Morrison (@kim-em on GitHub) with their workflow URL. Candidate log text and exit
+code 137 do not authorize a retry; trusted cgroup telemetry and supervisor
+deadlines supply the structured resource evidence. Both Namespace profiles run
+the real sandbox boundary tests in CI.
+
+The profile is workflow/report metadata, not a field in `comparator.json`.
+It records the existing 95%/98% memory pressure/ceiling policy and the
+19,800-second production budget, without adding a CPU quota or changing swap
+policy. The capacity check records host memory, effective memory thresholds,
+and free workspace. A preflight can help detect an expensive failure before
+submission; it does not run Challenge rendering, editorial review, or registration.
+A later run can still differ because of host performance, cache availability,
+or a transient service failure. Normal submission cooldowns apply to all outcomes.
+
+Pin the reusable workflow to a full commit, just as Palomar pins submitted
+source:
+
+```yaml
+jobs:
+  palomar-preflight:
+    uses: PalomarRegistry/PalomarSubmission/.github/workflows/submission.yml@<full-commit>
+    with:
+      repository: ${{ github.repository }}
+      commit: ${{ github.sha }}
+      pipeline_commit: <same-full-commit-as-the-uses-reference>
+      request_id: preflight001
+      mode: full
+      execution_profile: palomar-standard-v1
+      options: '{"comparator_config_path":"comparator.json","authorization_relationship":"I am a responsible author or maintainer"}'
+```
+
+Keep `pipeline_commit` equal to the workflow's `uses` SHA. This explicit input
+is for reusable callers only; server dispatches check out their workflow revision.
+The caller asserts this pairing: the workflow validates the SHA format but
+cannot check that it matches `uses`. Third-party preflight reports are advisory.
+`request_id` must be exactly 12 lowercase alphanumeric characters, such as
+`preflight001`; hyphens and underscores are not accepted. `options` must include
+the repository-relative `comparator_config_path` and an explicit
+`authorization_relationship`. The example declares that the caller is a
+responsible author or maintainer; choose the truthful supported relationship
+for your case. Include `project_path` when the project is not at the repository
+root, and `formalization_metadata_path` when the metadata is not at the default
+`formalization.yaml` within that project. All paths are repository-relative.
+
+External callers must select `execution_profile: palomar-standard-v1`, since
+the default profile uses Palomar's own runner labels. When preparation rejects
+an input, correct the indicated field and rerun against the same source commit;
+these errors do not require a source change. The job summary shows the bounded
+failure and next action, and the complete report remains available as an artifact.
+Profile resolution and pipeline-checkout errors occur before preparation; use
+their Actions job logs to correct the profile or pinned pipeline revision.
+
+The `inputs` context is materialized as the verifier's request for either trigger,
+so a caller's push or pull-request event cannot replace the supplied inputs.
+
+The workflow has `preflight` and `full` modes. Both invoke
+the same `verify_submission.py prepare` entry point; full verification merely
+continues into the expensive toolchain and proof steps after preparation says
+the submission is ready. Their run names and artifact names are distinct so a
+preflight result cannot be mistaken for mechanical verification. Failed reports
+carry a bounded diagnostics-v1 list: every item names its owner, explanation,
+next action, retryability, optional location, and—only for fields in
+[`formalization-profile.json`](formalization-profile.json)—whether a constrained
+metadata repair may be offered.
+
+Failed Solution builds also carry `build_error_excerpts`: multiline Lean errors
+with their locations, limited to 20 blocks of 8,000 characters each. Each block
+marks truncation, and the report counts captured errors omitted by the block limit
+and records when the process output itself was truncated. This
+preserves the expected and actual types when later output displaces the log tail.
+The existing bounded diagnostic explanation and `build_log_tail` remain available.
+
+Every report also labels its broad `phase` as `preparation` or `verification`.
+That producer-owned classification lets downstream services keep preparation
+failures actionable even when they are discovered during a full run.
+[`browser-preflight-policy.json`](browser-preflight-policy.json) publishes the
+bounded subset of preparation rules that the submission page can repeat at an
+exact commit. It is advisory only: the workflow remains authoritative and
+repeats every check after submission. Consumers must fail open when the policy
+is unavailable or incompatible, and compare its complete contents before using
+a browser result to ask for confirmation. The file is generated: it is what
+`python -m scripts.browser_preflight_policy` projects from this repository's
+constants, so change the constant and rerun that script with `--write` rather
+than editing the document.
+
+Formalization profile 4 reports every missing or invalid mechanically required
+metadata field separately and includes only safely reusable values from a
+recognized older shape. That lets the submission site explain and collect the
+complete correction in one form. It never guesses classifications,
+maintainers, source relationships, review claims, or whether a repository is a
+thin wrapper; malformed or alias-bearing YAML remains a manual correction. The
+profile carries the multiline `project.description` used as the public
+registry abstract and structured `sources[].contributors` entries for
+non-author source credits.
+
+The proof project may use arbitrary pinned **public GitHub** Git dependencies
+at full 40-character commit SHAs. They build from source inside Palomar's fresh
+Lake build directories. Submitted or substantive source repositories containing
+Git submodules are rejected. An inert submodule gitlink in a dependency is
+allowed because dependency submodules are never initialized or read; the exact
+gitlink is retained by the archive fork. Git LFS pointers are rejected everywhere, as are
+Git dependencies hosted anywhere other than GitHub. Palomar must be able to
+preserve the complete source graph consumed by the accepted build in ordinary
+Git. The Challenge is compiled
+separately without candidate Lake configuration, against only verified
+allowlisted dependencies; its protected module is published under an
+unpredictable per-run verifier-owned top-level namespace and is the statement
+Palomar exports for the comparator. The alias prevents a Challenge and Solution that share a
+submitted top-level namespace from capturing one another through Lean's
+package-prefix search. Common submitted prebuilt artifacts are rejected early,
+and no candidate build output can replace the protected statement or frozen
+trusted dependency modules. Only this statement surface is restricted;
+arbitrary pinned dependencies remain available to the proof in `Solution.lean`.
+Tau Ceti and CSLib imports are recorded as qualified trust surfaces; no other
+statement dependency is accepted, including one from a project Palomar has
+already indexed.
+
+An allowlisted root normally has to be an ancestor of its configured canonical
+branch. A root may explicitly also accept exact semantic-version release tags
+from that same canonical repository. Mathlib uses this narrow exception because
+an official patch release can add a toolchain-bump commit to the previous
+release while `master` has already advanced on the next release line. Arbitrary,
+nightly, and repository-local tags do not broaden the trusted history.
+
+Tau Ceti revisions on canonical `TauCetiProject/TauCeti` `main` are supported,
+subject to the submission toolchain minimum and exact pinned manifest closure.
+The `accepted_revisions` list adds historical exceptions to the canonical
+ancestry rule; it does not restrict Tau Ceti to those revisions. In particular,
+the old Lean 4.31 revision in that list is retained for historical provenance,
+not recommended for new submissions. Pin a full canonical commit with a
+supported toolchain and preserve that commit's complete dependency closure.
+
+Independent kernel replay is a registry invariant, not a submitter option.
+The optional `enable_nanoda` field in a submitted `comparator.json` is retained
+for upstream compatibility but is deliberately non-authoritative: missing,
+false, or any other JSON value does not disable or block verification, and a
+submitted `external_kernels` is rejected. The trusted runner writes a separate
+protected configuration that registers the toolchain's bundled NanoDa kernel
+and passes that copy to `lake comparator`. Lean and NanoDa must both accept.
+The runner then replays the exact protected Solution export with con-ron in a
+separate sandbox. A recognized inductive-support decline, fuel exhaustion, or
+authenticated capacity limit can leave that advisory replay inconclusive;
+an actual rejection, unknown error, or non-standard axiom still blocks acceptance.
+The replay has a 30-minute cap inside the existing shared verification budget,
+reserving a minute for report finalization. Both positive and ill-typed negative
+controls must pass before any submission is built. The report's `kernels` lists
+only successful independent kernels; bounded `kernel_attempts` evidence and a
+workflow warning record any decline. Entries display the recorded successful
+kernels, so a declined con-ron is never presented as having verified the proof.
+Technical Maintainers can update con-ron independently of the source compiler by
+reviewing and merging `checker-revisions.json` in this repository. Each exact
+source toolchain maps to an official Lean release, its release commit, archive
+SHA-256 and executable SHA-256. No submission setting or environment variable
+can select an update. The runner authenticates both digests, stores the executable
+outside candidate-writable paths, and requires the same positive and negative
+controls before using it. Download, authentication or control failures stop
+verification. The initial update uses con-ron from Lean 4.36.0-rc1 for the four
+supported Lean 4.35 releases; Lean, Lake, the exporter and NanoDa stay pinned to
+the submitted source toolchain. `tool_digests` records the executable actually
+run, and `con_ron_checker` records the release provenance in the archived public
+mechanical report. Updating the manifest requires the normal repository review,
+CI and deployment process; it never rewrites an existing entry's evidence.
+
+AI review is not part of this repository's CI.
+[`PalomarReviewer`](https://github.com/PalomarRegistry/PalomarReviewer) runs it
+automatically against the mechanical report of a passing run, using the prompts
+in [`PalomarPolicy`](https://github.com/PalomarRegistry/PalomarPolicy). No
+person starts a review or approves its result.
+
+## Required source layout
+
+See [`PalomarRegistry/PalomarPolicy`](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md).
+The contract is:
+
+```text
+lean-toolchain            # in the project or the repository root
+lakefile.toml             #   or lakefile.lean, which also needs lake-manifest.json
+formalization.yaml
+<the Comparator configuration named by the submission>
+<its challenge_module and solution_module sources>
+LICENSE                   # repository root, and only there
+```
+
+The Challenge module's top-level directory (or file, for a single-component
+module name) must not share its name with a top-level entry of any dependency:
+Lean resolves a module's source by that first component and Lake lists
+dependencies first, so Verso would look for the Challenge inside the
+dependency. Verification refuses such a layout with
+`challenge.module_root_shadowed` before any review is spent on it.
+
+Only `formalization.yaml` is required under that exact name. The Challenge and
+Solution paths follow from `challenge_module` and `solution_module` in the
+Comparator configuration, and the configuration's own path is the one the
+submission named, so none of the three is a fixed filename. The selected project
+need not be the repository root either: `project_path` may name a subdirectory,
+and everything but the licence is resolved inside it.
+
+The licence filename is case-insensitive and may instead use `LICENCE`,
+`COPYING`, `UNLICENSE`, or `OFL`, with an optional `.md`, `.markdown`, or
+`.txt` extension. Exactly one such regular root file is required. It must be
+nonempty UTF-8 text, match one standard SPDX licence mechanically, and agree
+exactly with the SPDX identifier in `project.license`.
+
+Current metadata should declare `version: v0.4`; an omitted version follows the
+upstream dispatcher's v0.4 default. `formalization.yaml` must be valid YAML with
+one top-level mapping and a nonempty project name of at most 300 characters,
+plus nonempty description, authorship, license, classification,
+automation-method, and review-status fields. Classification requires one to
+eight official arXiv subject classes and permits up to eight distinct MSC2020
+codes. Each project author may
+be a name or a mapping with `name` and
+optional `github` login and `orcid`; ORCIDs may use the bare identifier or the
+canonical `https://orcid.org/` URL and are stored in bare form by the registry.
+An ORCID iD must not be included in a person's `name`; use a person mapping with
+separate `name` and `orcid` fields instead. Preparation checks the iD's ISO 7064
+check digit and asks the public ORCID Registry whether that exact iD names a
+current record. Palomar retains only the iD and the time of that check, not the
+returned profile. A missing or deactivated record is a metadata error; an
+unavailable registry is a retryable Palomar failure. The check establishes
+that the record existed at that time. It does not authenticate the submitter,
+establish control of the ORCID record, or prove authorship. The current provenance
+contract also requires a nonempty `project.responsible_maintainers` list and a
+nonempty `sources` list. The submitted repository is the substantive proof
+development by default, so ordinary submissions need no `repository` section.
+A thin wrapper must instead provide a pinned
+`repository.substantive_formalization`; the legacy explicit
+`repository.role: thin-wrapper` spelling remains accepted. Every source,
+including an `original-proof` entry, needs a
+`relationship`. An `original-proof` entry must use `relationship: other`;
+additional sources accompanying an original result may use `background` or
+`other`. A `formalizes`, `adapts`, or `independently-proves` relationship instead
+declares the result source-based and therefore conflicts with `type:
+original-proof` anywhere in the list. Thus a result is original exactly when at
+least one entry is `original-proof`, every such entry uses `other`, and every
+other relationship is `background` or `other`; it is source-based exactly when
+there is no `original-proof` entry and at least one relationship is
+`formalizes`, `adapts`, or `independently-proves`. All other combinations fail.
+A supplied source `type` is a concise free-text description such as `article`,
+`paper`, `book`, `formalization`, or `web post`; it may be omitted except
+where the exact value `original-proof` is the origin declaration. Invalid or
+missing provenance fails mechanical verification with the field that needs
+changing. Source `authors` are bibliographic authors. Optional
+`contributors` records non-author credits as mappings with a nonempty `name`
+and a free-form `role` of at most 200 characters.
+
+`project.description` is the public registry abstract for the formalization as
+a whole. It must be nonempty and should concisely identify the mathematical
+content and principal results. The browser displays it during preliminary
+checks, and an authenticated submitter may ask Palomar to open a pull request
+changing this field before full verification starts.
+New files should not add a top-level `provenance` block: put maintainers under
+`project`, the optional thin-wrapper target under `repository`, and result origin
+in the source entries as above. For compatibility with older files, the verifier
+ignores a top-level `provenance` block and accepts singular
+`project.responsible_maintainer` and `sources[].author` aliases; current plural
+fields take precedence when both spellings are present. Result origin is always
+derived from the current `sources` entries, so a `result_origin` value in an
+ignored legacy block cannot override them. The exact mechanical minimum is
+enforced here; the fields' intended meaning and authoring conventions are
+documented in
+[`PalomarPolicy/CONTRIBUTING.md`](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md#3-write-formalizationyaml).
+
+The checked-in identifier lists under [`taxonomies/`](taxonomies/) are snapshots
+of the official [arXiv taxonomy](https://arxiv.org/category_taxonomy) and
+[MSC2020](https://msc2020.org/). Their purpose is exact intake validation; the
+editorial AI separately checks whether the selected subjects are plausible for
+the submitted result.
+
+The prototype accepts public GitHub repositories and any released or RC Lean
+toolchain at or above the minimum recorded in
+[`toolchains.json`](toolchains.json). There is no list of accepted versions:
+tooling revisions are derived from release tags, which is what a table of them
+kept getting wrong. Everything that judges a submission ships in the submitted
+toolchain itself, so verification records the lean4 commit its release tag
+names together with the digests of the installed binaries. Rendering selects
+the exact Verso release tag; when a stable positive Lean patch release has no
+exact Verso tag, Palomar uses that same major/minor release line's patch-zero
+tag and rebuilds the pinned source with the submission's exact Lean toolchain.
+Release candidates never fall back. The resolved Verso commit is recorded in
+the render report. The file is deliberately a closed record containing only
+its schema version and the minimum Lean release; it does not claim to configure
+tooling repositories that the verifier does not read from it.
+
+## Licensing
+
+PalomarSubmission's software is MIT-licensed. The vendored taxonomy data is a
+separate work under the terms recorded in [`taxonomies/LICENSE.md`](taxonomies/LICENSE.md).
+Submission licence validation covers the submitted repository snapshot only;
+cited papers, reused formalizations, and dependencies retain their own licences.
+
+## Security
+
+Submission Lean is hostile input. The verification job has read-only repository
+permissions and no credential in its environment, and its only output is a
+bounded JSON artifact, so there is no second job holding a write token to
+compromise. See [`SECURITY.md`](SECURITY.md) before changing the workflow or
+verifier.
+
+## Code boundaries
+
+[`scripts/submission_contract.py`](scripts/submission_contract.py) owns the
+dispatch-input allowlist and envelope validation, GitHub repository
+normalization, and the complete `formalization.yaml` contract.
+[`scripts/verify_submission.py`](scripts/verify_submission.py) applies the
+remaining per-field dispatch rules for the commit, existing id, and
+authorization while it orchestrates checkout and verification. It does not
+carry a second request or metadata parser or a compatibility entry point.
+
+## Development checks
+
+Repository Python files use the `E`, `F`, `I`, `UP`, and `B` Ruff rule families declared
+in [`pyproject.toml`](pyproject.toml). Install the single locked lint dependency
+and run the same check as CI with:
+
+```sh
+python -m pip install --disable-pip-version-check --require-hashes \
+  --no-deps --only-binary=:all: -r requirements-lint.txt
+python -m ruff check .
+```
+
+The verifier runtime dependency remains separately locked in
+[`requirements.txt`](requirements.txt); Ruff is not installed in verification
+or cold-build jobs.
+
+CI also rejects the wording of the retired intake mechanism, using the
+stdlib-only checker in
+[`.github/scripts/check_retired_intake_wording.py`](.github/scripts/check_retired_intake_wording.py).
+It reads `SECURITY.md`, `README.md`, every Markdown file below `docs/`, and
+every Python file below `scripts/`, including the ones sitting directly in it,
+and it takes an optional repository root so the tests can run it against a
+planted file. It rejects a closed set of collocations, not the bare word
+"issue", which the tracker and private reporting still need. Anything it cannot
+read is a failure rather than a file it passes over, because a scan surface
+that quietly shrinks is invisible in a passing run. Run it with:
+
+```sh
+python .github/scripts/check_retired_intake_wording.py
+```
+
+## Lean source requirements
+
+Every regular `.lean` source file in the submitted repository must use Lean's
+module system and contain at most **10,000 physical lines**. This includes
+Challenge, Solution, unused source files, generated certificates, contained
+projects, and local path dependencies. Ordinary comments may precede the
+`module` header; module documentation belongs after it. Blank and comment lines
+count. LF and CRLF each delimit one line; an unterminated final line counts,
+and a final newline does not add an empty line.
+
+Lake configuration files named `lakefile.lean` are exempt from the module
+header requirement, but still have the 10,000-line cap. Files below `.git` or
+`.lake` are excluded; submitted `.lean` symbolic links are rejected so a link
+cannot hide an oversized source file. Separately declared
+substantive source repositories for thin wrappers receive the same checks.
+External pinned Git dependencies are outside this per-file limit; Lean still
+checks their compatibility with the module system. The existing Challenge
+limits of **1,000 lines and 100 KiB** also apply.
+
+Porting requires more than adding `module`: make the declarations needed by
+other modules public, use `public import` where the public interface needs an
+import, and expose definitions whose bodies clients need. See
+[Lean's modules and visibility reference](https://lean-lang.org/doc/reference/latest/Source-Files-and-Modules/#modules-and-visibility).
+Rebuild and rerun Comparator after porting. Split oversized files into smaller
+modules or reduce generated certificates; do not hide them in excluded paths.
+
+The submission form and HTTPS intake check a bounded subset of the submitted
+repository at the exact commit and report incomplete scans explicitly. They do
+not scan separately declared substantive repositories; preparation checks those.
+The verifier scans the complete checkout before builds and confirms headers with Lean's parser before running
+submitted Lake code. Violations identify the file and require a corrected new
+commit. These rules apply to new ordinary submissions and revisions; metadata
+corrections retain their registered source and are not retroactively rejected.
+
+The preparation report records `source_requirements` and aggregates file diagnostics
+with the other non-executing checks. `source.module_required`,
+`source.file_too_long`, `source.invalid_utf8`, `source.invalid_header`, and
+`source.symlink_not_allowed` are submitter failures, not retryable infrastructure
+failures. Header confirmation uses Lean's fast import parser; full compilation
+continues to check the selected sources' complete syntax and line endings.
+Execution repeats the scan and batches
+`lean --deps-json` over all submitted source files before candidate Lake code
+runs. `browser-preflight-policy.json` publishes the shared scope and line cap.

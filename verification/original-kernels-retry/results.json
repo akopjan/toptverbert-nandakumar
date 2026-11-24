@@ -1,0 +1,1136 @@
+{
+  "scope": "Selected compiled theorem/definition declarations and their transitive dependencies",
+  "full_palomar_workflow": false,
+  "independent_challenge_comparison": false,
+  "sandbox_note": "Components run inside the surrounding execution sandbox; bwrap is not invoked.",
+  "started_utc": "2026-11-24T04:51:35.315835+00:00",
+  "project": "/workspace/scratch/9db1b532943d/akopyan-completion",
+  "module": "Solution",
+  "declarations": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.convex_partition_counterexample"
+  ],
+  "definition_targets": [],
+  "exported_declarations": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.convex_partition_counterexample"
+  ],
+  "proof_modules": [
+    "Solution"
+  ],
+  "audited_definitions": [
+    "AkopyanSixfold.simplex",
+    "AkopyanSixfold.DisjointSupports",
+    "AkopyanSixfold.IsAlmostSixEmbedding",
+    "AkopyanSixfold.Ambient",
+    "AkopyanSixfold.Body",
+    "AkopyanSixfold.unitBall",
+    "AkopyanSixfold.IsSixPartition"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "toolchain_prefix": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux",
+  "tool_versions": {
+    "lean": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "lake": "Lake version 5.0.0-src+eb6cafb (Lean version 4.35.0)"
+  },
+  "tool_sha256": {
+    "lean": "bf8d54e4714cc4b03d3f6bb34c83b7202b87e49c8bfcbff6895c085bb90ceb38",
+    "lake": "8ba83c98f76562d03b8dbc33f1057151ba6cbb121679dde76b2260ccc90495e1",
+    "leanexport": "f6a6483d518a11b323c28b9bac176d2220df0e9fc3230833815db9586669c074",
+    "leanchecker": "12c38901cdbfab178f1bf6145dd30012e9a3b2c11ca695292a5884fa3cbaddb6",
+    "nanoda_bin": "cbf13950fc4a48f635a0beceeb5ed32dd82568b870cfd081b6391c1f2cf02ba5",
+    "con-ron": "60f4ca9fb9436c323789fa49aae33af6dcd1b9b54b43a66b461779ce79fd8eec"
+  },
+  "verifier_sha256": "af08a1a5fbfc723b40fe6bc3d56b03a1b804ce83afb5c122fbf223a7cb820cc4",
+  "input_sha256": {
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lake-manifest.json": "12c81501edb3666cfee1de79738126e572394b427da53776b63d3bdeb99c12aa",
+    "lakefile.toml": "e204c3eb898d50c05f92a2b9a76e1a8caa3304f9587a8eec540c05277ca00e3b",
+    "AkopyanResearch/BoundaryRegularization.lean": "979321396f3e312a98854c560b014a450630f5ba5588135c529b3f1c5aa17811",
+    ".lake/build/lib/lean/AkopyanResearch/BoundaryRegularization.olean": "f5b4ad7cfd0a3a96c04bdce90831ea12da961f3054935207aeeaec285398fae5",
+    ".lake/build/lib/lean/AkopyanResearch/BoundaryRegularization.olean.private": "3ed73cfb6aae847cc8226e24a3cf1185ab7fd3e14556db626fe3d689b1368525",
+    ".lake/build/lib/lean/AkopyanResearch/BoundaryRegularization.olean.server": "4baac2e35a53330b94f1349c0c2c5adccfaff145374d48fdc7212be5d5f8470d",
+    "AkopyanResearch/CanonicalExtraction.lean": "3f502e849dcad5a649862995f953f208fcc5f4b438e85bc4885f261967d29338",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalExtraction.olean": "965b6d3483bdf7932ce67a41b50e27a9c6c75ca6f48e37c4229da2c47cf020d3",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalExtraction.olean.private": "d55cc831600d3c8d92288c1aee3177f4e06bcf86bb02d49e9390323cf8c0057b",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalExtraction.olean.server": "26d51b1317f78914a9169dbf4fd5890abfbf2feab2143c7f8b04c0f8d0713df7",
+    "AkopyanResearch/CanonicalQuadratic.lean": "ac61e310a4da64e99b800f54d3e775b73b69b637e27971f347ec0e66454befe9",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalQuadratic.olean": "3c36dbf887bf02b02dafbc38f252937a5820e95a6c0bea500d043b275ccde7f3",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalQuadratic.olean.private": "5497e8fb358a6f05469ac314372cb29f8640bf1d932bb94c6ce1d12c9a51b3e0",
+    ".lake/build/lib/lean/AkopyanResearch/CanonicalQuadratic.olean.server": "67ccde469243747bdcff953394be909605e7c6f5fd5b41e7af260f17bcd8d3d6",
+    "AkopyanResearch/FiniteRegularization.lean": "1cbba31568c36ce001c93b5406a37b005ee71b3dfca2d650002eba98b048cf1c",
+    ".lake/build/lib/lean/AkopyanResearch/FiniteRegularization.olean": "09c18acb7cf498de7b644444861d3ee3de24b2832d44216d9bc7d3967236cb42",
+    ".lake/build/lib/lean/AkopyanResearch/FiniteRegularization.olean.private": "08da1e4a1324ea1155b398513d1a8d5e25b36643cf53db716f118ddb5688a26b",
+    ".lake/build/lib/lean/AkopyanResearch/FiniteRegularization.olean.server": "429e6bc1909ba4c1bd993cf29d5837f9c5a8aaf345b467df247284e17522f301",
+    "AkopyanResearch/QuadraticInterpolation.lean": "08d35f858a999822dc108cf1d57393a53cdfbd1f06b4fc72918020ec330fd65c",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticInterpolation.olean": "86d897662e5ffbc6426a611c227ee748f4ee6bc57f25080f31e114ee1824fe58",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticInterpolation.olean.private": "83cf9e12559eb6c458502b349304776522b5c482ef419a7bf30dcbe44d409b5d",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticInterpolation.olean.server": "0faa59b5dfe4304afad6e698b1111f14735773cf8535981f4e41fc2b1195cb3d",
+    "AkopyanResearch/QuadraticRealization.lean": "ae51af09d1ec438352c4a6db424656ca6e01e56823a61abb6825478d0bd6dd70",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticRealization.olean": "29d43a6cea3dd9e7dda5c3dc248575eda6bbac51d13c4a7aa566c05a30c85a34",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticRealization.olean.private": "d3a3072025d354c37c474c25b6e617143d357efc997ef77ab1be8e6e8ff4ba82",
+    ".lake/build/lib/lean/AkopyanResearch/QuadraticRealization.olean.server": "70417998e2ab8d7ad6f43fc8e05c4825872e4bf43de09b73c1ee9ec2d93fc122",
+    "AkopyanResearch/SafeQuadraticBridge.lean": "b27f0647fbbd6d6b2425e58fc9ea82ffdff9ae96d3d2b536090b671e09d87544",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticBridge.olean": "0ab337de77739d560d6e63ed1ec486e02f715be1f7d0f726420425f269e33e70",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticBridge.olean.private": "0d922574a395c1a7ff71aa64c1203b6c932db8e596ebb2f5038993319bf96e06",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticBridge.olean.server": "b40f1ff23d2e6e7d70d5f6e332de96b86113cdc60f004ebb1b9d8b083a2fe0e4",
+    "AkopyanResearch/SafeQuadraticRealization.lean": "083ed7f3e19660a667f33a613aee89a8a39cf0b38fefa7ec4b297665b4088a50",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticRealization.olean": "e40dbe51001146013a1260579e4f2bc3189a67b6b0cb847d2e0d43cdfd1d9df0",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticRealization.olean.private": "f52bc4144e416b7b27f06ef1baace789cf10c63b9e030be13aa2c2a6d5e24fe2",
+    ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticRealization.olean.server": "648dd44de62fcaa679c6f898543b9c019319c807fbf3593d17bf2abbbeb17107",
+    "RequestProject/Balance.lean": "bc9f9255a1bc62492cb7f001e57c7ee928d5999dbfbc6e39e30a8f56b0ccb65c",
+    ".lake/build/lib/lean/RequestProject/Balance.olean": "12b731f300b5c06ceab6d066615ccd96e9fa17f0348bc2dae4e09448916eec0d",
+    ".lake/build/lib/lean/RequestProject/Balance.olean.private": "85b3681dc0fc805b992256398f941ff502c4cbe3d3ad7b26f6a151fb4e75ce1f",
+    ".lake/build/lib/lean/RequestProject/Balance.olean.server": "5fa99c9d18a165473ebd1929a7512591c319d526d8a186e7b5ab0264c9a38f12",
+    "RequestProject/Boundary.lean": "1bbea3b7640691248b7d407a58d4fb214ba9e6de0f48c2b5d059394dc5c2cfbe",
+    ".lake/build/lib/lean/RequestProject/Boundary.olean": "219b627b806418ba9976a6183dd5239cf22d97eed6bd5e68f63b69e7d88054eb",
+    ".lake/build/lib/lean/RequestProject/Boundary.olean.private": "805ec2f06cb5533823b45838710eaa88978126121a98bbf89d55cdfae463c60e",
+    ".lake/build/lib/lean/RequestProject/Boundary.olean.server": "58b4906f51eddfeff4eac807627d23b4400d518567774aa606920ba55df89b9a",
+    "RequestProject/Cochain.lean": "de5174099971555266ed4c7b61693ad4927444938931c3135e0be35d263e7ce6",
+    ".lake/build/lib/lean/RequestProject/Cochain.olean": "7040e9e869bac2440064a70f11ee97dc256e5b5ae1136d45d8ab162e9a9da806",
+    ".lake/build/lib/lean/RequestProject/Cochain.olean.private": "213ed8b574edc58cd0e1897557fce2948a8b4c7815a1efed8a82ddb397290a7d",
+    ".lake/build/lib/lean/RequestProject/Cochain.olean.server": "094c282210be68575885b5a5dd110b667b704d8ae3e3e3e2839eb02d816b61da",
+    "RequestProject/Construction/Assembly.lean": "fd2390ca67f8ac59fc3893e69f923984648d0cc2c3d8054787ffd22adb6d563a",
+    ".lake/build/lib/lean/RequestProject/Construction/Assembly.olean": "03e8f8e406d4d6e5b35c02c8241922c063f6948b5996d04f599280edfc7d77e4",
+    ".lake/build/lib/lean/RequestProject/Construction/Assembly.olean.private": "a173798a278f5f80b1596a949fd8901d6ea1c61f9471315f5941fb583f6c2b17",
+    ".lake/build/lib/lean/RequestProject/Construction/Assembly.olean.server": "085e09ef4ee91bbe2febac83a60c94a043946aff7ee00145b3108b04c472cdc8",
+    "RequestProject/Construction/CellCount.lean": "5fcfa00409e54a2b813353e9639c247b1fb8a6949e5ef5548e9fec10f4017be1",
+    ".lake/build/lib/lean/RequestProject/Construction/CellCount.olean": "c7b91491384f76a1ce4634ba8e27891ff23c80807cee4966af2dee09b0b47caa",
+    ".lake/build/lib/lean/RequestProject/Construction/CellCount.olean.private": "f8e0df07764c33b4e1c7253abb20c9f0f08652888cabe406509f7996fd8eebc1",
+    ".lake/build/lib/lean/RequestProject/Construction/CellCount.olean.server": "3422587038b0bc8f9bae9393cf752aadd0827a7fab438b0dc41ac767a142900e",
+    "RequestProject/Construction/Chart.lean": "8a949caba8e4297d767c32a63c79b9bc7f8259eee793b4aa12176027878b39d1",
+    ".lake/build/lib/lean/RequestProject/Construction/Chart.olean": "aacce807292441236a12ae69c5fe93ade300e560e83fd7503ed7f98345d17867",
+    ".lake/build/lib/lean/RequestProject/Construction/Chart.olean.private": "666ce7275d21d2c869d680a8eb2cb59b554729a0196811f8859551261302a9ad",
+    ".lake/build/lib/lean/RequestProject/Construction/Chart.olean.server": "82fc29d74c0004d4d05efe26ec958b66a98e6004e0a01262b39ed4154347ab30",
+    "RequestProject/Construction/DetLemmas.lean": "49e09f6c243340bb926fb25970d17c0d77913b44a22a74b8640e27548a660f5e",
+    ".lake/build/lib/lean/RequestProject/Construction/DetLemmas.olean": "04920e02e3f0441ee6dfcade7e009f79c7feb2ad2193201f9c03f42774500f21",
+    ".lake/build/lib/lean/RequestProject/Construction/DetLemmas.olean.private": "b072fae8542c1d34adfc9b7267c2884f05227b4027b28a353e2df1067ff5ad41",
+    ".lake/build/lib/lean/RequestProject/Construction/DetLemmas.olean.server": "a647ca92034d9be6593a2f527265ea598d46d6dd102adacb64861db3bed8d5c2",
+    "RequestProject/Construction/Frames.lean": "2b7cd30fe9cd984fe92a72e859551c00e7dcdd12143c9d21b7ac442572f3ea92",
+    ".lake/build/lib/lean/RequestProject/Construction/Frames.olean": "545e0acbc2bea0f42a36baffdcad6182a76cea55f460e8223269851c820541d0",
+    ".lake/build/lib/lean/RequestProject/Construction/Frames.olean.private": "9378ae806380f5adf60b5ae940c0d57243c909b1325007db7be74fa8902e7a7f",
+    ".lake/build/lib/lean/RequestProject/Construction/Frames.olean.server": "44f166e70f16f25e3eb7e5d6b0c5227065145f0d770ce323348faf508685995c",
+    "RequestProject/Construction/Good.lean": "5b90898cb69616d82cb3bd96d8886cd2f2a4b4819ba80c140dcef7ef528eeb3c",
+    ".lake/build/lib/lean/RequestProject/Construction/Good.olean": "cd3a57c9eb7e4876542e2bfd492c94f886d9b770111c27b74ad072fd8995f05f",
+    ".lake/build/lib/lean/RequestProject/Construction/Good.olean.private": "43dbff543b3d386f061e37213b40e6bcf61f5884b550f11cbde98bac97127fea",
+    ".lake/build/lib/lean/RequestProject/Construction/Good.olean.server": "e18a1a19ac6da827f9a6cf9fd9829fac33c9d1cd7dce7c7621768683e17ad490",
+    "RequestProject/Construction/Indep.lean": "0561ef01fc23e1e2532fbe61da7ca210f9982e5142adffb6d587404f5e1c661a",
+    ".lake/build/lib/lean/RequestProject/Construction/Indep.olean": "9f59de9566f968cc9b289d5e0ba308dc1c76974db1617490178e9c2e569d05c4",
+    ".lake/build/lib/lean/RequestProject/Construction/Indep.olean.private": "fa7e155deb6d9412bd5737b17a089d5ea95d09e89fef5ed6d301431eb4c4a1e8",
+    ".lake/build/lib/lean/RequestProject/Construction/Indep.olean.server": "7b11080cc6d7a76825b9163d5013b61547cf9deeb341c7daacd5439bdc9cab69",
+    "RequestProject/Construction/InnerCell.lean": "fbd8e72c32d786e8e29aeac9a11c0383724cee10a24aab437deef5df8947fed3",
+    ".lake/build/lib/lean/RequestProject/Construction/InnerCell.olean": "e386ecf02cab110fe8133dce5719fe5cef6422fe7e9e0d7228f8d4de65a2dc23",
+    ".lake/build/lib/lean/RequestProject/Construction/InnerCell.olean.private": "5dbab9b3afbda7cbb85a8748b30a19c524aca1c99e52b36201fe29b0a1ad2b9c",
+    ".lake/build/lib/lean/RequestProject/Construction/InnerCell.olean.server": "8e97b5debc8c57a4bb82a5acd0897cd1050a50b6baec602b9825105d8ed49147",
+    "RequestProject/Construction/Layout.lean": "b95a49c0973632c7a84fff1a97e5454a86f96cbbb3eabef6d873d9c80a475523",
+    ".lake/build/lib/lean/RequestProject/Construction/Layout.olean": "a749d3dc0978293c31bbe60f812a74dcec6673c3ea6bebeefb5b7a2d849501d3",
+    ".lake/build/lib/lean/RequestProject/Construction/Layout.olean.private": "67ea2f8137ffa675827776f0975c7ea52e496abe628772676570808e11af9dbd",
+    ".lake/build/lib/lean/RequestProject/Construction/Layout.olean.server": "f625f55a7548be65259b03bccab6726833942a4036b98757035cb00df264bbc4",
+    "RequestProject/Construction/Local.lean": "61ecc909996d8633c4bcb4fd4af40a997d53874177cb2149c0cdf731ddffe067",
+    ".lake/build/lib/lean/RequestProject/Construction/Local.olean": "7d942c61f503189eeece44f077e0f32bb272d5718b0b028079bba5973b1a0b77",
+    ".lake/build/lib/lean/RequestProject/Construction/Local.olean.private": "6f967037496eb3917be2228481dd481e65f296d43e3a24317a20f8b74078f733",
+    ".lake/build/lib/lean/RequestProject/Construction/Local.olean.server": "480189cb7e4e3f6cd086847a9186c3dbf15b1b903b4512af9e6c12e1e65d11c3",
+    "RequestProject/Construction/Map.lean": "df6d19a56794a4e2bf0dd092b0b8eb07560632d9c141fe6af7830b4935cce957",
+    ".lake/build/lib/lean/RequestProject/Construction/Map.olean": "a68e758b07f53dbff23eee188be016149f9b1621c9635a7ca4a490a99904115c",
+    ".lake/build/lib/lean/RequestProject/Construction/Map.olean.private": "3b4828bc611a3749644e59ecdf613fb8891f4f7f23b3b3e02ecb7ce26ce3b576",
+    ".lake/build/lib/lean/RequestProject/Construction/Map.olean.server": "72cacee50fc326078fc17c3efa718509e4a5a542de5bf95a3bc594242fcc6aa6",
+    "RequestProject/Construction/Obstacles.lean": "d3f709ee7135d81e3c5c263ae3a54eb4b426db21e515ad8d3c94744292f50b61",
+    ".lake/build/lib/lean/RequestProject/Construction/Obstacles.olean": "7e29d7cdbd8d8bc1ebcdfbd61e595f8d3927e75f23379633c25d64e68aef29eb",
+    ".lake/build/lib/lean/RequestProject/Construction/Obstacles.olean.private": "e4ad6500940055729a7dd366fdde997c253711bcd8ddf7d7c90a887a25f5df97",
+    ".lake/build/lib/lean/RequestProject/Construction/Obstacles.olean.server": "df68e11961f3cc7c4712d2cfe34724d4b7711e4ab88c1f82087bb179f9b050a3",
+    "RequestProject/Construction/PyrAlg.lean": "34b006b7a9affa2dade42589b0d9f8e4d35ee170e9e9a5941ffd32146484f9a8",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrAlg.olean": "2286bee5222f27f94303870ada134cb0b39c94dba8f9e0be034be80c306b7666",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrAlg.olean.private": "d1c24ee0570a77dc5125caab89588cb68a10994b18d9591ed28a77b0696e239a",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrAlg.olean.server": "ff7b386678b42e3b9eb81a7dd8e41ef10076d23f0be1b3383d5a1b41a49d02c9",
+    "RequestProject/Construction/PyrCell.lean": "6d10e9c07d294d3656aec7cdd8bca29ad47d8bba318907583b36c31df009038e",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrCell.olean": "86184727e9f9d0b645c063e72a0eebb1b2be34495a5aaf6cec8d297f393099c3",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrCell.olean.private": "45facc9b76e02e72928a05af03f8d893b7e78c26a88555c395215eecef383c2a",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrCell.olean.server": "7aeb8e97c0400dd0845e01f3010dc8699ceb5f1c24d54b36f3e576e2ee4bb016",
+    "RequestProject/Construction/PyrDet.lean": "a82a09696ecc964b33a4ec1c3f2534420b7bfa1e3a2c3f15f3775bfe32505f52",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrDet.olean": "c087aadde7b8e44539dbc9c1c326f474311e34ea83f54e181556722d5f51b8ee",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrDet.olean.private": "bdf28f417e0fd5c62cfc47cf9d42a926001b8cad3b95ed19cf067dd1d96923ba",
+    ".lake/build/lib/lean/RequestProject/Construction/PyrDet.olean.server": "be063ee5f301c42aec3ef0c35925da8d8f0378dee054ffc0d82946a8e2e35ee7",
+    "RequestProject/Construction/Safety.lean": "4ed02ee36b5cf073ce0b20e8e0ad012b96aa3bb917bc756b1059af636406829e",
+    ".lake/build/lib/lean/RequestProject/Construction/Safety.olean": "3a7f78f5f09d7d271b2df996c0851c6ba2d7a157f9b110118c6fb322819d339e",
+    ".lake/build/lib/lean/RequestProject/Construction/Safety.olean.private": "aa0a84e5ca642da7a85837d99faf2be42963834e4c680a840be86f4303182c94",
+    ".lake/build/lib/lean/RequestProject/Construction/Safety.olean.server": "2be6ecc5b11e05841c27c4d2c3677f17ace3932673e88a0ec92f2f02802c8ae0",
+    "RequestProject/Generic.lean": "711314399b804219a25c55fb0472b09ff5db4b41e8d0c79401beb74f7941ae6c",
+    ".lake/build/lib/lean/RequestProject/Generic.olean": "63366eb95e1237b135d100a86e7b62a85a44402e3f0f12308034106c2ad4fb06",
+    ".lake/build/lib/lean/RequestProject/Generic.olean.private": "f6b010a530a17fc7e08e8047bd8c48466632f87021c95943db43c64d8cc071c7",
+    ".lake/build/lib/lean/RequestProject/Generic.olean.server": "21345d041f447b8ebd6c03862cd44c4511e9a7d08c68c7ea4e225dcbc9a94625",
+    "RequestProject/Reduction.lean": "b403a35928c808eb7fa9fda4a8fb890755bf99b037b8adea2d26bd91327c4794",
+    ".lake/build/lib/lean/RequestProject/Reduction.olean": "3832d640bdad0b0200b2add1dcb29c795d7d94133a637324119eef81209981ec",
+    ".lake/build/lib/lean/RequestProject/Reduction.olean.private": "0674a83169ecb5c84ce60ee93ce77bb9558513501b8e07a956a84f8bbb6aaa6e",
+    ".lake/build/lib/lean/RequestProject/Reduction.olean.server": "38761918e5aaaf10ee65af96efde82f143b5a1e5842bbe4cc670e1233ae42ea8",
+    "RequestProject/Solution.lean": "21a44423bd69b613010d1b935e054ddcc6883aaaaeef80f0ae0fa56699465930",
+    ".lake/build/lib/lean/RequestProject/Solution.olean": "2c6974a62526bad8cec891176e29b9a70b5c0dd1331f59eb45776a2f3461bf6e",
+    ".lake/build/lib/lean/RequestProject/Solution.olean.private": "7b027a84c1d993079b55f9e9f947f68093270f4b6ec7787de421891f7cdb9434",
+    ".lake/build/lib/lean/RequestProject/Solution.olean.server": "78769b4700e0ec4927bbe27d2184b4583eb73fd068322e4a4411430793ff53c3",
+    "RequestProject/Surgery/Avoid.lean": "41a786506e38ada8bb35eff92b292fd8f3abe1da03ccd5f7a66f0f0b575f1dba",
+    ".lake/build/lib/lean/RequestProject/Surgery/Avoid.olean": "3fb7358c1ac48dc8edc94fc0abaf53adfa2b8ac19f2feb525a91a2c0357a2a5d",
+    ".lake/build/lib/lean/RequestProject/Surgery/Avoid.olean.private": "e8e480c3d5c90d268df6cc23a18e0c88204ed5c25f4da0cf000a25ebc6cc9f1f",
+    ".lake/build/lib/lean/RequestProject/Surgery/Avoid.olean.server": "445ea85ee8226ea9791a731d0e085f0237c12da68704f8ec328d13b458a6545e",
+    "RequestProject/Surgery/CancelGood.lean": "71897114df6299e980ae28bb24b69e30957aff4ee0d2f3e90b363fdd805994c9",
+    ".lake/build/lib/lean/RequestProject/Surgery/CancelGood.olean": "ceee3eb3f4005623b47fbc59b32f4109f192863f84a1be0a256a0f9c905ff9be",
+    ".lake/build/lib/lean/RequestProject/Surgery/CancelGood.olean.private": "c6b18105b878b3a318503ffd80e0674f7e741c0aab3b30bfff0437698c58cb54",
+    ".lake/build/lib/lean/RequestProject/Surgery/CancelGood.olean.server": "08473eda26efde6f9d78eada75841d53a7ebe797a980e2ddd01bc724a46e5510",
+    "RequestProject/Surgery/Clear.lean": "c1c6bcbe47fc236eca74bae0456a04c758541ea22e8efc19c7ac9484cfe020dd",
+    ".lake/build/lib/lean/RequestProject/Surgery/Clear.olean": "bd2aa9999bfb76dcca51487e8f52c8d44328f5c5d3b91b88c45277229243f45d",
+    ".lake/build/lib/lean/RequestProject/Surgery/Clear.olean.private": "bb9c91de3b633049f80bfd695895cf79f396eed5afde122517a9b916311d79d1",
+    ".lake/build/lib/lean/RequestProject/Surgery/Clear.olean.server": "c2bc8e4cf936677c4d3a8ce0ea653d9b861e5e3e329964c4df03e1f6f65212bc",
+    "RequestProject/Surgery/Core.lean": "11e0eb3c14515214a6c60914744cd8403950c798affb7a691ae19f6a9702e8ea",
+    ".lake/build/lib/lean/RequestProject/Surgery/Core.olean": "70854279188ceb230d94bbdbb22b4d1e5cdef772fa1bd9c3ef58e19a8e32d3b3",
+    ".lake/build/lib/lean/RequestProject/Surgery/Core.olean.private": "eb0197974b01e6881502e7d428a092fec55e35eee4a35aa787acb8778d404bbe",
+    ".lake/build/lib/lean/RequestProject/Surgery/Core.olean.server": "b309aab59e97d965f1f5455317add91d264e37968c2e8c729056b20db8fd920e",
+    "RequestProject/Surgery/Cutoff.lean": "9f746d079dd25d6e0bd3dd383002aa6055e81463e7bdc119394ab7c5b726137b",
+    ".lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean": "78faa7482cd5f7846969e7d0d54e8f7b44fb84a630d05d97c4580cd5136fc3e2",
+    ".lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean.private": "abde284cd90f68e71b7de14022dea1b66792bf5205d11a72f8e6874b0bdccd10",
+    ".lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean.server": "de78c6f91bdb058022cded9e9b73fce8317bbb9f316749f1559f7ac55b797e02",
+    "RequestProject/Surgery/Frame.lean": "20ac565cef04550314fb3bae5c4258d3b4c53bcf02ea3ee7d96e5840230f2914",
+    ".lake/build/lib/lean/RequestProject/Surgery/Frame.olean": "ea5e1943809487143ebd7b13318afbcfb4e1a0b3040e90b0dfc3c760363a02ca",
+    ".lake/build/lib/lean/RequestProject/Surgery/Frame.olean.private": "57ecbb8cd7ff7867506b218ce780ee843e2ddcf6ecadb23c0f220ce5529e36f3",
+    ".lake/build/lib/lean/RequestProject/Surgery/Frame.olean.server": "24fff7ea89723e86fa07d62e7f9ccc1ae4002e8796f54050059108ef458846c5",
+    "RequestProject/Surgery/GLPath.lean": "268f9226af29f990a2728fa2e668db39c79e5396262408830b0a72ebcc1415bf",
+    ".lake/build/lib/lean/RequestProject/Surgery/GLPath.olean": "e351644aabdc03cf6e577b280a293b4b29187192e47ee51b1941441dc7e16736",
+    ".lake/build/lib/lean/RequestProject/Surgery/GLPath.olean.private": "8d7eacf7ecd919bdc5b3e22f7623ede5d0db157b4dd712d083304ab7e985cc9e",
+    ".lake/build/lib/lean/RequestProject/Surgery/GLPath.olean.server": "6d49fde448fec055e4af54aeec7d657544d7e995f0c2a6fd6a6a3bbc197705d7",
+    "RequestProject/Surgery/Good.lean": "4d18d71a74c08ba4ecc753f07968949be028dfacb1c89699a9a9c11e1ae7543e",
+    ".lake/build/lib/lean/RequestProject/Surgery/Good.olean": "1b5aa3b5c30843331d12966f5c40be314c7288d780097fa86c163c19c0de195e",
+    ".lake/build/lib/lean/RequestProject/Surgery/Good.olean.private": "30697e01be1e4f43da7f72b20fb08204f14d115a129a14db9647e0b0759f21cd",
+    ".lake/build/lib/lean/RequestProject/Surgery/Good.olean.server": "6e9f94c41b2dbda024539b238ef78f3eb1e7911e66f17c0d215d06e629519d26",
+    "RequestProject/Surgery/Main.lean": "d2dc0e07bda30f3e2b7365caaca643628df76ff6964373120d47b8225a0129fc",
+    ".lake/build/lib/lean/RequestProject/Surgery/Main.olean": "e4977f2056fd32abb5a5178cd39f35b69586926db399a223491cf50ce0d5d68f",
+    ".lake/build/lib/lean/RequestProject/Surgery/Main.olean.private": "d78e66340c64bd4c908b7b2db7efc24e99ce8e6db6b9cfe434f3f52833c65f8e",
+    ".lake/build/lib/lean/RequestProject/Surgery/Main.olean.server": "4ce9b90aa6b6e14c9617f12a9cca8f9c88feae75f58f02e71402018dd127ebe2",
+    "RequestProject/Surgery/PairCancel.lean": "4e06d1cb832f2b7eaa2023d3bda83573f42e3bc95530004da8c1f7363b149e87",
+    ".lake/build/lib/lean/RequestProject/Surgery/PairCancel.olean": "4dfe915019fe739f76d525c2c1a439661ab3e24c745d4aaadd161a436811f35b",
+    ".lake/build/lib/lean/RequestProject/Surgery/PairCancel.olean.private": "84e3a9c0ee5977617e304f4b563b1ed3a6222b066db7f956c8e822250f876c1b",
+    ".lake/build/lib/lean/RequestProject/Surgery/PairCancel.olean.server": "76029bda13e6a109d288c7f22c9bd81f9a6031b327be89fc7907c20f898ca5ed",
+    "RequestProject/Surgery/PathHomotopy.lean": "48bf6f149a4822a303d38ebda37189ed84063f487fdcb7067f75144a815e5d00",
+    ".lake/build/lib/lean/RequestProject/Surgery/PathHomotopy.olean": "58d53a8328f69607c29c54694e135b68a8358af6efb2786d2a989b00f529359a",
+    ".lake/build/lib/lean/RequestProject/Surgery/PathHomotopy.olean.private": "0bbace7adc4396e6a138ed483c39ffa77f13804e43835c2b3958b858ec8f0a9d",
+    ".lake/build/lib/lean/RequestProject/Surgery/PathHomotopy.olean.server": "2c6af3bd210c81152b6c27c63140a55e260bffe4369fe0a4df45bf2e6582053f",
+    "RequestProject/Surgery/Separate.lean": "3aa766f46450f55992c702d4395fe3f4f26ca7b750d7c731f3dd5c21c04f9d58",
+    ".lake/build/lib/lean/RequestProject/Surgery/Separate.olean": "e9a8236a15b9c24f7cdedde73bd3affc0352667b207882bad0adf8cdd4bdd99d",
+    ".lake/build/lib/lean/RequestProject/Surgery/Separate.olean.private": "3743e90869c5e93684aa3cc27df103355843e8cfc85f163bdcb0bbf8315a7395",
+    ".lake/build/lib/lean/RequestProject/Surgery/Separate.olean.server": "e9edf92445be00083a8c0f4b58509ce888d32aec31bd61e5b0c06207bf23c3ce",
+    "RequestProject/Surgery/Shift.lean": "a09d24f3acc57fd00bb268b6b5fa10aa6e52e71a16259dc068a96eea812b4dac",
+    ".lake/build/lib/lean/RequestProject/Surgery/Shift.olean": "e719ca59e59be560731c1cbf7ec87ad9d484c8664e0bc16a51547669c634e164",
+    ".lake/build/lib/lean/RequestProject/Surgery/Shift.olean.private": "78c66a7dfec3dbc4b8194820c1065f8e6215f5692451d48a1fea9b282b5c72f9",
+    ".lake/build/lib/lean/RequestProject/Surgery/Shift.olean.server": "bda08e93abc013fee6b07ab5316985c8124755a869337135dd2d673741a8b4c9",
+    "RequestProject/Surgery/ShiftGood.lean": "c8bdeae38ce46e531a09e11a27322d14db90351106f05b9d87088177bc9f6524",
+    ".lake/build/lib/lean/RequestProject/Surgery/ShiftGood.olean": "e97d1fbe34ca2536b0d49ec2ec1f4a0d4ca8a43cdad3c7727173621d1a7c3115",
+    ".lake/build/lib/lean/RequestProject/Surgery/ShiftGood.olean.private": "3aa2366f241bbc10521fb34c4095ead4c797c308e11cda4371d1010ec8e65073",
+    ".lake/build/lib/lean/RequestProject/Surgery/ShiftGood.olean.server": "f806f36dfbbee531ad9b8739309384afb5e9cf6e0e485c113233912be993d65a",
+    "RequestProject/Surgery/Transport.lean": "4836655b8f0b9abc262995aa18adfcfa815c0cb2a937c9cbd9b82f0a724fd20f",
+    ".lake/build/lib/lean/RequestProject/Surgery/Transport.olean": "aec18cdd1aaad109668f019658725a3ce6c1fa72c0f8d7a3e9444a74e5d49e1e",
+    ".lake/build/lib/lean/RequestProject/Surgery/Transport.olean.private": "33b61cc8e1c519cf65413d9110b500537acfb349ae7e7d0997ee8100e9e60c34",
+    ".lake/build/lib/lean/RequestProject/Surgery/Transport.olean.server": "84843e0796f9692932c5e934d39acab0241d0d080386a7499b9f9dc10bf5ce15",
+    "RequestProject/Surgery/ZeroSet.lean": "d8ba85d3686bd1e86e2f34716d0a5f7f3d6533de288b7d8cf317a53e38c6a1e1",
+    ".lake/build/lib/lean/RequestProject/Surgery/ZeroSet.olean": "1c95ee193ff048c89a00a67a542e2e7c0ab292e028dabc3228a4225b2ea50bdf",
+    ".lake/build/lib/lean/RequestProject/Surgery/ZeroSet.olean.private": "c401904a056e65a7cdf6b36b0ae08d7f71faa4036aac97b9bf512d40f5236fd4",
+    ".lake/build/lib/lean/RequestProject/Surgery/ZeroSet.olean.server": "be1d95fe86d6d46fcf84946661ffc3cc250b7fadb15f6c9aff81cd180026216e",
+    "Solution.lean": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+    ".lake/build/lib/lean/Solution.olean": "53688af7c1e16005ba43a4bc793760b4d811a934a26da97bce00526925c21e01",
+    ".lake/build/lib/lean/Solution.olean.private": "b865712497edf27b14328cfdccc516f93f272934abad8427f8eee55ae33bff66",
+    ".lake/build/lib/lean/Solution.olean.server": "6b89c820c00eec47ad724d9946cd84b7cf66408cdc67857740032152a52ea207",
+    "verification/original-kernels-retry/DeclarationAudit.lean": "7b5f78862a9538cd5fc06a07f7eb7415fd7a0d37e73b318c21678315af9723d4"
+  },
+  "steps": [
+    {
+      "label": "build",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "build",
+        "Solution"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 7.77,
+      "log": "verification/original-kernels-retry/build.log",
+      "stdout": null
+    },
+    {
+      "label": "declaration-audit",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "-R",
+        "/workspace/scratch/9db1b532943d/akopyan-completion",
+        "/workspace/scratch/9db1b532943d/akopyan-completion/verification/original-kernels-retry/DeclarationAudit.lean"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 27.647,
+      "log": "verification/original-kernels-retry/declaration-audit.log",
+      "stdout": null
+    },
+    {
+      "label": "export",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "leanexport",
+        "Solution",
+        "--",
+        "AkopyanSixfold.tverberg_counterexample",
+        "AkopyanSixfold.convex_partition_counterexample"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 1049.289,
+      "log": "verification/original-kernels-retry/export.log",
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/original-kernels/selected-retry1.ndjson"
+    },
+    {
+      "label": "leanchecker",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/leanchecker",
+        "--silent",
+        "--from-export",
+        "/workspace/scratch/9db1b532943d/tools-runtime/original-kernels/selected-retry1.ndjson"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 128.524,
+      "log": "verification/original-kernels-retry/leanchecker.log",
+      "stdout": null
+    },
+    {
+      "label": "nanoda",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/nanoda_bin",
+        "/workspace/scratch/9db1b532943d/akopyan-completion/verification/original-kernels-retry/nanoda.json"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 29.693,
+      "log": "verification/original-kernels-retry/nanoda.log",
+      "stdout": null
+    },
+    {
+      "label": "con-ron",
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/con-ron",
+        "--jobs=4",
+        "/workspace/scratch/9db1b532943d/tools-runtime/original-kernels/selected-retry1.ndjson"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 20.829,
+      "log": "verification/original-kernels-retry/con-ron.log",
+      "stdout": null
+    }
+  ],
+  "outcome": "all-components-accepted",
+  "dependency_discovery_reused_from": {
+    "path": "/workspace/scratch/9db1b532943d/akopyan-completion/verification/original-kernels/results.json",
+    "sha256": "51a043e2b73e873254ff050584f797253335862e57ac18b657628d91a4c1ebb3"
+  },
+  "local_dependency_closure": [
+    "AkopyanResearch.BoundaryRegularization",
+    "AkopyanResearch.CanonicalExtraction",
+    "AkopyanResearch.CanonicalQuadratic",
+    "AkopyanResearch.FiniteRegularization",
+    "AkopyanResearch.QuadraticInterpolation",
+    "AkopyanResearch.QuadraticRealization",
+    "AkopyanResearch.SafeQuadraticBridge",
+    "AkopyanResearch.SafeQuadraticRealization",
+    "RequestProject.Balance",
+    "RequestProject.Boundary",
+    "RequestProject.Cochain",
+    "RequestProject.Construction.Assembly",
+    "RequestProject.Construction.CellCount",
+    "RequestProject.Construction.Chart",
+    "RequestProject.Construction.DetLemmas",
+    "RequestProject.Construction.Frames",
+    "RequestProject.Construction.Good",
+    "RequestProject.Construction.Indep",
+    "RequestProject.Construction.InnerCell",
+    "RequestProject.Construction.Layout",
+    "RequestProject.Construction.Local",
+    "RequestProject.Construction.Map",
+    "RequestProject.Construction.Obstacles",
+    "RequestProject.Construction.PyrAlg",
+    "RequestProject.Construction.PyrCell",
+    "RequestProject.Construction.PyrDet",
+    "RequestProject.Construction.Safety",
+    "RequestProject.Generic",
+    "RequestProject.Reduction",
+    "RequestProject.Solution",
+    "RequestProject.Surgery.Avoid",
+    "RequestProject.Surgery.CancelGood",
+    "RequestProject.Surgery.Clear",
+    "RequestProject.Surgery.Core",
+    "RequestProject.Surgery.Cutoff",
+    "RequestProject.Surgery.Frame",
+    "RequestProject.Surgery.GLPath",
+    "RequestProject.Surgery.Good",
+    "RequestProject.Surgery.Main",
+    "RequestProject.Surgery.PairCancel",
+    "RequestProject.Surgery.PathHomotopy",
+    "RequestProject.Surgery.Separate",
+    "RequestProject.Surgery.Shift",
+    "RequestProject.Surgery.ShiftGood",
+    "RequestProject.Surgery.Transport",
+    "RequestProject.Surgery.ZeroSet",
+    "Solution"
+  ],
+  "local_dependency_graph": {
+    "Solution": [
+      "AkopyanResearch.SafeQuadraticRealization",
+      "RequestProject.Solution"
+    ],
+    "AkopyanResearch.SafeQuadraticRealization": [
+      "AkopyanResearch.SafeQuadraticBridge"
+    ],
+    "AkopyanResearch.SafeQuadraticBridge": [
+      "AkopyanResearch.CanonicalExtraction",
+      "AkopyanResearch.FiniteRegularization",
+      "AkopyanResearch.QuadraticRealization"
+    ],
+    "AkopyanResearch.QuadraticRealization": [],
+    "AkopyanResearch.FiniteRegularization": [
+      "AkopyanResearch.BoundaryRegularization"
+    ],
+    "AkopyanResearch.BoundaryRegularization": [],
+    "AkopyanResearch.CanonicalExtraction": [
+      "AkopyanResearch.CanonicalQuadratic"
+    ],
+    "AkopyanResearch.CanonicalQuadratic": [
+      "AkopyanResearch.QuadraticInterpolation"
+    ],
+    "AkopyanResearch.QuadraticInterpolation": [],
+    "RequestProject.Solution": [
+      "RequestProject.Balance",
+      "RequestProject.Construction.Assembly",
+      "RequestProject.Reduction"
+    ],
+    "RequestProject.Construction.Assembly": [
+      "RequestProject.Construction.Chart",
+      "RequestProject.Construction.Good",
+      "RequestProject.Construction.Obstacles",
+      "RequestProject.Construction.Safety",
+      "RequestProject.Surgery.Main"
+    ],
+    "RequestProject.Construction.Good": [
+      "RequestProject.Construction.PyrCell"
+    ],
+    "RequestProject.Construction.PyrCell": [
+      "RequestProject.Construction.PyrDet"
+    ],
+    "RequestProject.Construction.PyrDet": [
+      "RequestProject.Construction.InnerCell"
+    ],
+    "RequestProject.Construction.InnerCell": [
+      "RequestProject.Construction.CellCount",
+      "RequestProject.Construction.Safety"
+    ],
+    "RequestProject.Construction.Safety": [
+      "RequestProject.Construction.PyrAlg"
+    ],
+    "RequestProject.Construction.PyrAlg": [
+      "RequestProject.Construction.Indep",
+      "RequestProject.Construction.Local"
+    ],
+    "RequestProject.Construction.Indep": [
+      "RequestProject.Balance"
+    ],
+    "RequestProject.Balance": [
+      "RequestProject.Boundary",
+      "RequestProject.Cochain"
+    ],
+    "RequestProject.Cochain": [],
+    "RequestProject.Boundary": [
+      "RequestProject.Generic"
+    ],
+    "RequestProject.Generic": [
+      "RequestProject.Reduction"
+    ],
+    "RequestProject.Reduction": [],
+    "RequestProject.Construction.Local": [
+      "RequestProject.Construction.Map"
+    ],
+    "RequestProject.Construction.Map": [
+      "RequestProject.Boundary",
+      "RequestProject.Construction.Layout",
+      "RequestProject.Surgery.Core"
+    ],
+    "RequestProject.Surgery.Core": [
+      "RequestProject.Surgery.PathHomotopy"
+    ],
+    "RequestProject.Surgery.PathHomotopy": [
+      "RequestProject.Surgery.Avoid"
+    ],
+    "RequestProject.Surgery.Avoid": [],
+    "RequestProject.Construction.Layout": [
+      "RequestProject.Reduction"
+    ],
+    "RequestProject.Construction.CellCount": [
+      "RequestProject.Construction.Frames",
+      "RequestProject.Construction.Indep"
+    ],
+    "RequestProject.Construction.Frames": [
+      "RequestProject.Construction.Chart",
+      "RequestProject.Construction.DetLemmas",
+      "RequestProject.Construction.Map",
+      "RequestProject.Construction.Obstacles",
+      "RequestProject.Surgery.Good"
+    ],
+    "RequestProject.Surgery.Good": [
+      "RequestProject.Surgery.Shift"
+    ],
+    "RequestProject.Surgery.Shift": [
+      "RequestProject.Surgery.Cutoff",
+      "RequestProject.Surgery.ZeroSet"
+    ],
+    "RequestProject.Surgery.Cutoff": [
+      "RequestProject.Surgery.Core"
+    ],
+    "RequestProject.Surgery.ZeroSet": [
+      "RequestProject.Surgery.Transport"
+    ],
+    "RequestProject.Surgery.Transport": [
+      "RequestProject.Surgery.PairCancel"
+    ],
+    "RequestProject.Surgery.PairCancel": [
+      "RequestProject.Surgery.Cutoff",
+      "RequestProject.Surgery.Frame"
+    ],
+    "RequestProject.Surgery.Frame": [
+      "RequestProject.Surgery.GLPath"
+    ],
+    "RequestProject.Surgery.GLPath": [],
+    "RequestProject.Construction.DetLemmas": [
+      "RequestProject.Cochain"
+    ],
+    "RequestProject.Construction.Obstacles": [
+      "RequestProject.Boundary"
+    ],
+    "RequestProject.Construction.Chart": [
+      "RequestProject.Reduction"
+    ],
+    "RequestProject.Surgery.Main": [
+      "RequestProject.Surgery.CancelGood"
+    ],
+    "RequestProject.Surgery.CancelGood": [
+      "RequestProject.Surgery.Clear",
+      "RequestProject.Surgery.Transport"
+    ],
+    "RequestProject.Surgery.Clear": [
+      "RequestProject.Surgery.Separate"
+    ],
+    "RequestProject.Surgery.Separate": [
+      "RequestProject.Surgery.Avoid",
+      "RequestProject.Surgery.ShiftGood"
+    ],
+    "RequestProject.Surgery.ShiftGood": [
+      "RequestProject.Surgery.Good"
+    ]
+  },
+  "dependency_discovery": [
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "Solution.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Solution.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/SafeQuadraticRealization.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/SafeQuadraticRealization.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/SafeQuadraticBridge.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/SafeQuadraticBridge.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/CanonicalExtraction.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/FiniteRegularization.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/QuadraticRealization.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Normed/Module/FiniteDimension.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/QuadraticRealization.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Convex/StdSimplex.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Field.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Fin.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Data/Fintype/Card.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Logic/Equiv/Fin/Basic.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic/FunProp.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/FiniteRegularization.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/BoundaryRegularization.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Normed/Operator/BoundedLinearMaps.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Normed/Group/Constructions.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Discrete.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/BoundaryRegularization.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Topology/Order/Compact.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Normed/Field/Basic.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Analysis/Normed/Group/Continuity.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Topology/Algebra/Order/Group.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Topology/Algebra/GroupWithZero.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Linarith.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic/Ring.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/CanonicalExtraction.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/CanonicalQuadratic.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Topology/Instances/Real/Lemmas.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/CanonicalQuadratic.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/AkopyanResearch/QuadraticInterpolation.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Dimension/Constructions.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Finsupp/LinearCombination.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Group/Finset/Piecewise.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "AkopyanResearch/QuadraticInterpolation.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Basic/Real/Basic.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/LinearAlgebra/Span/Basic.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Data/Finset/Card.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Algebra/BigOperators/Pi.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib/Tactic.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Solution.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Reduction.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Balance.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Assembly.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Assembly.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Safety.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Chart.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Obstacles.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Main.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Good.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Good.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/PyrCell.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/PyrCell.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/PyrDet.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/PyrDet.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/InnerCell.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/InnerCell.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/CellCount.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Safety.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Safety.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/PyrAlg.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/PyrAlg.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Local.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Indep.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Indep.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Balance.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Balance.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Boundary.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Cochain.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Cochain.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Boundary.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Generic.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Generic.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Reduction.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Reduction.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Local.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Map.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Map.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Layout.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Boundary.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Core.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Core.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/PathHomotopy.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/PathHomotopy.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Avoid.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Avoid.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Layout.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Reduction.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/CellCount.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Frames.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Indep.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Frames.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Map.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Chart.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/Obstacles.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Construction/DetLemmas.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Good.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Good.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Shift.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Shift.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/ZeroSet.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Cutoff.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Core.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/ZeroSet.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Transport.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Transport.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/PairCancel.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/PairCancel.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Frame.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Frame.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/GLPath.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/GLPath.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/DetLemmas.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Cochain.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Obstacles.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Boundary.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Construction/Chart.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Reduction.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Main.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/CancelGood.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/CancelGood.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Clear.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Transport.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Clear.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Separate.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/Separate.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/ShiftGood.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Avoid.olean\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/bin/lake",
+        "env",
+        "lean",
+        "--deps",
+        "RequestProject/Surgery/ShiftGood.lean"
+      ],
+      "exit_code": 0,
+      "stdout": "/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/lean-4.35.0-linux/lib/lean/Init.olean\n/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/build/lib/lean/Mathlib.olean\n/workspace/scratch/9db1b532943d/akopyan-completion/.lake/build/lib/lean/RequestProject/Surgery/Good.olean\n",
+      "stderr": ""
+    }
+  ],
+  "imported_private_theorem_kinds_checked": true,
+  "imported_private_definition_kinds_checked": false,
+  "export_file": "/workspace/scratch/9db1b532943d/tools-runtime/original-kernels/selected-retry1.ndjson",
+  "export_sha256": "e13da01da2ed86c54af2e33eb8277862cb7f6a8100a78d6d4043e99b205a8781",
+  "export_size_bytes": 433148960,
+  "export_structure": {
+    "target_records": {
+      "AkopyanSixfold.tverberg_counterexample": {
+        "kind": "thm",
+        "line": 6170305,
+        "has_value": true
+      },
+      "AkopyanSixfold.convex_partition_counterexample": {
+        "kind": "thm",
+        "line": 8127907,
+        "has_value": true
+      }
+    },
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declaration_record_counts": {
+      "inductive": 1012,
+      "def": 10823,
+      "thm": 39235,
+      "axiom": 3,
+      "quot": 4,
+      "opaque": 37
+    }
+  },
+  "nanoda_unpermitted_axiom_hard_error": true,
+  "nanoda_config_sha256": "f8c4bc9ca30b246f11a50ecac9ec780d3a49b45615953f7cddb9a5e37f2b6455",
+  "export_unchanged_during_kernel_checks": true,
+  "changed_inputs_during_verification": [],
+  "proof_inputs_unchanged": true,
+  "component_outcome": "all-components-accepted",
+  "driver_exit_code": 0,
+  "finished_utc": "2026-11-24T05:12:58.894037+00:00"
+}

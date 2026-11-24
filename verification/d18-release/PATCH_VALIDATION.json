@@ -1,0 +1,2075 @@
+{
+  "scope": "All source/configuration/scripts/tests/docs files and original-specification inputs; generated verification evidence is distributed in ZIP",
+  "patch_sha256": "03e29b1750346a9913337a14db67c37eb67b0546d454f3811289a21ef0a62e39",
+  "patch_bytes": 3896672,
+  "original_files": 96,
+  "final_files": 509,
+  "source_bytes_and_executable_modes_match": true,
+  "challenge_bytes_unchanged": false,
+  "solution_bytes_unchanged": true,
+  "commands": [
+    {
+      "command": [
+        "git",
+        "apply",
+        "--whitespace=nowarn",
+        "--check",
+        "/workspace/scratch/9db1b532943d/output/akopyan_d18_changes.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "apply",
+        "--whitespace=nowarn",
+        "/workspace/scratch/9db1b532943d/output/akopyan_d18_changes.patch"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "final_core_files": {
+    "AkopyanResearch.lean": {
+      "sha256": "ccc49c7d44cb63d456dc14cfe0dd2f8e4ebf829bb996c3dbf3e0f90c6b7824da",
+      "executable": false
+    },
+    ".gitignore": {
+      "sha256": "9e04637ca77422fc6e2f74a56c6b29c095a6d5a0c91f07ef90c18d13446707cd",
+      "executable": false
+    },
+    "lakefile.toml": {
+      "sha256": "82bd5f26ab3050c4a6a67affa8cdad9033c884e1b673cab35d16d97ab8991412",
+      "executable": false
+    },
+    "FORMALIZATION_STATUS.md": {
+      "sha256": "faffadc3ba6f5a1c25a0b081ea0e8b69a855c46e633aae8906040a28edf0ec0e",
+      "executable": false
+    },
+    "comparator.json": {
+      "sha256": "a4f9bd30fbdd7cffa6ece2beed49bcb14fd908b58f436de535f3324f5d3d22ee",
+      "executable": false
+    },
+    "README.md": {
+      "sha256": "ff1b109f516f1da757221261a3926c2480984e2d3359a2a43a289c39ff2f2b3a",
+      "executable": false
+    },
+    "lake-manifest.json": {
+      "sha256": "12c81501edb3666cfee1de79738126e572394b427da53776b63d3bdeb99c12aa",
+      "executable": false
+    },
+    "Solution.lean": {
+      "sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+      "executable": false
+    },
+    "PalomarSolution.lean": {
+      "sha256": "98bcca73c13415a014c1cb394eb8530f8e82993ca7b123fc42752ce0c560744e",
+      "executable": false
+    },
+    "Audit.lean": {
+      "sha256": "637d981b7331e9720716ef94bbe213b7baa59f4ed016f0b1daae2ad528b09476",
+      "executable": false
+    },
+    "lean-toolchain": {
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "executable": false
+    },
+    "CHANGES.md": {
+      "sha256": "17d17318e588f13f1c0a4a956991c3ca94c8e9159402e6d817250a0aadb34089",
+      "executable": false
+    },
+    "README.en.md": {
+      "sha256": "68b8df792c6121c2513d8ae26eea91ec17f36975db0fb0decf907b85455511f2",
+      "executable": false
+    },
+    "Challenge.lean": {
+      "sha256": "d7b36eaa7daf9c593b205f0fc3f748c0a6c8ab3ba726269947d71328c4ce4e66",
+      "executable": false
+    },
+    "Hatcher/UPSTREAM.md": {
+      "sha256": "0b1fbf37cddb4a6b89936b08e24e0e2205f763ec029f19bc66a36c59b851f40b",
+      "executable": false
+    },
+    "RequestProject/Balance.lean": {
+      "sha256": "bc9f9255a1bc62492cb7f001e57c7ee928d5999dbfbc6e39e30a8f56b0ccb65c",
+      "executable": false
+    },
+    "RequestProject/Boundary.lean": {
+      "sha256": "1bbea3b7640691248b7d407a58d4fb214ba9e6de0f48c2b5d059394dc5c2cfbe",
+      "executable": false
+    },
+    "RequestProject/Generic.lean": {
+      "sha256": "711314399b804219a25c55fb0472b09ff5db4b41e8d0c79401beb74f7941ae6c",
+      "executable": false
+    },
+    "RequestProject/Solution.lean": {
+      "sha256": "21a44423bd69b613010d1b935e054ddcc6883aaaaeef80f0ae0fa56699465930",
+      "executable": false
+    },
+    "RequestProject/Cochain.lean": {
+      "sha256": "de5174099971555266ed4c7b61693ad4927444938931c3135e0be35d263e7ce6",
+      "executable": false
+    },
+    "RequestProject/Reduction.lean": {
+      "sha256": "b403a35928c808eb7fa9fda4a8fb890755bf99b037b8adea2d26bd91327c4794",
+      "executable": false
+    },
+    "Submission/UPSTREAM.md": {
+      "sha256": "d6fe50e5408ebc7353812b589e04143554ffe9ae151a34b90afe00072c3d47c6",
+      "executable": false
+    },
+    "Submission/LICENSE": {
+      "sha256": "f29dae1e11ec0f9c3c6c29a5358c1703c936f3f2a2a16367ea3259ba9d3f71a2",
+      "executable": false
+    },
+    "Submission/SphereGenerator.lean": {
+      "sha256": "9170ff0821ed44373bbb3f145621fedf6a1f6787e861808f02946830970cd761",
+      "executable": false
+    },
+    "Submission/SphereHomotopy.lean": {
+      "sha256": "6aaab9361f30ae017e2fb9b5bcea5cb59bd9d9356335bb2f961e762becca0a63",
+      "executable": false
+    },
+    "Submission/SphereHomologicalDegree.lean": {
+      "sha256": "2efdaca4f106171cbef9f5abfaafdc883763b80db335d7f33a0feb7ad84c8b51",
+      "executable": false
+    },
+    "scripts/verify-selected-kernels.py": {
+      "sha256": "556b2ce9b706aefa10d3e44521db83392354af002ed998a3ce33ae4287bebac7",
+      "executable": false
+    },
+    "scripts/sync-audit.py": {
+      "sha256": "f9ce8f1be3121ad55b4fc37863f83d30a678714ca2303c5e15fb08f2a9aa0563",
+      "executable": true
+    },
+    "scripts/verify-comparator.sh": {
+      "sha256": "ada42f3e0f67cf91a9606bf2bfe1250679d91c66075cf0afb85146d54b8e36bd",
+      "executable": true
+    },
+    "scripts/check_structure.py": {
+      "sha256": "381f02627b556e8b9e46ab05d5def6256c88d11b7d5cf40285d5560b0bf34170",
+      "executable": false
+    },
+    "scripts/verify.sh": {
+      "sha256": "35c7699b4c820af9af4fd00f3c585bf31abf9cd676afce1c1f2787298cbd5930",
+      "executable": true
+    },
+    "scripts/check-statements.py": {
+      "sha256": "4a829e36ec51c0f7f7e04e90c180f0f28ec0746bc283111a29a912546981dfc0",
+      "executable": false
+    },
+    "scripts/check-provenance.py": {
+      "sha256": "82e48d0745c6b6b5b1ff2584eca7379c7aff3a4689a168046a7255692577a22c",
+      "executable": false
+    },
+    "LICENSES/Apache-2.0.txt": {
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "executable": false
+    },
+    "tests/test_dimension_arithmetic.py": {
+      "sha256": "81bcc53353b15102775e08c76500ff07039375e289e2cc264067f3e7ea0efb6c",
+      "executable": false
+    },
+    "tests/test_static.py": {
+      "sha256": "d13c67a7156b9895ec9f994f761ea75fbd723eec4c7b6ac3e8eed69cbba197f9",
+      "executable": false
+    },
+    "tests/test_statement_audit.py": {
+      "sha256": "becc6fe1af54c5ebc16bafdfbbd62e0007660278b28de89df54a4515d9b15114",
+      "executable": false
+    },
+    "docs/SAFE_TABLE_TO_EMBEDDING.md": {
+      "sha256": "23369c7ea239dfaac57d2fe57cea439433079fa4b4f405cdc3d77b2f32988506",
+      "executable": false
+    },
+    "docs/PALOMAR_PREPARATION.md": {
+      "sha256": "88b22e14dc20fbcf8395e4b897c13a95e8751ca8f6e1a8a55633249f4861c493",
+      "executable": false
+    },
+    "docs/PLANAR_COMPARISON_RESEARCH.md": {
+      "sha256": "0d6e189c31d5c44d9ab77903a2e66118732c76cedf403b2d6ded49683ca7d14f",
+      "executable": false
+    },
+    "docs/DIMENSION_EIGHTEEN_PROOF.md": {
+      "sha256": "f8c5a12f54433f84c840802b2fbad45b6d10b887077cb1e9faec842071461a74",
+      "executable": false
+    },
+    "docs/GEOMETRIC_FUNCTIONAL.md": {
+      "sha256": "46090bae36988f30b84fdc9b4e47e506cedb4c282b5c0150d54b4eb5dd9de14b",
+      "executable": false
+    },
+    "docs/PROOF_MAP.md": {
+      "sha256": "bd80da23978ac64e107db05df04778355a86c4986fa3140089c986c816bbd928",
+      "executable": false
+    },
+    "docs/PROOF_COMPANION.md": {
+      "sha256": "5e5d03e152eb843f3106649d7c86366dbdb944f395bedfbaa7c5f22a5a8ed158",
+      "executable": false
+    },
+    "docs/GEOMETRIC_MARKERS.md": {
+      "sha256": "24c79fa85006ab17fc58a2bf60baf90cb1aacf5172b47f1a2e58aa2d1b57f42c",
+      "executable": false
+    },
+    "docs/MATHEMATICAL_CONTEXT.md": {
+      "sha256": "58716f237ff74706d79792ef7d59f54773af650aba03b8d425a38563a693fdd3",
+      "executable": false
+    },
+    "docs/TARGET_SECTION.md": {
+      "sha256": "28a01945fd37059e06995f685a18d512aa9e297a2ab6acb7ca68fc1b9ca5db72",
+      "executable": false
+    },
+    "AkopyanResearch/PlanarTestJoin.lean": {
+      "sha256": "647af1c4312a0fdf42cb7cb7165386e0b0c15515b8d649019f5e02ad034397bc",
+      "executable": false
+    },
+    "AkopyanResearch/DiskCylinderRetraction.lean": {
+      "sha256": "75ce0e417c27006a570668772c8f1cae9192d41175705013db72fc90e1ab6d7e",
+      "executable": false
+    },
+    "AkopyanResearch/QuaternionBelt.lean": {
+      "sha256": "9d57c09039fe95ebb1b50d8537f79210ef1cf1b70e89f42fd2b995084fed7b3f",
+      "executable": false
+    },
+    "AkopyanResearch/PlanarTestLocal.lean": {
+      "sha256": "9db3cd03a71e98d168bbe5f84c8278eb8724f08ea5c4816bcce48651fc34d112",
+      "executable": false
+    },
+    "AkopyanResearch/FiniteGenericity.lean": {
+      "sha256": "384243ecb6806e6bc20d51dc175f44a90688ca05ffd0f626fb137980e210a51c",
+      "executable": false
+    },
+    "AkopyanResearch/MatchingProjection.lean": {
+      "sha256": "34dcdc1438bdec795fff24973c4ac86007b15b8dd9fcf8957a220ae9f66759a4",
+      "executable": false
+    },
+    "AkopyanResearch/SplitSphereChart.lean": {
+      "sha256": "287fcf87051b87120e89cdaec64efb101e8cdcadb535987fc4a1b8f3933b3662",
+      "executable": false
+    },
+    "AkopyanResearch/FrameTransport.lean": {
+      "sha256": "761d2640c200f1758f9d196927990387c4b520bb319ada881e448db5bd7862ee",
+      "executable": false
+    },
+    "AkopyanResearch/PairCollapse.lean": {
+      "sha256": "a0e8c043e621298e5662f448bb52e9d33416048098c65509eae61a91e6c2c3f9",
+      "executable": false
+    },
+    "AkopyanResearch/CoxeterTriangulation.lean": {
+      "sha256": "a008c1869e17be7d5d2b5c428bf60e9179c8ed9d6d9c34c0c9fc4ae21a60d2c9",
+      "executable": false
+    },
+    "AkopyanResearch/PairUniversalSource.lean": {
+      "sha256": "94d18711d4500465e58b4cbe5abfae6dcd9ae31f9aeeef419e6eff3e31380142",
+      "executable": false
+    },
+    "AkopyanResearch/PairNormalFrame.lean": {
+      "sha256": "6b7de6ae50873276ea7e267c42779357669746b0f3fa4b05d16c6dfbf8cfb603",
+      "executable": false
+    },
+    "AkopyanResearch/QuadraticNaturality.lean": {
+      "sha256": "82d4e2908568649531e221d427e7e2435cfd0dcee9711d7a10ae903af7f91c6a",
+      "executable": false
+    },
+    "AkopyanResearch/ColoredChainContraction.lean": {
+      "sha256": "d4646e569dca695cd665f7de10c23e0aa59bc61632025669c13642a75240b16a",
+      "executable": false
+    },
+    "AkopyanResearch/BeltTrickSO.lean": {
+      "sha256": "42cb305f0238504df0b30a482e0691542b861bea3006b9613b22d42b9b95ea2a",
+      "executable": false
+    },
+    "AkopyanResearch/CanonicalQuadratic.lean": {
+      "sha256": "ac61e310a4da64e99b800f54d3e775b73b69b637e27971f347ec0e66454befe9",
+      "executable": false
+    },
+    "AkopyanResearch/ChainTelescoping.lean": {
+      "sha256": "c8d0b39583482d47910ff589d090eefc31d97e29c965f7445db3cdd873372cc6",
+      "executable": false
+    },
+    "AkopyanResearch/FramedAnnulus.lean": {
+      "sha256": "f5c940330f3af43fd0d1fa720bb0e65730d99728440f18d457ba5f370e464879",
+      "executable": false
+    },
+    "AkopyanResearch/Completion.lean": {
+      "sha256": "d9780aee4a144e0dad22575e9f11d9ba08abc0d60b99e05877dbb80473f421df",
+      "executable": false
+    },
+    "AkopyanResearch/NormalBundleTrivialization.lean": {
+      "sha256": "7b948075439e7c61c2d5f66a55ca3b47d03441f0ab76b8e97443471773223e9b",
+      "executable": false
+    },
+    "AkopyanResearch/QuadraticArrangement.lean": {
+      "sha256": "5bcb373bc38a94faa28f3b3713d83d0bf3297642222b4e38987551fc231b8cdb",
+      "executable": false
+    },
+    "AkopyanResearch/QuadraticRealization.lean": {
+      "sha256": "ae51af09d1ec438352c4a6db424656ca6e01e56823a61abb6825478d0bd6dd70",
+      "executable": false
+    },
+    "AkopyanResearch/SafeQuadraticBridge.lean": {
+      "sha256": "b27f0647fbbd6d6b2425e58fc9ea82ffdff9ae96d3d2b536090b671e09d87544",
+      "executable": false
+    },
+    "AkopyanResearch/BoundaryRegularization.lean": {
+      "sha256": "979321396f3e312a98854c560b014a450630f5ba5588135c529b3f1c5aa17811",
+      "executable": false
+    },
+    "AkopyanResearch/EquivariantPinch64.lean": {
+      "sha256": "645c62b3db1a134065c4b883e371d2291e487dfa37008be5e7b193d78f968ee6",
+      "executable": false
+    },
+    "AkopyanResearch/PairNormalChart.lean": {
+      "sha256": "117750b6af078fa75068c26487582a7e8157d22c33d1cdcd7f6f00cddace98b3",
+      "executable": false
+    },
+    "AkopyanResearch/RowSylowGeometry.lean": {
+      "sha256": "1ee719d614a021990afcc46068097d76b4144f8de8f9bdf303f3d5484f4d35fd",
+      "executable": false
+    },
+    "AkopyanResearch/BranchPinch.lean": {
+      "sha256": "14e8eefb2bd6b0a293348eb5854465cf32d1caf4ae10f00e374f4511fa876b61",
+      "executable": false
+    },
+    "AkopyanResearch/MarksArithmetic.lean": {
+      "sha256": "1c1a68a59c08d096a24460eb0157ace924bf6b3581e78720af5ee4c346262ed5",
+      "executable": false
+    },
+    "AkopyanResearch/MatchingCombinatorics.lean": {
+      "sha256": "e3233545a058388522e5131926190edb52317acca8aaaad5763530f6d76db380",
+      "executable": false
+    },
+    "AkopyanResearch/CanonicalExtraction.lean": {
+      "sha256": "3f502e849dcad5a649862995f953f208fcc5f4b438e85bc4885f261967d29338",
+      "executable": false
+    },
+    "AkopyanResearch/CoxeterChamber.lean": {
+      "sha256": "8f3a2c8c3654a1203b6a07491b0774358491ef08a3ee16f29bc99af803864a33",
+      "executable": false
+    },
+    "AkopyanResearch/QuadraticRank.lean": {
+      "sha256": "3c02399bce12a296005be25165ef90d92f11adcc74f742e93e750fd7f2358a4b",
+      "executable": false
+    },
+    "AkopyanResearch/ProperCollapse.lean": {
+      "sha256": "6bda1248aeb4c9fc608091be12a113c92361d81a0ffa4327a9e15a8f9272a395",
+      "executable": false
+    },
+    "AkopyanResearch/FiniteRegularization.lean": {
+      "sha256": "1cbba31568c36ce001c93b5406a37b005ee71b3dfca2d650002eba98b048cf1c",
+      "executable": false
+    },
+    "AkopyanResearch/QuadraticInterpolation.lean": {
+      "sha256": "08d35f858a999822dc108cf1d57393a53cdfbd1f06b4fc72918020ec330fd65c",
+      "executable": false
+    },
+    "AkopyanResearch/SafeQuadraticRealization.lean": {
+      "sha256": "083ed7f3e19660a667f33a613aee89a8a39cf0b38fefa7ec4b297665b4088a50",
+      "executable": false
+    },
+    "AkopyanResearch/PairGeometry.lean": {
+      "sha256": "4d3a23c51d85c4ed41b2a6bab2f1d613b40b1fbc15a119b1c360dcc86548cc69",
+      "executable": false
+    },
+    "AkopyanResearch/TransferArithmetic.lean": {
+      "sha256": "6aff4bdf3b9cadb89948db9e8eba153729a2061957890a419839d79f632ba268",
+      "executable": false
+    },
+    "AkopyanResearch/CochainAnnihilator.lean": {
+      "sha256": "9232471e5fdd4276ed9c4b18a70ca4a6f02b9e491874e1d3082bca7c0fa35c74",
+      "executable": false
+    },
+    "AkopyanResearch/PairCollapseEquivariant.lean": {
+      "sha256": "62bbfbc534ffe30e29dfee649de42d4cd5cd9b67bcfdb989a40e55ca8b6647ba",
+      "executable": false
+    },
+    "AkopyanResearch/PlanarTestGlobal.lean": {
+      "sha256": "db71abdd28efc4fd7b79f5c5cf60d560850f13d0c95ebae0cb6a626ab89dda95",
+      "executable": false
+    },
+    "AkopyanResearch/InvariantCaps.lean": {
+      "sha256": "d7d5289cf7ee7ba835c3e273706cfd95fa1f56c78acb9d466efa86fccc78cb24",
+      "executable": false
+    },
+    "Hatcher/Sphere/RadialDeformationRetract.lean": {
+      "sha256": "9238088196212cb55669e7f6f9dfb9ce63ad68a7331cf3d2b060daf9c2c8d85b",
+      "executable": false
+    },
+    "Hatcher/Sphere/ZeroSphere.lean": {
+      "sha256": "49f84f361d78fef458a71bc0cc2b4cf4aba82439daae6badecef55172a6e9553",
+      "executable": false
+    },
+    "Hatcher/Sphere/HemisphereNeighborhoodCover.lean": {
+      "sha256": "9c784da5c525d34da602772d33fcb1b04da35a10ceb5fc3cdc756f0386007ad2",
+      "executable": false
+    },
+    "Hatcher/Sphere/HemisphereCharts.lean": {
+      "sha256": "7bb684f97eef42c9ba490d9a7287162a834ddee5b7d84c487303338a6e58cf3e",
+      "executable": false
+    },
+    "Hatcher/Excision/SmallChainEquivalence.lean": {
+      "sha256": "677e763361c6a231295a03286d30624481e84537870fd920b597c5ea7ca838c5",
+      "executable": false
+    },
+    "Hatcher/Excision/SmallSimplices.lean": {
+      "sha256": "a224a84566e79a935e15d0cd255dd05864f995cec93c574ca1bc5e69f35206bb",
+      "executable": false
+    },
+    "Hatcher/Excision/BinaryCover.lean": {
+      "sha256": "f7019a38f77d10cdcfcbd7b206541a478fefd03e3be315e9ce77362e9c590271",
+      "executable": false
+    },
+    "Hatcher/Excision/Devissage.lean": {
+      "sha256": "f287999e1ed62c9fc647e00f7fdd5e8b73b4aee79b8fbfae3b0eea1cecc8c547",
+      "executable": false
+    },
+    "Hatcher/Excision/SubdivisionDiameter.lean": {
+      "sha256": "b2a962c4bc53bc84d8412f29d828fac38804fb63bde70f83ca283107bf4d1432",
+      "executable": false
+    },
+    "Hatcher/Excision/AffineSubdivision.lean": {
+      "sha256": "3cf6f6c6ce0e56c267deb0aecf5c5b44f78377acbd003a9fae7effe3dd468373",
+      "executable": false
+    },
+    "Hatcher/Excision/SingularSubdivision.lean": {
+      "sha256": "4355f6dda94cba49ddb7a18ba932239a9b900b69cb3b8f346d35a6750f84806d",
+      "executable": false
+    },
+    "Hatcher/Excision/AffineChains.lean": {
+      "sha256": "4f22f0f2fcebc5424400932adebafc0180d3a53bc493b69566d0f2111d7f7373",
+      "executable": false
+    },
+    "Hatcher/Singular/PointQuotientNeighborhoodContraction.lean": {
+      "sha256": "e1c81f3f41f874bb8777b5b428f84fd7c783708725b864f78900762ab43a2b01",
+      "executable": false
+    },
+    "Hatcher/Singular/Reduced.lean": {
+      "sha256": "ddc57fbbf16e071e2189025459a18cd7fec6496edee4f90a32deb71cbad9223a",
+      "executable": false
+    },
+    "Hatcher/Singular/PointedRelative.lean": {
+      "sha256": "347acf819f5c539041f626b44a1a46dd3be8978d33d6a8870177ee6429b05c83",
+      "executable": false
+    },
+    "Hatcher/Singular/GoodPairExcisionDiagram.lean": {
+      "sha256": "2c57298f6bfb61a65ea6dccd8037e143dd5d7ae5d3ea90346552ed1236891c0b",
+      "executable": false
+    },
+    "Hatcher/Singular/RelativeIsomorphism.lean": {
+      "sha256": "8c8ba1f66384907ebb0cf506091f552457e3fde0087e690cec7ec64ec07dbac5",
+      "executable": false
+    },
+    "Hatcher/Singular/GoodPair.lean": {
+      "sha256": "246f72bd6a99d50b3337746948aef1fc962d02d500396b0e8e0727556c4e807a",
+      "executable": false
+    },
+    "Hatcher/Singular/PointQuotientNeighborhoodExcision.lean": {
+      "sha256": "3ad17e2db2e883dfd76349df9f77b8fcbc62f8a9c7996c3af79cbbcd42514dd8",
+      "executable": false
+    },
+    "Hatcher/Singular/PointQuotientNeighborhoodHomology.lean": {
+      "sha256": "bc6d28ae2ab01200412443b2c4447e90dbd3d54779366e4d023803184ae8f2ce",
+      "executable": false
+    },
+    "Hatcher/Singular/GoodPairNeighborhoodQuotient.lean": {
+      "sha256": "df7d85bcaf76cb7ec8e2d13d84e5a1df2f2bfab6fe34e16b6e27b9c6ce52d6c1",
+      "executable": false
+    },
+    "Hatcher/Singular/PointQuotientTopology.lean": {
+      "sha256": "a3aa829509b1638cecc00f0ebc325f5549b1147af06e2e710245c7751891acce",
+      "executable": false
+    },
+    "Hatcher/Singular/PointQuotient.lean": {
+      "sha256": "2b25edfbf28cc5e2a245f5bb9f1859fc3dcf475a8efe71655509c6066410b7eb",
+      "executable": false
+    },
+    "Hatcher/Singular/GoodPairPointQuotientHomology.lean": {
+      "sha256": "47d87e95b4c564f0f41547a227bb2326241a6d5725aa2187dc126c44ad0c60d9",
+      "executable": false
+    },
+    "Hatcher/Singular/ReducedRelative.lean": {
+      "sha256": "e1b085c04374866e74f8e3c37c92fb8197c20a36ec1ff2a9033739ea78453dbf",
+      "executable": false
+    },
+    "Hatcher/Singular/Relative.lean": {
+      "sha256": "e0b1c3114fb6d0ab49dff39863ac9141ac32ca6a6235dc874992a34291a9eb4a",
+      "executable": false
+    },
+    "Hatcher/Singular/Homology.lean": {
+      "sha256": "fa3b2668d3e6b4b2dccbac47a2925755065d659cd37d3992284c819c61685165",
+      "executable": false
+    },
+    "Hatcher/Singular/GoodPairNeighborhoodHomology.lean": {
+      "sha256": "08fa20f45134b69bc46968e33d2f9f9f1b044303c9d6e0a4c2e0ecbc71fa6af7",
+      "executable": false
+    },
+    "Hatcher/MayerVietoris/Sequence.lean": {
+      "sha256": "b24d4ba6de691042012a4ec3a75f65951ffd50e341f3f9cb8df0e44d7283ba49",
+      "executable": false
+    },
+    "Hatcher/MayerVietoris/ShortExact.lean": {
+      "sha256": "9f91a1710aba0e3bb93d9ed97a1fc2afd59d7e9703eba53cfa8e0d11e60f0a04",
+      "executable": false
+    },
+    "Hatcher/MayerVietoris/Neighborhood.lean": {
+      "sha256": "04bd63714f02c015e8b3069dc2a765d88a446b20f73fc8050dd723a1ac40faf1",
+      "executable": false
+    },
+    "Hatcher/MayerVietoris/ChainComplex.lean": {
+      "sha256": "ddfb86168491533b84546fd9a100e3b31945dd29f4e29db6cc67c644fa3fe35c",
+      "executable": false
+    },
+    "Hatcher/Topology/StrongDeformationRetract.lean": {
+      "sha256": "8db6439259386f01d402bb2da1a641f3d20d1b7ed42fb0d36d3d83a197924fff",
+      "executable": false
+    },
+    "Hatcher/Algebra/Homology/Augment.lean": {
+      "sha256": "ff3120e4e3bbed00e28d91860814ff1ea482d4df0d96b794719a9bb127b7fa77",
+      "executable": false
+    },
+    "RequestProject/Construction/Chart.lean": {
+      "sha256": "8a949caba8e4297d767c32a63c79b9bc7f8259eee793b4aa12176027878b39d1",
+      "executable": false
+    },
+    "RequestProject/Construction/Obstacles.lean": {
+      "sha256": "d3f709ee7135d81e3c5c263ae3a54eb4b426db21e515ad8d3c94744292f50b61",
+      "executable": false
+    },
+    "RequestProject/Construction/Map.lean": {
+      "sha256": "df6d19a56794a4e2bf0dd092b0b8eb07560632d9c141fe6af7830b4935cce957",
+      "executable": false
+    },
+    "RequestProject/Construction/Frames.lean": {
+      "sha256": "2b7cd30fe9cd984fe92a72e859551c00e7dcdd12143c9d21b7ac442572f3ea92",
+      "executable": false
+    },
+    "RequestProject/Construction/Good.lean": {
+      "sha256": "5b90898cb69616d82cb3bd96d8886cd2f2a4b4819ba80c140dcef7ef528eeb3c",
+      "executable": false
+    },
+    "RequestProject/Construction/Safety.lean": {
+      "sha256": "4ed02ee36b5cf073ce0b20e8e0ad012b96aa3bb917bc756b1059af636406829e",
+      "executable": false
+    },
+    "RequestProject/Construction/PyrCell.lean": {
+      "sha256": "6d10e9c07d294d3656aec7cdd8bca29ad47d8bba318907583b36c31df009038e",
+      "executable": false
+    },
+    "RequestProject/Construction/Local.lean": {
+      "sha256": "61ecc909996d8633c4bcb4fd4af40a997d53874177cb2149c0cdf731ddffe067",
+      "executable": false
+    },
+    "RequestProject/Construction/Assembly.lean": {
+      "sha256": "fd2390ca67f8ac59fc3893e69f923984648d0cc2c3d8054787ffd22adb6d563a",
+      "executable": false
+    },
+    "RequestProject/Construction/InnerCell.lean": {
+      "sha256": "fbd8e72c32d786e8e29aeac9a11c0383724cee10a24aab437deef5df8947fed3",
+      "executable": false
+    },
+    "RequestProject/Construction/Layout.lean": {
+      "sha256": "b95a49c0973632c7a84fff1a97e5454a86f96cbbb3eabef6d873d9c80a475523",
+      "executable": false
+    },
+    "RequestProject/Construction/PyrAlg.lean": {
+      "sha256": "34b006b7a9affa2dade42589b0d9f8e4d35ee170e9e9a5941ffd32146484f9a8",
+      "executable": false
+    },
+    "RequestProject/Construction/CellCount.lean": {
+      "sha256": "5fcfa00409e54a2b813353e9639c247b1fb8a6949e5ef5548e9fec10f4017be1",
+      "executable": false
+    },
+    "RequestProject/Construction/Indep.lean": {
+      "sha256": "0561ef01fc23e1e2532fbe61da7ca210f9982e5142adffb6d587404f5e1c661a",
+      "executable": false
+    },
+    "RequestProject/Construction/DetLemmas.lean": {
+      "sha256": "49e09f6c243340bb926fb25970d17c0d77913b44a22a74b8640e27548a660f5e",
+      "executable": false
+    },
+    "RequestProject/Construction/PyrDet.lean": {
+      "sha256": "a82a09696ecc964b33a4ec1c3f2534420b7bfa1e3a2c3f15f3775bfe32505f52",
+      "executable": false
+    },
+    "RequestProject/Surgery/Shift.lean": {
+      "sha256": "a09d24f3acc57fd00bb268b6b5fa10aa6e52e71a16259dc068a96eea812b4dac",
+      "executable": false
+    },
+    "RequestProject/Surgery/GLPath.lean": {
+      "sha256": "268f9226af29f990a2728fa2e668db39c79e5396262408830b0a72ebcc1415bf",
+      "executable": false
+    },
+    "RequestProject/Surgery/Good.lean": {
+      "sha256": "4d18d71a74c08ba4ecc753f07968949be028dfacb1c89699a9a9c11e1ae7543e",
+      "executable": false
+    },
+    "RequestProject/Surgery/CancelGood.lean": {
+      "sha256": "71897114df6299e980ae28bb24b69e30957aff4ee0d2f3e90b363fdd805994c9",
+      "executable": false
+    },
+    "RequestProject/Surgery/Separate.lean": {
+      "sha256": "3aa766f46450f55992c702d4395fe3f4f26ca7b750d7c731f3dd5c21c04f9d58",
+      "executable": false
+    },
+    "RequestProject/Surgery/ZeroSet.lean": {
+      "sha256": "d8ba85d3686bd1e86e2f34716d0a5f7f3d6533de288b7d8cf317a53e38c6a1e1",
+      "executable": false
+    },
+    "RequestProject/Surgery/Frame.lean": {
+      "sha256": "20ac565cef04550314fb3bae5c4258d3b4c53bcf02ea3ee7d96e5840230f2914",
+      "executable": false
+    },
+    "RequestProject/Surgery/PathHomotopy.lean": {
+      "sha256": "48bf6f149a4822a303d38ebda37189ed84063f487fdcb7067f75144a815e5d00",
+      "executable": false
+    },
+    "RequestProject/Surgery/Core.lean": {
+      "sha256": "11e0eb3c14515214a6c60914744cd8403950c798affb7a691ae19f6a9702e8ea",
+      "executable": false
+    },
+    "RequestProject/Surgery/Avoid.lean": {
+      "sha256": "41a786506e38ada8bb35eff92b292fd8f3abe1da03ccd5f7a66f0f0b575f1dba",
+      "executable": false
+    },
+    "RequestProject/Surgery/Cutoff.lean": {
+      "sha256": "9f746d079dd25d6e0bd3dd383002aa6055e81463e7bdc119394ab7c5b726137b",
+      "executable": false
+    },
+    "RequestProject/Surgery/Clear.lean": {
+      "sha256": "c1c6bcbe47fc236eca74bae0456a04c758541ea22e8efc19c7ac9484cfe020dd",
+      "executable": false
+    },
+    "RequestProject/Surgery/Main.lean": {
+      "sha256": "d2dc0e07bda30f3e2b7365caaca643628df76ff6964373120d47b8225a0129fc",
+      "executable": false
+    },
+    "RequestProject/Surgery/ShiftGood.lean": {
+      "sha256": "c8bdeae38ce46e531a09e11a27322d14db90351106f05b9d87088177bc9f6524",
+      "executable": false
+    },
+    "RequestProject/Surgery/Transport.lean": {
+      "sha256": "4836655b8f0b9abc262995aa18adfcfa815c0cb2a937c9cbd9b82f0a724fd20f",
+      "executable": false
+    },
+    "RequestProject/Surgery/PairCancel.lean": {
+      "sha256": "4e06d1cb832f2b7eaa2023d3bda83573f42e3bc95530004da8c1f7363b149e87",
+      "executable": false
+    },
+    "Submission/Model/Suspension.lean": {
+      "sha256": "242342043de8cd04736a670d8d7b9da4f3e20a9fcf40ef0ff06ad8d3dde17486",
+      "executable": false
+    },
+    "Submission/Model/Sphere.lean": {
+      "sha256": "6f9156fcd00d34424e190acec1672624f238baa7f79ef81e6ad943d3c077ef2c",
+      "executable": false
+    },
+    "Submission/Model/SphereCompl.lean": {
+      "sha256": "08f402b0d874a96cdc03e317d6ca10b4ecdbf67a0f53aca444aa0615c6bfdf2e",
+      "executable": false
+    },
+    "Submission/Model/SuspSphere.lean": {
+      "sha256": "868f1afc981a80185a3b2c8009b5d8dacbbe8fdd07ecdd42367fb5f0929b4b96",
+      "executable": false
+    },
+    "Submission/Model/SphereConnected.lean": {
+      "sha256": "45c8dc664a5740c61e6961561f66e44ec185490c9a317b5f791f60bbd164b807",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Exponential.lean": {
+      "sha256": "adf8a4751ca3f9039cfc11a9deb6b6aab37fc3f67ec923b8b02e3a7012f4cd2d",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Defs.lean": {
+      "sha256": "856a1b4250a0a62db14467cd0516b9bf3c19e1e30866d5a0c38cfc84145f2d7f",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Auxiliary.lean": {
+      "sha256": "0de4b575ca5ba1d6e0924c7f779a1f1bf31a688cac846f3fe8afd97c62dcfb3d",
+      "executable": false
+    },
+    "Submission/Cohomology/Singular.lean": {
+      "sha256": "6eb064d17162a000a0a68d5e5efad02ba548303341591ef6297666910dff0501",
+      "executable": false
+    },
+    "Submission/Cohomology/Cup.lean": {
+      "sha256": "df38b38b7c829d626b06cda95141d57251c4f73a7dbfc25b99a36bcd88369f09",
+      "executable": false
+    },
+    "Submission/Cohomology/Basic.lean": {
+      "sha256": "585862ad73f994cc58acd82ef8384ac66d6cdee8f72297acec0b301ba4901c98",
+      "executable": false
+    },
+    "Submission/Cohomology/FrontBack.lean": {
+      "sha256": "ec1bc3c42b4843b1c8420621a06c511ab83e334c3e57ec0be2c7fce7db736aa0",
+      "executable": false
+    },
+    "Submission/Cohomology/Cochain.lean": {
+      "sha256": "496a6200443dc083803219e83c48937d838b9f85d7d9305f000f05a56c2480f0",
+      "executable": false
+    },
+    "Submission/Cohomology/DualBridge.lean": {
+      "sha256": "5d3f795110132a696769ca0612621ff19d9a89e3e356544ad74c90508bf3d6a8",
+      "executable": false
+    },
+    "Submission/Homology/MayerVietorisIso.lean": {
+      "sha256": "7a03a43f880804f2ae6f68c5624e836227030ccd353f96adf26cd336c74121fd",
+      "executable": false
+    },
+    "Submission/Homology/LesTools.lean": {
+      "sha256": "b7e7305dbdc9cafd47f9598d88f48f04fba32e9132dc188660f161df357678d0",
+      "executable": false
+    },
+    "Submission/Homology/RightExact.lean": {
+      "sha256": "b27e6012fb3e3d37571275ba28b35f0b2d1ce3aca48bf92b4110e19500069e05",
+      "executable": false
+    },
+    "Submission/Homology/Homotopy.lean": {
+      "sha256": "b6eb00dc92719de458623e09a9e8e89467a762237e92e6f92714cf3ab0531bbd",
+      "executable": false
+    },
+    "Submission/Homology/Sphere.lean": {
+      "sha256": "ca8c31d22a6d66d4b7c84b82643fcbf55ed2080eb90fc0bc93733672bd49c317",
+      "executable": false
+    },
+    "Submission/Homology/MayerVietoris.lean": {
+      "sha256": "ad4dbc0022d8ec0e83bfa171d4633a9f523a0d04ab46d343492d4fc3c6806682",
+      "executable": false
+    },
+    "Submission/Homology/Basic.lean": {
+      "sha256": "a1875251bc079afbd97c51cd1ea9504478653822943c47741d419fe5b16a2b6a",
+      "executable": false
+    },
+    "Submission/Homology/SmallSimplices.lean": {
+      "sha256": "50160e27a0c7c2a063686bd32fec03eb98bd80da3ecc8b73ecb4970c2d0ac81c",
+      "executable": false
+    },
+    "Submission/Homology/HomologyZero.lean": {
+      "sha256": "39a7845ef249a02268c8c0d84f87c14d1dbec6ad52e662e5125094ba52443f59",
+      "executable": false
+    },
+    "Submission/Homology/RelMap.lean": {
+      "sha256": "55e6fc86770988e73c3617a54d6c969a108bd8cff7058164599e5f800d3adaef",
+      "executable": false
+    },
+    "Submission/Homology/PairHomotopy.lean": {
+      "sha256": "6d5b4839285f7046d257d1cf6722c63959b301d8de54dbad7364146b97c9f7af",
+      "executable": false
+    },
+    "Submission/Homology/SphereZeroSplit.lean": {
+      "sha256": "e106822d1e23a4aa6b7171d097dc5e96ca81ea4ab450b367f4b08cc692a50459",
+      "executable": false
+    },
+    "Submission/Homology/Pair.lean": {
+      "sha256": "d8e2ab86985ec6f2a952241ece008d6c601a4dec3020bc64fa6b3f1bb039ad7b",
+      "executable": false
+    },
+    "Submission/Homology/Contractible.lean": {
+      "sha256": "274480ef8a95f84776d64ec1bbb730c1c4f3cdf306edc2614298ece4025314e6",
+      "executable": false
+    },
+    "Submission/Homology/Excision.lean": {
+      "sha256": "8f2f2379ba1c59f861766cd3460d714ca6e3a83db71e4f0bdb1dbf0a5a014cd2",
+      "executable": false
+    },
+    "Submission/Homology/Point.lean": {
+      "sha256": "2723035f27cf0d2dfe30667ccef3d490b3111f7521485613c6df8b81ee84034d",
+      "executable": false
+    },
+    "Submission/Homology/MayerVietorisLES.lean": {
+      "sha256": "fe84c128041923969e8441b6790f16591da57cc152af4ea6aef46b112747cd12",
+      "executable": false
+    },
+    "Submission/Homology/SphereZero.lean": {
+      "sha256": "85ee7274303f2556cbc45657f1ae9244f05d3a0a39ada6a0803f44f20af8eb99",
+      "executable": false
+    },
+    "Submission/Homology/SphereOne.lean": {
+      "sha256": "285ae53976f30764301c0c19ef11c39bea539cd6690220559fb6100e0dc5a8ce",
+      "executable": false
+    },
+    "Submission/Homology/SimplicialSplitting.lean": {
+      "sha256": "b9f4407f6e6f1c16b432480656285232c886159dd3cc910e0f9e25ab237c723c",
+      "executable": false
+    },
+    "Submission/ForMathlib/SimplexModel.lean": {
+      "sha256": "466ddefdc2cef589608aac351cc1e5852942bc048a184433c9bf58c3f1a357b8",
+      "executable": false
+    },
+    "Submission/Approximation/Estimate.lean": {
+      "sha256": "f835e2b6111fb884b710fbffa496614cf66cb8406760e5cbc49f956b925807ad",
+      "executable": false
+    },
+    "Submission/Approximation/Approx.lean": {
+      "sha256": "87a90e3b2d6ce55632c193c426000124ce8e0e88920c4d8a80f8466af32a3370",
+      "executable": false
+    },
+    "Submission/Approximation/Simplex.lean": {
+      "sha256": "a464afc77579d5090fa3600da2b620d91de547f6a03913873ffe8c3ba0bb421c",
+      "executable": false
+    },
+    "Submission/Approximation/Boundary.lean": {
+      "sha256": "98766733743c047cd757503d454cd2722041fb428de268f8e8532d8f7cd9745a",
+      "executable": false
+    },
+    "Submission/Approximation/Grid.lean": {
+      "sha256": "825de5807f5714581f121682d810ce0f8a4421acbf2c89d32fd889279083aa98",
+      "executable": false
+    },
+    "Submission/Approximation/RegularValue.lean": {
+      "sha256": "1d7dd1c3e1441fa1a6d9d3edc80f2cf4f19df74ad387fdda9b6424e7c7c85a44",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexGlue.lean": {
+      "sha256": "ccd88f3a08a9c1be42bdb3235fed7706dc92b57ff427d5fe0ae838ab9c1fb506",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeSimplex.lean": {
+      "sha256": "cd9acc601afeaac94bc552ba5657ef5eb6e629cc9aacfa24f3f55e71cbb85290",
+      "executable": false
+    },
+    "Submission/Hurewicz/AbsoluteNaturality.lean": {
+      "sha256": "9effe223bfb3a784e4febca185e4979edc8684ad1c24dc52b847aa387661c082",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeSurjectivity.lean": {
+      "sha256": "6cda74458961aaae96dbdc332fd0d138036cc5da0be5ac40e1e2f8957e0ca7be",
+      "executable": false
+    },
+    "Submission/Hurewicz/AbsoluteSurjectivity.lean": {
+      "sha256": "ee0c4bad9f04b0dba3c6e96bf7d89854e12074dbceddbfae1c166ceec7fc2495",
+      "executable": false
+    },
+    "Submission/Hurewicz/StickSimplex.lean": {
+      "sha256": "f8a6c770bbb35ea8f5b9c2d5c137fc3df5257d7276978c53c533f35c1be854fa",
+      "executable": false
+    },
+    "Submission/Hurewicz/SmallRelativeChains.lean": {
+      "sha256": "2cbf22b184d86301007500333bed74bf0c39ff9c65bb778b62ca96536972efed",
+      "executable": false
+    },
+    "Submission/Hurewicz/Compression.lean": {
+      "sha256": "ba667979a7f9c76d67fe8626bafb150ce2e1ff89554ccf2d8739088251a92d7c",
+      "executable": false
+    },
+    "Submission/Hurewicz/AbsoluteIsomorphism.lean": {
+      "sha256": "38593b4be1b755c3a8df8b927833e5b5fea7cf4808d90f62644e2b6ba9b41481",
+      "executable": false
+    },
+    "Submission/Hurewicz/Deformation.lean": {
+      "sha256": "2344d52e555a3db70aed27b21c72c872cc152cdcff30d373d474c5e292274508",
+      "executable": false
+    },
+    "Submission/Hurewicz/CubicalBoundary.lean": {
+      "sha256": "4647b010498d1633b49becad7b7ebc3645e31983f45ea8e0caf35e5a28b128b5",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialRelation.lean": {
+      "sha256": "fe108c406c014380d5439d0abe2d67a4fb1951de21beb32333b9e49d6e9aeda3",
+      "executable": false
+    },
+    "Submission/Hurewicz/AbsoluteComparison.lean": {
+      "sha256": "1f289011473ebf954dcf84944a190b317dd1b9bc94f6cfc9d4fc5495655a1145",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexCubeOrientation.lean": {
+      "sha256": "6256a48e3b3fad46d0b4290cfbe515bdb2b973f0bdb977a07cf45a371b450d2c",
+      "executable": false
+    },
+    "Submission/Hurewicz/DeformationClass.lean": {
+      "sha256": "5013c9f98a39a4ee175601fd45782508b2f43a733f9ce34da30eb3003cd54443",
+      "executable": false
+    },
+    "Submission/Hurewicz/NormalizedBoundary.lean": {
+      "sha256": "09dfb17f2a430c6d3e746b89e3e990cc59ef0f9c6caf5477a59cb00e4e17146d",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeRepresentatives.lean": {
+      "sha256": "cc1bde631692117b28601667446fcdbcbcd7e90a5fe189fcb095d9182ded2239",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeSimplicialDescent.lean": {
+      "sha256": "e9497f5714183034a9cb9c97fa5cefa994c6fdf8356ec8c393c107cb4243e3a6",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexCubeClass.lean": {
+      "sha256": "3a890cc62fb6019094d20d7bc13498b88cc933aeb3678590752adf430f54607b",
+      "executable": false
+    },
+    "Submission/Hurewicz/ConnectedVanishing.lean": {
+      "sha256": "24aac2e1008251713424670497d103cdd98acadbae2085825eb236a2d4f76f2a",
+      "executable": false
+    },
+    "Submission/Hurewicz/FaceHomotopy.lean": {
+      "sha256": "79e557cb34d1f5b8a11e856b2b2b3b3f256506f779ed7263bb22146ee2898d86",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexHEP.lean": {
+      "sha256": "356fbbd222fbe429bd5aadb2a7dafdf063b356870d41fece9935c77cd02d68eb",
+      "executable": false
+    },
+    "Submission/Hurewicz/StickBoundary.lean": {
+      "sha256": "4fbdf30082abf819b5352da92a5209d39acc5925fc19b74d3953997d23a6fc66",
+      "executable": false
+    },
+    "Submission/Hurewicz/CubicalCollapse.lean": {
+      "sha256": "1e44cab50073348061a2a91e99c2555ce7c7b7bd8b9478442981fb322e0899cd",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeMap.lean": {
+      "sha256": "540a0bc95fec8a82f96688878cc1e428756ad027d9c9d2c500123396759dfb17",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialIndexShift.lean": {
+      "sha256": "bdefa57323d17f3d8b6cd525818c781a95f77fd2744caf6e2485f0504857f2f5",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeNormalization.lean": {
+      "sha256": "0e2c947641ece36b25ffd6dec23fe919467fb371210b5ce530cf4272aea9f8fb",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexBall.lean": {
+      "sha256": "ecc3bf8472ad1dd058e3463720788838de5417fb9cea36a155359e8c2dafa5fe",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexHorn.lean": {
+      "sha256": "5e0822ae2f1d0acdf03bc46ab6e7007a4adb88be612fa75ca6c65270c7c1810c",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialRelationAt.lean": {
+      "sha256": "245aaa6f2da40d5431dd37f6499ae7a16951cf703e86daec605948a15f6ddb72",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeAdditivity.lean": {
+      "sha256": "1a9fecdb9b7ebd00cbefc44f5b9bcccc79d05710e890688e91f2c303fa594acb",
+      "executable": false
+    },
+    "Submission/Hurewicz/SphereLoopBridge.lean": {
+      "sha256": "009a0d126049cb3d8a619cb77bfdf7bfc9a0dea7303bbac063757ca752c19c7d",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplexDict.lean": {
+      "sha256": "b8925f538bd3a393dc914477d224e0e8bea4b3759ddc9c10c2fdf831bcc16036",
+      "executable": false
+    },
+    "Submission/Hurewicz/SingularKan.lean": {
+      "sha256": "93fae7ab700ee37ea5f0c32f2c0b549c6a3b8acb7c15d602b821861c771974a9",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialAddition.lean": {
+      "sha256": "2f0595767a0cb0a86d61a5d18a2128b08cc181d5a230e91cd17b215f6bceca0d",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialTelescope.lean": {
+      "sha256": "eef6f76333ff289b8f4c4ad10225a401735fb1e01781f2ebf1e13d78d8fa3aa8",
+      "executable": false
+    },
+    "Submission/Hurewicz/NormalizedSimplex.lean": {
+      "sha256": "c877e10cb05b0e005471e0bfef122d40f1c017677362ee6902e4f06f622f7e48",
+      "executable": false
+    },
+    "Submission/Hurewicz/Prism.lean": {
+      "sha256": "be590b39f296784e3d29334012c95c521e032800d5b4a2ff0106cce92fc59a51",
+      "executable": false
+    },
+    "Submission/Hurewicz/Tower.lean": {
+      "sha256": "d80e322d418ecbe22545f9882f9867ac4e79a02d3f50ad17ec8593222a8d0526",
+      "executable": false
+    },
+    "Submission/Hurewicz/SimplicialDescent.lean": {
+      "sha256": "7303614c336f51eadb020cafcc0455425a51f897a4352ab0240b63eff7e087bf",
+      "executable": false
+    },
+    "Submission/Hurewicz/RelativeBoundary.lean": {
+      "sha256": "1d43eb940d5d61e7c3154cb5c27f5c91aad39b0deac7a20726b67b9d9b931783",
+      "executable": false
+    },
+    "Submission/Hurewicz/CubeFundamentalClass.lean": {
+      "sha256": "4343db59507123f251400ca192cecdca0d40b5759da317d8b233697be7ac54fa",
+      "executable": false
+    },
+    "Submission/Hurewicz/StickSphere.lean": {
+      "sha256": "91c59dedb8c4766c7852ce741d8acb631bcccaea23457c82ae68c680eddee81f",
+      "executable": false
+    },
+    "Submission/Hurewicz/CubicalShell.lean": {
+      "sha256": "f22fe7921ef420e3233d6d4938788cd1d4c823867cbb9915de7cbeef8d75734b",
+      "executable": false
+    },
+    "Submission/Hurewicz/Vanishing.lean": {
+      "sha256": "aa1a7fdbbab839628e725187095b0f03e53d0a7cdcac0fc3fe9f40a48b6441c1",
+      "executable": false
+    },
+    "Submission/Homotopy/ContractionData.lean": {
+      "sha256": "e17a489039652f07bf0874c009645ae3365972e40e7860bb798a519612356464",
+      "executable": false
+    },
+    "Submission/Homotopy/HomotopyLesTools.lean": {
+      "sha256": "ab90e41aab04aae8713bd60c1e79a2d1584e7f68231a8f10194f9fa3f45b694b",
+      "executable": false
+    },
+    "Submission/Homotopy/CubePair.lean": {
+      "sha256": "7df4ea97ad680edb757e77197ed1b67e4ab84d6096238482e383c4f0fe55aeb4",
+      "executable": false
+    },
+    "Submission/Homotopy/FibrationLES.lean": {
+      "sha256": "894aaddf7665f454fbb1fa2442256f29b07d14ffabfa33db12ecb4ebc88ec838",
+      "executable": false
+    },
+    "Submission/Homotopy/Fibration.lean": {
+      "sha256": "59b8810ec109872b394cf5e030f3145d39666068487b0f76861b35a09f66bde4",
+      "executable": false
+    },
+    "Submission/Homotopy/RelGroup.lean": {
+      "sha256": "adebd072d37270a777a0b922198a1a1cf00200c9e3474154579f5f6363b70134",
+      "executable": false
+    },
+    "Submission/Homotopy/RelMap.lean": {
+      "sha256": "3869f31cdecfe10dd7d2e52de54fb9adec8726bf7c354cc6bdaffdfbea91a778",
+      "executable": false
+    },
+    "Submission/Homotopy/DiscTrivialisation.lean": {
+      "sha256": "9d2a14d8180d344ef33a9061dfd661c2b3605bd9fc73e745648b6cf7010e5e9e",
+      "executable": false
+    },
+    "Submission/Homotopy/SingletonPair.lean": {
+      "sha256": "9affeed89b69d695f6c520080cd2b00f6bc496a31f9a59e8bb9ba15cd8ca9c25",
+      "executable": false
+    },
+    "Submission/Homotopy/Connected.lean": {
+      "sha256": "9aac78090c2e34e60f4d3384098dbc73161bef70b97a70ea33487a5b805691bf",
+      "executable": false
+    },
+    "Submission/Homotopy/PathFibration.lean": {
+      "sha256": "7ea0fda275c3577462606a7f951f350ed455b9cf7de1f6b53c587019d5235297",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/DiskHomeoCube.lean": {
+      "sha256": "7e6db337624978596e564c8c5b68de22fcc3b14983fc7e79a1e8bf6e1b4e78e0",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/UnitInterval.lean": {
+      "sha256": "72bc51b04767de968ce9b5b3dd3d5db5e6af7442fd3ee8a3b2b509045e1888a8",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/MappingCylinder.lean": {
+      "sha256": "ba40a9d703e2727bd90575f0dc725239afaa35b47cac8564b5f59b6fe2a840f1",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/Cube.lean": {
+      "sha256": "fd1b23241980ab683e6e3c3c9ad5bebaa0f0c29fc595ba08386d1b01f13e1b31",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/CubeBoundaryMap.lean": {
+      "sha256": "447be30c9773590d58ec02bc2d067306ea7016a9184d4bdf3ed01a59c6c471b1",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/Jar.lean": {
+      "sha256": "770f3ad68447c17332f54e023ffe090931375507a83c8b268ae700f632e9b3f1",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/Pushout.lean": {
+      "sha256": "88dda7d3035d086076de16a3694bc6513ce624b497cb57d7b637ca804a9b4929",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/Disk.lean": {
+      "sha256": "3b34a8cc35355efdfbfb0fabd4bf07b8d36482893035230e9528f818a5f87875",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Shapes/Maps.lean": {
+      "sha256": "e6789af046cb136beea20bcca2faedcc4dd556d0db22dc67db5b7fa5d556308d",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HomotopyGroup/ChangeBasePt.lean": {
+      "sha256": "52377e71cb9532ea615759185789bbd5e3bb5c177a4902327c1d85e6025d3ef4",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HomotopyGroup/InducedMaps.lean": {
+      "sha256": "e8458fefbf7d78e04ea7a3fcdaeb36e681438214a05b85781104b11243c8c267",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/CWComplex/Basic.lean": {
+      "sha256": "7c8ab1d337c627fe3ac1bca150fa98cf594372ecb90aa780af2e46254e056889",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/RelHomotopyGroup/Compression.lean": {
+      "sha256": "88b026b1d06c3adcb5048bc306939983b0031e53a7ac3ba67fc928a402ca7d68",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/RelHomotopyGroup/Algebra.lean": {
+      "sha256": "8e7bc99cde2288335b956e662bffb81d377eb134b90b4333917e5e797906ef78",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/RelHomotopyGroup/LongExactSeq.lean": {
+      "sha256": "54ead9555fd5d474b485d446fe0ca3e3b4f068ca336c26091c8e3c68725dc549",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/RelHomotopyGroup/Defs.lean": {
+      "sha256": "5ec9b5aad404044d5eb7000028ed5ca2cceb5b27bf1da23c93849ff9fdb06a31",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Compressible/Defs.lean": {
+      "sha256": "5b31c502e9c9532fc2fd6cdfaa96584074ead4478e1038ad294df270cd7fb000",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/Compressible/Disk.lean": {
+      "sha256": "9d56779efd4dc5d92fbe8b971807fe2d5862247042c7f18ce3106f0eaf81b98f",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HEP/Cofibration.lean": {
+      "sha256": "b7af894941b5667ace22974a661e78f3c1a2d13b3b2a9b8a9b4e07e4349f9610",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HEP/Cube.lean": {
+      "sha256": "ee5bf7f2b032d9fcd80fb5188b6fe198b038e91021429390351a37d44f67f72a",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HEP/Retract.lean": {
+      "sha256": "eafd421c6ac40278885a46ad6ec834e9fa94f9603d7d6f7a8bc205874ce27cd2",
+      "executable": false
+    },
+    "Submission/WhiteheadTheorem/HEP/CubeJar.lean": {
+      "sha256": "192a128918a2f77c58b9253ce27edb996162b9c8c77f2dc57d77e498aaefb0b2",
+      "executable": false
+    },
+    "Submission/Homology/UCT/HomologyClass.lean": {
+      "sha256": "14f986817b3e8233da637beee4fbf6e14e007ae1f6068284b4ee9a6abf78e133",
+      "executable": false
+    },
+    "Submission/Homology/UCT/Dual.lean": {
+      "sha256": "423d642cae7a41e8f61f743251446443b582024be22efbbc84182b6a9c1d93e3",
+      "executable": false
+    },
+    "Submission/ForMathlib/HomotopyGroup/Product.lean": {
+      "sha256": "64e89ac0403edf4a1c671eba1f2dfa2517993d2ec7bd169916a311d9be227858",
+      "executable": false
+    },
+    "Submission/ForMathlib/HomotopyGroup/Map.lean": {
+      "sha256": "d6176d352b4248a2ba6d2ea1128738a5e365e37d461ba0d4fd2e0f4b034a8542",
+      "executable": false
+    },
+    "Submission/ForMathlib/HomotopyGroup/Homotopy.lean": {
+      "sha256": "b03b5ff2639ae418aef79cd9a0100cd281d5465e34cab5b181bc82eed2b7dabc",
+      "executable": false
+    },
+    "Submission/ForMathlib/HomotopyGroup/Basic.lean": {
+      "sha256": "d5895cf98cb87ada606b804d011b22dd46ec269e575c3e91edd8407caab2e24f",
+      "executable": false
+    },
+    "Submission/ForMathlib/HomotopyGroup/Contractible.lean": {
+      "sha256": "ac9fcdbe64408c4af79ce3fe8bd6577ac6d736116a958f23e4e5d2a378665e7a",
+      "executable": false
+    },
+    "Submission/Hurewicz/DegreeOne/Affine.lean": {
+      "sha256": "67903aafe82919ba76c25b8cdbb334f19f484f5857ba45218a16ea24b7b98069",
+      "executable": false
+    },
+    ".github/workflows/palomar-preflight.yml": {
+      "sha256": "5c32ed3a0a5d42e64d3876787e28ad9dbacc60014a7bc30eeca1d9b47251f22e",
+      "executable": false
+    },
+    ".github/workflows/verify.yml": {
+      "sha256": "fb20a7a73eedd80c7e25c5fb43e3cee1e55040857dee9385e88df4cd4a430ada",
+      "executable": false
+    },
+    "docs/pdf/LICENSE_BAKOMA.txt": {
+      "sha256": "2f7f289fb0c865e70e19cf933ab03c398fc6c013b765c9a3e05374f43b49caeb",
+      "executable": false
+    },
+    "docs/pdf/LICENSE_DEJAVU.txt": {
+      "sha256": "d75938dec098f06f0ac3c00853065d94f020be1c3c62ef1dc2975ba15b4d9b0e",
+      "executable": false
+    },
+    "docs/pdf/LICENSE_STIX.txt": {
+      "sha256": "bab3d31dfef07f483624f2f65f2711e76065b8e7273278b1c071ede1041c9959",
+      "executable": false
+    },
+    "docs/pdf/README.md": {
+      "sha256": "b7fa738dee549e9eb8c74614f0e493b7c319d19a44c8b2e2bfaeca1b2b6dfe76",
+      "executable": false
+    },
+    "docs/pdf/build_companion.py": {
+      "sha256": "636802069af5a25eb6be96dcea8be73ad3df2266ee311dac2527651533b850f6",
+      "executable": false
+    },
+    "docs/pdf/requirements.txt": {
+      "sha256": "8eb50c19dfe247bc399f067bd3141e63f1eb4356570784266ee7c279541a2725",
+      "executable": false
+    },
+    "docs/third_party/hatcher-at/PROVENANCE.json": {
+      "sha256": "92a5cd393e986a7f34e0dd6efb0597e9d07007aafc90b583136454b2a1ea2597",
+      "executable": false
+    },
+    "docs/third_party/hatcher-at/LICENSE": {
+      "sha256": "b40930bbcf80744c86c46a12bc9da056641d722716c378f5659b9e555ef833e1",
+      "executable": false
+    },
+    "docs/third_party/hatcher-at/AUDIT.txt": {
+      "sha256": "f64f7d6d96000cd142680d3e0d187c8bd5ddf1c1520e88c0f1134d4b9dd7b0ee",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/PROVENANCE.json": {
+      "sha256": "fa2a7c6c78b4afcd6e9f5b56436cea6c2e98590665e7d49b90d4cb459ff525d0",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/ABSOLUTESURJECTIVITY_PROVENANCE.json": {
+      "sha256": "d851997013040a7840f280fe09a9c7f42836e55d823f93eb8e2e84dbb607d0e4",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/ABSOLUTESURJECTIVITY_AUDIT.txt": {
+      "sha256": "efee1b3e073c0d257e330c6f8ebedfeadf7f477d1a3cfbc29190c98503aa75e3",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVE_GROUP_PROVENANCE.json": {
+      "sha256": "9b5f1595b742182983a57645eb62c99f6536fffbc27f2369ecd22b6f10b066db",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/LICENSE": {
+      "sha256": "f29dae1e11ec0f9c3c6c29a5358c1703c936f3f2a2a16367ea3259ba9d3f71a2",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/ABSOLUTEISOMORPHISM_AUDIT.txt": {
+      "sha256": "26036c83015965a6be8c4873bbe6acf365307a4b6b2f4688e76ba2f3bb6b22f1",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/VANISHING_AUDIT.txt": {
+      "sha256": "93590891f9517d820e5b22e2b8b581b2844c9bacedf62459eec6038d0fd1061e",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/FIBRATION_PROVENANCE.json": {
+      "sha256": "7975b7543121670403c7bdb0d67c43848f712a4b2ece72c121f07bd87c2fdace",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/CONTRACTIBLEHUREWICZ_AUDIT.txt": {
+      "sha256": "cb91913e057131e402854c4bdd892b584848a4c37325e975a910fc752ec272c1",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/PATH_TRIVIALISATION_PROVENANCE.json": {
+      "sha256": "44314a0d7f992cfa7171382cfe40e2a2f4d23f53a3b92720bb436a5a99cbc009",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/SKELETONCONNECTIVITY_PROVENANCE.json": {
+      "sha256": "58787155d57d2b0a8089bc6c074edde34fe2dac4bd9fa1fc5334c4e3b2053407",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/VANISHING_PROVENANCE.json": {
+      "sha256": "72d9033ad0bc68bd47dbd9f7e540fdb3b1faa971f37f32263698d6e855e76147",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/ABSOLUTEISOMORPHISM_PROVENANCE.json": {
+      "sha256": "2790fe29de1778edb2fcc0aa2ce5adc0f34d7760602bfc97f6054adeef7eb51d",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/SKELETONCONNECTIVITY_AUDIT.txt": {
+      "sha256": "cfc90ae5d972030187eb8d3a707d88327e7e7b7aa615e3c48d07ae651b52dcc8",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVE_GROUP_AUDIT.txt": {
+      "sha256": "e2d5ed6a7bc4b5c61edda029d4094d86acbae4aea403bc5cbd4ddaa65fbda2b2",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/LOCAL_ADAPTERS_PROVENANCE.json": {
+      "sha256": "934d8a3db4f957ef739fb4e831e0f79480dd57232a544b999a9bd520901ebc58",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVE_MAP_PRODUCT_AUDIT.txt": {
+      "sha256": "132b279f4e2af804614c2111de2c5c505fc4cf5be5f327355ecf89cb062487fb",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/PATH_TRIVIALISATION_AUDIT.txt": {
+      "sha256": "d7ff8e10ecd4f0f286db0bd4482d09802b2487ac0f247801d386259706bffae0",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVEDESCENT_AUDIT.txt": {
+      "sha256": "7b1f2a100be870296c66fde950501efd817701eb78fb8755bda0d98048975ef6",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVE_MAP_PRODUCT_PROVENANCE.json": {
+      "sha256": "031f9247de8a02ea64c3a62aebc646f11b76bba7a25d0deb586a2febc71fe7c1",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/FREE_RELATIVE_CLASS_AUDIT.txt": {
+      "sha256": "76ba0be156888c7bd25d5e8817ae5faa2eae628411d7c6bbe0f05281a909a95a",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/CONTRACTIBLEHUREWICZ_PROVENANCE.json": {
+      "sha256": "e3a9ddaf99398a259e3a72ac01fe76b8b98fab99d8fcafdb660548d189fd9636",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/RELATIVEDESCENT_PROVENANCE.json": {
+      "sha256": "0fb7437faf0d58cae93a7bf326f45380cbe8292345cdf277438c78a804a93a1a",
+      "executable": false
+    },
+    "docs/third_party/homotopy-groups-lean/AUDIT.txt": {
+      "sha256": "91e7943795d3e27749d397bed707cf21efa52092a4105b4ae3a30d2c16328d76",
+      "executable": false
+    },
+    "verification/original-specification/Challenge36.lean.txt": {
+      "sha256": "cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05",
+      "executable": false
+    },
+    "verification/original-specification/manifest.json": {
+      "sha256": "9aa2d1ec8bbd305ada0edac899602cda92e55828c7d8ce8bb7c12ddf2edd0b18",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticMeridians.lean": {
+      "sha256": "49e2cae57f623d6221faf8656867986c3c4df1563f2b9655bf909cee3d470dd0",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OriginalJoinCoordinates.lean": {
+      "sha256": "35f18867cd4f320fe43b2b086429d123d3af9587f5cf6e60a10c9df923a4a778",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingCylinderConnectivity.lean": {
+      "sha256": "c3cef9f43d24295c1a95e8da67914497773b79093dd40449da9d5963944dcb33",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FibrationRelativeHomology.lean": {
+      "sha256": "eb406eab6df73e6a52bc9fe484d91dd06715260a1bfc26e2c6bf2f9c4cd14a78",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticStratumHomology.lean": {
+      "sha256": "15f987cd61e3c6f574f1b52f746f8b27e2f913b4c59ad92caf2cd29e4f49f067",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductSphereThom.lean": {
+      "sha256": "b4c3cf51c9146bbf1af6f5a60c4d27001898555ba1068396d05d9a6ac3cae898",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopProductHomology.lean": {
+      "sha256": "d5e0dffe67d4223a4d563aed282c88d3f0062f83986e9351b17a907d7b354e91",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PathFibreEquivalences.lean": {
+      "sha256": "bc42e89a8e9a9f585e0497caac2249a158b1f7b00d172eaf6d0e223c0b35d8a6",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/EquivariantJoinStep.lean": {
+      "sha256": "77bb628ef301a8c0589bf0eba0ceef7694aee8467142387144a9e4d042bfc9c4",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RankOneSplit.lean": {
+      "sha256": "10fa39764394249eacffd5e801a36acf49cf8acdb9362e30643354e3d413366a",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticDeletion.lean": {
+      "sha256": "09ad063265c928e78dd879afe7f75b815f1234823fbeb69eb3bbd897b36b2476",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeHomologyConnectivity.lean": {
+      "sha256": "283b3721af387f1127117445d3560560b804cbd8004d35292da53b286c38d9c2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductSphereKernel.lean": {
+      "sha256": "5f28ec6e5dea639f52ff234ba45eccec6e06f96edb73f6544d1ec17087d12493",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConnectivityTransport.lean": {
+      "sha256": "d4831fb6eefeee737c04accfa7a682e21e0aa6f8813ab5917fcea4b6f3bca971",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteLoopModelHomology.lean": {
+      "sha256": "0f576acf1c58348a425b4e99732299209b78522c88b2dc7419c1280a3b929b87",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/CubicalCut.lean": {
+      "sha256": "49f092e17eb5abcc5fe9aa865d0a09058ac9e3466d7ac3fa427b0e54180bb18b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/UniversalSimplexAddition.lean": {
+      "sha256": "f3da86bdd41db5a0b46a158d16c239a419117706db41abef618b55b5fac4a2f5",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetFibration.lean": {
+      "sha256": "2b18ba6c05438e96838b35e2d44242a58b351040296460d48151b92565823c75",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairNeighborhoodDeformation.lean": {
+      "sha256": "d7deb92f074bb11ab7fa9c99220442140944d6aadd114fb68ef181f692f54446",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ArrangementConnectivity.lean": {
+      "sha256": "2e7077683f36b93d50324bb6cb6be11760df3b5c048e9eaa429c95465832be0b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearTubePair.lean": {
+      "sha256": "a566115760852d589f0e8b81dda4dbd051cabe843ad509c01e2f4b54b49e9cbe",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LocalLink.lean": {
+      "sha256": "a1e3b536b324eab30b1d8b74bd434eca6e91e8a8fa96611c5dfc3367cf5d69f3",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/DimensionEighteen.lean": {
+      "sha256": "24f45bfe59787b9308d242083be6163f7852abaec0bc2565cd90fafdaeac7ad8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetCollapseModel.lean": {
+      "sha256": "b06517bf465c6e4f8f0fc519ce0d00980a55ecc615618c6abd50ce63f7a3da5b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteReduction.lean": {
+      "sha256": "353cc60d09f0518369641700139ae6e5987567f26ac796057b436489ad075ccb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopProduct13Homology.lean": {
+      "sha256": "2a45c7135d609df62004c92f05a8e06786e1b32a2f532f189fa81b0a6d13b627",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ArrangementLink.lean": {
+      "sha256": "8ded9c750872b82aaee31ae066b9285af654ed6dfc15d3c7ffe03a33af4b0512",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteProductTopology.lean": {
+      "sha256": "ec4e6bb740213c7a8a4df49790eb092d9fc4795284c00c66c4a9731468c15627",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteComplementCoordinates.lean": {
+      "sha256": "f995551351918a1947615176a665f772ea014ea26e2cdd81900d61149395a30e",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/IteratedJoinCoordinates.lean": {
+      "sha256": "3d6ab03a87051be3b88edcb650b5039c1ffad4ef9c4afdadd7474ea6bb8e2431",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingCylinderHomology.lean": {
+      "sha256": "23d9028f6536de9e0e8a247a7700d8c0677d87fd26aed624de747844e14bcaee",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductZeroSphereKernel.lean": {
+      "sha256": "fcaa4079e1bcbdf0dbe707f70f5df3e0656908589243b942fa327a6b50c5cbe2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/HomotopyFiberFibration.lean": {
+      "sha256": "2809269edf36c0444ebbe0c8f48a43b3e48e6e5477d3891c7f7f8418d7cab792",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeFaceDiagram.lean": {
+      "sha256": "e0bc32d76c0f707308589cb2abf348477b2bcb46ca7660f11be9f1bea64377f3",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairGoodPair.lean": {
+      "sha256": "5348ed5f0b1aab6741178380d39670b48a5596c7dc6e8f1c213423eb9fd425b9",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticMayerVietorisSets.lean": {
+      "sha256": "fd27bf9f446eefcf2883f91510e61c59330f9579da595b60796d65ebc5697605",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/BinaryProductHomology.lean": {
+      "sha256": "c777c0813d84e843a9e61c0e7f218300d62399fc4536023e1ecad20e11a663e4",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeHomotopyBasepoint.lean": {
+      "sha256": "402d2f65241f88b52f8669cf3ea414456edd81e11c28db777c0bb3f1f47ff113",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/CommonPairHomology.lean": {
+      "sha256": "f3eba4b5dc9c145413c103774d06b77dc97bdb0ecb18e96b559c662d9c8aec1e",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PhaseExtension.lean": {
+      "sha256": "7e68c8080f3fc9e7816d13a181a9ece0abee5c0de3ba2186ac0a2e64977b07dd",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeSimplexBoundary.lean": {
+      "sha256": "fd606bea9cc105666c3d85494d9e6ea7c6180a1b4b2a7b243835cc2c2c9e9d35",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairSourceProjections.lean": {
+      "sha256": "b7c59f89aeb5f9119ff6ad9eba91ecd9dc956920f3d85c18325115908aec561e",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticNewPairKernel.lean": {
+      "sha256": "f077ffe05b47a0d5257e172a1510d538d58314d603eed6f4f53d96d8613b0b36",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopProduct13Coordinates.lean": {
+      "sha256": "dbf7b0a59d543ce65331e4a8048a6e97f6ab0ec95f2fef1dbe6d69402a5f9a31",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TableRealization.lean": {
+      "sha256": "973d4e87aebd499c642bec42142182039126e7a68b48efc74a6f8ee7b0ad3c3a",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ShortExactCoordinates.lean": {
+      "sha256": "61d48874b756ffefb999f1507ede935cdc1ddf7552b6363fc35be7d67ba6dc41",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SimplexEmbedding.lean": {
+      "sha256": "0bb4e725e3d02b2f2855160d6b1f61402916a39f003d1a54fcec5e9241031f97",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingPathPair.lean": {
+      "sha256": "2cbc2b38a29bda537f9c4eef5e19c3d31aa8979986a9375d8454252c53ce2dc5",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OpenComplementQuotient.lean": {
+      "sha256": "acec2403ea293ffbba3ca717982fd16e4e7fe59ae8bfb3a26af566bae1a7f4b1",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearMeridian.lean": {
+      "sha256": "6cb46fea0a4578529c6fcbfa3bc2daa17491cd1adacf0b8ed1283231544a7451",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/GeneralTableBridge.lean": {
+      "sha256": "2dbf70983e6ed4e27e734c88916997ce061783cd0b0da40333e068c930503c99",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeComparison.lean": {
+      "sha256": "3a821696db36b2344ea34e7fe6a0c58b4004c0b7a9f35b7b4ce87045e5d1c1f4",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/HomotopyFiberConnectivity.lean": {
+      "sha256": "4d99e27ea2e630e05139d6348ac49c9a3d400bbc9c296a06dd32f947f327866c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MayerVietorisNaturality.lean": {
+      "sha256": "a18e12ee78628797b1cc2516a235d56045d73b5ffb9082ea507dae580a5ee203",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ChosenTargetSections.lean": {
+      "sha256": "c6dd655beb5713ead4a91aed67a10e89acee8c16cbafc8b679039107e252f166",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SignedExactKernel.lean": {
+      "sha256": "fbb9cd2c4e78cf381285ace4cfb98e7dcd98ab1e7bdd53c84c2adf0aee022ff1",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparisonCoordinates.lean": {
+      "sha256": "4e9e6de5b32a781b42ba4d188e4e0abbc4b0af51f9dd9c86f7eecf074a0559be",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/DisjointComplementHomology.lean": {
+      "sha256": "b435661d099f9b67fd1fdc6b3e58e2adf727248e617553a8c033e4fe78db56b3",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ContractibleSimplexAddition.lean": {
+      "sha256": "ffb624aeaa3f529813cbcbfa61ed8e61ee65d45df352f7de3919bbae53903805",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticPairEnumeration.lean": {
+      "sha256": "d06541fac0a150387a7db23c7f4b644da8ab5473325b1c5e503d25efb9d5560b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FibrationConnectivity.lean": {
+      "sha256": "9380262c6ccea07835ed258d8fe9d0893f2afef1e67c22c03cb544401853538b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopSphereHomology.lean": {
+      "sha256": "b767b3a1938818e41120c99d2c97399fe325159e21375bf0859d1b9969a3e1c3",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeHurewiczDescent.lean": {
+      "sha256": "63876169852cfdba9b88458905a7504cb846db7939957d46414c0331a1a6a43d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteSphereSourceHomology.lean": {
+      "sha256": "94176b32da9006ff850b4ff964ffd0246aef002ca4dd8ae65e8e06ae65d30994",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopSpaceConnectivity.lean": {
+      "sha256": "a89373379a1ebf1c9107ddcc414affe4ffda7108e20c3c28385e74bc8a13a6da",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticConnectivity.lean": {
+      "sha256": "3eca73b11f90d576efcc20cdeb7ca7372594cdfbe48c81f8364712e185be7349",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetConnectivity.lean": {
+      "sha256": "c5e3778e125af4de22ac43524beedcc086cee49753cb8265e8ce05ea74ebf3be",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/Sphere13FibreHomology.lean": {
+      "sha256": "2c4727307822696e57b253d147697d7f9c909dc43fd8c153f6050403c5fe9634",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SimplexHurewiczAdd.lean": {
+      "sha256": "c0bdd636583739a742e49161c501b99716753e301972a1fb2d07735c354ffeec",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticPairHomology.lean": {
+      "sha256": "7f522096c2714c0856ec9e77360f0b09d0f6f476844627e913bea849553330f0",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetFiberModel.lean": {
+      "sha256": "f428e590e14a81fbbdf4d8dd88d16b5eb360763f89ae820009aeca8c92912f23",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairL2Deformation.lean": {
+      "sha256": "c08ba43cbd5cabd4212a04fab2aa84ddbeec95099fcc265ea91a8feaa2cbb86d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairEvaluationEquivalence.lean": {
+      "sha256": "1c864cff5683f7aeb0fb6f46ae5b8ceabfa72f96b26626737a5c3a54f62e81e8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PuncturedSpace.lean": {
+      "sha256": "2c2103672a83e4e84467ebe7c459555f2d8915561f2d072fd5df216a398fbc92",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/CubicalHomotopyRectification.lean": {
+      "sha256": "a7cddcfcba53e785c25db533fab0f2b91a357fb89d5712630627db92c90208eb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereSourceCover.lean": {
+      "sha256": "535eeb8a097977ae0e6c09caf2781d593905da2ddef60f36c41a06c034358aa2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCofiberModel.lean": {
+      "sha256": "3c83e3b4d5dc0d96a4089f2bc68d5082dae728fa79d90f6f1269915dfd6385f7",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ArrangementHomology.lean": {
+      "sha256": "029533a7066a155b525f1e48f9084735d4dd3dd0644b2dd5cda1af71cdd67600",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RankOneProduct.lean": {
+      "sha256": "66a8c41b05ac92e058437d0f0251033ce61af9c34376a8e11cdde2ae8092b883",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/NeighborhoodNDR.lean": {
+      "sha256": "aeb737c53e4c50845cfd49dfc79f45ecf8a5ba49ec9c29ad960d085f7b2e6773",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FibreInclusionTransport.lean": {
+      "sha256": "a1c6a06f6e2684a500634e972401926bf355f286ee588778ad47fe4681a98052",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingCylinderFaceLifting.lean": {
+      "sha256": "730a5b802b3446e0afe8900898556dbb02b6e46f1299f43b4878c55f3f8f31f7",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCofiberSection.lean": {
+      "sha256": "de923e49872f85e8402e7b6e286c805c853e7eea502621b1bd3358c1295f8f87",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairOrbit.lean": {
+      "sha256": "c3972fd1b1ee77e3926db4aaca393196d45a3c605fb8a5251804a4994b9d416e",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/EquivariantJoinIteration.lean": {
+      "sha256": "29ed3b76946d15886c1a53cadb7103aa5105c21de4ae567c519ba6487e9c0373",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetPairCoordinates.lean": {
+      "sha256": "11c223662bfab8e3a09390360247c3499f9b51aa545778a81431da171022da12",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairBoundaryComparison.lean": {
+      "sha256": "6f34acb3bd786ed295ae3d7ceb31464ed7d904e8faf87a1a8e18ba7b3ed8408d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/HomotopyPullbackCoordinates.lean": {
+      "sha256": "be4e65ad353e043a49a14c479b3257a9d734b6723e3b797be6d042f287ebd965",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairRelativeHomology.lean": {
+      "sha256": "ebb042c29cef5c04a083d283cc6d386c53a87ae1245240e892cebc8597ba39b2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/HomotopyPullback.lean": {
+      "sha256": "b4e2109aaa18935786b68274e88ae45275281893e1c941b3069394d3028fc278",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MatchingPairCollapse.lean": {
+      "sha256": "6f916388102efa1cd8321647ad021a0ece2d40ede76831f6769bca356fdd5a39",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearTubeThom.lean": {
+      "sha256": "0c3fd43da468e157b16db51b1b2d82cdd1f3c054731355a680e8b3148b856005",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinMassCoordinates.lean": {
+      "sha256": "a90aa7cc6b2ae5b646a0942bb300c415ba61148f40ef23d1ef3ad968ce79f9da",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductExpectation.lean": {
+      "sha256": "f0db1e576b71583c86d82ab2d7f4f763745f2bff8c703bfabbb6f2aa347008b2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductNormalPairKernel.lean": {
+      "sha256": "2e3da1c801c101d98c344a8cff4055b8c4b681fa075c649d4090c4a020ed183c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairLocalEquivalence.lean": {
+      "sha256": "faa144f49dd2383e24a0ef1a107cb5778d61099de16c6326ce40ea09f3582284",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereSourceHomology.lean": {
+      "sha256": "e868bb2e3ec6935f38fee00e62fff6f8053ff803a5950b542f7de9d38337bf85",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinRowAction.lean": {
+      "sha256": "6b8e4e64e32da22df000e98e2a29f4c0f413cf8242ba6fc6913de5144938ea75",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FreeRelativeClass.lean": {
+      "sha256": "89b76139696a18acc5e35c0b22be7d86daabb30c4d332c4a1daadaa7961ca29f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticFlatRank.lean": {
+      "sha256": "18333eaf1fd5ea13bacbcc1d6d9da12bb8e3339f9cd18fb117b0fb312244cf0d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticPairCover.lean": {
+      "sha256": "ffb92e75a7db40d65771713c0973fb198f7fb56ae166546b5df32fff38c75ef5",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticBoundaryExtension.lean": {
+      "sha256": "bf8f06d5afe92526a2bfb577e47851be5d20cd053c8ff49cb5dfeefac23919eb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearTubeExcision.lean": {
+      "sha256": "8d78b5d17755ee4a1aaa22b82b8f63774baa83f277b33d2128e84a0e98d09c02",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticDeletedPairs.lean": {
+      "sha256": "7073f42312b7096ea1ed74bb1e029967932cee3d455b29912b14a0efeec7bff6",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SimplexSkeletonRetraction.lean": {
+      "sha256": "da83ce93b5ad88f7e8b187a62726091d2ed900112e2b7f4a027146579eb828d1",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticPairRank.lean": {
+      "sha256": "d56a58ea9a4835c2be7a2f090c9df19d8e74cf7d1291a7ea8c29825fd801c14d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FinitePointConnectivity.lean": {
+      "sha256": "1716457b2fa787a2ceddb74761a0ae2e32a22d968ce30d40cb3f06851185a81a",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairConcreteLocalModel.lean": {
+      "sha256": "c3cd77447112126deb7f7f314a3cfd902e03395ac5a33db66f3e34193a2757f2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereHomology.lean": {
+      "sha256": "a9bca8017a5f83568ba978436b0af2fc6b55e10dd9da68e0e09376f1cf5ab22d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinVertexMap.lean": {
+      "sha256": "860198014d40537aba50b9ea5330c980ea9749b868829557edbf7a11f4aae0f9",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparisonHomology.lean": {
+      "sha256": "73eeaa4ee15167f1e9083cb4b78a30cc2ed7ff6d9786dd52ea385c321511ac5b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparisonTarget.lean": {
+      "sha256": "24e4269766c831e97bb9880e6a8cd26af31dd34c7bdb5f07ccbe37df7867ea12",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticComplementCoordinates.lean": {
+      "sha256": "903572d9afa6c09b2364ebf5800d139d8a476ec346dea6bb3e4fb3d4d67bd589",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OpenUnionBoundary.lean": {
+      "sha256": "31641bf92b13fe4a4d78a786598c08614ec71b9cac8ce3d16f33f9fdb3c4bc05",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/NDRCylinder.lean": {
+      "sha256": "5671a01b3d13646839522764710ee1f02438e48ccf1069c26197376cef96f458",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingPathHomology.lean": {
+      "sha256": "16f76dfd9f2aff1c09c9e884d5a4454ed377e18e99e564854ca13d4876fdda1f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetHighHomology.lean": {
+      "sha256": "75e1a473874fe49c2c9ed0ed3872a1815ebe5b92a146e6916b30b0411104fd23",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopProductGeometry.lean": {
+      "sha256": "8f8d7ff496895c8d2f626661e25ca3bbe0c80ed930006d151787829480dc9eba",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCommonAlignment.lean": {
+      "sha256": "a023a9e9b40e3cc2c6dca2b99177b508a32b907d6ef25bbd2ef1cb6dc6254ba0",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearPreimageHomotopy.lean": {
+      "sha256": "44285358a4153d72a2348392f9f3a20d29c8034b0ebaa5203e3a9219d071eb99",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SingleCoordinateModel.lean": {
+      "sha256": "93a4204adcb6727208266c8690c36532a86a0f9c39793885e7f4fe2aea23f339",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparisonConnectivity.lean": {
+      "sha256": "cba7c2f7d8ae7a9fedb5988679efc3cbd4ab99334f7c6824ab53502a07f03e65",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinNullIteration.lean": {
+      "sha256": "b325b0773d0bb81866d30a793319690af0f91da794fbb7d3e85a1ccdba75c2ae",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductSphereProjection.lean": {
+      "sha256": "9ac2615b90f75b6e689b4de8f80eabdbdd26ed783790bcf207a9ff5326dd5fdf",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticPairCoordinates.lean": {
+      "sha256": "b139468ebf0bf537e02ff94dc31954d196d82bcf2bbc24ba7efa0f37dcb381fb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairNormalModel.lean": {
+      "sha256": "74c000e4f6dc29a3a9c28a238d13f542e0334dd253c21a4d5af250b313f369e2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FreeRelativeOperations.lean": {
+      "sha256": "121d1cbf7b8897a50066563848a45937ae7d90768d55f5a81e7f0bcd94dd316c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinCoordinates.lean": {
+      "sha256": "27a7bb7bbe0efc75d009aa89eb1a63029478ea487ef6e45e3efab249d751e2c1",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PurePhaseCoordinates.lean": {
+      "sha256": "4043767789af9bcc4cae827dd108d41d9462147b385184bee2ee7418b98af561",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OriginalJoinBridge.lean": {
+      "sha256": "6c10b69e170e597422ab09e6ee373a990783dc3c79356d9b7f00a5aff7130955",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OriginalPairPath.lean": {
+      "sha256": "8172735562ec8045e75cb2c36ed32df94e465c24c90bb057123e1bc3a804b643",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TableToEmbedding.lean": {
+      "sha256": "9a2d613aadf0b9ac0635921def0e3af425a761bb74f4a8bce2112091812f0c40",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairBalancedJoin.lean": {
+      "sha256": "c49857d42c8e0f885ce7d3f525b0e4d6c68ae3ab51e6ad2acfbf373ed1da5a37",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearPairComplementHomology.lean": {
+      "sha256": "765f0a830253f3965edad27526eecf994b3a9353a57c62d01d313a059f4ef861",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticHomology.lean": {
+      "sha256": "fb1ae24bca1a0fb5812d9ce41a66a8159a6a7a3f62662cd2ce2a31d6c201b959",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SimplexSkeletonConnectivity.lean": {
+      "sha256": "c0582468b22c41e4d9edbdbc159c81cec41c32d7eceb6987d39c3ae14029e6e7",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RepresentationSphereInvariants.lean": {
+      "sha256": "151f028295f974dd12e8308d96cc6cf7bc5da92e40eac607c6530842df5bc24f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticSourceCoordinates.lean": {
+      "sha256": "a62cb1a18463a07774e57708c97b940e5223627f4ef9903ff7c5a89acb9a9898",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairEndpointHomology.lean": {
+      "sha256": "0f38091b0704182dd769f49483ec5bc30e6f30164c5332068a062b6d263f1c62",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductConnectivity.lean": {
+      "sha256": "581a4942a7c44869f12e7eeb273a4370f8ea42b502313a4c52a93766407eb8ae",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticComplementHomology.lean": {
+      "sha256": "0d2ce2137b94d328538f44fdc6ed81f5570f5fb84e7d3a275e299d50b2209791",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LoopSphereCover.lean": {
+      "sha256": "91a7ce9c5d8dd148cc23414472010afd3cd3a22c956cfa7ced95d9ac58755b88",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingPathReplacement.lean": {
+      "sha256": "a704580c1fa93a9febb808db3c123da064a7a5b7df03dab22aed0b83f31f8371",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConnectedPair.lean": {
+      "sha256": "95c81865e3881539ce395527edf7103331fc54d65b93f171760fbf245933a34f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductProjectionIsomorphism.lean": {
+      "sha256": "41c6e139904301c7318a499a96b9d1972d73be5946a0e8cfe0631687c389a49b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ContractibleSourcePullback.lean": {
+      "sha256": "c4840abead8cf349d7aad9e6e58212f2c0b6dff405516d09864322f0f5e62dfb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductHemisphereCover.lean": {
+      "sha256": "6adf2d4da9878660756e8d4e8fff9d3828c14c546f308c3a32c7f80a6f40c576",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/RelativeHomologyBridge.lean": {
+      "sha256": "fb15394ca3a18f40ebd37e8e9d640545dba73e4f7848e194304fc162b1c7df03",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PathProductCoordinates.lean": {
+      "sha256": "257145a2a34ee37912464e7dc049a4216b7f35b8cfb54812843c7c5c099e830a",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingCylinderLifting.lean": {
+      "sha256": "3a9b8aea1434b080ced2d39392413d1e744327805791e29e0228982b792ef237",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereNineSourceHomology.lean": {
+      "sha256": "f0a0276000ed1aca803273f93a9b287618170bcc4680e3c1d2d4cdcd3435d41a",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ComplementMayerVietoris.lean": {
+      "sha256": "c245d230b86b412f9458a4b9cd7de4bb9032e64882299445ae89116209351863",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ProductNormalThom.lean": {
+      "sha256": "423da1828fdb5d71be4b62d7fed9aba0298e6693bb86d919c0ad0daf92d82220",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ExactCommonSection.lean": {
+      "sha256": "8a21d59a36cb95ba21e9c0ee143f7ef821083b61c8728e18cc52ce528291d932",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/NormedLinearThom.lean": {
+      "sha256": "480a4a90b5f2de0cf296b38c304fbbf205b1b4f56b39615df22c400566abc0eb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairNormalHomology.lean": {
+      "sha256": "6bad8f8026de84d1b8661fdcef84a44b3cc572ebcb59746cf5392362ab18128f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ComparisonContract.lean": {
+      "sha256": "5fe6624e59c2430982b011b9dd3188bd327b46b3ed1a2c607edd23a6ff9e68a0",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairLocalConnectivity.lean": {
+      "sha256": "772492082143e0a895de0a663081fef29a8f8c245ced21ba7c4945638b91f292",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCollapseHomology.lean": {
+      "sha256": "f3fc86c6db3131e56299c02be81ba19c6bbbd0893097729ba0f101e8c5dc7774",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCollapsedLocus.lean": {
+      "sha256": "9f35d8fdce2869b8d643ce80c88c9341642e3333c7952032f666dd4a0f1c277f",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparison.lean": {
+      "sha256": "4a5f68d52be03665c4983bebaa0f8e446177095797d3c95f02b6dc8fd29219a8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/CubicalPasting.lean": {
+      "sha256": "0d8620f634811003270f297281873035b83b158e9421c2d4602464631501f50c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairSphereAction.lean": {
+      "sha256": "0f8b5820eb0a813aa0328eaea52f5c99d25c2417a1f7f7e40cd8aaddd459e953",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MappingCylinderCompression.lean": {
+      "sha256": "5b0d8011195861e56eac080fcbc97a9d60ce65b176aaaecd603c772056c2271b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairIntersection.lean": {
+      "sha256": "fd0c1b1159114ef4b6257eeb5daeb22a6b03173be3c1cac2ee8fee4b7c228300",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/DisjointComplementCoordinates.lean": {
+      "sha256": "1f625992d059f5b98c11d4ea81a9b8985c2f1cacf1dfffd7dee0aabd167eb3bb",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/ConcreteComparisonLifting.lean": {
+      "sha256": "390fdbabb29938ad3abaa649c1cf561b1fc0e91e4e8691b5fd4b1aa8eaa7d4f2",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FirstHomologyComparison.lean": {
+      "sha256": "74b40a46510056bf0a885e5661d91380cc347fe4bfdc8650ac46950888d32014",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/QuadraticLink.lean": {
+      "sha256": "0242bf505dd407a4a3dca1433af2331a197fc5c1afd516c75793e6d264dbd4d8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/TargetProjectionHomotopy.lean": {
+      "sha256": "f2a0114d76ae2f1f1d17e46889b8149daa357f57685f9debd734889912153b8d",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteLoop13Homology.lean": {
+      "sha256": "4098b9e45f2af7b277306779000bfbf49310b0ba1dd1ba9e0791e6ddd909c9b9",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LocalPairPathHomology.lean": {
+      "sha256": "31fb395e0ff286035440bcb1f5161bcd617f1a1fb78b46784f6e1c6f92ff4b50",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/UniversalSimplexBoundary.lean": {
+      "sha256": "72ac622027e2f98738bb947bfff45ae625f01c7a657746303e5ae5ce07d1b91c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FiniteLoop13Coordinates.lean": {
+      "sha256": "f582dd93f791af83b30c3b786dfd1452bc0e8e6ae63b335e2709d0047c515520",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/FaceCubicalHomeomorph.lean": {
+      "sha256": "5267579c771cc80b307f7b0201f4fb18212bcb69cb1888877c1e854e4b55ffe8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MatchingExtraction.lean": {
+      "sha256": "886bf586428331c08b34fcc5a12436e9fad62f33de82049beeb7e99a1df9b18c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/JoinNullhomotopy.lean": {
+      "sha256": "c91af24cfc5bd38f5b0ec15184a6ad650283ede40bbd9d57e40af0ecfb1d6b21",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/OpenUnionMayerVietoris.lean": {
+      "sha256": "4dd72d4d4b867528519869977737299bcfdc9226ee03616ca3a5fc5c152a349c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearTube.lean": {
+      "sha256": "95007030aa190fd47d8ce58a06fc9cd19862ff5e28a7da660044737ab2ac08c8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/MatchingSphereMap.lean": {
+      "sha256": "3c448eba85bcd766ce5e06985ff097decf1c1afc8d40b7e791715109f5f3ec69",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SplitExactKernel.lean": {
+      "sha256": "b8462dad5aea9bfdbab8576dc409d77596ced61d8c577b5c4f38e229dc992ad0",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairDeformation.lean": {
+      "sha256": "4b5c4ba4b44eb87a440f1ed2388e06b02399140812c83358ae67f8f992771fd8",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairCofibration.lean": {
+      "sha256": "b6e33546ab7067694cac3c1fb5a8072e4e0eb1e9595a52ac3eed019f5ab337b6",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PuncturedSphereHomeomorphism.lean": {
+      "sha256": "c7b3c01349a2db87b1bc4d39dd8814fc813ac6936320503f74c7892b192df9e5",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairPathCoordinates.lean": {
+      "sha256": "44689a2dd0d74cb0af4ca3f28aabd662c3275ca743779ae63ad56df5284ced1c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereSourceKernel.lean": {
+      "sha256": "90bda81c622f1fc4258e783b8c2f40b00394e45087ba924868de68fd41d8526c",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/PairRepresentation.lean": {
+      "sha256": "b2861cf19751de2cb6b8f84ce14e5c8bbc719d4bfc011e482f9c03e69ad6c70b",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/LinearTubeClosed.lean": {
+      "sha256": "15c60d6559774d16d3c78e9e422bd485d5ca757f6ad5b50eff77332f0e2cdc78",
+      "executable": false
+    },
+    "AkopyanResearch/Completion/SphereConnectivity.lean": {
+      "sha256": "a66e8c815049003adfd0a602c0b3c72cc338f7fbe0ba21a2c2023b914ce8bc4c",
+      "executable": false
+    }
+  },
+  "verified_at_utc": "2026-11-24T10:27:28.258145+00:00",
+  "passed": true
+}

@@ -1,0 +1,9 @@
+module
+
+/-! Clean axioms but an extra hypothesis: not a proof of Challenge. -/
+
+public theorem Fixture.successorWitness (n : Nat)
+    (h : ∃ m : Nat, m = n + 1) : ∃ m : Nat, m = n + 1 := by
+  exact h
+
+#print axioms Fixture.successorWitness

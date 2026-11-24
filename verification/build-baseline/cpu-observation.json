@@ -1,0 +1,26 @@
+{
+  "recorded_utc": "2026-11-24T05:08:41.109652+00:00",
+  "visible_hardware_count": 9,
+  "visible_cpu_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "lean_num_threads_environment": null,
+  "lean_default_threads_source": "tools-runtime/lean-4.35.0-linux/src/lean/Lean/Shell.lean",
+  "lean_default_threads_source_sha256": "bbfcf01a93bcb9ca3f4d1264d3ad9890f3a6384dbbc949f5bf3cc286c0ec2225",
+  "lean_default_threads_definition": "def defaultNumThreads : UInt32 :=\n  if Internal.isMultiThread () then\n    Platform.Internal.getHardwareConcurrency ()\n  else 0\n",
+  "cgroup_quota_observable": false,
+  "observed_missing_paths": [
+    "/sys/fs/cgroup/cpu.max",
+    "/sys/fs/cgroup/memory.max",
+    "/sys/fs/cgroup/cpu/cpu.cfs_quota_us"
+  ],
+  "recommendation": "For subsequent direct Lean elaboration processes use the documented -j 1 or -j 2 option. No running process was interrupted or reconfigured. These observations do not establish a CPU quota."
+}

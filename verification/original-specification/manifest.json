@@ -1,0 +1,11 @@
+{
+  "archived_file": "Challenge36.lean.txt",
+  "original_challenge_sha256": "cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05",
+  "unchanged_solution_sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+  "original_theorems": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.convex_partition_counterexample"
+  ],
+  "original_dimension_bound": "36 \u2264 d",
+  "purpose": "Byte-preserving archive of the previous independent specification; the proof file Solution.lean is retained unchanged."
+}

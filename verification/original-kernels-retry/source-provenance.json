@@ -1,0 +1,240 @@
+{
+  "scope": "The selected Solution local source import closure, not the entire current project",
+  "files": [
+    {
+      "path": "AkopyanResearch/BoundaryRegularization.lean",
+      "sha256": "979321396f3e312a98854c560b014a450630f5ba5588135c529b3f1c5aa17811",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/CanonicalExtraction.lean",
+      "sha256": "3f502e849dcad5a649862995f953f208fcc5f4b438e85bc4885f261967d29338",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/CanonicalQuadratic.lean",
+      "sha256": "ac61e310a4da64e99b800f54d3e775b73b69b637e27971f347ec0e66454befe9",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/FiniteRegularization.lean",
+      "sha256": "1cbba31568c36ce001c93b5406a37b005ee71b3dfca2d650002eba98b048cf1c",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/QuadraticInterpolation.lean",
+      "sha256": "08d35f858a999822dc108cf1d57393a53cdfbd1f06b4fc72918020ec330fd65c",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/QuadraticRealization.lean",
+      "sha256": "ae51af09d1ec438352c4a6db424656ca6e01e56823a61abb6825478d0bd6dd70",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/SafeQuadraticBridge.lean",
+      "sha256": "b27f0647fbbd6d6b2425e58fc9ea82ffdff9ae96d3d2b536090b671e09d87544",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "AkopyanResearch/SafeQuadraticRealization.lean",
+      "sha256": "083ed7f3e19660a667f33a613aee89a8a39cf0b38fefa7ec4b297665b4088a50",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Balance.lean",
+      "sha256": "bc9f9255a1bc62492cb7f001e57c7ee928d5999dbfbc6e39e30a8f56b0ccb65c",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Boundary.lean",
+      "sha256": "1bbea3b7640691248b7d407a58d4fb214ba9e6de0f48c2b5d059394dc5c2cfbe",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Cochain.lean",
+      "sha256": "de5174099971555266ed4c7b61693ad4927444938931c3135e0be35d263e7ce6",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Assembly.lean",
+      "sha256": "fd2390ca67f8ac59fc3893e69f923984648d0cc2c3d8054787ffd22adb6d563a",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/CellCount.lean",
+      "sha256": "5fcfa00409e54a2b813353e9639c247b1fb8a6949e5ef5548e9fec10f4017be1",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Chart.lean",
+      "sha256": "8a949caba8e4297d767c32a63c79b9bc7f8259eee793b4aa12176027878b39d1",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/DetLemmas.lean",
+      "sha256": "49e09f6c243340bb926fb25970d17c0d77913b44a22a74b8640e27548a660f5e",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Frames.lean",
+      "sha256": "2b7cd30fe9cd984fe92a72e859551c00e7dcdd12143c9d21b7ac442572f3ea92",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Good.lean",
+      "sha256": "5b90898cb69616d82cb3bd96d8886cd2f2a4b4819ba80c140dcef7ef528eeb3c",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Indep.lean",
+      "sha256": "0561ef01fc23e1e2532fbe61da7ca210f9982e5142adffb6d587404f5e1c661a",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/InnerCell.lean",
+      "sha256": "fbd8e72c32d786e8e29aeac9a11c0383724cee10a24aab437deef5df8947fed3",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Layout.lean",
+      "sha256": "b95a49c0973632c7a84fff1a97e5454a86f96cbbb3eabef6d873d9c80a475523",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Local.lean",
+      "sha256": "61ecc909996d8633c4bcb4fd4af40a997d53874177cb2149c0cdf731ddffe067",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Map.lean",
+      "sha256": "df6d19a56794a4e2bf0dd092b0b8eb07560632d9c141fe6af7830b4935cce957",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Obstacles.lean",
+      "sha256": "d3f709ee7135d81e3c5c263ae3a54eb4b426db21e515ad8d3c94744292f50b61",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/PyrAlg.lean",
+      "sha256": "34b006b7a9affa2dade42589b0d9f8e4d35ee170e9e9a5941ffd32146484f9a8",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/PyrCell.lean",
+      "sha256": "6d10e9c07d294d3656aec7cdd8bca29ad47d8bba318907583b36c31df009038e",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/PyrDet.lean",
+      "sha256": "a82a09696ecc964b33a4ec1c3f2534420b7bfa1e3a2c3f15f3775bfe32505f52",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Construction/Safety.lean",
+      "sha256": "4ed02ee36b5cf073ce0b20e8e0ad012b96aa3bb917bc756b1059af636406829e",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Generic.lean",
+      "sha256": "711314399b804219a25c55fb0472b09ff5db4b41e8d0c79401beb74f7941ae6c",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Reduction.lean",
+      "sha256": "b403a35928c808eb7fa9fda4a8fb890755bf99b037b8adea2d26bd91327c4794",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Solution.lean",
+      "sha256": "21a44423bd69b613010d1b935e054ddcc6883aaaaeef80f0ae0fa56699465930",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Avoid.lean",
+      "sha256": "41a786506e38ada8bb35eff92b292fd8f3abe1da03ccd5f7a66f0f0b575f1dba",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/CancelGood.lean",
+      "sha256": "71897114df6299e980ae28bb24b69e30957aff4ee0d2f3e90b363fdd805994c9",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Clear.lean",
+      "sha256": "c1c6bcbe47fc236eca74bae0456a04c758541ea22e8efc19c7ac9484cfe020dd",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Core.lean",
+      "sha256": "11e0eb3c14515214a6c60914744cd8403950c798affb7a691ae19f6a9702e8ea",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Cutoff.lean",
+      "sha256": "9f746d079dd25d6e0bd3dd383002aa6055e81463e7bdc119394ab7c5b726137b",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Frame.lean",
+      "sha256": "20ac565cef04550314fb3bae5c4258d3b4c53bcf02ea3ee7d96e5840230f2914",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/GLPath.lean",
+      "sha256": "268f9226af29f990a2728fa2e668db39c79e5396262408830b0a72ebcc1415bf",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Good.lean",
+      "sha256": "4d18d71a74c08ba4ecc753f07968949be028dfacb1c89699a9a9c11e1ae7543e",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Main.lean",
+      "sha256": "d2dc0e07bda30f3e2b7365caaca643628df76ff6964373120d47b8225a0129fc",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/PairCancel.lean",
+      "sha256": "4e06d1cb832f2b7eaa2023d3bda83573f42e3bc95530004da8c1f7363b149e87",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/PathHomotopy.lean",
+      "sha256": "48bf6f149a4822a303d38ebda37189ed84063f487fdcb7067f75144a815e5d00",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Separate.lean",
+      "sha256": "3aa766f46450f55992c702d4395fe3f4f26ca7b750d7c731f3dd5c21c04f9d58",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Shift.lean",
+      "sha256": "a09d24f3acc57fd00bb268b6b5fa10aa6e52e71a16259dc068a96eea812b4dac",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/ShiftGood.lean",
+      "sha256": "c8bdeae38ce46e531a09e11a27322d14db90351106f05b9d87088177bc9f6524",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/Transport.lean",
+      "sha256": "4836655b8f0b9abc262995aa18adfcfa815c0cb2a937c9cbd9b82f0a724fd20f",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "RequestProject/Surgery/ZeroSet.lean",
+      "sha256": "d8ba85d3686bd1e86e2f34716d0a5f7f3d6533de288b7d8cf317a53e38c6a1e1",
+      "unchanged_from_supplied_archive": true
+    },
+    {
+      "path": "Solution.lean",
+      "sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+      "unchanged_from_supplied_archive": true
+    }
+  ]
+}

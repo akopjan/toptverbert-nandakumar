@@ -1,0 +1,67 @@
+{
+  "repository": "https://github.com/PalomarRegistry/PalomarSubmission",
+  "revision": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+  "retrieved_utc": "2026-11-24T08:44:14.922913+00:00",
+  "files": [
+    {
+      "file": "COMMIT.json",
+      "url": "https://api.github.com/repos/PalomarRegistry/PalomarSubmission/commits/14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "bytes": 15476,
+      "sha256": "4ea731c4dd79ff0317676de82e6d283bfeed02440845f9f6e5918b02f6d36d56",
+      "git_blob_sha1": "30ca0d4e2d3d275621f2a0fbcd4f89988110060f"
+    },
+    {
+      "file": "submission.yml",
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/.github/workflows/submission.yml",
+      "bytes": 12543,
+      "sha256": "10d97d59e223c3378d4b96601260f26fec1b27d4fd94739bc06a63ec3bab9c17",
+      "git_blob_sha1": "9e64a62a110e1beec226db86cb7fe70ee2cf5e47"
+    },
+    {
+      "file": "README.md",
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/README.md",
+      "bytes": 27985,
+      "sha256": "2a4bb665e790fdaad054c2b38e6b68a99103d15930be6dad47871bbea3810a42",
+      "git_blob_sha1": "aa174547d1786fb5538c20b311ec2c7e65f267e5"
+    },
+    {
+      "file": "verify_submission.py.txt",
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/verify_submission.py",
+      "bytes": 277924,
+      "sha256": "3ff03bf4d7774ec47e1e81fe397d03e54895ee59901036580c6da3b57010cc08",
+      "git_blob_sha1": "35afd78fbc4ba9ecd43a617f99ab8f9a4f376842"
+    },
+    {
+      "file": "submission_contract.py.txt",
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/submission_contract.py",
+      "bytes": 50310,
+      "sha256": "264b7da57bd099b7cd4da15b580b32978671a60b8b396c60920f584176224cc3",
+      "git_blob_sha1": "c8b7ae49a9914c4585dab3d04e2f372f2b104903"
+    },
+    {
+      "file": "WORKFLOW_CONTENT.json",
+      "url": "https://api.github.com/repos/PalomarRegistry/PalomarSubmission/contents/.github/workflows/submission.yml?ref=14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+      "bytes": 18479,
+      "sha256": "11526f128de63eacc8a5e18f6e6b85aca32e448d039a29805bfba1023a37f8b8"
+    },
+    {
+      "file": "workflow_inputs.py.txt",
+      "url": "https://raw.githubusercontent.com/PalomarRegistry/PalomarSubmission/14aa8d6b3c2f14a8540605e37144560b9a00e7e7/scripts/workflow_inputs.py",
+      "bytes": 2825,
+      "sha256": "0a564f08c2d2628b441c33310d63ab9dddd3caacd32bc0aa52742c30387b429c",
+      "git_blob_sha1": "1ed7e73243dce93699449d3c2c08877671265257"
+    }
+  ],
+  "canonical_git_ref": {
+    "command": "git ls-remote https://github.com/PalomarRegistry/PalomarSubmission.git refs/heads/main",
+    "revision": "14aa8d6b3c2f14a8540605e37144560b9a00e7e7",
+    "ref": "refs/heads/main"
+  },
+  "github_commit_verification": {
+    "verified": true,
+    "reason": "valid",
+    "verified_at": "2026-10-28T19:18:58Z"
+  },
+  "workflow_blob_matches_contents_api": true,
+  "verification_scope": "Canonical GitHub HTTPS API and git remote agree on the revision; GitHub reports the commit signature verified. Raw pinned workflow bytes equal the API blob and its Git object SHA-1. No independent local GPG verification is claimed."
+}

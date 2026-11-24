@@ -1,0 +1,11 @@
+'AkopyanResearch.exists_safe_factored_quadratic_coefficients' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanResearch.equal_mass_disjoint_matrix' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanResearch.exists_almostSix_of_safe_compatible_quadratic_table' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+'AkopyanSixfold.join_almostSixEmbedding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.exists_isBlocking_5d' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.blaschke_isCompact_subsets_unitBall' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.exists_eta_of_isBlocking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.convex_partition_of_embedding_and_blocking' depends on axioms: [propext, Classical.choice, Quot.sound]
+'AkopyanSixfold.convex_partition_counterexample_ge_18' depends on axioms: [propext, Classical.choice, Quot.sound]

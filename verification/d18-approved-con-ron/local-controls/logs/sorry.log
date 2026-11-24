@@ -1,0 +1,2 @@
+con-ron: 1 inductive blocks modelled in-process: Lean.Syntax (30 generated records, checked by the fold as declarations and not counted as records of the file)
+con-ron: declined (465 declarations checked, 1 skipped for tolerated axioms) (--verified): 1 via sorryAx; first skipped: Fixture.successorWitness

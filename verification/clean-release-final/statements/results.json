@@ -1,0 +1,42 @@
+{
+  "outcome": "literal-statements-accepted",
+  "started_utc": "2026-11-24T06:00:02.994495+00:00",
+  "scope": "Literal independent Challenge statements checked by Lean exact against Solution",
+  "full_palomar_workflow": false,
+  "comparator_invoked": false,
+  "generator_sha256": "1fad178074530a46fbd81deb09f853d31c32a591a7bd16e1dd1e95a301db5d08",
+  "finished_utc": "2026-11-24T06:00:10.122120+00:00",
+  "command": [
+    "lake",
+    "env",
+    "lean",
+    "-R",
+    "/workspace/scratch/9db1b532943d/clean-release/akopyan_formalization_updated",
+    "/workspace/scratch/9db1b532943d/clean-release/akopyan_formalization_updated/verification/clean-release-final/statements/StatementAudit.lean"
+  ],
+  "lean_exit_code": 0,
+  "elapsed_seconds": 7.127,
+  "input_sha256": {
+    "Challenge.lean": "cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05",
+    "Solution.lean": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+    "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+    "lake-manifest.json": "12c81501edb3666cfee1de79738126e572394b427da53776b63d3bdeb99c12aa",
+    "lakefile.toml": "e204c3eb898d50c05f92a2b9a76e1a8caa3304f9587a8eec540c05277ca00e3b"
+  },
+  "generated_sha256": "ac75050a52d78b81906b2d11f777be63d75b1098a75a036ad2c452e9030d7d86",
+  "exact_reverse_transformation_matched": true,
+  "changed_inputs_during_verification": [],
+  "proof_targets": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.convex_partition_counterexample"
+  ],
+  "namespace_replacement": [
+    "AkopyanSixfold",
+    "AkopyanChallengeAudit"
+  ],
+  "added_import": "Solution",
+  "proof_replacements": [
+    "  exact AkopyanSixfold.tverberg_counterexample\n",
+    "  exact AkopyanSixfold.convex_partition_counterexample d hd\n"
+  ]
+}

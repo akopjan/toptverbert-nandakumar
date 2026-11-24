@@ -1,0 +1,364 @@
+{
+  "repository": "https://github.com/Deicyde/hatcher-at",
+  "revision": "6d729567d1573a7e8785773a55de36d0e3ec5761",
+  "upstream_lean": "4.34.1",
+  "port_lean": "4.35.0",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Hatcher.Algebra.Homology.Augment",
+      "upstream_path": "Hatcher/Algebra/Homology/Augment.lean",
+      "upstream_sha256": "fd542a06064d0459e4010363a209e34128b22b5d3645e231bf75ba5473255800",
+      "port_sha256": "ff3120e4e3bbed00e28d91860814ff1ea482d4df0d96b794719a9bb127b7fa77",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: augmentHomotopyHom."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.AffineChains",
+      "upstream_path": "Hatcher/Excision/AffineChains.lean",
+      "upstream_sha256": "b9b499fbabbbaaf1ab73c97c6ec60d6849c9be4f0600da9b1893a5f2cea76639",
+      "port_sha256": "4f22f0f2fcebc5424400932adebafc0180d3a53bc493b69566d0f2111d7f7373",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: simplexCategory_delta_apply, simplexCategory_sigma_apply.",
+        "Adapted iteration to the new CategoryTheory.End structure using End.of and End.asHom."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.AffineSubdivision",
+      "upstream_path": "Hatcher/Excision/AffineSubdivision.lean",
+      "upstream_sha256": "e9a00aea8b5d8a8869843893d65eccabce6250bd52f84b2ae6ddbb2024141be9",
+      "port_sha256": "3cf6f6c6ce0e56c267deb0aecf5c5b44f78377acbd003a9fae7effe3dd468373",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.BinaryCover",
+      "upstream_path": "Hatcher/Excision/BinaryCover.lean",
+      "upstream_sha256": "6772915b57d2946e3b9740fd529007dbe487bdcfb1d10ffe870f079d1d3cf219",
+      "port_sha256": "f7019a38f77d10cdcfcbd7b206541a478fefd03e3be315e9ce77362e9c590271",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: mono_toSSetMap_of_injective."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.Devissage",
+      "upstream_path": "Hatcher/Excision/Devissage.lean",
+      "upstream_sha256": "481df9dbd3ed436358be11e53765d9a208320b23e07c8c78afbddb2159d5c76b",
+      "port_sha256": "f287999e1ed62c9fc647e00f7fdd5e8b73b4aee79b8fbfae3b0eea1cecc8c547",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: sigmaConstCokernelShortComplex, splittingSigmaConstCokernelShortComplex, splittingSigmaConstCokernelShortComplex', subcomplex_pair_left, subcomplex_pair_right, subcomplex_pair_hom, pair_of_left, pair_of_right, pair_of_hom, pairIsoMk, iota_chainComplex_pi_f_eq_zero, iota_chainComplex_pi_f_eq_zero_of_mem_range, iota_chainComplex_pi_f_eq_zero_of_subcomplex, chainComplexX_hom_ext, chainComplexXDesc, iota_chainComplexXDesc, chainComplex_pi_naturality, chainComplex_pi_f_naturality, iota_chainComplexMap_f, splittingChainComplexShortComplexEval, homOfSubcomplexes, shortComplexHomOfSubcomplexes, splittingShortComplexHomOfSubcomplexesEval, homotopyEquivalences_chainComplexMap_homOfSubcomplexes, mono_left_of_mono_right."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.SingularSubdivision",
+      "upstream_path": "Hatcher/Excision/SingularSubdivision.lean",
+      "upstream_sha256": "91dddf4d79a5a5a7fe50786d329318f0505d55db4a6e3e24fe2622046d8fbaf3",
+      "port_sha256": "4355f6dda94cba49ddb7a18ba932239a9b900b69cb3b8f346d35a6750f84806d",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: singularChainHomotopyIdSubdivision_hom_eq.",
+        "Adapted iteration to the new CategoryTheory.End structure using End.of and End.asHom."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.SmallChainEquivalence",
+      "upstream_path": "Hatcher/Excision/SmallChainEquivalence.lean",
+      "upstream_sha256": "f60a4d7e7350f6edc535ea02332801cdd98ec3771a0a32a2be1e94ff01178bd9",
+      "port_sha256": "677e763361c6a231295a03286d30624481e84537870fd920b597c5ea7ca838c5",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: sigmaConstCokernelShortComplex, splittingSigmaConstCokernelShortComplex, splittingSigmaConstCokernelShortComplex', subcomplexPair_left, subcomplexPair_right, subcomplexPair_hom, splittingSubcomplexPairEval, kernelForkSubcomplexPairX, isLimitKernelForkSubcomplexPairX, kernelForkSubcomplexPair, isLimitKernelForkSubcomplexPair, mono_smallChainInclusion, iota_subcomplexPair_pi_eq_zero, iota_subcomplexPair_pi_eq_zero_of_mem, fin_sum_univ_eq_sum_of_le, nonempty_iteratedSubdivisionIsSmall, smallestSubdivisionDepth, iteratedSubdivisionIsSmall_smallestDepth, iteratedSubdivisionIsSmall_iff_smallestDepth_le, smallestSubdivisionDepth_eq_zero_iff, smallestSubdivisionDepth_face_le, smallRetractionHomotopyAux, iota_smallRetractionHomotopyAux, smallRetractionHomotopy, smallRetractionHomotopy_eq, smallRetractionHomotopy_zero, smallRetractionEndomorphism, smallRetractionEndomorphism_eq_sub, smallRetractionEndomorphismHomotopyId, iota_smallRetractionEndomorphism_f, smallRetractionEndomorphism_f_zero, smallChainInclusion_comp_endomorphism, iota_singularChainSubdivisionIter_comp_pi_eq_zero, singularChainMap_subtypeVal_comp_pi, iota_singularChainHomotopy_comp_pi_eq_zero, iota_singularChainSubdivisionIter_homotopy_comp_pi_eq_zero, iota_subdivisionIter_sub_endomorphism, iota_endomorphism_comp_pi, smallRetractionEndomorphism_f_comp_pi, smallRetractionEndomorphism_comp_pi, smallChainRetraction, smallChainRetraction_comp_inclusion, inclusion_comp_smallChainRetraction.",
+        "Prefixed three formerly private cokernel-splitting helper names with smallChain_ to avoid collisions with Devissage."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.SmallSimplices",
+      "upstream_path": "Hatcher/Excision/SmallSimplices.lean",
+      "upstream_sha256": "71978cdeb8bc277bd55b86106db35b6a0cfb8ba137921bdd3206bef06022d5b0",
+      "port_sha256": "a224a84566e79a935e15d0cd255dd05864f995cec93c574ca1bc5e69f35206bb",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: simplexCoordinateAffineMap."
+      ]
+    },
+    {
+      "module": "Hatcher.Excision.SubdivisionDiameter",
+      "upstream_path": "Hatcher/Excision/SubdivisionDiameter.lean",
+      "upstream_sha256": "125ad3aa9e2d9134402b44132b532175d76632f49456e50568a3706ea5a91869",
+      "port_sha256": "b2a962c4bc53bc84d8412f29d828fac38804fb63bde70f83ca283107bf4d1432",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.MayerVietoris.ChainComplex",
+      "upstream_path": "Hatcher/MayerVietoris/ChainComplex.lean",
+      "upstream_sha256": "5c0a819cecd018c72a945e31abe91069965e96a5b0fedcd4e135b77256586fdb",
+      "port_sha256": "ddfb86168491533b84546fd9a100e3b31945dd29f4e29db6cc67c644fa3fe35c",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.MayerVietoris.Neighborhood",
+      "upstream_path": "Hatcher/MayerVietoris/Neighborhood.lean",
+      "upstream_sha256": "a6c24a1d6a5849315501417150859410e75ce77b26f6db771d9d97e42ca65709",
+      "port_sha256": "04bd63714f02c015e8b3069dc2a765d88a446b20f73fc8050dd723a1ac40faf1",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: neighborhoodSequenceIso."
+      ]
+    },
+    {
+      "module": "Hatcher.MayerVietoris.Sequence",
+      "upstream_path": "Hatcher/MayerVietoris/Sequence.lean",
+      "upstream_sha256": "d1abe1e81f3b008509de4ed1c5b52460a47b74f5fdafb48402e8b7c499450b37",
+      "port_sha256": "b24d4ba6de691042012a4ec3a75f65951ffd50e341f3f9cb8df0e44d7283ba49",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: subspaceInclusion, intersectionToLeft, intersectionToRight, mono_toSSetMap_of_injective, subspaceChainIso, subspaceChains, subspaceChainMap, intersectionToLeftSubspaceChainMap, intersectionToRightSubspaceChainMap, subspaceBiprodChainIso, subspaceChainIso_hom_comp_intersectionToLeftChainMap, subspaceChainIso_hom_comp_intersectionToRightChainMap, singularChainComplexIntersectionMap_eq, singularChainComplexIntersectionMap_comp_unionMap, singularChainComplexShortComplex, chainComplexShortComplexIso, singularChainComplexShortComplex_shortExact, homologyBiprodIso, subspaceChainIso_hom_comp_leftToSmallCoverChainMap_comp_inclusion, subspaceChainIso_hom_comp_rightToSmallCoverChainMap_comp_inclusion, singularChainComplexUnionMap_comp_inclusion, homologyMap_intersection_comp_homologyBiprodIso, homologyBiprodIso_hom_comp_unionMap, smallSequence, smallSequenceIso."
+      ]
+    },
+    {
+      "module": "Hatcher.MayerVietoris.ShortExact",
+      "upstream_path": "Hatcher/MayerVietoris/ShortExact.lean",
+      "upstream_sha256": "46f8effc3c4e1b99117ff4d2a65e4e55c62921f3d579d1a2b4d068652fbdb6d7",
+      "port_sha256": "9f91a1710aba0e3bb93d9ed97a1fc2afd59d7e9703eba53cfa8e0d11e60f0a04",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.GoodPair",
+      "upstream_path": "Hatcher/Singular/GoodPair.lean",
+      "upstream_sha256": "03f3dd3184e30969949d4ea1e9db8f47d54ce32e95ea5068782e325d20e97461",
+      "port_sha256": "246f72bd6a99d50b3337746948aef1fc962d02d500396b0e8e0727556c4e807a",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Retained the complete general good-pair definitions; omitted the independent CW subcomplex application and its RegularNeighborhoodDeformation import."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.GoodPairExcisionDiagram",
+      "upstream_path": "Hatcher/Singular/GoodPairExcisionDiagram.lean",
+      "upstream_sha256": "1996e202002c7f4468b1109e022ad7bb04d3493241cae9c720d8bf2c3768dee1",
+      "port_sha256": "2c57298f6bfb61a65ea6dccd8037e143dd5d7ae5d3ea90346552ed1236891c0b",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.GoodPairNeighborhoodHomology",
+      "upstream_path": "Hatcher/Singular/GoodPairNeighborhoodHomology.lean",
+      "upstream_sha256": "03410f0de3b03c1a0e5e1b8cd0e4cefc29801b30e87e31117c148354bd62cd67",
+      "port_sha256": "08fa20f45134b69bc46968e33d2f9f9f1b044303c9d6e0a4c2e0ecbc71fa6af7",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.GoodPairNeighborhoodQuotient",
+      "upstream_path": "Hatcher/Singular/GoodPairNeighborhoodQuotient.lean",
+      "upstream_sha256": "7c98dea28938724f68fbce0978b1642377a157ef7301b4a569f0cb9d1ae6db8b",
+      "port_sha256": "df7d85bcaf76cb7ec8e2d13d84e5a1df2f2bfab6fe34e16b6e27b9c6ce52d6c1",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: projection_eq_point_of_mem_range, projection_mem_range_of_eq_point, projection_injOn_compl_range, projection_preimage_image_eq."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.GoodPairPointQuotientHomology",
+      "upstream_path": "Hatcher/Singular/GoodPairPointQuotientHomology.lean",
+      "upstream_sha256": "fd408857c23378098da35c62a6ad8ff10c99adb744805c57ec8bbe663b9c1fdd",
+      "port_sha256": "47d87e95b4c564f0f41547a227bb2326241a6d5725aa2187dc126c44ad0c60d9",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.Homology",
+      "upstream_path": "Hatcher/Singular/Homology.lean",
+      "upstream_sha256": "9639bc093229718529a94ff26d348c8bd23c3157dbd1b6bb614c745e38492d27",
+      "port_sha256": "fa3b2668d3e6b4b2dccbac47a2925755065d659cd37d3992284c819c61685165",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointQuotient",
+      "upstream_path": "Hatcher/Singular/PointQuotient.lean",
+      "upstream_sha256": "4bb6f6fc517199bff8de530b8177d2c6e2132f6caadf6f5bcbba58eab4a343ce",
+      "port_sha256": "2b25edfbf28cc5e2a245f5bb9f1859fc3dcf475a8efe71655509c6066410b7eb",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointQuotientNeighborhoodContraction",
+      "upstream_path": "Hatcher/Singular/PointQuotientNeighborhoodContraction.lean",
+      "upstream_sha256": "636474a2a918306c54a3dc6fd2d8350d1c8c7c0fa5979a1d84831e39f220dbbe",
+      "port_sha256": "e1c81f3f41f874bb8777b5b428f84fd7c783708725b864f78900762ab43a2b01",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: neighborhoodProjection_inclusion, deformation_fixed_of_mem_range, deformation_projection_eq_of_projection_eq, pointQuotientNeighborhoodSection, pointQuotientNeighborhoodSection_spec, pointQuotientNeighborhoodDeformationMap, pointQuotientNeighborhoodDeformationMap_comp_projection, continuous_pointQuotientNeighborhoodDeformationMap, pointQuotientNeighborhoodDeformation."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointQuotientNeighborhoodExcision",
+      "upstream_path": "Hatcher/Singular/PointQuotientNeighborhoodExcision.lean",
+      "upstream_sha256": "dd45fb8ed10da711bef16cca49f9ac0ffd967a9fd4e6251a0f48867b6a3ecd21",
+      "port_sha256": "3ad17e2db2e883dfd76349df9f77b8fcbc62f8a9c7996c3af79cbbcd42514dd8",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointQuotientNeighborhoodHomology",
+      "upstream_path": "Hatcher/Singular/PointQuotientNeighborhoodHomology.lean",
+      "upstream_sha256": "5425f277ce358abc29796725ce6e683942963f4cc8cb58bda7ec946bdffe6abe",
+      "port_sha256": "bc6d28ae2ab01200412443b2c4447e90dbd3d54779366e4d023803184ae8f2ce",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointQuotientTopology",
+      "upstream_path": "Hatcher/Singular/PointQuotientTopology.lean",
+      "upstream_sha256": "1076164982ae22b6e3207d084a20ae2a8d162accdeac0b9b972183f87868d44d",
+      "port_sha256": "a3aa829509b1638cecc00f0ebc325f5549b1147af06e2e710245c7751891acce",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: pointQuotientTypesIsPushout, pointQuotientProjection_injective_of_not_mem, compactComplementCollapse, compactComplementQuotientMap, compactComplementQuotientMap_projection, compactComplementQuotientMap_point."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.PointedRelative",
+      "upstream_path": "Hatcher/Singular/PointedRelative.lean",
+      "upstream_sha256": "caed85798052e12231accd2a9c304e97486e106b9bb76ae7d0ef1e3d75aa6b78",
+      "port_sha256": "347acf819f5c539041f626b44a1a46dd3be8978d33d6a8870177ee6429b05c83",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.Reduced",
+      "upstream_path": "Hatcher/Singular/Reduced.lean",
+      "upstream_sha256": "f7bbdb1c5fedb98ee2aa5a438b3c61cc93f124831d8293b9306fd07c996d6977",
+      "port_sha256": "ddc57fbbf16e071e2189025459a18cd7fec6496edee4f90a32deb71cbad9223a",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: positiveShortComplexIso."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.ReducedRelative",
+      "upstream_path": "Hatcher/Singular/ReducedRelative.lean",
+      "upstream_sha256": "c56f5419197d592f8f16575f0d8edee2dbe638705b3c8b18f12e8ad3e9cdd19d",
+      "port_sha256": "e1b085c04374866e74f8e3c37c92fb8197c20a36ec1ff2a9033739ea78453dbf",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Added explicit Mathlib.Algebra.Homology.HomologicalComplexAbelian import for the degreewise short-exactness theorem."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.Relative",
+      "upstream_path": "Hatcher/Singular/Relative.lean",
+      "upstream_sha256": "c560b494433e5d5c048a8c258274a337b2d330155b7d408d96be226becc8a699",
+      "port_sha256": "e0b1c3114fb6d0ab49dff39863ac9141ac32ca6a6235dc874992a34291a9eb4a",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: sSetPairChainComplexShortComplex."
+      ]
+    },
+    {
+      "module": "Hatcher.Singular.RelativeIsomorphism",
+      "upstream_path": "Hatcher/Singular/RelativeIsomorphism.lean",
+      "upstream_sha256": "b6cc3cf656816de6a1ef4f149a9960947387851f3f108810e8c03ce120d8f7df",
+      "port_sha256": "8c8ba1f66384907ebb0cf506091f552457e3fde0087e690cec7ec64ec07dbac5",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Hatcher.Sphere.HemisphereCharts",
+      "upstream_path": "Hatcher/Sphere/HemisphereCharts.lean",
+      "upstream_sha256": "aeeeecfa27c600ff5289a5834cc960dd1ac04693c1476b717d9de08b66eb4256",
+      "port_sha256": "7bb684f97eef42c9ba490d9a7287162a834ddee5b7d84c487303338a6e58cf3e",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: rawNorthPole, rawSouthPole, rawNorthHemisphere, rawSouthHemisphere, rawEquator, rawStereographicChart, rawStereographicChart_apply, rawStereographicChart_symm_apply_coe, inner_stereographic'_symm, inner_rawStereographicChart, rawNorthHemisphere_chart_iff, rawSouthHemisphere_chart_iff, rawEquator_chart_iff, nestedSubtypeHomeomorph, rawNorthHemisphere_subset_northNeighborhood, rawSouthHemisphere_subset_southNeighborhood, rawEquator_subset_northNeighborhood, rawEquator_subset_southNeighborhood, northNeighborhoodRawHomeomorph, southNeighborhoodRawHomeomorph, northHemisphereRawHomeomorph, southHemisphereRawHomeomorph, equatorRawHomeomorph, rawNorthHemisphereHomeomorph, rawSouthHemisphereHomeomorph, rawNorthPoleInNorthNeighborhood, rawNorthChart_northPole, rawNorthChart_ne_zero_iff, rawOverlap, overlapRawHomeomorph, rawOverlapHomeomorph, rawEquatorHomeomorph, radiusTwoSphereHomeomorphRawSphere."
+      ]
+    },
+    {
+      "module": "Hatcher.Sphere.HemisphereNeighborhoodCover",
+      "upstream_path": "Hatcher/Sphere/HemisphereNeighborhoodCover.lean",
+      "upstream_sha256": "37e9223b2c1f9555ce2a1add2d921a1db0c233e22fe9a9fcba034c49dc4adbf6",
+      "port_sha256": "9c784da5c525d34da602772d33fcb1b04da35a10ceb5fc3cdc756f0386007ad2",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: strongDeformationRetractOfHomeomorphSquare, northHemisphereStrongDeformationRetract, southHemisphereStrongDeformationRetract, equatorStrongDeformationRetract, hemisphereIntersectionStrongDeformationRetract, radiusTwoSpherePoint."
+      ]
+    },
+    {
+      "module": "Hatcher.Sphere.RadialDeformationRetract",
+      "upstream_path": "Hatcher/Sphere/RadialDeformationRetract.lean",
+      "upstream_sha256": "fc2a2db8a79eb70ad3dd40bb241af4eeb5d0a0f0f0c29188cebdbd1559aec8ce",
+      "port_sha256": "9238088196212cb55669e7f6f9dfb9ce63ad68a7331cf3d2b060daf9c2c8d85b",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: closedBallRadialFactor, continuous_closedBallRadialFactor, closedBallRadialClamp, continuous_closedBallRadialClamp, closedBallRadialClamp_mem, closedBallRadialClamp_eq_self, closedBallRadialRetraction, closedBallRadialDeformationMap, continuous_closedBallRadialDeformationMap, closedBallRadialDeformation, spherePuncturedRadialRetraction, homeomorphSphereProd_spherePuncturedInclusion, spherePuncturedRadialRetraction_inclusion, puncturedRadialRadius, continuous_puncturedRadialRadius, spherePuncturedRadialDeformationMap, continuous_spherePuncturedRadialDeformationMap, spherePuncturedRadialDeformation.",
+        "Replaced a redundant simplification of the unit-sphere norm by the explicit mem_sphere_zero_iff_norm lemma."
+      ]
+    },
+    {
+      "module": "Hatcher.Sphere.ZeroSphere",
+      "upstream_path": "Hatcher/Sphere/ZeroSphere.lean",
+      "upstream_sha256": "b4da4bf91689fff9cc2fd544b253fdd57cdbb0e60658040c58c42d043bcffc1e",
+      "port_sha256": "49f84f361d78fef458a71bc0cc2b4cf4aba82439daae6badecef55172a6e9553",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Made private helpers public for Lean 4.35 module visibility: RawZeroSphere, rawZeroSpherePoint, rawZeroSpherePoint_cases, rawZeroSphereEquivBool, rawZeroSphereHomeomorphBool, zeroSphereHomeomorphTwoPoint."
+      ]
+    },
+    {
+      "module": "Hatcher.Topology.StrongDeformationRetract",
+      "upstream_path": "Hatcher/Topology/StrongDeformationRetract.lean",
+      "upstream_sha256": "d48fac8fcdf0142ab1d3d5b455d504fafa6c9c80702764e90167ade71a20a284",
+      "port_sha256": "8db6439259386f01d402bb2da1a641f3d20d1b7ed42fb0d36d3d83a197924fff",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    }
+  ],
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "authors": [
+    "Joël Riou",
+    "Jack McCarthy"
+  ],
+  "secondary_source": {
+    "repository": "https://github.com/joelriou/excision",
+    "revision": "8b56cd0c8e5f39a7c2f36418c80b298e469596a6",
+    "note": "Attribution preserved in the relevant excision file headers."
+  },
+  "base_audit": {
+    "lean": "4.35.0",
+    "modules": 12,
+    "declarations": 745,
+    "theorems": 609,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass"
+  },
+  "expanded_audit": "Pending complete project audit after mathematical module integration."
+}

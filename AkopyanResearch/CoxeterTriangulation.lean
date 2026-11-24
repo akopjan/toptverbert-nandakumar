@@ -572,7 +572,7 @@ end ExactStrata
 
 section CircleDegree
 
-def homToCont {α β : Type*} [TopologicalSpace α] [TopologicalSpace β] (e : α ≃ₜ β) :
+def coxeterHomToCont {α β : Type*} [TopologicalSpace α] [TopologicalSpace β] (e : α ≃ₜ β) :
     C(α, β) :=
   ⟨e, e.continuous⟩
 
@@ -735,7 +735,7 @@ lemma addCircleEquivFixedP_row_pi_div_two :
 
 lemma addCircleEquivFixedP_row_conj_pi_div_two
     (f : C(FixedP_row, FixedP_row)) (hf : f anchorS_P_row = anchorS_P_row) :
-    ((homToCont addCircleEquivFixedP_row.symm).comp (f.comp (homToCont addCircleEquivFixedP_row)))
+    ((coxeterHomToCont addCircleEquivFixedP_row.symm).comp (f.comp (coxeterHomToCont addCircleEquivFixedP_row)))
         (((Real.pi / 2 : ℝ) : AddCircle (2 * Real.pi))) =
       ((Real.pi / 2 : ℝ) : AddCircle (2 * Real.pi)) := by
   change addCircleEquivFixedP_row.symm
@@ -747,7 +747,7 @@ lemma addCircleEquivFixedP_row_conj_pi_div_two
 def fixedP_rowDegree (f : C(FixedP_row, FixedP_row))
     (hf : f anchorS_P_row = anchorS_P_row) : ℤ :=
   circleDegree (Real.pi / 2)
-    ((homToCont addCircleEquivFixedP_row.symm).comp (f.comp (homToCont addCircleEquivFixedP_row)))
+    ((coxeterHomToCont addCircleEquivFixedP_row.symm).comp (f.comp (coxeterHomToCont addCircleEquivFixedP_row)))
     (addCircleEquivFixedP_row_conj_pi_div_two f hf)
 
 theorem fixedP_row_homotopyRel_of_degree_eq
@@ -758,24 +758,24 @@ theorem fixedP_row_homotopyRel_of_degree_eq
     ContinuousMap.HomotopicRel f g {anchorS_P_row} := by
   let e : AddCircle (2 * Real.pi) ≃ₜ FixedP_row := addCircleEquivFixedP_row
   let f' : C(AddCircle (2 * Real.pi), AddCircle (2 * Real.pi)) :=
-    (homToCont e.symm).comp (f.comp (homToCont e))
+    (coxeterHomToCont e.symm).comp (f.comp (coxeterHomToCont e))
   let g' : C(AddCircle (2 * Real.pi), AddCircle (2 * Real.pi)) :=
-    (homToCont e.symm).comp (g.comp (homToCont e))
+    (coxeterHomToCont e.symm).comp (g.comp (coxeterHomToCont e))
   obtain ⟨H'⟩ := circle_homotopyRel_of_degree_eq (Real.pi / 2) f' g'
     (addCircleEquivFixedP_row_conj_pi_div_two f hf)
     (addCircleEquivFixedP_row_conj_pi_div_two g hg) hdeg
-  let H_mid : ContinuousMap.HomotopyRel (f.comp (homToCont e)) (g.comp (homToCont e))
+  let H_mid : ContinuousMap.HomotopyRel (f.comp (coxeterHomToCont e)) (g.comp (coxeterHomToCont e))
       {((Real.pi / 2 : ℝ) : AddCircle (2 * Real.pi))} := by
-    have hef : (homToCont e).comp f' = f.comp (homToCont e) := by
+    have hef : (coxeterHomToCont e).comp f' = f.comp (coxeterHomToCont e) := by
       ext1 y
       exact e.apply_symm_apply (f (e y))
-    have heg : (homToCont e).comp g' = g.comp (homToCont e) := by
+    have heg : (coxeterHomToCont e).comp g' = g.comp (coxeterHomToCont e) := by
       ext1 y
       exact e.apply_symm_apply (g (e y))
-    exact (H'.compContinuousMap (homToCont e)).cast hef heg
+    exact (H'.compContinuousMap (coxeterHomToCont e)).cast hef heg
   refine ⟨{
     toContinuousMap := H_mid.toContinuousMap.comp
-      ((ContinuousMap.id I).prodMap (homToCont e.symm))
+      ((ContinuousMap.id I).prodMap (coxeterHomToCont e.symm))
     map_zero_left := fun x => by
       change H_mid (0, e.symm x) = f x
       rw [H_mid.apply_zero]

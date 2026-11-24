@@ -1,0 +1,822 @@
+⚠ [9081/9105] Replayed AkopyanResearch.RowSylowGeometry
+warning: AkopyanResearch/RowSylowGeometry.lean:654:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:655:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:656:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:657:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:658:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:659:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:662:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:663:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:664:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:665:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:666:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:667:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:654:17: This simp argument is unused:
+  if_pos (by decide : (0 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:655:17: This simp argument is unused:
+  if_pos (by decide : (1 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:656:17: This simp argument is unused:
+  if_pos (by decide : (2 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:657:17: This simp argument is unused:
+  if_pos (by decide : (3 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:658:17: This simp argument is unused:
+  if_neg (by decide : ¬(4 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:659:17: This simp argument is unused:
+  if_neg (by decide : ¬(5 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:662:17: This simp argument is unused:
+  if_pos (by decide : (0 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:663:17: This simp argument is unused:
+  if_pos (by decide : (1 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:664:17: This simp argument is unused:
+  if_pos (by decide : (2 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:665:17: This simp argument is unused:
+  if_pos (by decide : (3 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:666:17: This simp argument is unused:
+  if_neg (by decide : ¬(4 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:667:17: This simp argument is unused:
+  if_neg (by decide : ¬(5 : Fin 6).1 < 4)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:716:71: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:724:75: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:716:67: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:716:71: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:724:71: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:724:75: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: AkopyanResearch/RowSylowGeometry.lean:1253:12: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:1262:12: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:1273:12: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:1282:12: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:1873:41: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.ofReal_re, Complex.mul_re, Complex.I_re, mul_zero, Complex.ofReal_im,
+    Complex.I_im, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:1873:51: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.ofReal_re, Complex.mul_re, Complex.I_re, mul_zero, Complex.ofReal_im,
+    Complex.I_im, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2167:34: This simp argument is unused:
+  sub_self
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hcard, ↓reduceIte, norm_zero, zero_mul, smul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2167:44: This simp argument is unused:
+  norm_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hcard, ↓reduceIte, sub_self, zero_mul, smul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2167:55: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hcard, ↓reduceIte, sub_self, norm_zero, smul_zero, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2167:65: This simp argument is unused:
+  smul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hcard, ↓reduceIte, sub_self, norm_zero, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2167:76: This simp argument is unused:
+  add_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hcard, ↓reduceIte, sub_self, norm_zero, zero_mul, smul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2266:28: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2273:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2282:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2282:42: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2289:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2289:36: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2300:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2300:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2307:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2317:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2317:32: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2326:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2326:31: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/RowSylowGeometry.lean:2475:17: This simp argument is unused:
+  Set.Icc.coe_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sub_zero, one_mul, zero_mul, add_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/RowSylowGeometry.lean:2492:17: This simp argument is unused:
+  Set.Icc.coe_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sub_self, zero_mul, one_mul, zero_add]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9083/9105] Replayed AkopyanResearch.PairUniversalSource
+warning: AkopyanResearch/PairUniversalSource.lean:758:36: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:777:12: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:777:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:782:12: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:782:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:802:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/PairUniversalSource.lean:857:20: This simp argument is unused:
+  mul_assoc
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9085/9105] Replayed RequestProject.Surgery.GLPath
+warning: RequestProject/Surgery/GLPath.lean:28:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:119:6: Unused tactic linter: `skip` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Surgery/GLPath.lean:183:38: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:195:16: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/GLPath.lean:224:32: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:236:20: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:258:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:262:34: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:269:22: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:281:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:281:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9086/9105] Replayed RequestProject.Surgery.Frame
+warning: RequestProject/Surgery/Frame.lean:89:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/Frame.lean:96:39: This simp argument is unused:
+  Function.update_of_ne (Fin.succ_ne_zero _)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lin, Fin.sum_univ_succ, toVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Frame.lean:150:11: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+⚠ [9087/9105] Replayed RequestProject.Surgery.Avoid
+warning: RequestProject/Surgery/Avoid.lean:31:49: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵l̵t̵_̵t̵o̵p̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲l̲t̲_̲t̲o̲p̲
+⚠ [9088/9105] Replayed RequestProject.Surgery.PathHomotopy
+warning: RequestProject/Surgery/PathHomotopy.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PathHomotopy.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9089/9105] Replayed RequestProject.Surgery.Core
+warning: RequestProject/Surgery/Core.lean:41:0: automatically included section variable(s) unused in theorem `Surgery.exists_margin`:
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9090/9105] Replayed RequestProject.Surgery.Cutoff
+warning: RequestProject/Surgery/Cutoff.lean:45:4: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/Cutoff.lean:55:10: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+⚠ [9091/9105] Replayed AkopyanResearch.QuadraticArrangement
+warning: AkopyanResearch/QuadraticArrangement.lean:255:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: AkopyanResearch/QuadraticArrangement.lean:1320:10: `continuousOn_iff_continuous_restrict` has been deprecated: Use `continuousOn_iff_continuous_domRestrict` instead
+
+Hint: Replace the deprecated name:
+  continuousOn_iff_continuous_r̵d̲o̲m̲R̲estrict
+warning: AkopyanResearch/QuadraticArrangement.lean:1327:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1360:10: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1369:10: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1594:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1594:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1602:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1602:19: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1665:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1671:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1677:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: AkopyanResearch/QuadraticArrangement.lean:1683:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1720:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1739:24: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1768:22: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1792:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:1853:10: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/QuadraticArrangement.lean:2163:65: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9092/9105] Replayed RequestProject.Surgery.PairCancel
+warning: RequestProject/Surgery/PairCancel.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PairCancel.lean:96:4: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/PairCancel.lean:209:6: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/PairCancel.lean:232:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [9093/9105] Replayed RequestProject.Surgery.Transport
+warning: RequestProject/Surgery/Transport.lean:68:29: This simp argument is unused:
+  fromVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unitE, fromVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Transport.lean:110:24: This simp argument is unused:
+  toVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [toVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9094/9105] Replayed RequestProject.Surgery.ZeroSet
+warning: RequestProject/Surgery/ZeroSet.lean:59:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9096/9105] Replayed RequestProject.Surgery.Good
+warning: RequestProject/Surgery/Good.lean:60:0: automatically included section variable(s) unused in theorem `Surgery.eventually_eq_of_not_mem`:
+  [NormedAddCommGroup V]
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup V] [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RequestProject/Surgery/Good.lean:76:22: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:76:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:82:70: `Set.inter_union_diff` has been deprecated: Use `Set.inter_union_sdiff` instead
+
+Hint: Replace the deprecated name:
+  inter_union_s̲diff
+warning: RequestProject/Surgery/Good.lean:84:37: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/Good.lean:111:20: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:111:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:122:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+warning: RequestProject/Surgery/Good.lean:123:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+⚠ [9097/9105] Replayed RequestProject.Surgery.ShiftGood
+warning: RequestProject/Surgery/ShiftGood.lean:35:38: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/ShiftGood.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/ShiftGood.lean:95:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:111:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:136:33: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:146:29: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:147:30: `Set.setOf_false` has been deprecated: Use `Set.ofPred_false` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵f̵a̵l̵s̵e̵o̲f̲P̲r̲e̲d̲_̲f̲a̲l̲s̲e̲
+⚠ [9098/9105] Replayed RequestProject.Surgery.Separate
+warning: RequestProject/Surgery/Separate.lean:52:61: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9100/9105] Replayed RequestProject.Surgery.CancelGood
+warning: RequestProject/Surgery/CancelGood.lean:62:46: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/CancelGood.lean:89:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/CancelGood.lean:94:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:109:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:120:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:148:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9101/9105] Replayed RequestProject.Surgery.Main
+warning: RequestProject/Surgery/Main.lean:37:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/Main.lean:77:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9103/9105] Built AkopyanResearch.EquivariantPinch64 (18s)
+warning: AkopyanResearch/EquivariantPinch64.lean:99:25: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_zero, neg_zero, add_zero, mul_pow, sq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/EquivariantPinch64.lean:158:30: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:180:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:372:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:414:8: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:419:8: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:426:6: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: AkopyanResearch/EquivariantPinch64.lean:478:14: This simp argument is unused:
+  Finset.set_biUnion_insert
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9104/9105] Built AkopyanResearch.BeltTrickSO (30s)
+warning: AkopyanResearch/BeltTrickSO.lean:118:20: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:119:22: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.ext_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:122:20: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.ext_iff]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:144:28: This simp argument is unused:
+  Fin.succAbove_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:247:32: This simp argument is unused:
+  Fin.succAbove_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.submatrix]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:329:14: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:331:14: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hij]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:376:54: Variable name `hv` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hv
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: AkopyanResearch/BeltTrickSO.lean:504:17: This simp argument is unused:
+  hsum0
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [qReal, hpt0]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:743:4: Unused tactic linter: `change qReal t ∈ Submodule.span ℝ ({pt m.1, pt (m.1 + 1)} : Set E)` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: AkopyanResearch/BeltTrickSO.lean:947:16: This simp argument is unused:
+  h0a
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h0b, transportMatrix_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:947:21: This simp argument is unused:
+  h0b
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h0a, transportMatrix_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:959:16: This simp argument is unused:
+  h1a
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h1b, transportMatrix_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:959:21: This simp argument is unused:
+  h1b
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [h1a, transportMatrix_self]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:1039:32: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:1068:70: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:1072:12: This simp argument is unused:
+  Matrix.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Fin.sum_univ_two, Circle.coe_mul, Complex.mul_re, Complex.mul_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:1072:30: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [Matrix.mul_apply, Circle.coe_mul, Complex.mul_re, Complex.mul_im]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: AkopyanResearch/BeltTrickSO.lean:1167:18: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: AkopyanResearch/BeltTrickSO.lean:1167:8: Unused tactic linter: `all_goals try rfl` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+✔ [9105/9105] Built AkopyanResearch (23s)
+Build completed successfully (9105 jobs).

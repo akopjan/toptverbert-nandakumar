@@ -1,0 +1,18 @@
+{
+  "outcome": "build-failed-key-public-visibility",
+  "driver_exit_code": 1,
+  "recorded_utc": "2026-11-24T05:18:12.138577+00:00",
+  "stage_exit_codes": {
+    "structure": 0,
+    "unit-tests": 0,
+    "build": 1
+  },
+  "explanation": "The complete private-environment axiom scan passed for 5713 declarations from 119 owners. A key-public-view guard then rejected a theorem imported only through import all. Lean documents that public import and import all are separate directives. The next revision adds both imports for every proof owner; mathematical source bodies do not change.",
+  "subsequent_fix_changed_inputs": [
+    "Audit.lean",
+    "scripts/check_structure.py",
+    "scripts/sync-audit.py",
+    "tests/test_static.py"
+  ],
+  "subsequent_fix_changed_mathematical_sources": []
+}

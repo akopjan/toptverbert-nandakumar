@@ -1,0 +1,204 @@
+# NON-SUBMITTABLE PROJECT DRAFT — 2026-11-24 UTC.
+# This is deliberately not named formalization.yaml.
+# Required human authorship, licence and maintainer data are unresolved.
+# The empty authors list and empty licence intentionally fail the v0.4 schema.
+# Do not submit the requested unconditional d > 17 result: it is not proved.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "TopTverberg"
+  description: >-
+    A Lean 4 formalization of an almost-six embedding of the 35-dimensional
+    simplex into R^6 and a convex six-partition counterexample in every
+    dimension d >= 36. New modules construct the concrete single/pair
+    comparison data and a conditional reduction to d > 17. The required
+    relative lifting theorem for that comparison remains unproved.
+  authors: []  # TODO: establish the complete human formalizer list.
+  license: "" # TODO: obtain the actual SPDX licence and matching root file.
+  responsible_maintainers: [] # TODO: identify responsible human maintainers.
+
+# TODO: public GitHub repository URL and final 40-character commit SHA.
+# This is an ordinary proof-development project, so the upstream template
+# says to omit repository.substantive_formalization. Do not fabricate a URL
+# or repurpose the thin-wrapper field for the ordinary submission repository.
+
+classification:
+  arxiv: ["math.MG", "math.AT"]
+  msc2020: ["52C35", "55S91", "52A20"]
+
+sources:
+  - title: "User-supplied akopyan_toptverberg_formalization_reviewed(1).zip"
+    id: "sha256:7537d4233d74c40aa3eddad5fd4912287810f6a78c6543dbf75cf2fe364e119b"
+    type: "formalization"
+    location: "Solution.lean and its 47-module local proof closure"
+    relationship: "adapts"
+    license: "unknown"
+    note: >-
+      The supplied source archive is the direct source of A and B36. All
+      47 local modules in the checked Solution closure are byte-for-byte
+      unchanged. The current project adds verification, documentation and
+      Completion modules. Public bibliographic provenance and complete
+      source authorship have not yet been established; no claim of first
+      publication or source-author endorsement is made here.
+  - title: "Mathlib v4.35.0"
+    id: "https://github.com/leanprover-community/mathlib4/tree/56a005855ea17e0b0958f73ec801ae140b0a1679"
+    type: "formalization library"
+    relationship: "background"
+    note: "Pinned dependency recorded in lake-manifest.json."
+
+status:
+  scope: >-
+    The unconditional comparator targets are A (Delta^35 to R^6) and B for
+    d >= 36. The literal Challenge audit preserves all seven interface
+    definitions and both theorem types. Their actual proof bodies and
+    dependencies were accepted by Lean checker, NanoDa and con-ron with
+    exit code 0. Geometric blocking by 5*d markers is proved for d >= 18.
+    The new concrete comparison, its chosen target section, and the full
+    fifteen-color relative induction have each passed Lean. The d > 17
+    conclusion is conditional on the explicit proposition
+    AkopyanResearch.ConcreteComparison.RequiredRelativeLifting, whose
+    proof is not provided. The final working project gate passed at
+    2026-11-24T06:11:59Z, as recorded in verification/final-delivery/REPORT.md:
+    132 source modules, 131 proof-module owners and 6144 declarations
+    (4611 public, 1533 private; 4625 theorems and 1432 definitions),
+    including guards for 59 selected theorems and 16 selected definitions.
+    All 23 tests passed and all 145 recorded verification inputs were
+    unchanged. The build emitted 349 warnings; the fresh audit emitted none.
+    Four selected
+    Completion theorem proofs, including the conditional d > 17 theorem,
+    also passed all three independent checking components. A separate
+    compiled-interface comparison matched all nine types and seven
+    definition bodies between independently imported Challenge and Solution.
+    The latest modules prove exact pair ranks, PairState coverage and orbit
+    classification, the full homeomorphism of the concrete target with a
+    standard path-space homotopy fiber, the continuous linear normal model
+    of actual paired tests, and a strong deformation retraction of their
+    local complement Q onto the exact balanced locus K. Connectivity of
+    the comparison remains unproved. These modules are included in the
+    successful integrated working gate. The final source-release gate passed
+    at 2026-11-24T06:13:11Z with the same 145 input hashes; see
+    verification/clean-delivery/REPORT.md. It cumulatively cold-built 120
+    modules, then eleven additions, then PairCollapsedLocus. Entry modules
+    were rebuilt; the final stage preserved all 129 other object hashes.
+    No project build objects were copied from the working tree. This is
+    a 120+11+1 source rebuild, not repeated from-zero builds of all 132 modules.
+    Seven selected model declarations (two theorems and five definitions)
+    and 38429 dependency declarations were accepted by all three checking
+    components at 2026-11-24T06:09:39Z; see verification/model-kernels/REPORT.md.
+    That certificate belongs to the 131-module snapshot. The subsequently
+    added PairCollapsedLocus module proves a strong deformation of the
+    actual closed chart complement D onto its equal-common-component
+    subtype. It passed both final full Lean owner/build gates but was not
+    included in that export. A final source preflight checked all 147 regular
+    Lean files, including fifteen diagnostics, for module headers, the
+    10000-line limit and admissions outside Challenge; maximum length was
+    9336 lines, with no errors. The
+    official sandboxed Comparator returned exit 1 during bubblewrap tmpfs
+    setup with ENOENT; it has not accepted the project in this environment.
+  # Lexical proof-source scan excludes the independent Challenge and
+  # verification/tests directories, exactly as scripts/check_structure.py.
+  # Evidence: draft-proof-token-count.json (131 proof modules, hashed).
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "AkopyanSixfold.tverberg_counterexample"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+      literature_dependencies: []
+    - declaration: "AkopyanSixfold.convex_partition_counterexample"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+      literature_dependencies: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6 Astra Pro"]
+      framework: "ChatGPT multi-agent workspace"
+      tool_setup: >-
+        Lean 4.35.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc;
+        Lake 5.0.0-src; Mathlib commit
+        56a005855ea17e0b0958f73ec801ae140b0a1679; Python source checks;
+        parallel proof development and independent agent review;
+        proof-body export with leanexport and sequential Lean checker,
+        NanoDa and con-ron checks. CI requires Python 3.11 or newer.
+      cost:
+        wall_time: "At least 2 h 00 min 01 s of the restored-archive session, 2026-11-24T04:21:26Z to 2026-11-24T06:21:27Z; final packaging and delivery follow this recorded interval."
+        spend_usd: "not tracked"
+        hardware: "Linux workspace; detailed hardware accounting not tracked"
+      prompting_notes: >-
+        Complete the supplied Lean project without sorry or new axioms,
+        target the full d > 17 conclusion, and prepare a publication package.
+        Preserve exact theorem statements and explicitly distinguish every
+        remaining mathematical hypothesis from a proved result.
+  spend_usd: "not tracked"
+  notes: >-
+    This entry records the current completion and verification session only.
+    Automation used to produce the supplied original archive is not fully
+    reconstructed. The listed model is the model identity supplied in the
+    session; internal serving/build identifiers were not recorded. Agents
+    are not listed as human authors or responsible maintainers.
+
+fidelity:
+  divergences: >-
+    The original A and B36 statements and their seven interface definitions
+    are preserved, with a successful literal independent-statement check.
+    The requested unconditional d >= 18 strengthening is not completed.
+    Legacy CoherentComparison is documented as overstrong; the alternative
+    relative interface retains the prescribed boundary homotopy. The new
+    d > 17 theorem explicitly assumes RequiredRelativeLifting. No hidden
+    external theorem or new axiom is used to discharge that assumption.
+
+review:
+  status: "agent-reviewed; mechanically checked within the stated scope"
+  reviewers: []
+  notes: >-
+    Independent agents reviewed the geometry, row actions, pair collapse,
+    target isotropy and relative skeleton induction. External human peer
+    review is not established. The original proof closure passed three
+    independent checking components at 2026-11-24T05:12:58Z; see
+    verification/original-kernels-retry/REPORT.md. This is not registry
+    acceptance. Four selected Completion proofs passed the same checkers
+    at 2026-11-24T05:30:52Z; see verification/completion-kernels/REPORT.md.
+    Their stated hypotheses are retained. The compiled-interface check
+    passed separately; see verification/compiled-interface/REPORT.md.
+    New Completion declarations have passed module builds and the snapshot
+    project-owner audit; see verification/final-project-retry/REPORT.md.
+    The official Comparator attempt is recorded as failed, not accepted,
+    in verification/official-comparator/REPORT.md. Its ENOENT is consistent
+    with missing standard Linux mount targets; no sandbox bypass was used.
+    The topology research note marks GM, local comparison
+    connectivity, homological identification and relative lifting as
+    obligations that remain to be formalized.
+
+alignment:
+  namespace: "AkopyanSixfold"
+  statements:
+    - source: "Supplied Challenge, theorem A"
+      lean: "AkopyanSixfold.tverberg_counterexample"
+      module: "Solution"
+      status: "proved"
+      note: "Almost-six embedding Delta^35 to R^6; exact original statement."
+    - source: "Supplied Challenge, theorem B with 36 <= d"
+      lean: "AkopyanSixfold.convex_partition_counterexample"
+      module: "Solution"
+      status: "proved"
+      note: "Unconditional dimension bound is d >= 36."
+    - source: "Requested strengthening to 17 < d"
+      lean: "AkopyanSixfold.convex_partition_counterexample_gt_17_of_relative_lifting"
+      module: "AkopyanResearch.Completion.ConcreteReduction"
+      status: "proved conditional reduction; target existence still open"
+      note: >-
+        Explicitly assumes
+        AkopyanResearch.ConcreteComparison.RequiredRelativeLifting.
+        This is not an unconditional proof of the requested strengthening.
+
+acknowledgements: >-
+  Lean, Mathlib, the Comparator toolchain, Lean checker, NanoDa and con-ron.
+  Human contributor credits must be completed from confirmed provenance.

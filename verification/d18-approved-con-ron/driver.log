@@ -1,0 +1,5 @@
+Inspecting and hashing the final export without modifying it
+Inspected 594526516 bytes / 11112687 NDJSON records
+Starting approved con-ron with --jobs=4
+Checker exited 0; checking immutable inputs
+approved-con-ron-accepted-same-final-export

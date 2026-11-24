@@ -1,0 +1,3 @@
+PATH TRIVIALISATION AUDIT OK: 416 declarations, 307 theorems, 5 modules; only propext, Classical.choice, Quot.sound
+'Submission.homotopyEquivOverDisc' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Submission.BasedPathFamily.homotopyEquiv' depends on axioms: [propext, Classical.choice, Quot.sound]

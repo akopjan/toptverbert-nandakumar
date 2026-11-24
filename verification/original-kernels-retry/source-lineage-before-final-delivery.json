@@ -1,0 +1,11 @@
+{
+  "checked_utc": "2026-11-24T05:58:08.290867+00:00",
+  "historical_certificate_outcome": "all-components-accepted",
+  "historical_export_sha256": "e13da01da2ed86c54af2e33eb8277862cb7f6a8100a78d6d4043e99b205a8781",
+  "source_count_at_verification": 47,
+  "unchanged_source_count": 47,
+  "changed_source_entries": {},
+  "historical_entry_snapshots": {},
+  "all_selected_mathematical_proof_sources_unchanged": true,
+  "scope": "Hash comparison of final source revision with an already accepted historical certificate; independent kernel checks were not repeated."
+}

@@ -1,0 +1,10 @@
+{
+  "observed_utc": "2026-11-24T04:51:35.085712+00:00",
+  "status": "interrupted-incomplete",
+  "session_id": 37362,
+  "resume_error": "Unknown process id",
+  "observed_report_outcome": "verification-in-progress",
+  "completed_stages": [],
+  "mathematical_rejection": false,
+  "acceptance_claimed": false
+}

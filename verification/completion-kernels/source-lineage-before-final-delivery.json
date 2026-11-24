@@ -1,0 +1,23 @@
+{
+  "checked_utc": "2026-11-24T05:58:08.299449+00:00",
+  "historical_certificate_outcome": "all-components-accepted",
+  "historical_export_sha256": "d554d77166f9b6b606f09bf83c19f1ecd7123290359c494871293049cb5adecc",
+  "source_count_at_verification": 119,
+  "unchanged_source_count": 117,
+  "changed_source_entries": {
+    "AkopyanResearch/Completion.lean": {
+      "verified_sha256": "8fc6d17c7cf36a0422d865ba673fd69347cf91199ae224cef0a5dcdbfd158420",
+      "current_sha256": "cf8dfb444d87e6bcd735dde26d1f484578fadd2f864e7ef8d41b3c265615ae99"
+    },
+    "Audit.lean": {
+      "verified_sha256": "c2fc2460be7f40012c70664610dbfa4d0106b1ef177fd29da6ffc10072dcf371",
+      "current_sha256": "afb8e230f8d29dcedf29e553931ac60f4bbf9d374ff1ebb7a871f4b20589be8a"
+    }
+  },
+  "historical_entry_snapshots": {
+    "Audit.lean": "audit-entry-at-verification.lean.txt",
+    "AkopyanResearch/Completion.lean": "completion-entry-at-verification.lean.txt"
+  },
+  "all_selected_mathematical_proof_sources_unchanged": true,
+  "scope": "Hash comparison of final source revision with an already accepted historical certificate; independent kernel checks were not repeated."
+}

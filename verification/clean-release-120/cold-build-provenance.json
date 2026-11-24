@@ -1,0 +1,665 @@
+{
+  "recorded_utc": "2026-11-24T05:44:03.492885+00:00",
+  "stage": "/workspace/scratch/9db1b532943d/clean-release/akopyan_formalization_updated",
+  "scope": "120-module cold source snapshot before later unrelated pair-structure additions",
+  "started_without_project_build_objects": true,
+  "project_build_objects_copied_from_working_tree": false,
+  "all_120_modules_have_fresh_build_log_records": true,
+  "project_olean_files_after_build": [
+    {
+      "module": "AkopyanResearch",
+      "sha256": "e7d51de570de662fb9e265d68dea9c0f2324c66f35d341e493400fd8ced13849",
+      "path": ".lake/build/lib/lean/AkopyanResearch.olean"
+    },
+    {
+      "module": "AkopyanResearch.BeltTrickSO",
+      "sha256": "5fa7151a4441138a7a1067a1c7fedcca3c58f1d441f7258913ee80aa19ab7ca8",
+      "path": ".lake/build/lib/lean/AkopyanResearch/BeltTrickSO.olean"
+    },
+    {
+      "module": "AkopyanResearch.BoundaryRegularization",
+      "sha256": "f5b4ad7cfd0a3a96c04bdce90831ea12da961f3054935207aeeaec285398fae5",
+      "path": ".lake/build/lib/lean/AkopyanResearch/BoundaryRegularization.olean"
+    },
+    {
+      "module": "AkopyanResearch.BranchPinch",
+      "sha256": "5e54db15f0a67ff10d86b399be5bd1a029e71257c3e66b9305b2c9401e6dcbfd",
+      "path": ".lake/build/lib/lean/AkopyanResearch/BranchPinch.olean"
+    },
+    {
+      "module": "AkopyanResearch.CanonicalExtraction",
+      "sha256": "965b6d3483bdf7932ce67a41b50e27a9c6c75ca6f48e37c4229da2c47cf020d3",
+      "path": ".lake/build/lib/lean/AkopyanResearch/CanonicalExtraction.olean"
+    },
+    {
+      "module": "AkopyanResearch.CanonicalQuadratic",
+      "sha256": "3c36dbf887bf02b02dafbc38f252937a5820e95a6c0bea500d043b275ccde7f3",
+      "path": ".lake/build/lib/lean/AkopyanResearch/CanonicalQuadratic.olean"
+    },
+    {
+      "module": "AkopyanResearch.ChainTelescoping",
+      "sha256": "3c553e36013f6c16765ec9a314416328da83811ef617eb603cb2343be414c65d",
+      "path": ".lake/build/lib/lean/AkopyanResearch/ChainTelescoping.olean"
+    },
+    {
+      "module": "AkopyanResearch.CochainAnnihilator",
+      "sha256": "3122322905649fc25b78d7ac0a6c760e0c8975dc5b0a017121b40320782b65e1",
+      "path": ".lake/build/lib/lean/AkopyanResearch/CochainAnnihilator.olean"
+    },
+    {
+      "module": "AkopyanResearch.ColoredChainContraction",
+      "sha256": "4139403b6dee4ca9aa1b3f45fdc5b46eee054af58b1f3dc0ebb16878247fe4bf",
+      "path": ".lake/build/lib/lean/AkopyanResearch/ColoredChainContraction.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion",
+      "sha256": "ced3fa212e8f1efda20be5ebb7a057b5d98a98698fb56351730b9a7df951bc3c",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ArrangementLink",
+      "sha256": "e4ebd64a222f38caa86000cdc0da09ad2d5ce600a5482cd69a17fe924997b5c6",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ArrangementLink.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ChosenTargetSections",
+      "sha256": "6368516315b1587dcbece95f9b47bc84bdb4aba8dae01423ba8aaf78710bbe84",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ChosenTargetSections.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ComparisonContract",
+      "sha256": "72fd4c535fa6117a044d85ca20b09f2dbe39f6da648f662ff796c0fb6a273e1d",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ComparisonContract.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ConcreteComparison",
+      "sha256": "4018f21f74f21d7be00c5300f7b7359a47b9e32543f421217e9ffa463c5b7ea6",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ConcreteComparison.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ConcreteComparisonTarget",
+      "sha256": "4ae1c56307857d9e8113ea9ee8c1e6f724c6660e514c71a3fdff82d6da15b76b",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ConcreteComparisonTarget.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ConcreteReduction",
+      "sha256": "df339edf59e7688d62608c2500113c5f93d6cc4cbdc83c7fa2c9e6b09c2e1ba1",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ConcreteReduction.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.EquivariantJoinIteration",
+      "sha256": "b867405b71769a9381985a68e20f92ba0fb403035be904858191a09ec716efa9",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/EquivariantJoinIteration.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.EquivariantJoinStep",
+      "sha256": "5908f5374161156021041eadd1fb8be104180b4f9bd7db88796e494705ee6ead",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/EquivariantJoinStep.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.GeneralTableBridge",
+      "sha256": "d7beb475143080a49585967f57dd587eb7c9d30618a812a84085e179d7fb32f8",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/GeneralTableBridge.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.IteratedJoinCoordinates",
+      "sha256": "ce734daae9b0e655845f1a6819a80943a817a26ce057c6f9020f96d026400a92",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/IteratedJoinCoordinates.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinCoordinates",
+      "sha256": "5cf3bded98634fc7408df01053b84d500d14a5a28ed354b8f2155ba9a519bc19",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinCoordinates.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinMassCoordinates",
+      "sha256": "764e17c8c7630c5f1730ec0ac30e18e3407478aac6fa9c2eb1c7b1956b828dfc",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinMassCoordinates.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinNullIteration",
+      "sha256": "b130d06f2cb2726317fb7fcf69af824961662f6168d09f474a8b427161a63a5d",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinNullIteration.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinNullhomotopy",
+      "sha256": "196b529e991be6bc69730441f9c57e766b58c3994ad4eab9591444fe4b93f678",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinNullhomotopy.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinRowAction",
+      "sha256": "ed24bee64649c2fdc4b487b8be618a7484e5e764414b1b627e53bedae033589a",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinRowAction.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.JoinVertexMap",
+      "sha256": "a65686de7b8a1eb2c215dba5fcd124a2dcaf2d21f32c178437504928e97eb2a9",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/JoinVertexMap.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.LocalLink",
+      "sha256": "9a13a5bba7369a96b80be0d183c8d277a320bc3602eafc048230bc4b966d0fc8",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/LocalLink.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.MatchingExtraction",
+      "sha256": "4a8a5343c27e710733ffae36aa54b2012dfc37b89d463c067739f87c17d65e8c",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/MatchingExtraction.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.MatchingPairCollapse",
+      "sha256": "46d87de0fdcddbf98bab120afc893afab48e583a858e7baed0b90f62cf99ad35",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/MatchingPairCollapse.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.MatchingSphereMap",
+      "sha256": "59107a405a323ae00d02a350c60d82b10cc1f03b8974a316a84d40d0b3d59b3c",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/MatchingSphereMap.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.OriginalJoinBridge",
+      "sha256": "d5c83a4ac6ac5931096b6e020102b34b24b1e67c6e131a8201cb88df89c65e0d",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/OriginalJoinBridge.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.OriginalJoinCoordinates",
+      "sha256": "871a95021cf30b28fa696af3e04edc971924d8519ba67b43fbdc6edf22567bb9",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/OriginalJoinCoordinates.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.OriginalPairPath",
+      "sha256": "4dfd3e70b3a682e3d5f7425680c3dfec137011a84c7b5005ff41468b55ea2dc0",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/OriginalPairPath.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.PairSourceProjections",
+      "sha256": "802b31046b4161a1271ae7c5b550d3848e909af88b796321135d9b4a3e6106b9",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/PairSourceProjections.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.PairSphereAction",
+      "sha256": "fb7b66bd04f6a4875f3e9e5d69d4c84a26e4a3cdde09b67c2b6d57e558a9d791",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/PairSphereAction.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.PhaseExtension",
+      "sha256": "e0536c95cfe8bc62152e996acce8753774dc9e1c7e2cdc753836a466f4c56c49",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/PhaseExtension.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.ProductExpectation",
+      "sha256": "237aaae86d02812c6da8c9a6a8a6567d8c24ac19a12560696daf12cff90dbda7",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/ProductExpectation.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.PurePhaseCoordinates",
+      "sha256": "e5129c0daafed7d2efbd4dafa14cc9eb8b39ff1a66479c9393b6e0ce1f83dca1",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/PurePhaseCoordinates.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.QuadraticFlatRank",
+      "sha256": "75fd97c1d3093d9833fbdd33f852f21a4c164bd8d7e3036175e543a0ef1e03d3",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/QuadraticFlatRank.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.QuadraticLink",
+      "sha256": "3605ac0ba306eb5ff3429a91c61fa1b48ff2391fe561370e27228b83ab20f056",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/QuadraticLink.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.RelativeComparison",
+      "sha256": "e57fcf2fb81ff697054797f6eea8aa081b8b8d042bf4241cbd3caa0cf43b179b",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/RelativeComparison.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.RelativeFaceDiagram",
+      "sha256": "f4ac3b7f6e159e2f66da2f5230e5f406e5884d7b2a15ca680fddd47728b28f23",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/RelativeFaceDiagram.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.SimplexEmbedding",
+      "sha256": "1d2bb93b41f7d48523cb1be6542c6396f2a8d235b40ebfe198d791b033cadaac",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/SimplexEmbedding.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.TableRealization",
+      "sha256": "e3677df383d0d6d8fae8a2555c1c6c54e6a0fe33182c58ff912a97cc9d34c56e",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/TableRealization.olean"
+    },
+    {
+      "module": "AkopyanResearch.Completion.TableToEmbedding",
+      "sha256": "5b9f982277ac1084f8e84328d987042d58733b4ffe948fdc78da655dcea29fbf",
+      "path": ".lake/build/lib/lean/AkopyanResearch/Completion/TableToEmbedding.olean"
+    },
+    {
+      "module": "AkopyanResearch.CoxeterChamber",
+      "sha256": "c6715dc6566864fef125be64be67da23961c5bed4b9136958497d8a658d2d806",
+      "path": ".lake/build/lib/lean/AkopyanResearch/CoxeterChamber.olean"
+    },
+    {
+      "module": "AkopyanResearch.CoxeterTriangulation",
+      "sha256": "18a2cb2b07a9fd48b9e3f95bdf60fe28d9f2b2917cf3e928e0fc6e559142af74",
+      "path": ".lake/build/lib/lean/AkopyanResearch/CoxeterTriangulation.olean"
+    },
+    {
+      "module": "AkopyanResearch.DiskCylinderRetraction",
+      "sha256": "b37d2bc980c919953411b7e79fceb973aecd96137142155c746afe99c4b8d2c5",
+      "path": ".lake/build/lib/lean/AkopyanResearch/DiskCylinderRetraction.olean"
+    },
+    {
+      "module": "AkopyanResearch.EquivariantPinch64",
+      "sha256": "daca20376da98725ec7057514bf2753d2e296b93892a0ffc3af6ea33cf0c82f6",
+      "path": ".lake/build/lib/lean/AkopyanResearch/EquivariantPinch64.olean"
+    },
+    {
+      "module": "AkopyanResearch.FiniteGenericity",
+      "sha256": "eb3d5f7e1d73f52a799f1a35d87f6ce97b1bb2f84a77ce94afd61f95457d0bd3",
+      "path": ".lake/build/lib/lean/AkopyanResearch/FiniteGenericity.olean"
+    },
+    {
+      "module": "AkopyanResearch.FiniteRegularization",
+      "sha256": "09c18acb7cf498de7b644444861d3ee3de24b2832d44216d9bc7d3967236cb42",
+      "path": ".lake/build/lib/lean/AkopyanResearch/FiniteRegularization.olean"
+    },
+    {
+      "module": "AkopyanResearch.FrameTransport",
+      "sha256": "8fa71f05fd21534ee200baadba49df0e1ea471da4155aa22703a0019adeab092",
+      "path": ".lake/build/lib/lean/AkopyanResearch/FrameTransport.olean"
+    },
+    {
+      "module": "AkopyanResearch.FramedAnnulus",
+      "sha256": "5c7140a6280d005098eaeeddc491d42212ce6c0d8fdf7252c22eb9fef4addd70",
+      "path": ".lake/build/lib/lean/AkopyanResearch/FramedAnnulus.olean"
+    },
+    {
+      "module": "AkopyanResearch.InvariantCaps",
+      "sha256": "6eb145858ad964c77cba1d65c02a5aadb49745c673ef17e5f56b045b0d23a7af",
+      "path": ".lake/build/lib/lean/AkopyanResearch/InvariantCaps.olean"
+    },
+    {
+      "module": "AkopyanResearch.MarksArithmetic",
+      "sha256": "a88bf39bbbb2e6d77ab619280ff69143afa1e5fb1ce7f0f0f8b54c630bce43da",
+      "path": ".lake/build/lib/lean/AkopyanResearch/MarksArithmetic.olean"
+    },
+    {
+      "module": "AkopyanResearch.MatchingCombinatorics",
+      "sha256": "6f368906dcff1a6c987c26836f18b33275fd9545de2184b96a015a4a9a19f560",
+      "path": ".lake/build/lib/lean/AkopyanResearch/MatchingCombinatorics.olean"
+    },
+    {
+      "module": "AkopyanResearch.MatchingProjection",
+      "sha256": "7698f05e3e88f9e04f512079e51c6c167674b376a1bb57ad7998f008dd6c5249",
+      "path": ".lake/build/lib/lean/AkopyanResearch/MatchingProjection.olean"
+    },
+    {
+      "module": "AkopyanResearch.NormalBundleTrivialization",
+      "sha256": "1535d758157f97771df4ee253eea9fe833d9a7e5a8e3ac17b3462d353053a657",
+      "path": ".lake/build/lib/lean/AkopyanResearch/NormalBundleTrivialization.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairCollapse",
+      "sha256": "2920f13585c9842cc37dd9efb356f727de7b5340e0fa6c1541851c28c23d0c58",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairCollapse.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairCollapseEquivariant",
+      "sha256": "df96e523cd5a6b6292703377d424efdc1c6dcd6c2f5b6bd52cae901cd482edac",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairCollapseEquivariant.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairGeometry",
+      "sha256": "a38d86176633e576219b4a0c6cd91c6680da8fc0b0170c996f5433992fe88b9c",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairGeometry.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairNormalChart",
+      "sha256": "dd7330a9d77e32c9887cc712c5348a28b2c903a0241080e02920d6a7046831b6",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairNormalChart.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairNormalFrame",
+      "sha256": "f68c82d6326d17e190818e8e1c4a3babd06262668f83b79ccfc87b6e38f53aaf",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairNormalFrame.olean"
+    },
+    {
+      "module": "AkopyanResearch.PairUniversalSource",
+      "sha256": "19f2e6d3756e311aebb9872e4ade6f4986fd62d25cd0247e384ba7438ca8e31d",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PairUniversalSource.olean"
+    },
+    {
+      "module": "AkopyanResearch.PlanarTestGlobal",
+      "sha256": "eb57a60bde4fc0f9fe0ac94198a49a8788395244a99b6467b7ee6a85878c2281",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PlanarTestGlobal.olean"
+    },
+    {
+      "module": "AkopyanResearch.PlanarTestJoin",
+      "sha256": "c2f0b454dd1837407a708510537cf4935f9cfe9087b65f52b5055e340fbd3595",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PlanarTestJoin.olean"
+    },
+    {
+      "module": "AkopyanResearch.PlanarTestLocal",
+      "sha256": "c077b2d7f13ede63561224a8d57b0b45c7102bc2870962c84de8d2b9e90a5ff5",
+      "path": ".lake/build/lib/lean/AkopyanResearch/PlanarTestLocal.olean"
+    },
+    {
+      "module": "AkopyanResearch.ProperCollapse",
+      "sha256": "ad42808ac590fb5e69729c812c2488b1f8f1fe055a985e0fd5598584d369c777",
+      "path": ".lake/build/lib/lean/AkopyanResearch/ProperCollapse.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuadraticArrangement",
+      "sha256": "cab9afa29a367b8f03316f04994ea6f134a1e0e0b585f879d217aa51c61e78d9",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuadraticArrangement.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuadraticInterpolation",
+      "sha256": "86d897662e5ffbc6426a611c227ee748f4ee6bc57f25080f31e114ee1824fe58",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuadraticInterpolation.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuadraticNaturality",
+      "sha256": "b952e8fd954d3bd3be1dfac5749978dc9d34d315fca7ea25803aa77f28eba26b",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuadraticNaturality.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuadraticRank",
+      "sha256": "0aa94ba0251389068aac84bb240a05fc44b2622a0a2cd8293c36da91d893d40a",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuadraticRank.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuadraticRealization",
+      "sha256": "29d43a6cea3dd9e7dda5c3dc248575eda6bbac51d13c4a7aa566c05a30c85a34",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuadraticRealization.olean"
+    },
+    {
+      "module": "AkopyanResearch.QuaternionBelt",
+      "sha256": "df0f6b672fa1963928ee991e95a68adf950de5971f40ffa449d1ce24fae36105",
+      "path": ".lake/build/lib/lean/AkopyanResearch/QuaternionBelt.olean"
+    },
+    {
+      "module": "AkopyanResearch.RowSylowGeometry",
+      "sha256": "60dedc63fb6922e066d305f4735ade1b5b90177a028b2cbcbca6916d72065c04",
+      "path": ".lake/build/lib/lean/AkopyanResearch/RowSylowGeometry.olean"
+    },
+    {
+      "module": "AkopyanResearch.SafeQuadraticBridge",
+      "sha256": "0ab337de77739d560d6e63ed1ec486e02f715be1f7d0f726420425f269e33e70",
+      "path": ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticBridge.olean"
+    },
+    {
+      "module": "AkopyanResearch.SafeQuadraticRealization",
+      "sha256": "e40dbe51001146013a1260579e4f2bc3189a67b6b0cb847d2e0d43cdfd1d9df0",
+      "path": ".lake/build/lib/lean/AkopyanResearch/SafeQuadraticRealization.olean"
+    },
+    {
+      "module": "AkopyanResearch.SplitSphereChart",
+      "sha256": "5efcc4be58cae8e928916b72345df084cfb4985f22b264ad3dc229332e85048e",
+      "path": ".lake/build/lib/lean/AkopyanResearch/SplitSphereChart.olean"
+    },
+    {
+      "module": "AkopyanResearch.TransferArithmetic",
+      "sha256": "4b91ecdabb5a9b9f7f3496a78e5dce8091022dc87d6902376322b8d13b2876cc",
+      "path": ".lake/build/lib/lean/AkopyanResearch/TransferArithmetic.olean"
+    },
+    {
+      "module": "Audit",
+      "sha256": "141163ddfe17ffba3b973c8e03f11f7240680778fb87a922549ed4ef30802496",
+      "path": ".lake/build/lib/lean/Audit.olean"
+    },
+    {
+      "module": "Challenge",
+      "sha256": "3231107bbcc845fb5268ae946f9edd401a03769f27ce018bd9a43d497aacc316",
+      "path": ".lake/build/lib/lean/Challenge.olean"
+    },
+    {
+      "module": "RequestProject.Balance",
+      "sha256": "12b731f300b5c06ceab6d066615ccd96e9fa17f0348bc2dae4e09448916eec0d",
+      "path": ".lake/build/lib/lean/RequestProject/Balance.olean"
+    },
+    {
+      "module": "RequestProject.Boundary",
+      "sha256": "219b627b806418ba9976a6183dd5239cf22d97eed6bd5e68f63b69e7d88054eb",
+      "path": ".lake/build/lib/lean/RequestProject/Boundary.olean"
+    },
+    {
+      "module": "RequestProject.Cochain",
+      "sha256": "7040e9e869bac2440064a70f11ee97dc256e5b5ae1136d45d8ab162e9a9da806",
+      "path": ".lake/build/lib/lean/RequestProject/Cochain.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Assembly",
+      "sha256": "03e8f8e406d4d6e5b35c02c8241922c063f6948b5996d04f599280edfc7d77e4",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Assembly.olean"
+    },
+    {
+      "module": "RequestProject.Construction.CellCount",
+      "sha256": "c7b91491384f76a1ce4634ba8e27891ff23c80807cee4966af2dee09b0b47caa",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/CellCount.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Chart",
+      "sha256": "aacce807292441236a12ae69c5fe93ade300e560e83fd7503ed7f98345d17867",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Chart.olean"
+    },
+    {
+      "module": "RequestProject.Construction.DetLemmas",
+      "sha256": "04920e02e3f0441ee6dfcade7e009f79c7feb2ad2193201f9c03f42774500f21",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/DetLemmas.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Frames",
+      "sha256": "545e0acbc2bea0f42a36baffdcad6182a76cea55f460e8223269851c820541d0",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Frames.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Good",
+      "sha256": "cd3a57c9eb7e4876542e2bfd492c94f886d9b770111c27b74ad072fd8995f05f",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Good.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Indep",
+      "sha256": "9f59de9566f968cc9b289d5e0ba308dc1c76974db1617490178e9c2e569d05c4",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Indep.olean"
+    },
+    {
+      "module": "RequestProject.Construction.InnerCell",
+      "sha256": "e386ecf02cab110fe8133dce5719fe5cef6422fe7e9e0d7228f8d4de65a2dc23",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/InnerCell.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Layout",
+      "sha256": "a749d3dc0978293c31bbe60f812a74dcec6673c3ea6bebeefb5b7a2d849501d3",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Layout.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Local",
+      "sha256": "7d942c61f503189eeece44f077e0f32bb272d5718b0b028079bba5973b1a0b77",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Local.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Map",
+      "sha256": "a68e758b07f53dbff23eee188be016149f9b1621c9635a7ca4a490a99904115c",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Map.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Obstacles",
+      "sha256": "7e29d7cdbd8d8bc1ebcdfbd61e595f8d3927e75f23379633c25d64e68aef29eb",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Obstacles.olean"
+    },
+    {
+      "module": "RequestProject.Construction.PyrAlg",
+      "sha256": "2286bee5222f27f94303870ada134cb0b39c94dba8f9e0be034be80c306b7666",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/PyrAlg.olean"
+    },
+    {
+      "module": "RequestProject.Construction.PyrCell",
+      "sha256": "86184727e9f9d0b645c063e72a0eebb1b2be34495a5aaf6cec8d297f393099c3",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/PyrCell.olean"
+    },
+    {
+      "module": "RequestProject.Construction.PyrDet",
+      "sha256": "c087aadde7b8e44539dbc9c1c326f474311e34ea83f54e181556722d5f51b8ee",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/PyrDet.olean"
+    },
+    {
+      "module": "RequestProject.Construction.Safety",
+      "sha256": "3a7f78f5f09d7d271b2df996c0851c6ba2d7a157f9b110118c6fb322819d339e",
+      "path": ".lake/build/lib/lean/RequestProject/Construction/Safety.olean"
+    },
+    {
+      "module": "RequestProject.Generic",
+      "sha256": "63366eb95e1237b135d100a86e7b62a85a44402e3f0f12308034106c2ad4fb06",
+      "path": ".lake/build/lib/lean/RequestProject/Generic.olean"
+    },
+    {
+      "module": "RequestProject.Reduction",
+      "sha256": "3832d640bdad0b0200b2add1dcb29c795d7d94133a637324119eef81209981ec",
+      "path": ".lake/build/lib/lean/RequestProject/Reduction.olean"
+    },
+    {
+      "module": "RequestProject.Solution",
+      "sha256": "2c6974a62526bad8cec891176e29b9a70b5c0dd1331f59eb45776a2f3461bf6e",
+      "path": ".lake/build/lib/lean/RequestProject/Solution.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Avoid",
+      "sha256": "3fb7358c1ac48dc8edc94fc0abaf53adfa2b8ac19f2feb525a91a2c0357a2a5d",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Avoid.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.CancelGood",
+      "sha256": "ceee3eb3f4005623b47fbc59b32f4109f192863f84a1be0a256a0f9c905ff9be",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/CancelGood.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Clear",
+      "sha256": "bd2aa9999bfb76dcca51487e8f52c8d44328f5c5d3b91b88c45277229243f45d",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Clear.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Core",
+      "sha256": "70854279188ceb230d94bbdbb22b4d1e5cdef772fa1bd9c3ef58e19a8e32d3b3",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Core.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Cutoff",
+      "sha256": "78faa7482cd5f7846969e7d0d54e8f7b44fb84a630d05d97c4580cd5136fc3e2",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Cutoff.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Frame",
+      "sha256": "ea5e1943809487143ebd7b13318afbcfb4e1a0b3040e90b0dfc3c760363a02ca",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Frame.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.GLPath",
+      "sha256": "e351644aabdc03cf6e577b280a293b4b29187192e47ee51b1941441dc7e16736",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/GLPath.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Good",
+      "sha256": "1b5aa3b5c30843331d12966f5c40be314c7288d780097fa86c163c19c0de195e",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Good.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Main",
+      "sha256": "e4977f2056fd32abb5a5178cd39f35b69586926db399a223491cf50ce0d5d68f",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Main.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.PairCancel",
+      "sha256": "4dfe915019fe739f76d525c2c1a439661ab3e24c745d4aaadd161a436811f35b",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/PairCancel.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.PathHomotopy",
+      "sha256": "58d53a8328f69607c29c54694e135b68a8358af6efb2786d2a989b00f529359a",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/PathHomotopy.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Separate",
+      "sha256": "e9a8236a15b9c24f7cdedde73bd3affc0352667b207882bad0adf8cdd4bdd99d",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Separate.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Shift",
+      "sha256": "e719ca59e59be560731c1cbf7ec87ad9d484c8664e0bc16a51547669c634e164",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Shift.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.ShiftGood",
+      "sha256": "e97d1fbe34ca2536b0d49ec2ec1f4a0d4ca8a43cdad3c7727173621d1a7c3115",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/ShiftGood.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.Transport",
+      "sha256": "aec18cdd1aaad109668f019658725a3ce6c1fa72c0f8d7a3e9444a74e5d49e1e",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/Transport.olean"
+    },
+    {
+      "module": "RequestProject.Surgery.ZeroSet",
+      "sha256": "1c95ee193ff048c89a00a67a542e2e7c0ab292e028dabc3228a4225b2ea50bdf",
+      "path": ".lake/build/lib/lean/RequestProject/Surgery/ZeroSet.olean"
+    },
+    {
+      "module": "Solution",
+      "sha256": "53688af7c1e16005ba43a4bc793760b4d811a934a26da97bce00526925c21e01",
+      "path": ".lake/build/lib/lean/Solution.olean"
+    }
+  ],
+  "source_and_script_inputs_unchanged": true,
+  "stages": {
+    "structure": 0,
+    "unit-tests": 0,
+    "build": 0,
+    "statement-audit": 0,
+    "audit": 0
+  },
+  "external_dependency_revisions": [
+    {
+      "name": "mathlib",
+      "revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib"
+    },
+    {
+      "name": "plausible",
+      "revision": "dfa4f38190d07c37e315953e08b90fe2d95b3c24",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/plausible"
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "d6b4c7be5be75ec4917c873ac50c756dc1436372",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/LeanSearchClient"
+    },
+    {
+      "name": "importGraph",
+      "revision": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/importGraph"
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "df72b022e558978a1c50264cfc4d7fec86fa8e04",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/proofwidgets"
+    },
+    {
+      "name": "aesop",
+      "revision": "4a174c490d8707121c4a9290800489f105d85e07",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/aesop"
+    },
+    {
+      "name": "Qq",
+      "revision": "dce0ad79c486cb1fb504af04f953c3466b0c6db8",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/Qq"
+    },
+    {
+      "name": "batteries",
+      "revision": "66e469188fe07963e5cf666c7d4433f45b8131c5",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/batteries"
+    },
+    {
+      "name": "Cli",
+      "revision": "c24fe6078c630e89b489bffe59b3e20ac30d12c8",
+      "external_cache": "/workspace/scratch/9db1b532943d/tools-runtime/mathlib/.lake/packages/Cli"
+    }
+  ]
+}

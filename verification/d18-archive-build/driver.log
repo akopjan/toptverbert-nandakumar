@@ -1,0 +1,12 @@
+Running structure
+structure: exit 0
+Running provenance
+provenance: exit 0
+Running unit-tests
+unit-tests: exit 0
+Running build
+build: exit 0
+Running statement-audit
+usage: check-statements.py [-h] [--output-dir OUTPUT_DIR]
+check-statements.py: error: Statement-audit artifacts must be written under verification/.
+Verification failed (exit 2); inspect /workspace/scratch/9db1b532943d/akopyan-completion/verification/d18-archive-build

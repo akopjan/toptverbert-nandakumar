@@ -1,8 +1,12 @@
 """Unit tests for the source-level checker (no Lean runtime required)."""
 
 import importlib.util
+import copy
+import hashlib
+import json
 import subprocess
 import sys
+import tomllib
 import unittest
 from pathlib import Path
 
@@ -46,19 +50,77 @@ class CommentLexerTests(unittest.TestCase):
 
 
 class ProjectTests(unittest.TestCase):
+    def test_omitted_audit_owner_is_detected(self):
+        sources = {name: path.read_text() for name, path in checks.PROJECT_MODULES.items()}
+        marker = '    `RequestProject.Reduction,'
+        self.assertIn(marker, sources['Audit'])
+        sources['Audit'] = sources['Audit'].replace(marker, '', 1)
+        config = tomllib.loads((ROOT / 'lakefile.toml').read_text())
+        with self.assertRaisesRegex(ValueError, 'Audit owner mismatch'):
+            checks.check_build_and_audit_coverage(sources, config)
+
+    def test_omitted_private_import_is_detected(self):
+        sources = {name: path.read_text() for name, path in checks.PROJECT_MODULES.items()}
+        marker = 'import all RequestProject.Reduction\n'
+        self.assertIn(marker, sources['Audit'])
+        sources['Audit'] = sources['Audit'].replace(marker, '', 1)
+        config = tomllib.loads((ROOT / 'lakefile.toml').read_text())
+        with self.assertRaisesRegex(ValueError, 'omitted from private imports'):
+            checks.check_build_and_audit_coverage(sources, config)
+
+    def test_omitted_public_import_is_detected(self):
+        sources = {name: path.read_text() for name, path in checks.PROJECT_MODULES.items()}
+        marker = 'public import RequestProject.Reduction\n'
+        self.assertIn(marker, sources['Audit'])
+        sources['Audit'] = sources['Audit'].replace(marker, '', 1)
+        config = tomllib.loads((ROOT / 'lakefile.toml').read_text())
+        with self.assertRaisesRegex(ValueError, 'omitted from public imports'):
+            checks.check_build_and_audit_coverage(sources, config)
+
+    def test_omitted_build_glob_is_detected(self):
+        sources = {name: path.read_text() for name, path in checks.PROJECT_MODULES.items()}
+        config = copy.deepcopy(tomllib.loads((ROOT / 'lakefile.toml').read_text()))
+        for library in config['lean_lib']:
+            if library['name'] == 'RequestProject':
+                library['globs'] = []
+        with self.assertRaisesRegex(ValueError, 'omitted from Lake build globs'):
+            checks.check_build_and_audit_coverage(sources, config)
+
     def test_comparator_signatures_exact(self):
         challenge = (ROOT / 'Challenge.lean').read_text()
-        solution = (ROOT / 'Solution.lean').read_text()
-        for theorem in ('tverberg_counterexample', 'convex_partition_counterexample'):
+        for full_name, module in checks.PROOF_THEOREMS.items():
+            theorem = full_name.rsplit('.', 1)[-1]
+            solution = checks.PROJECT_MODULES[module].read_text()
             with self.subTest(theorem=theorem):
                 self.assertEqual(checks.theorem_signature(challenge, theorem),
                                  checks.theorem_signature(solution, theorem))
 
     def test_signature_mismatch_is_detected(self):
         original = (ROOT / 'Challenge.lean').read_text()
-        altered = original.replace('36 ≤ d', '37 ≤ d')
-        self.assertNotEqual(checks.theorem_signature(original, 'convex_partition_counterexample'),
-                            checks.theorem_signature(altered, 'convex_partition_counterexample'))
+        self.assertIn('(hd : 17 < d)', original)
+        altered = original.replace('(hd : 17 < d)', '(hd : 18 < d)')
+        self.assertNotEqual(checks.theorem_signature(original, 'convex_partition_counterexample_gt_17'),
+                            checks.theorem_signature(altered, 'convex_partition_counterexample_gt_17'))
+
+    def test_original_solution_and_specification_are_archived_unchanged(self):
+        archive = ROOT / 'verification/original-specification/Challenge36.lean.txt'
+        self.assertEqual(hashlib.sha256((ROOT / 'Solution.lean').read_bytes()).hexdigest(),
+                         checks.ORIGINAL_SOLUTION_SHA256)
+        self.assertEqual(hashlib.sha256(archive.read_bytes()).hexdigest(),
+                         checks.ORIGINAL_CHALLENGE36_SHA256)
+        old = archive.read_text()
+        current = (ROOT / 'Challenge.lean').read_text()
+        self.assertEqual(checks.theorem_signature(old, 'tverberg_counterexample'),
+                         checks.theorem_signature(current, 'tverberg_counterexample'))
+        for name in checks.INTERFACE_NAMES:
+            self.assertEqual(checks.public_definition(old, name), checks.public_definition(current, name))
+
+    def test_comparator_uses_publication_entry_point_and_exact_targets(self):
+        config = json.loads((ROOT / 'comparator.json').read_text())
+        self.assertEqual(config['solution_module'], 'PalomarSolution')
+        self.assertEqual(config['theorem_names'], list(checks.PROOF_THEOREMS))
+        self.assertEqual(checks.imports((ROOT / 'PalomarSolution.lean').read_text()),
+                         {'AkopyanResearch.Completion.DimensionEighteen'})
 
     def test_seven_interface_definitions_match(self):
         challenge = (ROOT / 'Challenge.lean').read_text()
@@ -84,6 +146,11 @@ class ProjectTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, 'does not exist'):
             checks.check_imports({'Solution': 'public import RequestProject.AbsentModule'})
 
+    def test_missing_vendored_module_is_detected(self):
+        for prefix in ('Submission', 'Hatcher'):
+            with self.subTest(prefix=prefix), self.assertRaisesRegex(ValueError, 'does not exist'):
+                checks.check_imports({'Solution': f'public import {prefix}.AbsentModule'})
+
     def test_missing_public_definition_is_detected(self):
         with self.assertRaisesRegex(ValueError, 'Could not locate'):
             checks.public_definition('def other := 42', 'simplex')
@@ -104,6 +171,32 @@ class ProjectTests(unittest.TestCase):
         self.assertGreater(count, 0)
         self.assertIn('Solution', graph['Audit'])
         self.assertNotIn('Challenge', graph['Solution'])
+        checks.check_specification_independence(graph)
+
+    def test_multiple_imports_on_one_line_are_all_checked(self):
+        self.assertEqual(checks.imports('public import Mathlib Solution Challenge\n'),
+                         {'Mathlib', 'Solution', 'Challenge'})
+        self.assertEqual(checks.imports('import all Solution\n'), {'Solution'})
+
+    def test_transitive_proof_import_of_specification_is_rejected(self):
+        graph = {'Challenge': set(), 'PalomarSolution': {'Bridge'},
+                 'Bridge': {'Challenge', 'Solution', 'AkopyanResearch.Completion.DimensionEighteen'},
+                 'Solution': set(), 'AkopyanResearch.Completion.DimensionEighteen': {'Solution'}}
+        with self.assertRaisesRegex(ValueError, 'depend transitively'):
+            checks.check_specification_independence(graph)
+
+    def test_transitive_specification_import_of_proof_is_rejected(self):
+        graph = {'Challenge': {'Bridge'}, 'Bridge': {'Solution'}, 'Solution': set(),
+                 'PalomarSolution': {'AkopyanResearch.Completion.DimensionEighteen'},
+                 'AkopyanResearch.Completion.DimensionEighteen': {'Solution'}}
+        with self.assertRaisesRegex(ValueError, 'independent specification'):
+            checks.check_specification_independence(graph)
+
+    def test_publication_entry_must_reach_the_new_proof(self):
+        graph = {'Challenge': set(), 'PalomarSolution': {'Solution'}, 'Solution': set(),
+                 'AkopyanResearch.Completion.DimensionEighteen': {'Solution'}}
+        with self.assertRaisesRegex(ValueError, 'actual proof modules'):
+            checks.check_specification_independence(graph)
 
     def test_static_check_cli(self):
         result = subprocess.run([sys.executable, str(ROOT / 'scripts/check_structure.py')],

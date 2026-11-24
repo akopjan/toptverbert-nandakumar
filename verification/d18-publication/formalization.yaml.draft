@@ -1,0 +1,287 @@
+# NON-SUBMITTABLE DRAFT: new A+B18 publication interface, 2026-11-24 UTC.
+# Confirm human authorship, responsible maintenance and the repository licence.
+# Replace the pending verification statements only with final release evidence.
+# The empty required human fields and licence are deliberate, visible blockers.
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+version: "v0.4"
+
+project:
+  name: "TopTverberg"
+  description: >-
+    A Lean 4 development of sixfold Tverberg counterexamples and convex
+    six-partition obstructions. The publication interface consists of an
+    almost-six embedding of the 35-dimensional simplex into R^6 and an
+    unconditional convex six-partition counterexample in every dimension
+    d > 17. The latter uses an almost-six embedding of the 89-dimensional
+    simplex into R^16, obtained from a concrete comparison of configuration
+    spaces, followed by the convex-geometric reduction. The unconditional
+    theorem module and the full integrated Lean build, literal statement
+    check and declaration-owner axiom audit have passed. The separate
+    cumulative source rebuild and independent compiled-interface comparison
+    have also passed. The selected final proofs and their dependencies
+    were accepted by Lean checker, NanoDa and con-ron, with an additional
+    successful replay using the approved newer con-ron. The local
+    Comparator attempt was blocked at sandbox setup; registry verification
+    is pending.
+  authors: [] # REQUIRED: confirmed human formalizers, not models or agents.
+  license: "" # REQUIRED: actual SPDX identifier and a matching root licence.
+  responsible_maintainers: [] # REQUIRED: confirmed responsible human maintainers.
+
+# This repository contains the substantive development. Therefore omit
+# repository.substantive_formalization; that field is only for thin wrappers.
+# The public GitHub repository and immutable release commit remain to be set
+# in the eventual submission. Do not invent them or a submission authorization.
+
+classification:
+  arxiv: ["math.MG", "math.AT"]
+  msc2020: ["52C35", "55S91", "52A20"]
+
+sources:
+  - title: "User-supplied akopyan_toptverberg_formalization_reviewed(1).zip"
+    authors: ["Arseniy Akopyan"]
+    id: "sha256:7537d4233d74c40aa3eddad5fd4912287810f6a78c6543dbf75cf2fe364e119b"
+    type: "other"
+    location: "Original Solution.lean and its local proof development"
+    relationship: "adapts"
+    license: "unknown"
+    note: >-
+      The supplied source header credits Arseniy Akopyan. This preserves
+      that credit; it does not establish the complete human formalizer list,
+      licence authority, or submission authorization. The original
+      Solution.lean is byte-for-byte preserved. It contains theorem A and
+      the earlier unconditional bound d >= 36. The present Completion
+      modules supply the new d > 17 result. The bounded literature review
+      in docs/MATHEMATICAL_CONTEXT.md and
+      verification/d18-publication/LITERATURE_REVIEW.md did not identify a
+      published source for the exact claims. This does not establish
+      priority or novelty. The source credit and publication history still
+      require human confirmation. No original paper or source-author
+      endorsement is invented. The archive checksum was rechecked.
+  - title: "homotopy-groups-lean: homotopy groups, Hurewicz and Whitehead infrastructure"
+    authors:
+      - "Vasily Ilin"
+      - "The Tau Ceti contributors (Map.lean and Homotopy.lean)"
+      - "Jiazhen Xia (WhiteheadTheorem)"
+    id: "https://github.com/Vilin97/homotopy-groups-lean/tree/c66523531ff172d7f41913d94e56921e790a1b47"
+    type: "other"
+    relationship: "adapts"
+    license: "Apache-2.0"
+    location: "Submission/; docs/third_party/homotopy-groups-lean/PROVENANCE.json"
+    note: >-
+      Selected proof modules were ported from Lean 4.32.2 to the pinned
+      Lean 4.35.0 environment. Original headers and the upstream licence
+      are retained. The source also credits Tau Ceti and Jiazhen Xia's
+      WhiteheadTheorem development. The provenance manifest distinguishes
+      imported source from newly proved supporting constructions.
+  - title: "hatcher-at: singular homology, excision, Mayer-Vietoris and good pairs"
+    authors: ["Joël Riou", "Jack McCarthy"]
+    id: "https://github.com/Deicyde/hatcher-at/tree/6d729567d1573a7e8785773a55de36d0e3ec5761"
+    type: "other"
+    relationship: "adapts"
+    license: "Apache-2.0"
+    location: "Hatcher/; docs/third_party/hatcher-at/PROVENANCE.json"
+    note: >-
+      Selected modules were ported from Lean 4.34.1 to Lean 4.35.0.
+      The excision sources also credit Joël Riou's excision repository at
+      commit 8b56cd0c8e5f39a7c2f36418c80b298e469596a6.
+      Original file headers, licence and source records are retained.
+  - title: "Mathlib v4.35.0"
+    authors: ["The Mathlib contributors"]
+    id: "https://github.com/leanprover-community/mathlib4/tree/56a005855ea17e0b0958f73ec801ae140b0a1679"
+    type: "other"
+    relationship: "background"
+    license: "Apache-2.0"
+    note: "Canonical pinned dependency; exact transitive revisions are in lake-manifest.json."
+
+related_formalizations:
+  - id: "https://github.com/Vilin97/homotopy-groups-lean/tree/c66523531ff172d7f41913d94e56921e790a1b47"
+    relationship: "builds-on"
+    note: "Ported proof infrastructure and new adapters; see the per-file provenance manifest."
+  - id: "https://github.com/jzxia/WhiteheadTheorem"
+    relationship: "builds-on"
+    note: "Credited secondary source of WhiteheadTheorem files in the pinned homotopy-groups-lean snapshot."
+  - id: "https://github.com/Deicyde/hatcher-at/tree/6d729567d1573a7e8785773a55de36d0e3ec5761"
+    relationship: "builds-on"
+    note: "Ported homology, excision, Mayer-Vietoris and good-pair proofs."
+  - id: "https://github.com/joelriou/excision/tree/8b56cd0c8e5f39a7c2f36418c80b298e469596a6"
+    relationship: "builds-on"
+    note: "Secondary excision source explicitly credited by the imported Hatcher modules."
+
+status:
+  scope: >-
+    The comparator now targets theorem A and the full theorem B with
+    17 < d. B's source declaration has no extra lifting, connectivity or
+    homology premise. It quantifies continuous functionals on actual
+    convex bodies and a probability measure absolutely continuous with
+    respect to Euclidean volume. The independent Challenge reproduces
+    the seven original interface definitions. The original B36
+    specification is retained as a text archive. The unconditional
+    DimensionEighteen module, including almostSix_ninety and the new
+    convex-partition theorem, and all proof modules have passed Lean
+    compilation. The source-level independence and exact-signature checks
+    have passed. The proof sources
+    contain no lexical sorry, admit or axiom declaration in this release;
+    the two intentional Challenge holes are excluded. The final integrated
+    gate passed at 2026-11-24T08:56:01Z in verification/d18-final-retry/:
+    all six stages returned zero, all 37 tests passed, and all recorded
+    verification inputs were unchanged. The owner audit checked 16765
+    declarations from 438 proof-module owners, including 14244 public and
+    2521 private declarations, 12586 theorems and 3975 definitions, with
+    no opaque declarations. It also checked guards for 90 selected theorems
+    and 28 selected definitions. The separate cumulative source rebuild
+    passed at 2026-11-24T09:01:10Z in verification/d18-clean-final/ with all
+    472 input hashes equal to the main gate and the same owner-audit counts.
+    It began with zero project build objects; its final source-only
+    synchronization preserved 2214 objects built there and copied no
+    working-project objects, as recorded in verification/d18-clean-build/.
+    A further clean compilation extracted a single immutable snapshot of
+    the final proof inputs from a source ZIP with zero starting project
+    objects. Its completed six-stage gate passed at
+    2026-11-24T10:23:29Z in verification/d18-archive-final/, with the same
+    472 source-input hashes. The first post-build statement-check attempt
+    refused an output directory outside that checkout; its corrected run
+    passed without changing sources or recompiling project modules.
+    Both attempts remain documented in verification/d18-archive-build/.
+    The resulting 1314 objects were compared with the kernel-bound main
+    objects: 1236 matched bytewise; all stored declarations, types, bodies
+    and imports in the remaining 78 objects of 64 modules agreed exactly.
+    This final comparison passed at 2026-11-24T10:24:38Z in
+    verification/d18-archive-object-comparison/.
+    The independent compiled-interface comparison passed at
+    2026-11-24T08:59:09Z in verification/d18-compiled-interface/: nine types
+    and seven definition bodies are identical, and 419 source files,
+    1257 compiled objects and all 1681 bound inputs were unchanged.
+    This check does not compare theorem proof bodies. The actual proof
+    bodies of theorem A, almostSix_ninety, the unconditional B18 and
+    requiredRelativeLifting, with their transitive dependencies, were
+    accepted by Lean checker, NanoDa and bundled con-ron at
+    2026-11-24T09:15:21Z in verification/d18-kernels/. Each returned zero.
+    Their 700996206-byte export has SHA-256
+    978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be.
+    It contains 58974 theorem records, 17008 definitions, 1381 inductives,
+    the three permitted axioms, four quotient records and 38 opaque
+    records; these counts include core and library dependencies.
+    The approved con-ron 4.36.0-rc1 also accepted the same export at
+    2026-11-24T09:18:19Z, exit zero in 109.273 seconds, with unchanged
+    checker, export and earlier report. Its evidence is in
+    verification/d18-approved-con-ron/. This is a supplemental component
+    replay, not the official registry workflow. The new sandboxed
+    Comparator attempt in
+    verification/d18-comparator/ returned exit 1 after 7.683 seconds:
+    bwrap failed to mount tmpfs with No such file or directory. All recorded
+    source hashes were unchanged; sandboxing was not bypassed. This is a
+    local setup failure before comparison, not a proof rejection. Registry
+    verification remains pending. Earlier B36 certificates do not certify
+    this B18 release. Dependency source
+    integrity passed in verification/d18-dependencies/results.json.
+  sorry_count: 0
+  sorry_in_definitions: 0
+  # The full owner audit passed against this whitelist, including private
+  # and generated declarations. This claim is no longer just a token scan.
+  axioms: ["propext", "Classical.choice", "Quot.sound"]
+  main_results:
+    - declaration: "AkopyanSixfold.tverberg_counterexample"
+      file: "Solution.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+      literature_dependencies: []
+    - declaration: "AkopyanSixfold.convex_partition_counterexample_gt_17"
+      file: "AkopyanResearch/Completion/DimensionEighteen.lean"
+      sorry_count: 0
+      axioms: ["propext", "Classical.choice", "Quot.sound"]
+      comparator_config: "comparator.json"
+      literature_dependencies: []
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6 Astra Pro"]
+      framework: "ChatGPT multi-agent workspace"
+      tool_setup: >-
+        Lean 4.35.0 with the committed Lake manifest and canonical Mathlib
+        revision 56a005855ea17e0b0958f73ec801ae140b0a1679; parallel source
+        development, targeted Lean compilation, Python static checks,
+        proof-dependency auditing and agent review. A separate optional
+        manual workflow calls the official reusable Palomar verifier at
+        commit 14aa8d6b3c2f14a8540605e37144560b9a00e7e7; it has not been
+        remotely executed. Final release checks are recorded separately
+        and must not be inferred from this draft.
+      cost:
+        wall_time: "At least 14414.004 seconds from 2026-11-24T06:31:30Z through 2026-11-24T10:31:44.003906+00:00; final archive assembly followed. The requested four-hour minimum was satisfied."
+        spend_usd: "not tracked"
+        hardware: "Linux workspace; detailed hardware accounting not tracked"
+      prompting_notes: >-
+        Complete the full d > 17 result without proof admissions or new
+        axioms, allowing alternative methods, and prepare the project for
+        Palomar. Preserve the mathematical statement and identify every
+        remaining verification or publication requirement explicitly.
+  spend_usd: "not tracked"
+  notes: >-
+    This describes the current completion session. The production history
+    of the supplied archive has not been fully reconstructed. The model
+    name is the identity supplied in the session. Automated contributors
+    are not listed as human authors or responsible maintainers.
+
+fidelity:
+  divergences: >-
+    The publication interface strengthens the earlier dimension bound
+    36 <= d to 17 < d and names that new theorem explicitly. The original
+    Solution.lean, theorem A and all seven interface definitions are
+    preserved. The original B36 Challenge is archived as
+    verification/original-specification/Challenge36.lean.txt. The proof
+    uses new concrete configuration-space comparison and topology
+    infrastructure. The exact statement does not assert that the measure
+    is supported on the unit ball; equipartition means one sixth of that
+    ball's measure. Public bibliographic provenance and novelty are not
+    established by the bounded literature review. A successful Comparator
+    run on a suitable host, official registry verification and human
+    attribution remain to be completed.
+
+review:
+  status: "agent-reviewed; complete Lean build, owner audit, interface checks and exported-proof kernel checks passed"
+  reviewers: []
+  notes: >-
+    Source statements, the zero-dimensional face case and exact prescribed
+    boundary homotopy were reviewed in
+    verification/d18-extension-2026-11-24/STATEMENT_AND_LIFTING_REVIEW.md.
+    The separate Mathlib-only reference and semantic checks passed in
+    verification/d18-extension-2026-11-24/SEMANTIC_SCOPE_REVIEW.md.
+    Publication checks and their source hashes are recorded in
+    verification/d18-publication/STATIC_PREFLIGHT.json. External human
+    peer review and Palomar acceptance are not established. The complete
+    A+B18 Lean build, literal statement check, 37-test regression suite
+    and owner audit passed in verification/d18-final-retry/ at
+    2026-11-24T08:56:01Z. The separate cumulative source rebuild and
+    compiled-interface comparison also passed. The interface digest is
+    0da75f6ec67460498e6f5a13890e8d06a76dd9dad1739c7f433af31e0b51c3d2.
+    The selected final proofs and their exported dependencies passed all
+    three bundled checking components and the supplemental approved
+    con-ron replay. These component checks do not assert a full official
+    Palomar workflow pass or external human peer review.
+    The new local Comparator attempt is recorded as blocked by the bwrap
+    tmpfs setup failure, not accepted. No older certificate substitutes
+    for the new release checks or for official registry verification.
+
+alignment:
+  namespace: "AkopyanSixfold"
+  statements:
+    - source: "Supplied theorem A"
+      lean: "AkopyanSixfold.tverberg_counterexample"
+      module: "Solution"
+      status: "proved; full Lean build and owner audit passed"
+      note: "Almost-six embedding of Delta^35 into R^6; unchanged statement."
+    - source: "Requested full convex six-partition statement for 17 < d"
+      lean: "AkopyanSixfold.convex_partition_counterexample_gt_17"
+      module: "AkopyanResearch.Completion.DimensionEighteen"
+      status: "proved unconditionally; full Lean build and owner audit passed"
+      note: >-
+        Compared through PalomarSolution against the independent
+        Challenge.lean. No additional premise occurs in the statement.
+
+acknowledgements: >-
+  The source credit to Arseniy Akopyan; Vasily Ilin; the Tau Ceti
+  contributors; Jiazhen Xia; Joël Riou; Jack McCarthy; the Lean and Mathlib
+  contributors; and the Comparator, Lean checker, NanoDa and con-ron
+  projects. These credits preserve supplied or upstream attribution and
+  do not resolve the human authorship or licence of the submitted project.

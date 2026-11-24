@@ -1,0 +1,44 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "upstream_lean": "4.32.2",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [],
+  "local_support": [
+    {
+      "module": "AkopyanResearch.Completion.PuncturedSphereHomeomorphism",
+      "sha256": "c7b3c01349a2db87b1bc4d39dd8814fc813ac6936320503f74c7892b192df9e5",
+      "description": [
+        "New proved supporting construction using the actual singular chains and actual relative homotopy groups; no added axioms."
+      ]
+    },
+    {
+      "module": "AkopyanResearch.Completion.SimplexSkeletonConnectivity",
+      "sha256": "c0582468b22c41e4d9edbdbc159c81cec41c32d7eceb6987d39c3ae14029e6e7",
+      "description": [
+        "New proved supporting construction using the actual singular chains and actual relative homotopy groups; no added axioms."
+      ]
+    }
+  ],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 2,
+    "declarations": 56,
+    "theorems": 44,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "AkopyanResearch.Completion.PuncturedSphereHomeomorphism",
+      "AkopyanResearch.Completion.SimplexSkeletonConnectivity"
+    ]
+  }
+}

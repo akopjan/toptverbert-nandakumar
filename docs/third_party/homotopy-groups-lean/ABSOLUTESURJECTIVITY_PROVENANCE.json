@@ -1,0 +1,258 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "upstream_lean": "4.32.2",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Submission.Homology.MayerVietoris",
+      "upstream_path": "Submission/Homology/MayerVietoris.lean",
+      "upstream_sha256": "6981d359ea6287cd5317831b95c708e69023afe9254b9baf4af24d35340d1e3d",
+      "port_sha256": "ad4dbc0022d8ec0e83bfa171d4633a9f523a0d04ab46d343492d4fc3c6806682",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Uses the exact Hatcher-backed small-simplex adapter instead of a duplicate excision implementation."
+      ]
+    },
+    {
+      "module": "Submission.Homology.MayerVietorisLES",
+      "upstream_path": "Submission/Homology/MayerVietorisLES.lean",
+      "upstream_sha256": "c472df480e9a952dd04374cd0562774ff0ff9c1f9bef8b6f99b46f8e14f77179",
+      "port_sha256": "fe84c128041923969e8441b6790f16591da57cc152af4ea6aef46b112747cd12",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.Excision",
+      "upstream_path": "Submission/Homology/Excision.lean",
+      "upstream_sha256": "94a161fb3d1a39a8b122a580ec96462eece324cc9522c78119497a362614fbf4",
+      "port_sha256": "8f2f2379ba1c59f861766cd3460d714ca6e3a83db71e4f0bdb1dbf0a5a014cd2",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Imported MonoCoprod explicitly and supplied the degreewise monicity proof; localized reducibility of the actual chain and relative complexes."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SmallRelativeChains",
+      "upstream_path": "Submission/Hurewicz/SmallRelativeChains.lean",
+      "upstream_sha256": "13ad7689ff69e1d377c9518980235485c0adc48dcf46ad1924ada2172a569207",
+      "port_sha256": "2cbf22b184d86301007500333bed74bf0c39ff9c65bb778b62ca96536972efed",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.Contractible",
+      "upstream_path": "Submission/Homology/Contractible.lean",
+      "upstream_sha256": "962b53b557ab536749b858fff4dc5b3b3574eede3acc16258a1f4ceb32e50d0b",
+      "port_sha256": "274480ef8a95f84776d64ec1bbb730c1c4f3cdf306edc2614298ece4025314e6",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.MayerVietorisIso",
+      "upstream_path": "Submission/Homology/MayerVietorisIso.lean",
+      "upstream_sha256": "bbb3b7bee11336a0b8227a4f0fb02baab9f3eef6c5a99db9b2a3b08a4ab406ff",
+      "port_sha256": "7a03a43f880804f2ae6f68c5624e836227030ccd353f96adf26cd336c74121fd",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.HomologyZero",
+      "upstream_path": "Submission/Homology/HomologyZero.lean",
+      "upstream_sha256": "a4c80d4ffc636e85af7938f8dee308e3f5c7ebdcc738ec88a5a2ae043632fc38",
+      "port_sha256": "39a7845ef249a02268c8c0d84f87c14d1dbec6ad52e662e5125094ba52443f59",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Localized reducibility and relaxed backward definal-equality transparency in the point augmentation proof; retained the actual singular liftCycles argument."
+      ]
+    },
+    {
+      "module": "Submission.Homology.RightExact",
+      "upstream_path": "Submission/Homology/RightExact.lean",
+      "upstream_sha256": "9e1924f13ddba91338ec25336f8f1b8f12208f660552391528dc8e6289c1acf9",
+      "port_sha256": "b27e6012fb3e3d37571275ba28b35f0b2d1ce3aca48bf92b4110e19500069e05",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Updated the zero-dimensional standard-simplex vertex to Convexity.StdSimplex.single 0."
+      ]
+    },
+    {
+      "module": "Submission.Homology.SphereZero",
+      "upstream_path": "Submission/Homology/SphereZero.lean",
+      "upstream_sha256": "c3e85320f9d041d4f55cf04055af01701cd35aff65356ca8d18e656c696c2da3",
+      "port_sha256": "85ee7274303f2556cbc45657f1ae9244f05d3a0a39ada6a0803f44f20af8eb99",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.SphereZeroSplit",
+      "upstream_path": "Submission/Homology/SphereZeroSplit.lean",
+      "upstream_sha256": "f4dabd746caa3ee8ce5f0e383d016cb06267d99c2a6faf6d55254a7a8a141499",
+      "port_sha256": "e106822d1e23a4aa6b7171d097dc5e96ca81ea4ab450b367f4b08cc692a50459",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.Sphere",
+      "upstream_path": "Submission/Homology/Sphere.lean",
+      "upstream_sha256": "fb15fc3802e40a26f887ba121ed2ed9f161dc9a3f861196e46c0517c143622ce",
+      "port_sha256": "ca8c31d22a6d66d4b7c84b82643fcbf55ed2080eb90fc0bc93733672bd49c317",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Homology.SphereOne",
+      "upstream_path": "Submission/Homology/SphereOne.lean",
+      "upstream_sha256": "dce2ecd9aaaa36aa7dcb75137d288b6428460017b56a900cdad14d773478b2fa",
+      "port_sha256": "285ae53976f30764301c0c19ef11c39bea539cd6690220559fb6100e0dc5a8ce",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Localized reducibility of the sphere belt to reconcile its concrete and generic representations."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.CubeFundamentalClass",
+      "upstream_path": "Submission/Hurewicz/CubeFundamentalClass.lean",
+      "upstream_sha256": "f4d6169c79cde27cc58da71dcf37839adbeba81600f8a68fa937259776e6fd05",
+      "port_sha256": "4343db59507123f251400ca192cecdca0d40b5759da317d8b233697be7ac54fa",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.RelativeAdditivity",
+      "upstream_path": "Submission/Hurewicz/RelativeAdditivity.lean",
+      "upstream_sha256": "0662a6e5b97ddc95dc02ce9968d47e0040f2700735d5e938ffe221d2bf3b3cb0",
+      "port_sha256": "1a9fecdb9b7ebd00cbefc44f5b9bcccc79d05710e890688e91f2c303fa594acb",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Updated old TopCat singular-chain names to the identical SSet chain constructions, and transported subordinate-simplex membership through the actual finite-coordinate simplex homeomorphism."
+      ]
+    },
+    {
+      "module": "Submission.Model.SphereCompl",
+      "upstream_path": "Submission/Model/SphereCompl.lean",
+      "upstream_sha256": "fb4c09a86d6c2af74fdc50c5e5a04931ca73cd8f26f98973a409e5a91ea527f8",
+      "port_sha256": "08f402b0d874a96cdc03e317d6ca10b4ecdbf67a0f53aca444aa0615c6bfdf2e",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.SphereHomotopy",
+      "upstream_path": "Submission/SphereHomotopy.lean",
+      "upstream_sha256": "2cf0cb0655c7f936a5df70d8874aef6a370f5f3b29787c076aaec0eab5534e44",
+      "port_sha256": "6aaab9361f30ae017e2fb9b5bcea5cb59bd9d9356335bb2f961e762becca0a63",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Model.SphereConnected",
+      "upstream_path": "Submission/Model/SphereConnected.lean",
+      "upstream_sha256": "390840fcf6b14107fb37e5bd75deab1ea09b7ee994e88d89907ebf50aba2c6f1",
+      "port_sha256": "45c8dc664a5740c61e6961561f66e44ec185490c9a317b5f791f60bbd164b807",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Uses the already extracted Approximation.Boundary lemmas without redeclaring them.",
+        "Narrowed the interpolation import to Approximation.Boundary, omitted the two duplicate extracted boundary lemmas, and projected equality of new Mathlib End-based fundamental-group elements to the underlying path quotient."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.SimplexCubeOrientation",
+      "upstream_path": "Submission/Hurewicz/SimplexCubeOrientation.lean",
+      "upstream_sha256": "036b3aa892916f50e704e69d33d55f1befd59b295b342baa5d9a78ae2747e7db",
+      "port_sha256": "6256a48e3b3fad46d0b4290cfbe515bdb2b973f0bdb977a07cf45a371b450d2c",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Adjusted backward definal-equality transparency for singleton-pair subtype proofs."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.RelativeSurjectivity",
+      "upstream_path": "Submission/Hurewicz/RelativeSurjectivity.lean",
+      "upstream_sha256": "0e794cbd14ee96b2ca668b17f37e9c175e45452fa290d47d5e9d14dfe5320bbe",
+      "port_sha256": "6cda74458961aaae96dbdc332fd0d138036cc5da0be5ac40e1e2f8957e0ca7be",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.AbsoluteSurjectivity",
+      "upstream_path": "Submission/Hurewicz/AbsoluteSurjectivity.lean",
+      "upstream_sha256": "903be192d330b66917947aac8610382a44067e312901a9b2c2fef1e45523107b",
+      "port_sha256": "ee0c4bad9f04b0dba3c6e96bf7d89854e12074dbceddbfae1c166ceec7fc2495",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers."
+      ]
+    },
+    {
+      "module": "Submission.Hurewicz.AbsoluteComparison",
+      "upstream_path": "Submission/Hurewicz/AbsoluteNaturality.lean",
+      "source_selection": "initial relative/absolute compatibility and naturality lemmas",
+      "upstream_sha256": "4f0c2b4c5c931ff8d65a1c155d1ce79a3e9ee15c8b0540a5573f61ded330104f",
+      "port_sha256": "1f289011473ebf954dcf84944a190b317dd1b9bc94f6cfc9d4fc5495655a1145",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Extracted the initial compatibility and naturality lemmas from upstream AbsoluteNaturality, with an AbsoluteSurjectivity dependency; proof statements and arguments are preserved."
+      ]
+    }
+  ],
+  "local_support": [
+    {
+      "module": "Submission.Homology.SmallSimplices",
+      "sha256": "50160e27a0c7c2a063686bd32fec03eb98bd80da3ecc8b73ecb4970c2d0ac81c",
+      "description": [
+        "Local adapter: transparent aliases to Hatcher's actual small singular subcomplexes and its proved chain homotopy equivalence; proved degreewise monicity of simplicial chain maps via sigmaConst."
+      ]
+    }
+  ],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 22,
+    "declarations": 579,
+    "theorems": 455,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "Submission.Homology.SmallSimplices",
+      "Submission.Homology.MayerVietoris",
+      "Submission.Homology.MayerVietorisLES",
+      "Submission.Homology.Excision",
+      "Submission.Hurewicz.SmallRelativeChains",
+      "Submission.Homology.Contractible",
+      "Submission.Homology.MayerVietorisIso",
+      "Submission.Homology.HomologyZero",
+      "Submission.Homology.RightExact",
+      "Submission.Homology.SphereZero",
+      "Submission.Homology.SphereZeroSplit",
+      "Submission.Homology.Sphere",
+      "Submission.Homology.SphereOne",
+      "Submission.Hurewicz.CubeFundamentalClass",
+      "Submission.Hurewicz.RelativeAdditivity",
+      "Submission.Model.SphereCompl",
+      "Submission.SphereHomotopy",
+      "Submission.Model.SphereConnected",
+      "Submission.Hurewicz.SimplexCubeOrientation",
+      "Submission.Hurewicz.RelativeSurjectivity",
+      "Submission.Hurewicz.AbsoluteSurjectivity",
+      "Submission.Hurewicz.AbsoluteComparison"
+    ]
+  }
+}

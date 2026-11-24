@@ -1,0 +1,2 @@
+HATCHER AUDIT OK: 745 declarations, 609 theorems, 12 modules; only propext, Classical.choice, Quot.sound
+All declaration kinds and private declarations were checked recursively against the standard axiom whitelist.

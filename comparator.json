@@ -1,14 +1,13 @@
 {
   "challenge_module": "Challenge",
-  "solution_module": "Solution",
+  "solution_module": "PalomarSolution",
   "theorem_names": [
     "AkopyanSixfold.tverberg_counterexample",
-    "AkopyanSixfold.convex_partition_counterexample"
+    "AkopyanSixfold.convex_partition_counterexample_gt_17"
   ],
   "permitted_axioms": [
     "propext",
     "Quot.sound",
     "Classical.choice"
-  ],
-  "enable_nanoda": false
+  ]
 }

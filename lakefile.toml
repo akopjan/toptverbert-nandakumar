@@ -1,6 +1,7 @@
 name = "TopTverberg"
 version = "0.1.0"
-defaultTargets = ["RequestProject", "AkopyanResearch", "Challenge", "Solution", "Audit"]
+weakLeanArgs = ["-j1"]
+defaultTargets = ["RequestProject", "AkopyanResearch", "Challenge", "Solution", "PalomarSolution", "Audit"]
 
 [[require]]
 name = "mathlib"
@@ -24,5 +25,17 @@ name = "Solution"
 roots = ["Solution"]
 
 [[lean_lib]]
+name = "PalomarSolution"
+roots = ["PalomarSolution"]
+
+[[lean_lib]]
 name = "Audit"
 roots = ["Audit"]
+
+[[lean_lib]]
+name = "Submission"
+globs = ["Submission.+"]
+
+[[lean_lib]]
+name = "Hatcher"
+globs = ["Hatcher.+"]

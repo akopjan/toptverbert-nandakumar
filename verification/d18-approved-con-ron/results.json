@@ -1,0 +1,141 @@
+{
+  "scope": "Supplemental replay of the same final export with the official approved con-ron binary",
+  "full_palomar_workflow": false,
+  "registry_acceptance": false,
+  "independent_challenge_comparison": false,
+  "official_positive_negative_controls_run": false,
+  "sandbox_note": "Uses the surrounding execution sandbox; does not reproduce the registry bwrap workflow.",
+  "started_utc": "2026-11-24T09:15:54.720816+00:00",
+  "outcome": "approved-con-ron-accepted-same-final-export",
+  "checker_attempted": true,
+  "source_toolchain": "leanprover/lean4:v4.35.0",
+  "approved_release": "v4.36.0-rc1",
+  "approved_release_commit": "c9afcddf514a6772bd4d649f7cfc04eff0b9f15e",
+  "approved_binary_sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "verifier_sha256": "5e211441ff55efd378d6d8ad83f4cf510f5719916f9eafed9dc2c4f703bef99e",
+  "permitted_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "required_final_theorems": [
+    "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting",
+    "AkopyanSixfold.almostSix_ninety",
+    "AkopyanSixfold.convex_partition_counterexample_gt_17",
+    "AkopyanSixfold.tverberg_counterexample"
+  ],
+  "jobs": 4,
+  "timeout_seconds": 1800,
+  "checker_path": "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+  "export_file": "/workspace/scratch/9db1b532943d/d18-final-proof.ndjson",
+  "ordinary_kernels_report": "/workspace/scratch/9db1b532943d/akopyan-completion/verification/d18-kernels/results.json",
+  "acquisition_evidence_sha256": {
+    "DOWNLOAD_VERIFICATION.json": "d25f7edabf83c0eb1ae0d134c7047929e5351a808f9d80b648a7eecab11e22fd",
+    "official-checker-revisions.json": "f8bf5d9df7e38fb16d667003b1b47dd28aaf4dc380ce01b50df3f8c36a79c6f3",
+    "official-release.json": "a50deec92e4bdd5ad41a0c0e7c0059f233ee6dc4ca8eb104bda9f3bbacf0482e",
+    "official-tag-ref.json": "f141222c4de8d985da95676ec15ab416ab8ba956e36761fdd8374c92257ca0f9",
+    "LICENSE": "8b28515ffffc5c0fe2807d8ae3735b00b324d9b7ce807dd63ff6ac8922fbce7e",
+    "LICENSES": "0af1535aa474a58f5d21b2f4b503bb91cad4ff34fec0f10dc776a0a041795fd8",
+    "fetch_official_checker.py": "ee499ba760c0c25505cce1b842b7d723d348a9823435835e97e720a2ece547c5",
+    "SOURCE_COPY_MANIFEST.json": "5d183d4931c7b4e00457459a685548b87df70e1a291318f485dd58bc5533f40e"
+  },
+  "checker_sha256_before": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "checker_identity_before": {
+    "size": 3649920,
+    "mtime_ns": 1795510793538803371,
+    "device": 27,
+    "inode": 550834
+  },
+  "ordinary_kernels_report_sha256": "7587d60175e14da6f6427624e2ff9d909b9b04f20f6b85eb33695fc347ae6c9b",
+  "ordinary_kernel_exit_codes": {
+    "leanchecker": 0,
+    "nanoda": 0,
+    "con-ron": 0
+  },
+  "ordinary_outcome": "all-components-accepted",
+  "ordinary_export_sha256": "978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be",
+  "declarations": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.almostSix_ninety",
+    "AkopyanSixfold.convex_partition_counterexample_gt_17",
+    "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting"
+  ],
+  "definition_targets": [],
+  "exported_declarations": [
+    "AkopyanSixfold.tverberg_counterexample",
+    "AkopyanSixfold.almostSix_ninety",
+    "AkopyanSixfold.convex_partition_counterexample_gt_17",
+    "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting"
+  ],
+  "export_identity_before_inspection": {
+    "size": 700996206,
+    "mtime_ns": 1795511288657982695,
+    "device": 27,
+    "inode": 550841
+  },
+  "export_sha256": "978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be",
+  "export_size_bytes": 700996206,
+  "export_record_count": 13030263,
+  "export_structure": {
+    "target_records": {
+      "AkopyanSixfold.tverberg_counterexample": {
+        "kind": "thm",
+        "line": 6170305,
+        "has_value": true
+      },
+      "AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting": {
+        "kind": "thm",
+        "line": 12117245,
+        "has_value": true
+      },
+      "AkopyanSixfold.almostSix_ninety": {
+        "kind": "thm",
+        "line": 12117250,
+        "has_value": true
+      },
+      "AkopyanSixfold.convex_partition_counterexample_gt_17": {
+        "kind": "thm",
+        "line": 13030263,
+        "has_value": true
+      }
+    },
+    "axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "declaration_record_counts": {
+      "inductive": 1381,
+      "def": 17008,
+      "thm": 58974,
+      "axiom": 3,
+      "quot": 4,
+      "opaque": 38
+    }
+  },
+  "same_export_and_declaration_records": true,
+  "export_identity_before_checker": {
+    "size": 700996206,
+    "mtime_ns": 1795511288657982695,
+    "device": 27,
+    "inode": 550841
+  },
+  "command": [
+    "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+    "--jobs=4",
+    "/workspace/scratch/9db1b532943d/d18-final-proof.ndjson"
+  ],
+  "checker_exit_code": 0,
+  "checker_timed_out": false,
+  "checker_elapsed_seconds": 109.273,
+  "checker_log": "con-ron.log",
+  "checker_log_sha256": "c075ac9431a66c111f7956aeef40116adc8880d59ab8bec77bb89d65b5d75ffe",
+  "export_sha256_after_checker": "978d77cdeecf295f3ae79fbc5c18f5d42fb66e911dc7ce0e758925c7d543a0be",
+  "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "ordinary_kernels_report_sha256_after": "7587d60175e14da6f6427624e2ff9d909b9b04f20f6b85eb33695fc347ae6c9b",
+  "export_unchanged": true,
+  "checker_unchanged": true,
+  "ordinary_report_unchanged": true,
+  "driver_exit_code": 0,
+  "finished_utc": "2026-11-24T09:18:19.626259+00:00"
+}

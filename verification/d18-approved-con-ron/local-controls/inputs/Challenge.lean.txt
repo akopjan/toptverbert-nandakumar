@@ -1,0 +1,6 @@
+module
+
+/-! Independent statement surface for an infrastructure test only. -/
+
+public theorem Fixture.successorWitness (n : Nat) : ∃ m : Nat, m = n + 1 := by
+  sorry

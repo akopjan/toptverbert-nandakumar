@@ -1,0 +1,36 @@
+def AkopyanSixfold.simplex : (n : ℕ) → Set.{0} (Fin n → ℝ) :=
+fun n => Set.ofPred.{0} fun x => (∀ (v : Fin n), LE.le.{0} 0 (x v)) ∧ Eq.{1} (∑ v, x v) 1
+def AkopyanSixfold.DisjointSupports : {n : ℕ} → (Fin 6 → Fin n → ℝ) → Prop :=
+fun {n} x => ∀ (i j : Fin 6), Ne.{1} i j → ∀ (v : Fin n), Eq.{1} (x i v) 0 ∨ Eq.{1} (x j v) 0
+def AkopyanSixfold.IsAlmostSixEmbedding : {n d : ℕ} → ((Fin n → ℝ) → Fin d → ℝ) → Prop :=
+fun {n d} f =>
+  ContinuousOn.{0, 0} f (AkopyanSixfold.simplex n) ∧
+    ∀ (x : Fin 6 → Fin n → ℝ),
+      (∀ (i : Fin 6), Membership.mem.{0, 0} (AkopyanSixfold.simplex n) (x i)) →
+        AkopyanSixfold.DisjointSupports x → ∃ i, Ne.{1} (f (x i)) (f (x 0))
+@[reducible] def AkopyanSixfold.Ambient : ℕ → Type :=
+fun d => EuclideanSpace.{0, 0} ℝ (Fin d)
+@[reducible] def AkopyanSixfold.Body : ℕ → Type :=
+fun d => ConvexBody.{0} (AkopyanSixfold.Ambient d)
+def AkopyanSixfold.unitBall : (d : ℕ) → Set.{0} (AkopyanSixfold.Ambient d) :=
+fun d => Metric.closedBall.{0} 0 1
+def AkopyanSixfold.IsSixPartition : {d : ℕ} → (Fin 6 → AkopyanSixfold.Body d) → Prop :=
+fun {d} C =>
+  Eq.{1} (AkopyanSixfold.unitBall d) (⋃ i, ↑(C i)) ∧
+    (∀ (i : Fin 6), Set.Nonempty.{0} (interior.{0} ↑(C i))) ∧
+      ∀ (i j : Fin 6), Ne.{1} i j → Disjoint.{0} (interior.{0} ↑(C i)) (interior.{0} ↑(C j))
+AkopyanSixfold.tverberg_counterexample : ∃ f, AkopyanSixfold.IsAlmostSixEmbedding f
+'AkopyanSixfold.tverberg_counterexample' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+AkopyanSixfold.convex_partition_counterexample : ∀ (d : ℕ),
+  LE.le.{0} 36 d →
+    ∃ Phi mu,
+      Continuous.{0, 0} Phi ∧
+        MeasureTheory.IsProbabilityMeasure.{0} mu ∧
+          MeasureTheory.Measure.AbsolutelyContinuous.{0} mu MeasureTheory.volume.{0} ∧
+            ∀ (C : Fin 6 → AkopyanSixfold.Body d),
+              AkopyanSixfold.IsSixPartition C →
+                (∀ (i : Fin 6), Eq.{1} (mu ↑(C i)) (HDiv.hDiv.{0, 0, 0} (mu (AkopyanSixfold.unitBall d)) 6)) →
+                  ∃ i, Ne.{1} (Phi (C i)) (Phi (C 0))
+'AkopyanSixfold.convex_partition_counterexample' depends on axioms: [propext, Classical.choice.{u}, Quot.sound.{u}]
+Axiom whitelist passed for AkopyanSixfold.tverberg_counterexample: [propext, Classical.choice, Quot.sound]
+Axiom whitelist passed for AkopyanSixfold.convex_partition_counterexample: [propext, Classical.choice, Quot.sound]

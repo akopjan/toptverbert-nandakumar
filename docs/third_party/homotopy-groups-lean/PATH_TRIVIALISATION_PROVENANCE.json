@@ -1,0 +1,74 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "port_lean": "4.35.0",
+  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "license": "Apache-2.0",
+  "files": [
+    {
+      "module": "Submission.Model.Sphere",
+      "upstream_path": "Submission/Model/Sphere.lean",
+      "upstream_sha256": "d03394d1c98ae7a5bc1c1b17c1b430d59909424f846ef414314307c1b53e1c04",
+      "port_sha256": "6f9156fcd00d34424e190acec1672624f238baa7f79ef81e6ad943d3c077ef2c",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Replaced deprecated if_pos/if_neg by ite_eq_left/ite_eq_right."
+      ]
+    },
+    {
+      "module": "Submission.Model.Suspension",
+      "upstream_path": "Submission/Model/Suspension.lean",
+      "upstream_sha256": "0a4723c46a91a5dd4d571169fadd3d80a3c29c8772089867720ad632b6f90f04",
+      "port_sha256": "242342043de8cd04736a670d8d7b9da4f3e20a9fcf40ef0ff06ad8d3dde17486",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Submission.Model.SuspSphere",
+      "upstream_path": "Submission/Model/SuspSphere.lean",
+      "upstream_sha256": "264d4fb3b07a8ad9a3e23d02dbe0970b05591ff23c23b52315037985b54de424",
+      "port_sha256": "868f1afc981a80185a3b2c8009b5d8dacbbe8fdd07ecdd42367fb5f0929b4b96",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations."
+      ]
+    },
+    {
+      "module": "Submission.Homotopy.ContractionData",
+      "upstream_path": "Submission/Homotopy/ContractionData.lean",
+      "upstream_sha256": "0c990451941bbdb240e32251e8d5ccedb7557580fd20f8378a860f730eac68fa",
+      "port_sha256": "e17a489039652f07bf0874c009645ae3365972e40e7860bb798a519612356464",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Replaced deprecated Set.mem_setOf_eq by Set.mem_ofPred_eq."
+      ]
+    },
+    {
+      "module": "Submission.Homotopy.DiscTrivialisation",
+      "upstream_path": "Submission/Homotopy/DiscTrivialisation.lean",
+      "upstream_sha256": "dd22424dcfc27f8405813827a22f6fa329a954f70c5c76f72e9b968d814b88af",
+      "port_sha256": "9d2a14d8180d344ef33a9061dfd661c2b3605bd9fc73e745648b6cf7010e5e9e",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations.",
+        "Replaced deprecated if_pos/if_neg by ite_eq_left/ite_eq_right.",
+        "Specified PathSpace.continuous_val and Pullback.snd in legTotal continuity proof to avoid opaque-subtype instance ambiguity."
+      ]
+    }
+  ],
+  "audit": {
+    "result": "pass",
+    "modules": 5,
+    "declarations": 416,
+    "theorems": 307,
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "source": "verification/third_party/homotopy-groups-lean/PathTrivialisationAudit.lean",
+    "log": "docs/third_party/homotopy-groups-lean/PATH_TRIVIALISATION_AUDIT.txt"
+  }
+}

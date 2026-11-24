@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-24T10:28:02.730638+00:00",
+  "scope": "Bounded credential-pattern scan of the actual selected release payload; match values are not recorded; not an exhaustive secret scanner",
+  "selected_files": 1240,
+  "selected_bytes": 36176053,
+  "text_files_scanned": 1239,
+  "pattern_names": [
+    "github_token",
+    "aws_access_key",
+    "private_key_header",
+    "literal_bearer",
+    "signed_url"
+  ],
+  "findings": [],
+  "release_selector_sha256": "9477cecdaa6482bd823703075c3d03584f08b141cd5d73e37c760dd9cf3dfbe5",
+  "no_pattern_matches": true
+}

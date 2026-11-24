@@ -1,0 +1,15 @@
+{
+  "purpose": "Preserve exact entry module sources before later unrelated module additions; selected theorem proof bodies are unchanged",
+  "files": [
+    {
+      "source_path": "Audit.lean",
+      "snapshot_file": "audit-entry-at-verification.lean.txt",
+      "sha256": "c2fc2460be7f40012c70664610dbfa4d0106b1ef177fd29da6ffc10072dcf371"
+    },
+    {
+      "source_path": "AkopyanResearch/Completion.lean",
+      "snapshot_file": "completion-entry-at-verification.lean.txt",
+      "sha256": "8fc6d17c7cf36a0422d865ba673fd69347cf91199ae224cef0a5dcdbfd158420"
+    }
+  ]
+}

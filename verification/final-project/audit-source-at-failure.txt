@@ -1,0 +1,402 @@
+module
+
+public import Solution
+public import Lean.Util.CollectAxioms
+
+-- BEGIN PROJECT PRIVATE IMPORTS
+import all AkopyanResearch
+import all AkopyanResearch.BeltTrickSO
+import all AkopyanResearch.BoundaryRegularization
+import all AkopyanResearch.BranchPinch
+import all AkopyanResearch.CanonicalExtraction
+import all AkopyanResearch.CanonicalQuadratic
+import all AkopyanResearch.ChainTelescoping
+import all AkopyanResearch.CochainAnnihilator
+import all AkopyanResearch.ColoredChainContraction
+import all AkopyanResearch.Completion
+import all AkopyanResearch.Completion.ArrangementLink
+import all AkopyanResearch.Completion.ChosenTargetSections
+import all AkopyanResearch.Completion.ComparisonContract
+import all AkopyanResearch.Completion.ConcreteComparison
+import all AkopyanResearch.Completion.ConcreteComparisonTarget
+import all AkopyanResearch.Completion.ConcreteReduction
+import all AkopyanResearch.Completion.EquivariantJoinIteration
+import all AkopyanResearch.Completion.EquivariantJoinStep
+import all AkopyanResearch.Completion.GeneralTableBridge
+import all AkopyanResearch.Completion.IteratedJoinCoordinates
+import all AkopyanResearch.Completion.JoinCoordinates
+import all AkopyanResearch.Completion.JoinMassCoordinates
+import all AkopyanResearch.Completion.JoinNullIteration
+import all AkopyanResearch.Completion.JoinNullhomotopy
+import all AkopyanResearch.Completion.JoinRowAction
+import all AkopyanResearch.Completion.JoinVertexMap
+import all AkopyanResearch.Completion.LocalLink
+import all AkopyanResearch.Completion.MatchingExtraction
+import all AkopyanResearch.Completion.MatchingPairCollapse
+import all AkopyanResearch.Completion.MatchingSphereMap
+import all AkopyanResearch.Completion.OriginalJoinBridge
+import all AkopyanResearch.Completion.OriginalJoinCoordinates
+import all AkopyanResearch.Completion.OriginalPairPath
+import all AkopyanResearch.Completion.PairSourceProjections
+import all AkopyanResearch.Completion.PairSphereAction
+import all AkopyanResearch.Completion.PhaseExtension
+import all AkopyanResearch.Completion.ProductExpectation
+import all AkopyanResearch.Completion.PurePhaseCoordinates
+import all AkopyanResearch.Completion.QuadraticFlatRank
+import all AkopyanResearch.Completion.QuadraticLink
+import all AkopyanResearch.Completion.RelativeComparison
+import all AkopyanResearch.Completion.RelativeFaceDiagram
+import all AkopyanResearch.Completion.SimplexEmbedding
+import all AkopyanResearch.Completion.TableRealization
+import all AkopyanResearch.Completion.TableToEmbedding
+import all AkopyanResearch.CoxeterChamber
+import all AkopyanResearch.CoxeterTriangulation
+import all AkopyanResearch.DiskCylinderRetraction
+import all AkopyanResearch.EquivariantPinch64
+import all AkopyanResearch.FiniteGenericity
+import all AkopyanResearch.FiniteRegularization
+import all AkopyanResearch.FrameTransport
+import all AkopyanResearch.FramedAnnulus
+import all AkopyanResearch.InvariantCaps
+import all AkopyanResearch.MarksArithmetic
+import all AkopyanResearch.MatchingCombinatorics
+import all AkopyanResearch.MatchingProjection
+import all AkopyanResearch.NormalBundleTrivialization
+import all AkopyanResearch.PairCollapse
+import all AkopyanResearch.PairCollapseEquivariant
+import all AkopyanResearch.PairGeometry
+import all AkopyanResearch.PairNormalChart
+import all AkopyanResearch.PairNormalFrame
+import all AkopyanResearch.PairUniversalSource
+import all AkopyanResearch.PlanarTestGlobal
+import all AkopyanResearch.PlanarTestJoin
+import all AkopyanResearch.PlanarTestLocal
+import all AkopyanResearch.ProperCollapse
+import all AkopyanResearch.QuadraticArrangement
+import all AkopyanResearch.QuadraticInterpolation
+import all AkopyanResearch.QuadraticNaturality
+import all AkopyanResearch.QuadraticRank
+import all AkopyanResearch.QuadraticRealization
+import all AkopyanResearch.QuaternionBelt
+import all AkopyanResearch.RowSylowGeometry
+import all AkopyanResearch.SafeQuadraticBridge
+import all AkopyanResearch.SafeQuadraticRealization
+import all AkopyanResearch.SplitSphereChart
+import all AkopyanResearch.TransferArithmetic
+import all RequestProject.Balance
+import all RequestProject.Boundary
+import all RequestProject.Cochain
+import all RequestProject.Construction.Assembly
+import all RequestProject.Construction.CellCount
+import all RequestProject.Construction.Chart
+import all RequestProject.Construction.DetLemmas
+import all RequestProject.Construction.Frames
+import all RequestProject.Construction.Good
+import all RequestProject.Construction.Indep
+import all RequestProject.Construction.InnerCell
+import all RequestProject.Construction.Layout
+import all RequestProject.Construction.Local
+import all RequestProject.Construction.Map
+import all RequestProject.Construction.Obstacles
+import all RequestProject.Construction.PyrAlg
+import all RequestProject.Construction.PyrCell
+import all RequestProject.Construction.PyrDet
+import all RequestProject.Construction.Safety
+import all RequestProject.Generic
+import all RequestProject.Reduction
+import all RequestProject.Solution
+import all RequestProject.Surgery.Avoid
+import all RequestProject.Surgery.CancelGood
+import all RequestProject.Surgery.Clear
+import all RequestProject.Surgery.Core
+import all RequestProject.Surgery.Cutoff
+import all RequestProject.Surgery.Frame
+import all RequestProject.Surgery.GLPath
+import all RequestProject.Surgery.Good
+import all RequestProject.Surgery.Main
+import all RequestProject.Surgery.PairCancel
+import all RequestProject.Surgery.PathHomotopy
+import all RequestProject.Surgery.Separate
+import all RequestProject.Surgery.Shift
+import all RequestProject.Surgery.ShiftGood
+import all RequestProject.Surgery.Transport
+import all RequestProject.Surgery.ZeroSet
+import all Solution
+-- END PROJECT PRIVATE IMPORTS
+
+@[expose] public section
+
+set_option autoImplicit false
+
+/-!
+# Kernel-dependency audit for every project proof module
+
+`lake build Audit` imports the private proof information of every project
+proof module. It rejects actual axiom declarations and checks the transitive
+axiom dependencies of every project-owned declaration, including private and
+generated declarations. Only `propext`, `Classical.choice`, and `Quot.sound`
+are permitted. The independent `Challenge` module is excluded because its two
+placeholders specify the problem rather than supply a proof.
+
+Selected mathematical milestones are additionally required to be public,
+genuine theorem declarations; selected constructions must be genuine
+definitions. These kind checks use the private environment, where Lean 4.35
+retains proof bodies instead of weakening exported theorems to axioms.
+
+This command does not replace kernel elaboration. It runs only *after* all
+imported proof modules have compiled successfully.
+-/
+
+open Lean MeasureTheory
+
+/-!
+The following two examples restate the original `Challenge.lean` interfaces.
+Their proofs invoke the public declarations of `Solution.lean`, so the kernel
+checks the entire statements, not merely that theorem names exist.
+-/
+
+example :
+    ∃ f : (Fin 36 → ℝ) → (Fin 6 → ℝ),
+      AkopyanSixfold.IsAlmostSixEmbedding f :=
+  AkopyanSixfold.tverberg_counterexample
+
+example (d : ℕ) (hd : 36 ≤ d) :
+    ∃ (Phi : AkopyanSixfold.Body d → (Fin (d - 1) → ℝ))
+      (mu : Measure (AkopyanSixfold.Ambient d)),
+      Continuous Phi ∧
+      IsProbabilityMeasure mu ∧
+      mu.AbsolutelyContinuous volume ∧
+      ∀ C : Fin 6 → AkopyanSixfold.Body d,
+        AkopyanSixfold.IsSixPartition C →
+        (∀ i, mu (C i : Set (AkopyanSixfold.Ambient d)) =
+          mu (AkopyanSixfold.unitBall d) / 6) →
+        ∃ i, Phi (C i) ≠ Phi (C 0) :=
+  AkopyanSixfold.convex_partition_counterexample d hd
+
+open Lean Elab Command in
+run_cmd do
+  let permitted : List Name := [``propext, ``Classical.choice, ``Quot.sound]
+  let projectModules : List Name := [
+    `AkopyanResearch,
+    `AkopyanResearch.BeltTrickSO,
+    `AkopyanResearch.BoundaryRegularization,
+    `AkopyanResearch.BranchPinch,
+    `AkopyanResearch.CanonicalExtraction,
+    `AkopyanResearch.CanonicalQuadratic,
+    `AkopyanResearch.ChainTelescoping,
+    `AkopyanResearch.CochainAnnihilator,
+    `AkopyanResearch.ColoredChainContraction,
+    `AkopyanResearch.Completion,
+    `AkopyanResearch.Completion.ArrangementLink,
+    `AkopyanResearch.Completion.ChosenTargetSections,
+    `AkopyanResearch.Completion.ComparisonContract,
+    `AkopyanResearch.Completion.ConcreteComparison,
+    `AkopyanResearch.Completion.ConcreteComparisonTarget,
+    `AkopyanResearch.Completion.ConcreteReduction,
+    `AkopyanResearch.Completion.EquivariantJoinIteration,
+    `AkopyanResearch.Completion.EquivariantJoinStep,
+    `AkopyanResearch.Completion.GeneralTableBridge,
+    `AkopyanResearch.Completion.IteratedJoinCoordinates,
+    `AkopyanResearch.Completion.JoinCoordinates,
+    `AkopyanResearch.Completion.JoinMassCoordinates,
+    `AkopyanResearch.Completion.JoinNullIteration,
+    `AkopyanResearch.Completion.JoinNullhomotopy,
+    `AkopyanResearch.Completion.JoinRowAction,
+    `AkopyanResearch.Completion.JoinVertexMap,
+    `AkopyanResearch.Completion.LocalLink,
+    `AkopyanResearch.Completion.MatchingExtraction,
+    `AkopyanResearch.Completion.MatchingPairCollapse,
+    `AkopyanResearch.Completion.MatchingSphereMap,
+    `AkopyanResearch.Completion.OriginalJoinBridge,
+    `AkopyanResearch.Completion.OriginalJoinCoordinates,
+    `AkopyanResearch.Completion.OriginalPairPath,
+    `AkopyanResearch.Completion.PairSourceProjections,
+    `AkopyanResearch.Completion.PairSphereAction,
+    `AkopyanResearch.Completion.PhaseExtension,
+    `AkopyanResearch.Completion.ProductExpectation,
+    `AkopyanResearch.Completion.PurePhaseCoordinates,
+    `AkopyanResearch.Completion.QuadraticFlatRank,
+    `AkopyanResearch.Completion.QuadraticLink,
+    `AkopyanResearch.Completion.RelativeComparison,
+    `AkopyanResearch.Completion.RelativeFaceDiagram,
+    `AkopyanResearch.Completion.SimplexEmbedding,
+    `AkopyanResearch.Completion.TableRealization,
+    `AkopyanResearch.Completion.TableToEmbedding,
+    `AkopyanResearch.CoxeterChamber,
+    `AkopyanResearch.CoxeterTriangulation,
+    `AkopyanResearch.DiskCylinderRetraction,
+    `AkopyanResearch.EquivariantPinch64,
+    `AkopyanResearch.FiniteGenericity,
+    `AkopyanResearch.FiniteRegularization,
+    `AkopyanResearch.FrameTransport,
+    `AkopyanResearch.FramedAnnulus,
+    `AkopyanResearch.InvariantCaps,
+    `AkopyanResearch.MarksArithmetic,
+    `AkopyanResearch.MatchingCombinatorics,
+    `AkopyanResearch.MatchingProjection,
+    `AkopyanResearch.NormalBundleTrivialization,
+    `AkopyanResearch.PairCollapse,
+    `AkopyanResearch.PairCollapseEquivariant,
+    `AkopyanResearch.PairGeometry,
+    `AkopyanResearch.PairNormalChart,
+    `AkopyanResearch.PairNormalFrame,
+    `AkopyanResearch.PairUniversalSource,
+    `AkopyanResearch.PlanarTestGlobal,
+    `AkopyanResearch.PlanarTestJoin,
+    `AkopyanResearch.PlanarTestLocal,
+    `AkopyanResearch.ProperCollapse,
+    `AkopyanResearch.QuadraticArrangement,
+    `AkopyanResearch.QuadraticInterpolation,
+    `AkopyanResearch.QuadraticNaturality,
+    `AkopyanResearch.QuadraticRank,
+    `AkopyanResearch.QuadraticRealization,
+    `AkopyanResearch.QuaternionBelt,
+    `AkopyanResearch.RowSylowGeometry,
+    `AkopyanResearch.SafeQuadraticBridge,
+    `AkopyanResearch.SafeQuadraticRealization,
+    `AkopyanResearch.SplitSphereChart,
+    `AkopyanResearch.TransferArithmetic,
+    `Audit,
+    `RequestProject.Balance,
+    `RequestProject.Boundary,
+    `RequestProject.Cochain,
+    `RequestProject.Construction.Assembly,
+    `RequestProject.Construction.CellCount,
+    `RequestProject.Construction.Chart,
+    `RequestProject.Construction.DetLemmas,
+    `RequestProject.Construction.Frames,
+    `RequestProject.Construction.Good,
+    `RequestProject.Construction.Indep,
+    `RequestProject.Construction.InnerCell,
+    `RequestProject.Construction.Layout,
+    `RequestProject.Construction.Local,
+    `RequestProject.Construction.Map,
+    `RequestProject.Construction.Obstacles,
+    `RequestProject.Construction.PyrAlg,
+    `RequestProject.Construction.PyrCell,
+    `RequestProject.Construction.PyrDet,
+    `RequestProject.Construction.Safety,
+    `RequestProject.Generic,
+    `RequestProject.Reduction,
+    `RequestProject.Solution,
+    `RequestProject.Surgery.Avoid,
+    `RequestProject.Surgery.CancelGood,
+    `RequestProject.Surgery.Clear,
+    `RequestProject.Surgery.Core,
+    `RequestProject.Surgery.Cutoff,
+    `RequestProject.Surgery.Frame,
+    `RequestProject.Surgery.GLPath,
+    `RequestProject.Surgery.Good,
+    `RequestProject.Surgery.Main,
+    `RequestProject.Surgery.PairCancel,
+    `RequestProject.Surgery.PathHomotopy,
+    `RequestProject.Surgery.Separate,
+    `RequestProject.Surgery.Shift,
+    `RequestProject.Surgery.ShiftGood,
+    `RequestProject.Surgery.Transport,
+    `RequestProject.Surgery.ZeroSet,
+    `Solution]
+  let publicEnv := (← getEnv).setExporting true
+  let privateEnv := (← getEnv).setExporting false
+  for moduleName in projectModules do
+    if moduleName != `Audit then
+      unless (privateEnv.getModuleIdx? moduleName).isSome do
+        throwError "Project module is not imported: {moduleName}"
+  let checkAxioms (name : Name) : CommandElabM Unit := do
+    let axioms ← Lean.collectAxioms name
+    let forbidden := axioms.toList.filter fun ax => !permitted.contains ax
+    unless forbidden.isEmpty do
+      throwError "Forbidden axioms in {name}: {forbidden}"
+  let moduleNames := privateEnv.header.moduleNames
+  let mut ownedCount : Nat := 0
+  let mut publicCount : Nat := 0
+  let mut theoremCount : Nat := 0
+  let mut definitionCount : Nat := 0
+  let mut opaqueCount : Nat := 0
+  for (name, info) in privateEnv.constants do
+    let owner := match privateEnv.getModuleIdxFor? name with
+      | some index => moduleNames[index]!
+      | none => privateEnv.mainModule
+    if projectModules.contains owner then
+      ownedCount := ownedCount + 1
+      if (publicEnv.find? name).isSome then
+        publicCount := publicCount + 1
+      match info with
+      | .axiomInfo _ => throwError "Actual project axiom is forbidden: {name} (module {owner})"
+      | .thmInfo _ => theoremCount := theoremCount + 1
+      | .defnInfo _ => definitionCount := definitionCount + 1
+      | .opaqueInfo _ => opaqueCount := opaqueCount + 1
+      | _ => pure ()
+      checkAxioms name
+  if ownedCount == 0 then
+    throwError "The project declaration audit is empty"
+  logInfo m!"PROJECT AUDIT OK: {ownedCount} declarations from {projectModules.length} proof-module owners; {publicCount} public, {ownedCount - publicCount} private; {theoremCount} theorems, {definitionCount} definitions, {opaqueCount} opaque declarations; every kind checked against the axiom whitelist"
+  let targets : List Name := [
+    ``Tverberg6R.exists_height,
+    ``Tverberg6R.heightExtension,
+    ``AkopyanSixfold.tverberg_counterexample,
+    ``AkopyanSixfold.fivefold_tverberg_join,
+    ``AkopyanSixfold.exists_isBlocking_5d,
+    ``AkopyanSixfold.convex_partition_counterexample_ge_36,
+    ``AkopyanSixfold.convex_partition_counterexample_gt_17_of_continuous_table,
+    ``AkopyanSixfold.almostSix_ninety_of_relative_lifting,
+    ``AkopyanSixfold.convex_partition_counterexample_gt_17_of_relative_lifting,
+    ``AkopyanResearch.OriginalJoinBridge.exists_fifteen_join_map_with_block_nullhomotopy,
+    ``AkopyanResearch.OriginalJoinCoordinates.exists_fifteen_color_map_with_block_nullhomotopy,
+    ``AkopyanResearch.OriginalPairPath.exists_equivariant_pair_collapse_nullhomotopy,
+    ``AkopyanResearch.PairSphereAction.spherePairEquiv_equivariant,
+    ``AkopyanResearch.LocalLink.exists_linking_sphere_retract,
+    ``AkopyanResearch.ArrangementLink.exists_sphere_retract,
+    ``AkopyanResearch.exists_matching_sphere_retract,
+    ``AkopyanResearch.CoherentComparison.extends_boundary_into_nine_sphere,
+    ``AkopyanResearch.QuadraticFlatRank.scalarRank_dichotomy,
+    ``AkopyanResearch.QuadraticFlatRank.no_three_containing_flat_of_rank_lt_nine,
+    ``AkopyanResearch.QuadraticFlatRank.strict_flat_chain_length_bound,
+    ``AkopyanResearch.JoinMassCoordinates.continuous_fromMass_joint,
+    ``AkopyanResearch.ChosenTargetSections.exists_chosen_fifteen_color_sections,
+    ``AkopyanResearch.ChosenTargetSections.singleSection_enumeration_change,
+    ``AkopyanResearch.ChosenTargetSections.pairSection_equivariant,
+    ``AkopyanResearch.ChosenTargetSections.pairSection_pure,
+    ``AkopyanResearch.MatchingSphereMap.continuous_matchingSphere,
+    ``AkopyanResearch.MatchingSphereMap.matchingSphere_enumeration_change,
+    ``AkopyanResearch.MatchingSphereMap.matchingSphere_liftFace,
+    ``AkopyanResearch.MatchingSphereMap.matchingVector_ne_zero,
+    ``AkopyanResearch.MatchingPairCollapse.collapse_of_initial_differences,
+    ``AkopyanResearch.RelativeComparison.exists_safe_table_of_relative_lifting,
+    ``AkopyanResearch.ConcreteComparisonTarget.sectionMap_natural,
+    ``AkopyanResearch.ConcreteComparison.continuous_comparisonMap,
+    ``AkopyanResearch.ConcreteComparison.comparisonMap_natural,
+    ``AkopyanResearch.ConcreteComparison.exists_safe_table_of_required_lifting,
+    ``AkopyanSixfold.convex_partition_counterexample]
+  for name in targets do
+    unless (publicEnv.find? name).isSome do
+      throwError "Key theorem is not public: {name}"
+    match privateEnv.find? name with
+    | some (.thmInfo _) => pure ()
+    | _ => throwError "Missing genuine theorem declaration: {name}"
+    checkAxioms name
+    logInfo m!"KEY THEOREM OK {name}"
+  let definitions : List Name := [
+    ``AkopyanResearch.OriginalJoinBridge.originalSelfNullData,
+    ``AkopyanResearch.OriginalJoinCoordinates.coordinateHomeomorph,
+    ``AkopyanResearch.OriginalJoinCoordinates.coordinateMap,
+    ``AkopyanResearch.OriginalPairPath.pairPath,
+    ``AkopyanResearch.QuadraticFlatRank.splitFlat,
+    ``AkopyanResearch.ConcreteComparisonTarget.diagram,
+    ``AkopyanResearch.ConcreteComparison.comparison,
+    ``AkopyanResearch.ConcreteComparison.chosenSection,
+    ``AkopyanResearch.ConcreteComparison.RequiredRelativeLifting]
+  for name in definitions do
+    unless (publicEnv.find? name).isSome do
+      throwError "Key definition is not public: {name}"
+    match privateEnv.find? name with
+    | some (.defnInfo _) => pure ()
+    | _ => throwError "Missing genuine definition declaration: {name}"
+    checkAxioms name
+    logInfo m!"KEY DEFINITION OK {name}"
+
+-- Print the two public theorem certificates for a human-readable build log.
+#print axioms AkopyanSixfold.tverberg_counterexample
+#print axioms AkopyanSixfold.convex_partition_counterexample
+
+end

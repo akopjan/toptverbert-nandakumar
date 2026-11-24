@@ -1,0 +1,1066 @@
+⚠ [9055/9094] Replayed RequestProject.Reduction
+warning: RequestProject/Reduction.lean:207:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Reduction.lean:235:25: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Reduction.lean:244:23: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Reduction.lean:245:23: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Reduction.lean:264:12: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  tendsto_finset_̵s̵S̲um
+warning: RequestProject/Reduction.lean:280:49: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Reduction.lean:311:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Reduction.lean:342:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Reduction.lean:352:58: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Reduction.lean:393:33: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+⚠ [9056/9094] Replayed RequestProject.Generic
+warning: RequestProject/Generic.lean:68:19: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Generic.lean:231:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9057/9094] Replayed RequestProject.Boundary
+warning: RequestProject/Boundary.lean:45:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Boundary.lean:111:12: `Finset.card_univ_diff` has been deprecated: Use `Finset.card_univ_sdiff` instead
+
+Hint: Replace the deprecated name:
+  Finset.card_univ_s̲diff
+⚠ [9058/9094] Replayed RequestProject.Cochain
+warning: RequestProject/Cochain.lean:155:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Cochain.lean:170:6: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Cochain.lean:282:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9059/9094] Replayed RequestProject.Construction.Layout
+warning: RequestProject/Construction/Layout.lean:82:27: This simp argument is unused:
+  Fin.succAbove_right_inj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [ctr, bJ_succAbove]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/Layout.lean:100:8: This simp argument is unused:
+  Fin.sum_univ_five
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/Layout.lean:134:84: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Layout.lean:214:15: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Construction/Layout.lean:214:56: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+⚠ [9060/9094] Replayed RequestProject.Surgery.Avoid
+warning: RequestProject/Surgery/Avoid.lean:31:49: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵l̵t̵_̵t̵o̵p̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲l̲t̲_̲t̲o̲p̲
+⚠ [9061/9094] Replayed RequestProject.Surgery.PathHomotopy
+warning: RequestProject/Surgery/PathHomotopy.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PathHomotopy.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9062/9094] Replayed RequestProject.Construction.Chart
+warning: RequestProject/Construction/Chart.lean:95:37: This simp argument is unused:
+  ← Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [RingHom.id_apply]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/Chart.lean:193:17: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Construction/Chart.lean:204:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9063/9094] Replayed RequestProject.Surgery.GLPath
+warning: RequestProject/Surgery/GLPath.lean:28:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:119:6: Unused tactic linter: `skip` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Surgery/GLPath.lean:183:38: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:195:16: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/GLPath.lean:224:32: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:236:20: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:258:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:262:34: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:269:22: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:281:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:281:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9064/9094] Replayed RequestProject.Surgery.Frame
+warning: RequestProject/Surgery/Frame.lean:89:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/Frame.lean:96:39: This simp argument is unused:
+  Function.update_of_ne (Fin.succ_ne_zero _)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lin, Fin.sum_univ_succ, toVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Frame.lean:150:11: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+⚠ [9065/9094] Replayed RequestProject.Construction.DetLemmas
+warning: RequestProject/Construction/DetLemmas.lean:33:5: Variable name `hD` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hD
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: RequestProject/Construction/DetLemmas.lean:74:8: `Matrix.det_of_upperTriangular` has been deprecated: Use `Matrix.det_of_isUpperTriangular` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵d̵e̵t̵_̵o̵f̵_̵u̵p̵p̵e̵r̵T̵r̵i̵a̵n̵g̵u̵l̵a̵r̵d̲e̲t̲_̲o̲f̲_̲i̲s̲U̲p̲p̲e̲r̲T̲r̲i̲a̲n̲g̲u̲l̲a̲r̲
+warning: RequestProject/Construction/DetLemmas.lean:70:58: This simp argument is unused:
+  (Fin.castSucc_lt_last i).ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, Matrix.mul_apply, Fin.snoc_castSucc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/DetLemmas.lean:78:14: This simp argument is unused:
+  (Fin.castSucc_lt_last l).ne
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/DetLemmas.lean:84:12: This simp argument is unused:
+  Matrix.one_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hb', hab']
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9066/9094] Replayed RequestProject.Balance
+warning: RequestProject/Balance.lean:34:12: `Finset.card_univ_diff` has been deprecated: Use `Finset.card_univ_sdiff` instead
+
+Hint: Replace the deprecated name:
+  Finset.card_univ_s̲diff
+⚠ [9067/9094] Replayed RequestProject.Surgery.Core
+warning: RequestProject/Surgery/Core.lean:41:0: automatically included section variable(s) unused in theorem `Surgery.exists_margin`:
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9068/9094] Replayed RequestProject.Construction.Map
+warning: RequestProject/Construction/Map.lean:163:7: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Construction/Map.lean:168:7: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Construction/Map.lean:175:33: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Construction/Map.lean:177:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Construction/Map.lean:184:53: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+⚠ [9069/9094] Replayed RequestProject.Construction.Local
+warning: RequestProject/Construction/Local.lean:26:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Local.lean:54:18: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Local.lean:224:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Local.lean:238:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Local.lean:255:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9070/9094] Replayed RequestProject.Construction.Indep
+warning: RequestProject/Construction/Indep.lean:93:6: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Indep.lean:99:6: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9071/9094] Replayed RequestProject.Construction.PyrAlg
+warning: RequestProject/Construction/PyrAlg.lean:82:75: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Construction/PyrAlg.lean:177:52: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Construction/PyrAlg.lean:151:68: Variable name `hm` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hm
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9072/9094] Replayed RequestProject.Construction.Safety
+warning: RequestProject/Construction/Safety.lean:84:8: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Safety.lean:95:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Safety.lean:97:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Construction/Safety.lean:119:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9073/9094] Replayed RequestProject.Construction.Obstacles
+warning: RequestProject/Construction/Obstacles.lean:168:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:168:24: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:168:36: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:168:47: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:169:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:169:25: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:169:37: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:169:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:180:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:180:26: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:180:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:180:49: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:181:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:181:27: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:181:39: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:181:51: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:189:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:189:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:189:43: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:189:54: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:190:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:190:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Obstacles.lean:190:43: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Obstacles.lean:190:55: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9074/9094] Replayed RequestProject.Surgery.Cutoff
+warning: RequestProject/Surgery/Cutoff.lean:45:4: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/Cutoff.lean:55:10: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+⚠ [9075/9094] Replayed RequestProject.Surgery.PairCancel
+warning: RequestProject/Surgery/PairCancel.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PairCancel.lean:96:4: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/PairCancel.lean:209:6: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/PairCancel.lean:232:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [9076/9094] Replayed RequestProject.Surgery.Transport
+warning: RequestProject/Surgery/Transport.lean:68:29: This simp argument is unused:
+  fromVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unitE, fromVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Transport.lean:110:24: This simp argument is unused:
+  toVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [toVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9077/9094] Replayed RequestProject.Surgery.ZeroSet
+warning: RequestProject/Surgery/ZeroSet.lean:59:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9079/9094] Replayed RequestProject.Surgery.Good
+warning: RequestProject/Surgery/Good.lean:60:0: automatically included section variable(s) unused in theorem `Surgery.eventually_eq_of_not_mem`:
+  [NormedAddCommGroup V]
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup V] [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RequestProject/Surgery/Good.lean:76:22: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:76:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:82:70: `Set.inter_union_diff` has been deprecated: Use `Set.inter_union_sdiff` instead
+
+Hint: Replace the deprecated name:
+  inter_union_s̲diff
+warning: RequestProject/Surgery/Good.lean:84:37: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/Good.lean:111:20: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:111:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:122:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+warning: RequestProject/Surgery/Good.lean:123:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+⚠ [9080/9094] Replayed RequestProject.Surgery.ShiftGood
+warning: RequestProject/Surgery/ShiftGood.lean:35:38: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/ShiftGood.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/ShiftGood.lean:95:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:111:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:136:33: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:146:29: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:147:30: `Set.setOf_false` has been deprecated: Use `Set.ofPred_false` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵f̵a̵l̵s̵e̵o̲f̲P̲r̲e̲d̲_̲f̲a̲l̲s̲e̲
+⚠ [9081/9094] Replayed RequestProject.Surgery.Separate
+warning: RequestProject/Surgery/Separate.lean:52:61: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9083/9094] Replayed RequestProject.Surgery.CancelGood
+warning: RequestProject/Surgery/CancelGood.lean:62:46: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/CancelGood.lean:89:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/CancelGood.lean:94:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:109:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:120:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:148:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9084/9094] Replayed RequestProject.Surgery.Main
+warning: RequestProject/Surgery/Main.lean:37:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/Main.lean:77:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9087/9094] Replayed RequestProject.Construction.InnerCell
+warning: RequestProject/Construction/InnerCell.lean:68:6: `Matrix.det_of_lowerTriangular` has been deprecated: Use `Matrix.det_of_isLowerTriangular` instead
+
+Hint: Replace the deprecated name:
+  M̵a̵t̵r̵i̵x̵.̵d̵e̵t̵_̵o̵f̵_̵l̵o̵w̵e̵r̵T̵r̵i̵a̵n̵g̵u̵l̵a̵r̵d̲e̲t̲_̲o̲f̲_̲i̲s̲L̲o̲w̲e̲r̲T̲r̲i̲a̲n̲g̲u̲l̲a̲r̲
+warning: RequestProject/Construction/InnerCell.lean:77:55: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, Fin.snoc_castSucc, toBaryL_unitE, this, hs5]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/InnerCell.lean:78:21: This simp argument is unused:
+  Pi.single_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, hs5]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9088/9094] Replayed RequestProject.Construction.PyrDet
+warning: RequestProject/Construction/PyrDet.lean:142:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/PyrDet.lean:142:38: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/PyrDet.lean:186:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/PyrDet.lean:237:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/PyrDet.lean:191:25: This simp argument is unused:
+  Fin.lt_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.snoc, Equiv.swap_apply_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:242:25: This simp argument is unused:
+  Fin.lt_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.snoc, Equiv.swap_apply_def]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:242:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:250:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:258:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:266:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:274:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:282:47: This simp argument is unused:
+  Equiv.swap_apply_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [snocMat, D1, ycoef, ht, Pi.single_apply, Fin.succAbove, Fin.lt_def, Fin.snoc]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Construction/PyrDet.lean:191:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:199:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:207:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:215:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:223:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:231:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:242:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:250:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:258:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:266:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:274:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:282:69: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: RequestProject/Construction/PyrDet.lean:191:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:199:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:207:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:215:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:223:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:231:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:242:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:250:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:258:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:266:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:274:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrDet.lean:282:69: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9089/9094] Replayed RequestProject.Construction.PyrCell
+warning: RequestProject/Construction/PyrCell.lean:72:52: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Construction/PyrCell.lean:120:34: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/PyrCell.lean:162:38: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: RequestProject/Construction/PyrCell.lean:162:34: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Construction/PyrCell.lean:162:38: Unused tactic linter: `positivity` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [9090/9094] Replayed RequestProject.Construction.Good
+warning: RequestProject/Construction/Good.lean:129:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:144:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:151:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:153:16: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Good.lean:158:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:160:16: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Construction/Good.lean:175:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:184:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Construction/Good.lean:216:21: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9091/9094] Replayed RequestProject.Construction.Assembly
+warning: RequestProject/Construction/Assembly.lean:53:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+⚠ [9093/9094] Replayed Solution
+warning: Solution.lean:128:43: `isCompact_stdSimplex` has been deprecated: Use `Convexity.StdSimplex.compactSpace` instead
+
+Note: The updated constant has a different type:
+  ∀ (R : Type u_1) (M : Type u_2) [inst : Ring R] [inst_1 : TopologicalSpace R] [IsTopologicalRing R]
+    [inst_3 : PartialOrder R] [inst_4 : IsStrictOrderedRing R] [CompactIccSpace R] [OrderClosedTopology R] [Finite M],
+    CompactSpace (Convexity.StdSimplex R M)
+instead of
+  ∀ (𝕜 : Type u_1) (ι : Type u_2) [inst : Fintype ι] [inst_1 : TopologicalSpace 𝕜] [inst_2 : Semiring 𝕜]
+    [inst_3 : PartialOrder 𝕜] [OrderClosedTopology 𝕜] [ContinuousAdd 𝕜] [CompactIccSpace 𝕜] [IsOrderedAddMonoid 𝕜],
+    IsCompact (stdSimplex 𝕜 ι)
+warning: Solution.lean:3168:12: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:3063:53: This simp argument is unused:
+  real_inner_eq_re_inner
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inner_add_left, real_inner_smul_left, RCLike.inner_apply, conj_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Solution.lean:3064:6: This simp argument is unused:
+  RCLike.inner_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [inner_add_left, real_inner_smul_left, real_inner_eq_re_inner, conj_trivial]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: Solution.lean:2667:65: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:2675:60: Unused tactic linter: `norm_num` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3211:41: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: Solution.lean:3420:6: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Solution.lean:3489:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Solution.lean:3490:6: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: Solution.lean:3601:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3608:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3631:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3644:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3652:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3657:55: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: Solution.lean:3601:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:3631:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:3644:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:3652:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:3657:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: Solution.lean:3601:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3601:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3608:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3631:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3631:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3644:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3644:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3652:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3652:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3657:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:3657:55: Unused tactic linter: `contradiction` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: Solution.lean:4238:18: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:4244:64: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:4245:70: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:4252:72: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:4253:66: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:4265:72: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:4266:72: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:4325:18: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:5001:25: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5009:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5015:18: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5038:25: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:5038:39: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5040:27: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5060:27: `dif_neg` has been deprecated: Use `dite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵n̵e̵g̵d̲i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: Solution.lean:5060:41: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: Solution.lean:5174:5: Variable name `hS_univ` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hS_univ
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+Build completed successfully (9094 jobs).

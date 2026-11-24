@@ -1,0 +1,282 @@
+⚠ [9046/9066] Replayed RequestProject.Surgery.GLPath
+warning: RequestProject/Surgery/GLPath.lean:28:20: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:119:6: Unused tactic linter: `skip` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: RequestProject/Surgery/GLPath.lean:183:38: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:195:16: This simp argument is unused:
+  Function.update_of_ne hj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [hj]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/GLPath.lean:224:32: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:236:20: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:258:24: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵S̲e̲t̲.̲m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/GLPath.lean:262:34: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: RequestProject/Surgery/GLPath.lean:269:22: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+warning: RequestProject/Surgery/GLPath.lean:281:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:281:21: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: RequestProject/Surgery/GLPath.lean:282:21: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [9047/9066] Replayed RequestProject.Surgery.Frame
+warning: RequestProject/Surgery/Frame.lean:89:9: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/Frame.lean:96:39: This simp argument is unused:
+  Function.update_of_ne (Fin.succ_ne_zero _)
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [lin, Fin.sum_univ_succ, toVec]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Frame.lean:150:11: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+⚠ [9048/9066] Replayed RequestProject.Surgery.Avoid
+warning: RequestProject/Surgery/Avoid.lean:31:49: `ENat.coe_lt_top` has been deprecated: Use `ENat.natCast_lt_top` instead
+
+Hint: Replace the deprecated name:
+  E̵N̵a̵t̵.̵c̵o̵e̵_̵l̵t̵_̵t̵o̵p̵E̲N̲a̲t̲.̲n̲a̲t̲C̲a̲s̲t̲_̲l̲t̲_̲t̲o̲p̲
+⚠ [9049/9066] Replayed RequestProject.Surgery.PathHomotopy
+warning: RequestProject/Surgery/PathHomotopy.lean:52:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PathHomotopy.lean:53:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [9051/9077] Replayed RequestProject.Surgery.Core
+warning: RequestProject/Surgery/Core.lean:41:0: automatically included section variable(s) unused in theorem `Surgery.exists_margin`:
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [9052/9077] Replayed RequestProject.Surgery.Cutoff
+warning: RequestProject/Surgery/Cutoff.lean:45:4: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/Cutoff.lean:55:10: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+⚠ [9053/9077] Replayed RequestProject.Surgery.PairCancel
+warning: RequestProject/Surgery/PairCancel.lean:66:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+warning: RequestProject/Surgery/PairCancel.lean:96:4: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: RequestProject/Surgery/PairCancel.lean:209:6: `mul_le_one₀` has been deprecated: No replacement, use constituent lemmas from proof.
+warning: RequestProject/Surgery/PairCancel.lean:232:23: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+⚠ [9054/9077] Replayed RequestProject.Surgery.Transport
+warning: RequestProject/Surgery/Transport.lean:68:29: This simp argument is unused:
+  fromVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [unitE, fromVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: RequestProject/Surgery/Transport.lean:110:24: This simp argument is unused:
+  toVec_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [toVecLin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [9055/9077] Replayed RequestProject.Surgery.ZeroSet
+warning: RequestProject/Surgery/ZeroSet.lean:59:15: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9057/9077] Replayed RequestProject.Surgery.Good
+warning: RequestProject/Surgery/Good.lean:60:0: automatically included section variable(s) unused in theorem `Surgery.eventually_eq_of_not_mem`:
+  [NormedAddCommGroup V]
+  [NormedSpace ℝ V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [NormedAddCommGroup V] [NormedSpace ℝ V] in theorem ...
+
+Note: This linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: RequestProject/Surgery/Good.lean:76:22: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:76:32: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:82:70: `Set.inter_union_diff` has been deprecated: Use `Set.inter_union_sdiff` instead
+
+Hint: Replace the deprecated name:
+  inter_union_s̲diff
+warning: RequestProject/Surgery/Good.lean:84:37: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/Good.lean:111:20: `Set.mem_diff` has been deprecated: Use `Set.mem_sdiff` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵d̵i̵f̵f̵S̲e̲t̲.̲m̲e̲m̲_̲s̲d̲i̲f̲f̲
+warning: RequestProject/Surgery/Good.lean:111:30: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/Good.lean:122:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+warning: RequestProject/Surgery/Good.lean:123:13: `Set.ncard_inter_add_ncard_diff_eq_ncard` has been deprecated: Use `Set.ncard_inter_add_ncard_sdiff_eq_ncard` instead
+
+Hint: Replace the deprecated name:
+  S̵e̵t̵.̵ncard_inter_add_ncard_s̲diff_eq_ncard
+⚠ [9058/9077] Replayed RequestProject.Surgery.ShiftGood
+warning: RequestProject/Surgery/ShiftGood.lean:35:38: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/ShiftGood.lean:40:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/ShiftGood.lean:95:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:111:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/ShiftGood.lean:136:33: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:146:29: `Set.setOf_eq_eq_singleton` has been deprecated: Use `Set.ofPred_eq_eq_singleton` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵e̵q̵_̵e̵q̵_̵s̵i̵n̵g̵l̵e̵t̵o̵n̵o̲f̲P̲r̲e̲d̲_̲e̲q̲_̲e̲q̲_̲s̲i̲n̲g̲l̲e̲t̲o̲n̲
+warning: RequestProject/Surgery/ShiftGood.lean:147:30: `Set.setOf_false` has been deprecated: Use `Set.ofPred_false` instead
+
+Hint: Replace the deprecated name:
+  s̵e̵t̵O̵f̵_̵f̵a̵l̵s̵e̵o̲f̲P̲r̲e̲d̲_̲f̲a̲l̲s̲e̲
+⚠ [9059/9077] Replayed RequestProject.Surgery.Separate
+warning: RequestProject/Surgery/Separate.lean:52:61: Variable name `hF` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hF
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [9061/9077] Replayed RequestProject.Surgery.CancelGood
+warning: RequestProject/Surgery/CancelGood.lean:62:46: `Set.Finite.diff` has been deprecated: Use `Set.Finite.sdiff` instead
+warning: RequestProject/Surgery/CancelGood.lean:89:4: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/CancelGood.lean:94:37: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:109:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:120:39: `Set.mem_setOf_eq` has been deprecated: Use `Set.mem_ofPred_eq` instead
+
+Hint: Replace the deprecated name:
+  m̵e̵m̵_̵s̵e̵t̵O̵f̵_̵e̵q̵m̲e̲m̲_̲o̲f̲P̲r̲e̲d̲_̲e̲q̲
+warning: RequestProject/Surgery/CancelGood.lean:148:38: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [9062/9077] Replayed RequestProject.Surgery.Main
+warning: RequestProject/Surgery/Main.lean:37:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+warning: RequestProject/Surgery/Main.lean:77:2: `push_neg` has been deprecated. Prefer using `push Not` instead.
+If you'd rather continue using `push_neg` in your project, you can implement it as follows:
+```
+open Lean.Parser.Tactic in
+macro "push_neg" cfg:optConfig loc:(location)? : tactic =>
+  `(tactic| push $cfg:optConfig Not $[$loc]?)
+```
+ℹ [9071/9077] Replayed AkopyanResearch.Completion.PhaseExtension
+info: AkopyanResearch/Completion/PhaseExtension.lean:357:0: 'AkopyanResearch.PhaseExtension.continuous_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:358:0: 'AkopyanResearch.PhaseExtension.continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:359:0: 'AkopyanResearch.PhaseExtension.exists_continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:360:0: 'AkopyanResearch.PhaseExtension.extension_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9072/9077] Replayed AkopyanResearch.Completion.JoinCoordinates
+info: AkopyanResearch/Completion/JoinCoordinates.lean:388:0: 'AkopyanResearch.JoinCoordinates.continuous_toCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:389:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:390:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:391:0: 'AkopyanResearch.JoinCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:392:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:393:0: 'AkopyanResearch.JoinCoordinates.unitHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9073/9077] Replayed AkopyanResearch.Completion.IteratedJoinCoordinates
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:201:0: 'AkopyanResearch.IteratedJoinCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:202:0: 'AkopyanResearch.IteratedJoinCoordinates.finHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:203:0: 'AkopyanResearch.IteratedJoinCoordinates.finHomeomorph_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+ℹ [9074/9077] Replayed AkopyanResearch.Completion.PurePhaseCoordinates
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:144:0: 'AkopyanResearch.PurePhaseCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:145:0: 'AkopyanResearch.PurePhaseCoordinates.restrict_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:146:0: 'AkopyanResearch.PurePhaseCoordinates.insert_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [9075/9077] Replayed AkopyanResearch.Completion.JoinRowAction
+info: AkopyanResearch/Completion/JoinRowAction.lean:95:0: 'AkopyanResearch.JoinRowAction.inversionHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinRowAction.lean:96:0: 'AkopyanResearch.JoinRowAction.converted_map_equivariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [9076/9077] Built AkopyanResearch.Completion.OriginalJoinBridge (16s)
+✔ [9077/9077] Built AkopyanResearch.Completion.OriginalJoinCoordinates (10s)
+Build completed successfully (9077 jobs).

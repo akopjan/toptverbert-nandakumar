@@ -3,16 +3,900 @@ module
 public import Solution
 public import Lean.Util.CollectAxioms
 
+-- BEGIN PROJECT PRIVATE IMPORTS
+public import AkopyanResearch
+import all AkopyanResearch
+public import AkopyanResearch.BeltTrickSO
+import all AkopyanResearch.BeltTrickSO
+public import AkopyanResearch.BoundaryRegularization
+import all AkopyanResearch.BoundaryRegularization
+public import AkopyanResearch.BranchPinch
+import all AkopyanResearch.BranchPinch
+public import AkopyanResearch.CanonicalExtraction
+import all AkopyanResearch.CanonicalExtraction
+public import AkopyanResearch.CanonicalQuadratic
+import all AkopyanResearch.CanonicalQuadratic
+public import AkopyanResearch.ChainTelescoping
+import all AkopyanResearch.ChainTelescoping
+public import AkopyanResearch.CochainAnnihilator
+import all AkopyanResearch.CochainAnnihilator
+public import AkopyanResearch.ColoredChainContraction
+import all AkopyanResearch.ColoredChainContraction
+public import AkopyanResearch.Completion
+import all AkopyanResearch.Completion
+public import AkopyanResearch.Completion.ArrangementConnectivity
+import all AkopyanResearch.Completion.ArrangementConnectivity
+public import AkopyanResearch.Completion.ArrangementHomology
+import all AkopyanResearch.Completion.ArrangementHomology
+public import AkopyanResearch.Completion.ArrangementLink
+import all AkopyanResearch.Completion.ArrangementLink
+public import AkopyanResearch.Completion.BinaryProductHomology
+import all AkopyanResearch.Completion.BinaryProductHomology
+public import AkopyanResearch.Completion.ChosenTargetSections
+import all AkopyanResearch.Completion.ChosenTargetSections
+public import AkopyanResearch.Completion.CommonPairHomology
+import all AkopyanResearch.Completion.CommonPairHomology
+public import AkopyanResearch.Completion.ComparisonContract
+import all AkopyanResearch.Completion.ComparisonContract
+public import AkopyanResearch.Completion.ComplementMayerVietoris
+import all AkopyanResearch.Completion.ComplementMayerVietoris
+public import AkopyanResearch.Completion.ConcreteComparison
+import all AkopyanResearch.Completion.ConcreteComparison
+public import AkopyanResearch.Completion.ConcreteComparisonConnectivity
+import all AkopyanResearch.Completion.ConcreteComparisonConnectivity
+public import AkopyanResearch.Completion.ConcreteComparisonCoordinates
+import all AkopyanResearch.Completion.ConcreteComparisonCoordinates
+public import AkopyanResearch.Completion.ConcreteComparisonHomology
+import all AkopyanResearch.Completion.ConcreteComparisonHomology
+public import AkopyanResearch.Completion.ConcreteComparisonLifting
+import all AkopyanResearch.Completion.ConcreteComparisonLifting
+public import AkopyanResearch.Completion.ConcreteComparisonTarget
+import all AkopyanResearch.Completion.ConcreteComparisonTarget
+public import AkopyanResearch.Completion.ConcreteReduction
+import all AkopyanResearch.Completion.ConcreteReduction
+public import AkopyanResearch.Completion.ConnectedPair
+import all AkopyanResearch.Completion.ConnectedPair
+public import AkopyanResearch.Completion.ConnectivityTransport
+import all AkopyanResearch.Completion.ConnectivityTransport
+public import AkopyanResearch.Completion.ContractibleSimplexAddition
+import all AkopyanResearch.Completion.ContractibleSimplexAddition
+public import AkopyanResearch.Completion.ContractibleSourcePullback
+import all AkopyanResearch.Completion.ContractibleSourcePullback
+public import AkopyanResearch.Completion.CubicalCut
+import all AkopyanResearch.Completion.CubicalCut
+public import AkopyanResearch.Completion.CubicalHomotopyRectification
+import all AkopyanResearch.Completion.CubicalHomotopyRectification
+public import AkopyanResearch.Completion.CubicalPasting
+import all AkopyanResearch.Completion.CubicalPasting
+public import AkopyanResearch.Completion.DimensionEighteen
+import all AkopyanResearch.Completion.DimensionEighteen
+public import AkopyanResearch.Completion.DisjointComplementCoordinates
+import all AkopyanResearch.Completion.DisjointComplementCoordinates
+public import AkopyanResearch.Completion.DisjointComplementHomology
+import all AkopyanResearch.Completion.DisjointComplementHomology
+public import AkopyanResearch.Completion.EquivariantJoinIteration
+import all AkopyanResearch.Completion.EquivariantJoinIteration
+public import AkopyanResearch.Completion.EquivariantJoinStep
+import all AkopyanResearch.Completion.EquivariantJoinStep
+public import AkopyanResearch.Completion.ExactCommonSection
+import all AkopyanResearch.Completion.ExactCommonSection
+public import AkopyanResearch.Completion.FaceCubicalHomeomorph
+import all AkopyanResearch.Completion.FaceCubicalHomeomorph
+public import AkopyanResearch.Completion.FibrationConnectivity
+import all AkopyanResearch.Completion.FibrationConnectivity
+public import AkopyanResearch.Completion.FibrationRelativeHomology
+import all AkopyanResearch.Completion.FibrationRelativeHomology
+public import AkopyanResearch.Completion.FibreInclusionTransport
+import all AkopyanResearch.Completion.FibreInclusionTransport
+public import AkopyanResearch.Completion.FiniteComplementCoordinates
+import all AkopyanResearch.Completion.FiniteComplementCoordinates
+public import AkopyanResearch.Completion.FiniteLoop13Coordinates
+import all AkopyanResearch.Completion.FiniteLoop13Coordinates
+public import AkopyanResearch.Completion.FiniteLoop13Homology
+import all AkopyanResearch.Completion.FiniteLoop13Homology
+public import AkopyanResearch.Completion.FiniteLoopModelHomology
+import all AkopyanResearch.Completion.FiniteLoopModelHomology
+public import AkopyanResearch.Completion.FinitePointConnectivity
+import all AkopyanResearch.Completion.FinitePointConnectivity
+public import AkopyanResearch.Completion.FiniteProductTopology
+import all AkopyanResearch.Completion.FiniteProductTopology
+public import AkopyanResearch.Completion.FiniteSphereSourceHomology
+import all AkopyanResearch.Completion.FiniteSphereSourceHomology
+public import AkopyanResearch.Completion.FirstHomologyComparison
+import all AkopyanResearch.Completion.FirstHomologyComparison
+public import AkopyanResearch.Completion.FreeRelativeClass
+import all AkopyanResearch.Completion.FreeRelativeClass
+public import AkopyanResearch.Completion.FreeRelativeOperations
+import all AkopyanResearch.Completion.FreeRelativeOperations
+public import AkopyanResearch.Completion.GeneralTableBridge
+import all AkopyanResearch.Completion.GeneralTableBridge
+public import AkopyanResearch.Completion.HomotopyFiberConnectivity
+import all AkopyanResearch.Completion.HomotopyFiberConnectivity
+public import AkopyanResearch.Completion.HomotopyFiberFibration
+import all AkopyanResearch.Completion.HomotopyFiberFibration
+public import AkopyanResearch.Completion.HomotopyPullback
+import all AkopyanResearch.Completion.HomotopyPullback
+public import AkopyanResearch.Completion.HomotopyPullbackCoordinates
+import all AkopyanResearch.Completion.HomotopyPullbackCoordinates
+public import AkopyanResearch.Completion.IteratedJoinCoordinates
+import all AkopyanResearch.Completion.IteratedJoinCoordinates
+public import AkopyanResearch.Completion.JoinCoordinates
+import all AkopyanResearch.Completion.JoinCoordinates
+public import AkopyanResearch.Completion.JoinMassCoordinates
+import all AkopyanResearch.Completion.JoinMassCoordinates
+public import AkopyanResearch.Completion.JoinNullIteration
+import all AkopyanResearch.Completion.JoinNullIteration
+public import AkopyanResearch.Completion.JoinNullhomotopy
+import all AkopyanResearch.Completion.JoinNullhomotopy
+public import AkopyanResearch.Completion.JoinRowAction
+import all AkopyanResearch.Completion.JoinRowAction
+public import AkopyanResearch.Completion.JoinVertexMap
+import all AkopyanResearch.Completion.JoinVertexMap
+public import AkopyanResearch.Completion.LinearMeridian
+import all AkopyanResearch.Completion.LinearMeridian
+public import AkopyanResearch.Completion.LinearPairComplementHomology
+import all AkopyanResearch.Completion.LinearPairComplementHomology
+public import AkopyanResearch.Completion.LinearPreimageHomotopy
+import all AkopyanResearch.Completion.LinearPreimageHomotopy
+public import AkopyanResearch.Completion.LinearTube
+import all AkopyanResearch.Completion.LinearTube
+public import AkopyanResearch.Completion.LinearTubeClosed
+import all AkopyanResearch.Completion.LinearTubeClosed
+public import AkopyanResearch.Completion.LinearTubeExcision
+import all AkopyanResearch.Completion.LinearTubeExcision
+public import AkopyanResearch.Completion.LinearTubePair
+import all AkopyanResearch.Completion.LinearTubePair
+public import AkopyanResearch.Completion.LinearTubeThom
+import all AkopyanResearch.Completion.LinearTubeThom
+public import AkopyanResearch.Completion.LocalLink
+import all AkopyanResearch.Completion.LocalLink
+public import AkopyanResearch.Completion.LocalPairPathHomology
+import all AkopyanResearch.Completion.LocalPairPathHomology
+public import AkopyanResearch.Completion.LoopProduct13Coordinates
+import all AkopyanResearch.Completion.LoopProduct13Coordinates
+public import AkopyanResearch.Completion.LoopProduct13Homology
+import all AkopyanResearch.Completion.LoopProduct13Homology
+public import AkopyanResearch.Completion.LoopProductGeometry
+import all AkopyanResearch.Completion.LoopProductGeometry
+public import AkopyanResearch.Completion.LoopProductHomology
+import all AkopyanResearch.Completion.LoopProductHomology
+public import AkopyanResearch.Completion.LoopSpaceConnectivity
+import all AkopyanResearch.Completion.LoopSpaceConnectivity
+public import AkopyanResearch.Completion.LoopSphereCover
+import all AkopyanResearch.Completion.LoopSphereCover
+public import AkopyanResearch.Completion.LoopSphereHomology
+import all AkopyanResearch.Completion.LoopSphereHomology
+public import AkopyanResearch.Completion.MappingCylinderCompression
+import all AkopyanResearch.Completion.MappingCylinderCompression
+public import AkopyanResearch.Completion.MappingCylinderConnectivity
+import all AkopyanResearch.Completion.MappingCylinderConnectivity
+public import AkopyanResearch.Completion.MappingCylinderFaceLifting
+import all AkopyanResearch.Completion.MappingCylinderFaceLifting
+public import AkopyanResearch.Completion.MappingCylinderHomology
+import all AkopyanResearch.Completion.MappingCylinderHomology
+public import AkopyanResearch.Completion.MappingCylinderLifting
+import all AkopyanResearch.Completion.MappingCylinderLifting
+public import AkopyanResearch.Completion.MappingPathHomology
+import all AkopyanResearch.Completion.MappingPathHomology
+public import AkopyanResearch.Completion.MappingPathPair
+import all AkopyanResearch.Completion.MappingPathPair
+public import AkopyanResearch.Completion.MappingPathReplacement
+import all AkopyanResearch.Completion.MappingPathReplacement
+public import AkopyanResearch.Completion.MatchingExtraction
+import all AkopyanResearch.Completion.MatchingExtraction
+public import AkopyanResearch.Completion.MatchingPairCollapse
+import all AkopyanResearch.Completion.MatchingPairCollapse
+public import AkopyanResearch.Completion.MatchingSphereMap
+import all AkopyanResearch.Completion.MatchingSphereMap
+public import AkopyanResearch.Completion.MayerVietorisNaturality
+import all AkopyanResearch.Completion.MayerVietorisNaturality
+public import AkopyanResearch.Completion.NDRCylinder
+import all AkopyanResearch.Completion.NDRCylinder
+public import AkopyanResearch.Completion.NeighborhoodNDR
+import all AkopyanResearch.Completion.NeighborhoodNDR
+public import AkopyanResearch.Completion.NormedLinearThom
+import all AkopyanResearch.Completion.NormedLinearThom
+public import AkopyanResearch.Completion.OpenComplementQuotient
+import all AkopyanResearch.Completion.OpenComplementQuotient
+public import AkopyanResearch.Completion.OpenUnionBoundary
+import all AkopyanResearch.Completion.OpenUnionBoundary
+public import AkopyanResearch.Completion.OpenUnionMayerVietoris
+import all AkopyanResearch.Completion.OpenUnionMayerVietoris
+public import AkopyanResearch.Completion.OriginalJoinBridge
+import all AkopyanResearch.Completion.OriginalJoinBridge
+public import AkopyanResearch.Completion.OriginalJoinCoordinates
+import all AkopyanResearch.Completion.OriginalJoinCoordinates
+public import AkopyanResearch.Completion.OriginalPairPath
+import all AkopyanResearch.Completion.OriginalPairPath
+public import AkopyanResearch.Completion.PairBalancedJoin
+import all AkopyanResearch.Completion.PairBalancedJoin
+public import AkopyanResearch.Completion.PairBoundaryComparison
+import all AkopyanResearch.Completion.PairBoundaryComparison
+public import AkopyanResearch.Completion.PairCofiberModel
+import all AkopyanResearch.Completion.PairCofiberModel
+public import AkopyanResearch.Completion.PairCofiberSection
+import all AkopyanResearch.Completion.PairCofiberSection
+public import AkopyanResearch.Completion.PairCofibration
+import all AkopyanResearch.Completion.PairCofibration
+public import AkopyanResearch.Completion.PairCollapseHomology
+import all AkopyanResearch.Completion.PairCollapseHomology
+public import AkopyanResearch.Completion.PairCollapsedLocus
+import all AkopyanResearch.Completion.PairCollapsedLocus
+public import AkopyanResearch.Completion.PairCommonAlignment
+import all AkopyanResearch.Completion.PairCommonAlignment
+public import AkopyanResearch.Completion.PairConcreteLocalModel
+import all AkopyanResearch.Completion.PairConcreteLocalModel
+public import AkopyanResearch.Completion.PairDeformation
+import all AkopyanResearch.Completion.PairDeformation
+public import AkopyanResearch.Completion.PairEndpointHomology
+import all AkopyanResearch.Completion.PairEndpointHomology
+public import AkopyanResearch.Completion.PairEvaluationEquivalence
+import all AkopyanResearch.Completion.PairEvaluationEquivalence
+public import AkopyanResearch.Completion.PairGoodPair
+import all AkopyanResearch.Completion.PairGoodPair
+public import AkopyanResearch.Completion.PairIntersection
+import all AkopyanResearch.Completion.PairIntersection
+public import AkopyanResearch.Completion.PairL2Deformation
+import all AkopyanResearch.Completion.PairL2Deformation
+public import AkopyanResearch.Completion.PairLocalConnectivity
+import all AkopyanResearch.Completion.PairLocalConnectivity
+public import AkopyanResearch.Completion.PairLocalEquivalence
+import all AkopyanResearch.Completion.PairLocalEquivalence
+public import AkopyanResearch.Completion.PairNeighborhoodDeformation
+import all AkopyanResearch.Completion.PairNeighborhoodDeformation
+public import AkopyanResearch.Completion.PairNormalHomology
+import all AkopyanResearch.Completion.PairNormalHomology
+public import AkopyanResearch.Completion.PairNormalModel
+import all AkopyanResearch.Completion.PairNormalModel
+public import AkopyanResearch.Completion.PairOrbit
+import all AkopyanResearch.Completion.PairOrbit
+public import AkopyanResearch.Completion.PairPathCoordinates
+import all AkopyanResearch.Completion.PairPathCoordinates
+public import AkopyanResearch.Completion.PairRelativeHomology
+import all AkopyanResearch.Completion.PairRelativeHomology
+public import AkopyanResearch.Completion.PairRepresentation
+import all AkopyanResearch.Completion.PairRepresentation
+public import AkopyanResearch.Completion.PairSourceProjections
+import all AkopyanResearch.Completion.PairSourceProjections
+public import AkopyanResearch.Completion.PairSphereAction
+import all AkopyanResearch.Completion.PairSphereAction
+public import AkopyanResearch.Completion.PathFibreEquivalences
+import all AkopyanResearch.Completion.PathFibreEquivalences
+public import AkopyanResearch.Completion.PathProductCoordinates
+import all AkopyanResearch.Completion.PathProductCoordinates
+public import AkopyanResearch.Completion.PhaseExtension
+import all AkopyanResearch.Completion.PhaseExtension
+public import AkopyanResearch.Completion.ProductConnectivity
+import all AkopyanResearch.Completion.ProductConnectivity
+public import AkopyanResearch.Completion.ProductExpectation
+import all AkopyanResearch.Completion.ProductExpectation
+public import AkopyanResearch.Completion.ProductHemisphereCover
+import all AkopyanResearch.Completion.ProductHemisphereCover
+public import AkopyanResearch.Completion.ProductNormalPairKernel
+import all AkopyanResearch.Completion.ProductNormalPairKernel
+public import AkopyanResearch.Completion.ProductNormalThom
+import all AkopyanResearch.Completion.ProductNormalThom
+public import AkopyanResearch.Completion.ProductProjectionIsomorphism
+import all AkopyanResearch.Completion.ProductProjectionIsomorphism
+public import AkopyanResearch.Completion.ProductSphereKernel
+import all AkopyanResearch.Completion.ProductSphereKernel
+public import AkopyanResearch.Completion.ProductSphereProjection
+import all AkopyanResearch.Completion.ProductSphereProjection
+public import AkopyanResearch.Completion.ProductSphereThom
+import all AkopyanResearch.Completion.ProductSphereThom
+public import AkopyanResearch.Completion.ProductZeroSphereKernel
+import all AkopyanResearch.Completion.ProductZeroSphereKernel
+public import AkopyanResearch.Completion.PuncturedSpace
+import all AkopyanResearch.Completion.PuncturedSpace
+public import AkopyanResearch.Completion.PuncturedSphereHomeomorphism
+import all AkopyanResearch.Completion.PuncturedSphereHomeomorphism
+public import AkopyanResearch.Completion.PurePhaseCoordinates
+import all AkopyanResearch.Completion.PurePhaseCoordinates
+public import AkopyanResearch.Completion.QuadraticBoundaryExtension
+import all AkopyanResearch.Completion.QuadraticBoundaryExtension
+public import AkopyanResearch.Completion.QuadraticComplementCoordinates
+import all AkopyanResearch.Completion.QuadraticComplementCoordinates
+public import AkopyanResearch.Completion.QuadraticComplementHomology
+import all AkopyanResearch.Completion.QuadraticComplementHomology
+public import AkopyanResearch.Completion.QuadraticConnectivity
+import all AkopyanResearch.Completion.QuadraticConnectivity
+public import AkopyanResearch.Completion.QuadraticDeletedPairs
+import all AkopyanResearch.Completion.QuadraticDeletedPairs
+public import AkopyanResearch.Completion.QuadraticDeletion
+import all AkopyanResearch.Completion.QuadraticDeletion
+public import AkopyanResearch.Completion.QuadraticFlatRank
+import all AkopyanResearch.Completion.QuadraticFlatRank
+public import AkopyanResearch.Completion.QuadraticHomology
+import all AkopyanResearch.Completion.QuadraticHomology
+public import AkopyanResearch.Completion.QuadraticLink
+import all AkopyanResearch.Completion.QuadraticLink
+public import AkopyanResearch.Completion.QuadraticMayerVietorisSets
+import all AkopyanResearch.Completion.QuadraticMayerVietorisSets
+public import AkopyanResearch.Completion.QuadraticMeridians
+import all AkopyanResearch.Completion.QuadraticMeridians
+public import AkopyanResearch.Completion.QuadraticNewPairKernel
+import all AkopyanResearch.Completion.QuadraticNewPairKernel
+public import AkopyanResearch.Completion.QuadraticPairCoordinates
+import all AkopyanResearch.Completion.QuadraticPairCoordinates
+public import AkopyanResearch.Completion.QuadraticPairCover
+import all AkopyanResearch.Completion.QuadraticPairCover
+public import AkopyanResearch.Completion.QuadraticPairEnumeration
+import all AkopyanResearch.Completion.QuadraticPairEnumeration
+public import AkopyanResearch.Completion.QuadraticPairHomology
+import all AkopyanResearch.Completion.QuadraticPairHomology
+public import AkopyanResearch.Completion.QuadraticPairRank
+import all AkopyanResearch.Completion.QuadraticPairRank
+public import AkopyanResearch.Completion.QuadraticSourceCoordinates
+import all AkopyanResearch.Completion.QuadraticSourceCoordinates
+public import AkopyanResearch.Completion.QuadraticStratumHomology
+import all AkopyanResearch.Completion.QuadraticStratumHomology
+public import AkopyanResearch.Completion.RankOneProduct
+import all AkopyanResearch.Completion.RankOneProduct
+public import AkopyanResearch.Completion.RankOneSplit
+import all AkopyanResearch.Completion.RankOneSplit
+public import AkopyanResearch.Completion.RelativeComparison
+import all AkopyanResearch.Completion.RelativeComparison
+public import AkopyanResearch.Completion.RelativeFaceDiagram
+import all AkopyanResearch.Completion.RelativeFaceDiagram
+public import AkopyanResearch.Completion.RelativeHomologyBridge
+import all AkopyanResearch.Completion.RelativeHomologyBridge
+public import AkopyanResearch.Completion.RelativeHomologyConnectivity
+import all AkopyanResearch.Completion.RelativeHomologyConnectivity
+public import AkopyanResearch.Completion.RelativeHomotopyBasepoint
+import all AkopyanResearch.Completion.RelativeHomotopyBasepoint
+public import AkopyanResearch.Completion.RelativeHurewiczDescent
+import all AkopyanResearch.Completion.RelativeHurewiczDescent
+public import AkopyanResearch.Completion.RelativeSimplexBoundary
+import all AkopyanResearch.Completion.RelativeSimplexBoundary
+public import AkopyanResearch.Completion.RepresentationSphereInvariants
+import all AkopyanResearch.Completion.RepresentationSphereInvariants
+public import AkopyanResearch.Completion.ShortExactCoordinates
+import all AkopyanResearch.Completion.ShortExactCoordinates
+public import AkopyanResearch.Completion.SignedExactKernel
+import all AkopyanResearch.Completion.SignedExactKernel
+public import AkopyanResearch.Completion.SimplexEmbedding
+import all AkopyanResearch.Completion.SimplexEmbedding
+public import AkopyanResearch.Completion.SimplexHurewiczAdd
+import all AkopyanResearch.Completion.SimplexHurewiczAdd
+public import AkopyanResearch.Completion.SimplexSkeletonConnectivity
+import all AkopyanResearch.Completion.SimplexSkeletonConnectivity
+public import AkopyanResearch.Completion.SimplexSkeletonRetraction
+import all AkopyanResearch.Completion.SimplexSkeletonRetraction
+public import AkopyanResearch.Completion.SingleCoordinateModel
+import all AkopyanResearch.Completion.SingleCoordinateModel
+public import AkopyanResearch.Completion.Sphere13FibreHomology
+import all AkopyanResearch.Completion.Sphere13FibreHomology
+public import AkopyanResearch.Completion.SphereConnectivity
+import all AkopyanResearch.Completion.SphereConnectivity
+public import AkopyanResearch.Completion.SphereHomology
+import all AkopyanResearch.Completion.SphereHomology
+public import AkopyanResearch.Completion.SphereNineSourceHomology
+import all AkopyanResearch.Completion.SphereNineSourceHomology
+public import AkopyanResearch.Completion.SphereSourceCover
+import all AkopyanResearch.Completion.SphereSourceCover
+public import AkopyanResearch.Completion.SphereSourceHomology
+import all AkopyanResearch.Completion.SphereSourceHomology
+public import AkopyanResearch.Completion.SphereSourceKernel
+import all AkopyanResearch.Completion.SphereSourceKernel
+public import AkopyanResearch.Completion.SplitExactKernel
+import all AkopyanResearch.Completion.SplitExactKernel
+public import AkopyanResearch.Completion.TableRealization
+import all AkopyanResearch.Completion.TableRealization
+public import AkopyanResearch.Completion.TableToEmbedding
+import all AkopyanResearch.Completion.TableToEmbedding
+public import AkopyanResearch.Completion.TargetCollapseModel
+import all AkopyanResearch.Completion.TargetCollapseModel
+public import AkopyanResearch.Completion.TargetConnectivity
+import all AkopyanResearch.Completion.TargetConnectivity
+public import AkopyanResearch.Completion.TargetFiberModel
+import all AkopyanResearch.Completion.TargetFiberModel
+public import AkopyanResearch.Completion.TargetFibration
+import all AkopyanResearch.Completion.TargetFibration
+public import AkopyanResearch.Completion.TargetHighHomology
+import all AkopyanResearch.Completion.TargetHighHomology
+public import AkopyanResearch.Completion.TargetPairCoordinates
+import all AkopyanResearch.Completion.TargetPairCoordinates
+public import AkopyanResearch.Completion.TargetProjectionHomotopy
+import all AkopyanResearch.Completion.TargetProjectionHomotopy
+public import AkopyanResearch.Completion.UniversalSimplexAddition
+import all AkopyanResearch.Completion.UniversalSimplexAddition
+public import AkopyanResearch.Completion.UniversalSimplexBoundary
+import all AkopyanResearch.Completion.UniversalSimplexBoundary
+public import AkopyanResearch.CoxeterChamber
+import all AkopyanResearch.CoxeterChamber
+public import AkopyanResearch.CoxeterTriangulation
+import all AkopyanResearch.CoxeterTriangulation
+public import AkopyanResearch.DiskCylinderRetraction
+import all AkopyanResearch.DiskCylinderRetraction
+public import AkopyanResearch.EquivariantPinch64
+import all AkopyanResearch.EquivariantPinch64
+public import AkopyanResearch.FiniteGenericity
+import all AkopyanResearch.FiniteGenericity
+public import AkopyanResearch.FiniteRegularization
+import all AkopyanResearch.FiniteRegularization
+public import AkopyanResearch.FrameTransport
+import all AkopyanResearch.FrameTransport
+public import AkopyanResearch.FramedAnnulus
+import all AkopyanResearch.FramedAnnulus
+public import AkopyanResearch.InvariantCaps
+import all AkopyanResearch.InvariantCaps
+public import AkopyanResearch.MarksArithmetic
+import all AkopyanResearch.MarksArithmetic
+public import AkopyanResearch.MatchingCombinatorics
+import all AkopyanResearch.MatchingCombinatorics
+public import AkopyanResearch.MatchingProjection
+import all AkopyanResearch.MatchingProjection
+public import AkopyanResearch.NormalBundleTrivialization
+import all AkopyanResearch.NormalBundleTrivialization
+public import AkopyanResearch.PairCollapse
+import all AkopyanResearch.PairCollapse
+public import AkopyanResearch.PairCollapseEquivariant
+import all AkopyanResearch.PairCollapseEquivariant
+public import AkopyanResearch.PairGeometry
+import all AkopyanResearch.PairGeometry
+public import AkopyanResearch.PairNormalChart
+import all AkopyanResearch.PairNormalChart
+public import AkopyanResearch.PairNormalFrame
+import all AkopyanResearch.PairNormalFrame
+public import AkopyanResearch.PairUniversalSource
+import all AkopyanResearch.PairUniversalSource
+public import AkopyanResearch.PlanarTestGlobal
+import all AkopyanResearch.PlanarTestGlobal
+public import AkopyanResearch.PlanarTestJoin
+import all AkopyanResearch.PlanarTestJoin
+public import AkopyanResearch.PlanarTestLocal
+import all AkopyanResearch.PlanarTestLocal
+public import AkopyanResearch.ProperCollapse
+import all AkopyanResearch.ProperCollapse
+public import AkopyanResearch.QuadraticArrangement
+import all AkopyanResearch.QuadraticArrangement
+public import AkopyanResearch.QuadraticInterpolation
+import all AkopyanResearch.QuadraticInterpolation
+public import AkopyanResearch.QuadraticNaturality
+import all AkopyanResearch.QuadraticNaturality
+public import AkopyanResearch.QuadraticRank
+import all AkopyanResearch.QuadraticRank
+public import AkopyanResearch.QuadraticRealization
+import all AkopyanResearch.QuadraticRealization
+public import AkopyanResearch.QuaternionBelt
+import all AkopyanResearch.QuaternionBelt
+public import AkopyanResearch.RowSylowGeometry
+import all AkopyanResearch.RowSylowGeometry
+public import AkopyanResearch.SafeQuadraticBridge
+import all AkopyanResearch.SafeQuadraticBridge
+public import AkopyanResearch.SafeQuadraticRealization
+import all AkopyanResearch.SafeQuadraticRealization
+public import AkopyanResearch.SplitSphereChart
+import all AkopyanResearch.SplitSphereChart
+public import AkopyanResearch.TransferArithmetic
+import all AkopyanResearch.TransferArithmetic
+public import Hatcher.Algebra.Homology.Augment
+import all Hatcher.Algebra.Homology.Augment
+public import Hatcher.Excision.AffineChains
+import all Hatcher.Excision.AffineChains
+public import Hatcher.Excision.AffineSubdivision
+import all Hatcher.Excision.AffineSubdivision
+public import Hatcher.Excision.BinaryCover
+import all Hatcher.Excision.BinaryCover
+public import Hatcher.Excision.Devissage
+import all Hatcher.Excision.Devissage
+public import Hatcher.Excision.SingularSubdivision
+import all Hatcher.Excision.SingularSubdivision
+public import Hatcher.Excision.SmallChainEquivalence
+import all Hatcher.Excision.SmallChainEquivalence
+public import Hatcher.Excision.SmallSimplices
+import all Hatcher.Excision.SmallSimplices
+public import Hatcher.Excision.SubdivisionDiameter
+import all Hatcher.Excision.SubdivisionDiameter
+public import Hatcher.MayerVietoris.ChainComplex
+import all Hatcher.MayerVietoris.ChainComplex
+public import Hatcher.MayerVietoris.Neighborhood
+import all Hatcher.MayerVietoris.Neighborhood
+public import Hatcher.MayerVietoris.Sequence
+import all Hatcher.MayerVietoris.Sequence
+public import Hatcher.MayerVietoris.ShortExact
+import all Hatcher.MayerVietoris.ShortExact
+public import Hatcher.Singular.GoodPair
+import all Hatcher.Singular.GoodPair
+public import Hatcher.Singular.GoodPairExcisionDiagram
+import all Hatcher.Singular.GoodPairExcisionDiagram
+public import Hatcher.Singular.GoodPairNeighborhoodHomology
+import all Hatcher.Singular.GoodPairNeighborhoodHomology
+public import Hatcher.Singular.GoodPairNeighborhoodQuotient
+import all Hatcher.Singular.GoodPairNeighborhoodQuotient
+public import Hatcher.Singular.GoodPairPointQuotientHomology
+import all Hatcher.Singular.GoodPairPointQuotientHomology
+public import Hatcher.Singular.Homology
+import all Hatcher.Singular.Homology
+public import Hatcher.Singular.PointQuotient
+import all Hatcher.Singular.PointQuotient
+public import Hatcher.Singular.PointQuotientNeighborhoodContraction
+import all Hatcher.Singular.PointQuotientNeighborhoodContraction
+public import Hatcher.Singular.PointQuotientNeighborhoodExcision
+import all Hatcher.Singular.PointQuotientNeighborhoodExcision
+public import Hatcher.Singular.PointQuotientNeighborhoodHomology
+import all Hatcher.Singular.PointQuotientNeighborhoodHomology
+public import Hatcher.Singular.PointQuotientTopology
+import all Hatcher.Singular.PointQuotientTopology
+public import Hatcher.Singular.PointedRelative
+import all Hatcher.Singular.PointedRelative
+public import Hatcher.Singular.Reduced
+import all Hatcher.Singular.Reduced
+public import Hatcher.Singular.ReducedRelative
+import all Hatcher.Singular.ReducedRelative
+public import Hatcher.Singular.Relative
+import all Hatcher.Singular.Relative
+public import Hatcher.Singular.RelativeIsomorphism
+import all Hatcher.Singular.RelativeIsomorphism
+public import Hatcher.Sphere.HemisphereCharts
+import all Hatcher.Sphere.HemisphereCharts
+public import Hatcher.Sphere.HemisphereNeighborhoodCover
+import all Hatcher.Sphere.HemisphereNeighborhoodCover
+public import Hatcher.Sphere.RadialDeformationRetract
+import all Hatcher.Sphere.RadialDeformationRetract
+public import Hatcher.Sphere.ZeroSphere
+import all Hatcher.Sphere.ZeroSphere
+public import Hatcher.Topology.StrongDeformationRetract
+import all Hatcher.Topology.StrongDeformationRetract
+public import PalomarSolution
+import all PalomarSolution
+public import RequestProject.Balance
+import all RequestProject.Balance
+public import RequestProject.Boundary
+import all RequestProject.Boundary
+public import RequestProject.Cochain
+import all RequestProject.Cochain
+public import RequestProject.Construction.Assembly
+import all RequestProject.Construction.Assembly
+public import RequestProject.Construction.CellCount
+import all RequestProject.Construction.CellCount
+public import RequestProject.Construction.Chart
+import all RequestProject.Construction.Chart
+public import RequestProject.Construction.DetLemmas
+import all RequestProject.Construction.DetLemmas
+public import RequestProject.Construction.Frames
+import all RequestProject.Construction.Frames
+public import RequestProject.Construction.Good
+import all RequestProject.Construction.Good
+public import RequestProject.Construction.Indep
+import all RequestProject.Construction.Indep
+public import RequestProject.Construction.InnerCell
+import all RequestProject.Construction.InnerCell
+public import RequestProject.Construction.Layout
+import all RequestProject.Construction.Layout
+public import RequestProject.Construction.Local
+import all RequestProject.Construction.Local
+public import RequestProject.Construction.Map
+import all RequestProject.Construction.Map
+public import RequestProject.Construction.Obstacles
+import all RequestProject.Construction.Obstacles
+public import RequestProject.Construction.PyrAlg
+import all RequestProject.Construction.PyrAlg
+public import RequestProject.Construction.PyrCell
+import all RequestProject.Construction.PyrCell
+public import RequestProject.Construction.PyrDet
+import all RequestProject.Construction.PyrDet
+public import RequestProject.Construction.Safety
+import all RequestProject.Construction.Safety
+public import RequestProject.Generic
+import all RequestProject.Generic
+public import RequestProject.Reduction
+import all RequestProject.Reduction
+public import RequestProject.Solution
+import all RequestProject.Solution
+public import RequestProject.Surgery.Avoid
+import all RequestProject.Surgery.Avoid
+public import RequestProject.Surgery.CancelGood
+import all RequestProject.Surgery.CancelGood
+public import RequestProject.Surgery.Clear
+import all RequestProject.Surgery.Clear
+public import RequestProject.Surgery.Core
+import all RequestProject.Surgery.Core
+public import RequestProject.Surgery.Cutoff
+import all RequestProject.Surgery.Cutoff
+public import RequestProject.Surgery.Frame
+import all RequestProject.Surgery.Frame
+public import RequestProject.Surgery.GLPath
+import all RequestProject.Surgery.GLPath
+public import RequestProject.Surgery.Good
+import all RequestProject.Surgery.Good
+public import RequestProject.Surgery.Main
+import all RequestProject.Surgery.Main
+public import RequestProject.Surgery.PairCancel
+import all RequestProject.Surgery.PairCancel
+public import RequestProject.Surgery.PathHomotopy
+import all RequestProject.Surgery.PathHomotopy
+public import RequestProject.Surgery.Separate
+import all RequestProject.Surgery.Separate
+public import RequestProject.Surgery.Shift
+import all RequestProject.Surgery.Shift
+public import RequestProject.Surgery.ShiftGood
+import all RequestProject.Surgery.ShiftGood
+public import RequestProject.Surgery.Transport
+import all RequestProject.Surgery.Transport
+public import RequestProject.Surgery.ZeroSet
+import all RequestProject.Surgery.ZeroSet
+import all Solution
+public import Submission.Approximation.Approx
+import all Submission.Approximation.Approx
+public import Submission.Approximation.Boundary
+import all Submission.Approximation.Boundary
+public import Submission.Approximation.Estimate
+import all Submission.Approximation.Estimate
+public import Submission.Approximation.Grid
+import all Submission.Approximation.Grid
+public import Submission.Approximation.RegularValue
+import all Submission.Approximation.RegularValue
+public import Submission.Approximation.Simplex
+import all Submission.Approximation.Simplex
+public import Submission.Cohomology.Basic
+import all Submission.Cohomology.Basic
+public import Submission.Cohomology.Cochain
+import all Submission.Cohomology.Cochain
+public import Submission.Cohomology.Cup
+import all Submission.Cohomology.Cup
+public import Submission.Cohomology.DualBridge
+import all Submission.Cohomology.DualBridge
+public import Submission.Cohomology.FrontBack
+import all Submission.Cohomology.FrontBack
+public import Submission.Cohomology.Singular
+import all Submission.Cohomology.Singular
+public import Submission.ForMathlib.HomotopyGroup.Basic
+import all Submission.ForMathlib.HomotopyGroup.Basic
+public import Submission.ForMathlib.HomotopyGroup.Contractible
+import all Submission.ForMathlib.HomotopyGroup.Contractible
+public import Submission.ForMathlib.HomotopyGroup.Homotopy
+import all Submission.ForMathlib.HomotopyGroup.Homotopy
+public import Submission.ForMathlib.HomotopyGroup.Map
+import all Submission.ForMathlib.HomotopyGroup.Map
+public import Submission.ForMathlib.HomotopyGroup.Product
+import all Submission.ForMathlib.HomotopyGroup.Product
+public import Submission.ForMathlib.SimplexModel
+import all Submission.ForMathlib.SimplexModel
+public import Submission.Homology.Basic
+import all Submission.Homology.Basic
+public import Submission.Homology.Contractible
+import all Submission.Homology.Contractible
+public import Submission.Homology.Excision
+import all Submission.Homology.Excision
+public import Submission.Homology.HomologyZero
+import all Submission.Homology.HomologyZero
+public import Submission.Homology.Homotopy
+import all Submission.Homology.Homotopy
+public import Submission.Homology.LesTools
+import all Submission.Homology.LesTools
+public import Submission.Homology.MayerVietoris
+import all Submission.Homology.MayerVietoris
+public import Submission.Homology.MayerVietorisIso
+import all Submission.Homology.MayerVietorisIso
+public import Submission.Homology.MayerVietorisLES
+import all Submission.Homology.MayerVietorisLES
+public import Submission.Homology.Pair
+import all Submission.Homology.Pair
+public import Submission.Homology.PairHomotopy
+import all Submission.Homology.PairHomotopy
+public import Submission.Homology.Point
+import all Submission.Homology.Point
+public import Submission.Homology.RelMap
+import all Submission.Homology.RelMap
+public import Submission.Homology.RightExact
+import all Submission.Homology.RightExact
+public import Submission.Homology.SimplicialSplitting
+import all Submission.Homology.SimplicialSplitting
+public import Submission.Homology.SmallSimplices
+import all Submission.Homology.SmallSimplices
+public import Submission.Homology.Sphere
+import all Submission.Homology.Sphere
+public import Submission.Homology.SphereOne
+import all Submission.Homology.SphereOne
+public import Submission.Homology.SphereZero
+import all Submission.Homology.SphereZero
+public import Submission.Homology.SphereZeroSplit
+import all Submission.Homology.SphereZeroSplit
+public import Submission.Homology.UCT.Dual
+import all Submission.Homology.UCT.Dual
+public import Submission.Homology.UCT.HomologyClass
+import all Submission.Homology.UCT.HomologyClass
+public import Submission.Homotopy.Connected
+import all Submission.Homotopy.Connected
+public import Submission.Homotopy.ContractionData
+import all Submission.Homotopy.ContractionData
+public import Submission.Homotopy.CubePair
+import all Submission.Homotopy.CubePair
+public import Submission.Homotopy.DiscTrivialisation
+import all Submission.Homotopy.DiscTrivialisation
+public import Submission.Homotopy.Fibration
+import all Submission.Homotopy.Fibration
+public import Submission.Homotopy.FibrationLES
+import all Submission.Homotopy.FibrationLES
+public import Submission.Homotopy.HomotopyLesTools
+import all Submission.Homotopy.HomotopyLesTools
+public import Submission.Homotopy.PathFibration
+import all Submission.Homotopy.PathFibration
+public import Submission.Homotopy.RelGroup
+import all Submission.Homotopy.RelGroup
+public import Submission.Homotopy.RelMap
+import all Submission.Homotopy.RelMap
+public import Submission.Homotopy.SingletonPair
+import all Submission.Homotopy.SingletonPair
+public import Submission.Hurewicz.AbsoluteComparison
+import all Submission.Hurewicz.AbsoluteComparison
+public import Submission.Hurewicz.AbsoluteIsomorphism
+import all Submission.Hurewicz.AbsoluteIsomorphism
+public import Submission.Hurewicz.AbsoluteNaturality
+import all Submission.Hurewicz.AbsoluteNaturality
+public import Submission.Hurewicz.AbsoluteSurjectivity
+import all Submission.Hurewicz.AbsoluteSurjectivity
+public import Submission.Hurewicz.Compression
+import all Submission.Hurewicz.Compression
+public import Submission.Hurewicz.ConnectedVanishing
+import all Submission.Hurewicz.ConnectedVanishing
+public import Submission.Hurewicz.CubeFundamentalClass
+import all Submission.Hurewicz.CubeFundamentalClass
+public import Submission.Hurewicz.CubicalBoundary
+import all Submission.Hurewicz.CubicalBoundary
+public import Submission.Hurewicz.CubicalCollapse
+import all Submission.Hurewicz.CubicalCollapse
+public import Submission.Hurewicz.CubicalShell
+import all Submission.Hurewicz.CubicalShell
+public import Submission.Hurewicz.Deformation
+import all Submission.Hurewicz.Deformation
+public import Submission.Hurewicz.DeformationClass
+import all Submission.Hurewicz.DeformationClass
+public import Submission.Hurewicz.DegreeOne.Affine
+import all Submission.Hurewicz.DegreeOne.Affine
+public import Submission.Hurewicz.FaceHomotopy
+import all Submission.Hurewicz.FaceHomotopy
+public import Submission.Hurewicz.NormalizedBoundary
+import all Submission.Hurewicz.NormalizedBoundary
+public import Submission.Hurewicz.NormalizedSimplex
+import all Submission.Hurewicz.NormalizedSimplex
+public import Submission.Hurewicz.Prism
+import all Submission.Hurewicz.Prism
+public import Submission.Hurewicz.RelativeAdditivity
+import all Submission.Hurewicz.RelativeAdditivity
+public import Submission.Hurewicz.RelativeBoundary
+import all Submission.Hurewicz.RelativeBoundary
+public import Submission.Hurewicz.RelativeMap
+import all Submission.Hurewicz.RelativeMap
+public import Submission.Hurewicz.RelativeNormalization
+import all Submission.Hurewicz.RelativeNormalization
+public import Submission.Hurewicz.RelativeRepresentatives
+import all Submission.Hurewicz.RelativeRepresentatives
+public import Submission.Hurewicz.RelativeSimplex
+import all Submission.Hurewicz.RelativeSimplex
+public import Submission.Hurewicz.RelativeSimplicialDescent
+import all Submission.Hurewicz.RelativeSimplicialDescent
+public import Submission.Hurewicz.RelativeSurjectivity
+import all Submission.Hurewicz.RelativeSurjectivity
+public import Submission.Hurewicz.SimplexBall
+import all Submission.Hurewicz.SimplexBall
+public import Submission.Hurewicz.SimplexCubeClass
+import all Submission.Hurewicz.SimplexCubeClass
+public import Submission.Hurewicz.SimplexCubeOrientation
+import all Submission.Hurewicz.SimplexCubeOrientation
+public import Submission.Hurewicz.SimplexDict
+import all Submission.Hurewicz.SimplexDict
+public import Submission.Hurewicz.SimplexGlue
+import all Submission.Hurewicz.SimplexGlue
+public import Submission.Hurewicz.SimplexHEP
+import all Submission.Hurewicz.SimplexHEP
+public import Submission.Hurewicz.SimplexHorn
+import all Submission.Hurewicz.SimplexHorn
+public import Submission.Hurewicz.SimplicialAddition
+import all Submission.Hurewicz.SimplicialAddition
+public import Submission.Hurewicz.SimplicialDescent
+import all Submission.Hurewicz.SimplicialDescent
+public import Submission.Hurewicz.SimplicialIndexShift
+import all Submission.Hurewicz.SimplicialIndexShift
+public import Submission.Hurewicz.SimplicialRelation
+import all Submission.Hurewicz.SimplicialRelation
+public import Submission.Hurewicz.SimplicialRelationAt
+import all Submission.Hurewicz.SimplicialRelationAt
+public import Submission.Hurewicz.SimplicialTelescope
+import all Submission.Hurewicz.SimplicialTelescope
+public import Submission.Hurewicz.SingularKan
+import all Submission.Hurewicz.SingularKan
+public import Submission.Hurewicz.SmallRelativeChains
+import all Submission.Hurewicz.SmallRelativeChains
+public import Submission.Hurewicz.SphereLoopBridge
+import all Submission.Hurewicz.SphereLoopBridge
+public import Submission.Hurewicz.StickBoundary
+import all Submission.Hurewicz.StickBoundary
+public import Submission.Hurewicz.StickSimplex
+import all Submission.Hurewicz.StickSimplex
+public import Submission.Hurewicz.StickSphere
+import all Submission.Hurewicz.StickSphere
+public import Submission.Hurewicz.Tower
+import all Submission.Hurewicz.Tower
+public import Submission.Hurewicz.Vanishing
+import all Submission.Hurewicz.Vanishing
+public import Submission.Model.Sphere
+import all Submission.Model.Sphere
+public import Submission.Model.SphereCompl
+import all Submission.Model.SphereCompl
+public import Submission.Model.SphereConnected
+import all Submission.Model.SphereConnected
+public import Submission.Model.SuspSphere
+import all Submission.Model.SuspSphere
+public import Submission.Model.Suspension
+import all Submission.Model.Suspension
+public import Submission.SphereGenerator
+import all Submission.SphereGenerator
+public import Submission.SphereHomologicalDegree
+import all Submission.SphereHomologicalDegree
+public import Submission.SphereHomotopy
+import all Submission.SphereHomotopy
+public import Submission.WhiteheadTheorem.Auxiliary
+import all Submission.WhiteheadTheorem.Auxiliary
+public import Submission.WhiteheadTheorem.CWComplex.Basic
+import all Submission.WhiteheadTheorem.CWComplex.Basic
+public import Submission.WhiteheadTheorem.Compressible.Defs
+import all Submission.WhiteheadTheorem.Compressible.Defs
+public import Submission.WhiteheadTheorem.Compressible.Disk
+import all Submission.WhiteheadTheorem.Compressible.Disk
+public import Submission.WhiteheadTheorem.Defs
+import all Submission.WhiteheadTheorem.Defs
+public import Submission.WhiteheadTheorem.Exponential
+import all Submission.WhiteheadTheorem.Exponential
+public import Submission.WhiteheadTheorem.HEP.Cofibration
+import all Submission.WhiteheadTheorem.HEP.Cofibration
+public import Submission.WhiteheadTheorem.HEP.Cube
+import all Submission.WhiteheadTheorem.HEP.Cube
+public import Submission.WhiteheadTheorem.HEP.CubeJar
+import all Submission.WhiteheadTheorem.HEP.CubeJar
+public import Submission.WhiteheadTheorem.HEP.Retract
+import all Submission.WhiteheadTheorem.HEP.Retract
+public import Submission.WhiteheadTheorem.HomotopyGroup.ChangeBasePt
+import all Submission.WhiteheadTheorem.HomotopyGroup.ChangeBasePt
+public import Submission.WhiteheadTheorem.HomotopyGroup.InducedMaps
+import all Submission.WhiteheadTheorem.HomotopyGroup.InducedMaps
+public import Submission.WhiteheadTheorem.RelHomotopyGroup.Algebra
+import all Submission.WhiteheadTheorem.RelHomotopyGroup.Algebra
+public import Submission.WhiteheadTheorem.RelHomotopyGroup.Compression
+import all Submission.WhiteheadTheorem.RelHomotopyGroup.Compression
+public import Submission.WhiteheadTheorem.RelHomotopyGroup.Defs
+import all Submission.WhiteheadTheorem.RelHomotopyGroup.Defs
+public import Submission.WhiteheadTheorem.RelHomotopyGroup.LongExactSeq
+import all Submission.WhiteheadTheorem.RelHomotopyGroup.LongExactSeq
+public import Submission.WhiteheadTheorem.Shapes.Cube
+import all Submission.WhiteheadTheorem.Shapes.Cube
+public import Submission.WhiteheadTheorem.Shapes.CubeBoundaryMap
+import all Submission.WhiteheadTheorem.Shapes.CubeBoundaryMap
+public import Submission.WhiteheadTheorem.Shapes.Disk
+import all Submission.WhiteheadTheorem.Shapes.Disk
+public import Submission.WhiteheadTheorem.Shapes.DiskHomeoCube
+import all Submission.WhiteheadTheorem.Shapes.DiskHomeoCube
+public import Submission.WhiteheadTheorem.Shapes.Jar
+import all Submission.WhiteheadTheorem.Shapes.Jar
+public import Submission.WhiteheadTheorem.Shapes.MappingCylinder
+import all Submission.WhiteheadTheorem.Shapes.MappingCylinder
+public import Submission.WhiteheadTheorem.Shapes.Maps
+import all Submission.WhiteheadTheorem.Shapes.Maps
+public import Submission.WhiteheadTheorem.Shapes.Pushout
+import all Submission.WhiteheadTheorem.Shapes.Pushout
+public import Submission.WhiteheadTheorem.Shapes.UnitInterval
+import all Submission.WhiteheadTheorem.Shapes.UnitInterval
+-- END PROJECT PRIVATE IMPORTS
+
 @[expose] public section
 
 set_option autoImplicit false
 
 /-!
-# Kernel-dependency audit for the two required theorems
+# Kernel-dependency audit for every project proof module
 
-`lake build Audit` checks that both comparator theorems exist, are genuine
-Lean theorem declarations, and transitively depend only on the permitted
-foundational axioms `propext`, `Classical.choice`, and `Quot.sound`.
+`lake build Audit` imports the private proof information of every project
+proof module. It rejects actual axiom declarations and checks the transitive
+axiom dependencies of every project-owned declaration, including private and
+generated declarations. Only `propext`, `Classical.choice`, and `Quot.sound`
+are permitted. The independent `Challenge` module is excluded because its two
+placeholders specify the problem rather than supply a proof.
+
+Selected mathematical milestones are additionally required to be public,
+genuine theorem declarations; selected constructions must be genuine
+definitions. These kind checks use the private environment, where Lean 4.35
+retains proof bodies instead of weakening exported theorems to axioms.
 
 This command does not replace kernel elaboration. It runs only *after* all
 imported proof modules have compiled successfully.
@@ -44,29 +928,626 @@ example (d : ℕ) (hd : 36 ≤ d) :
         ∃ i, Phi (C i) ≠ Phi (C 0) :=
   AkopyanSixfold.convex_partition_counterexample d hd
 
+set_option maxHeartbeats 4000000 in
+open Lean Elab Command in
 run_cmd do
-  let permitted : Array Name := #[``propext, ``Classical.choice, ``Quot.sound]
-  -- Check the main milestones as well as the two published results. When the
-  -- audit fails, this helps locate the first problematic proof dependency.
-  let targets : Array Name :=
-    #[``Tverberg6R.exists_height,
-      ``Tverberg6R.heightExtension,
-      ``AkopyanSixfold.tverberg_counterexample,
-      ``AkopyanSixfold.fivefold_tverberg_join,
-      ``AkopyanSixfold.exists_isBlocking_5d,
-      ``AkopyanSixfold.convex_partition_counterexample_ge_36,
-      ``AkopyanSixfold.convex_partition_counterexample]
-  for name in targets do
-    unless (← getEnv).contains name do
-      throwError "Missing theorem declaration: {name}"
+  let permitted : List Name := [``propext, ``Classical.choice, ``Quot.sound]
+  let projectModules : List Name := [
+    `AkopyanResearch,
+    `AkopyanResearch.BeltTrickSO,
+    `AkopyanResearch.BoundaryRegularization,
+    `AkopyanResearch.BranchPinch,
+    `AkopyanResearch.CanonicalExtraction,
+    `AkopyanResearch.CanonicalQuadratic,
+    `AkopyanResearch.ChainTelescoping,
+    `AkopyanResearch.CochainAnnihilator,
+    `AkopyanResearch.ColoredChainContraction,
+    `AkopyanResearch.Completion,
+    `AkopyanResearch.Completion.ArrangementConnectivity,
+    `AkopyanResearch.Completion.ArrangementHomology,
+    `AkopyanResearch.Completion.ArrangementLink,
+    `AkopyanResearch.Completion.BinaryProductHomology,
+    `AkopyanResearch.Completion.ChosenTargetSections,
+    `AkopyanResearch.Completion.CommonPairHomology,
+    `AkopyanResearch.Completion.ComparisonContract,
+    `AkopyanResearch.Completion.ComplementMayerVietoris,
+    `AkopyanResearch.Completion.ConcreteComparison,
+    `AkopyanResearch.Completion.ConcreteComparisonConnectivity,
+    `AkopyanResearch.Completion.ConcreteComparisonCoordinates,
+    `AkopyanResearch.Completion.ConcreteComparisonHomology,
+    `AkopyanResearch.Completion.ConcreteComparisonLifting,
+    `AkopyanResearch.Completion.ConcreteComparisonTarget,
+    `AkopyanResearch.Completion.ConcreteReduction,
+    `AkopyanResearch.Completion.ConnectedPair,
+    `AkopyanResearch.Completion.ConnectivityTransport,
+    `AkopyanResearch.Completion.ContractibleSimplexAddition,
+    `AkopyanResearch.Completion.ContractibleSourcePullback,
+    `AkopyanResearch.Completion.CubicalCut,
+    `AkopyanResearch.Completion.CubicalHomotopyRectification,
+    `AkopyanResearch.Completion.CubicalPasting,
+    `AkopyanResearch.Completion.DimensionEighteen,
+    `AkopyanResearch.Completion.DisjointComplementCoordinates,
+    `AkopyanResearch.Completion.DisjointComplementHomology,
+    `AkopyanResearch.Completion.EquivariantJoinIteration,
+    `AkopyanResearch.Completion.EquivariantJoinStep,
+    `AkopyanResearch.Completion.ExactCommonSection,
+    `AkopyanResearch.Completion.FaceCubicalHomeomorph,
+    `AkopyanResearch.Completion.FibrationConnectivity,
+    `AkopyanResearch.Completion.FibrationRelativeHomology,
+    `AkopyanResearch.Completion.FibreInclusionTransport,
+    `AkopyanResearch.Completion.FiniteComplementCoordinates,
+    `AkopyanResearch.Completion.FiniteLoop13Coordinates,
+    `AkopyanResearch.Completion.FiniteLoop13Homology,
+    `AkopyanResearch.Completion.FiniteLoopModelHomology,
+    `AkopyanResearch.Completion.FinitePointConnectivity,
+    `AkopyanResearch.Completion.FiniteProductTopology,
+    `AkopyanResearch.Completion.FiniteSphereSourceHomology,
+    `AkopyanResearch.Completion.FirstHomologyComparison,
+    `AkopyanResearch.Completion.FreeRelativeClass,
+    `AkopyanResearch.Completion.FreeRelativeOperations,
+    `AkopyanResearch.Completion.GeneralTableBridge,
+    `AkopyanResearch.Completion.HomotopyFiberConnectivity,
+    `AkopyanResearch.Completion.HomotopyFiberFibration,
+    `AkopyanResearch.Completion.HomotopyPullback,
+    `AkopyanResearch.Completion.HomotopyPullbackCoordinates,
+    `AkopyanResearch.Completion.IteratedJoinCoordinates,
+    `AkopyanResearch.Completion.JoinCoordinates,
+    `AkopyanResearch.Completion.JoinMassCoordinates,
+    `AkopyanResearch.Completion.JoinNullIteration,
+    `AkopyanResearch.Completion.JoinNullhomotopy,
+    `AkopyanResearch.Completion.JoinRowAction,
+    `AkopyanResearch.Completion.JoinVertexMap,
+    `AkopyanResearch.Completion.LinearMeridian,
+    `AkopyanResearch.Completion.LinearPairComplementHomology,
+    `AkopyanResearch.Completion.LinearPreimageHomotopy,
+    `AkopyanResearch.Completion.LinearTube,
+    `AkopyanResearch.Completion.LinearTubeClosed,
+    `AkopyanResearch.Completion.LinearTubeExcision,
+    `AkopyanResearch.Completion.LinearTubePair,
+    `AkopyanResearch.Completion.LinearTubeThom,
+    `AkopyanResearch.Completion.LocalLink,
+    `AkopyanResearch.Completion.LocalPairPathHomology,
+    `AkopyanResearch.Completion.LoopProduct13Coordinates,
+    `AkopyanResearch.Completion.LoopProduct13Homology,
+    `AkopyanResearch.Completion.LoopProductGeometry,
+    `AkopyanResearch.Completion.LoopProductHomology,
+    `AkopyanResearch.Completion.LoopSpaceConnectivity,
+    `AkopyanResearch.Completion.LoopSphereCover,
+    `AkopyanResearch.Completion.LoopSphereHomology,
+    `AkopyanResearch.Completion.MappingCylinderCompression,
+    `AkopyanResearch.Completion.MappingCylinderConnectivity,
+    `AkopyanResearch.Completion.MappingCylinderFaceLifting,
+    `AkopyanResearch.Completion.MappingCylinderHomology,
+    `AkopyanResearch.Completion.MappingCylinderLifting,
+    `AkopyanResearch.Completion.MappingPathHomology,
+    `AkopyanResearch.Completion.MappingPathPair,
+    `AkopyanResearch.Completion.MappingPathReplacement,
+    `AkopyanResearch.Completion.MatchingExtraction,
+    `AkopyanResearch.Completion.MatchingPairCollapse,
+    `AkopyanResearch.Completion.MatchingSphereMap,
+    `AkopyanResearch.Completion.MayerVietorisNaturality,
+    `AkopyanResearch.Completion.NDRCylinder,
+    `AkopyanResearch.Completion.NeighborhoodNDR,
+    `AkopyanResearch.Completion.NormedLinearThom,
+    `AkopyanResearch.Completion.OpenComplementQuotient,
+    `AkopyanResearch.Completion.OpenUnionBoundary,
+    `AkopyanResearch.Completion.OpenUnionMayerVietoris,
+    `AkopyanResearch.Completion.OriginalJoinBridge,
+    `AkopyanResearch.Completion.OriginalJoinCoordinates,
+    `AkopyanResearch.Completion.OriginalPairPath,
+    `AkopyanResearch.Completion.PairBalancedJoin,
+    `AkopyanResearch.Completion.PairBoundaryComparison,
+    `AkopyanResearch.Completion.PairCofiberModel,
+    `AkopyanResearch.Completion.PairCofiberSection,
+    `AkopyanResearch.Completion.PairCofibration,
+    `AkopyanResearch.Completion.PairCollapseHomology,
+    `AkopyanResearch.Completion.PairCollapsedLocus,
+    `AkopyanResearch.Completion.PairCommonAlignment,
+    `AkopyanResearch.Completion.PairConcreteLocalModel,
+    `AkopyanResearch.Completion.PairDeformation,
+    `AkopyanResearch.Completion.PairEndpointHomology,
+    `AkopyanResearch.Completion.PairEvaluationEquivalence,
+    `AkopyanResearch.Completion.PairGoodPair,
+    `AkopyanResearch.Completion.PairIntersection,
+    `AkopyanResearch.Completion.PairL2Deformation,
+    `AkopyanResearch.Completion.PairLocalConnectivity,
+    `AkopyanResearch.Completion.PairLocalEquivalence,
+    `AkopyanResearch.Completion.PairNeighborhoodDeformation,
+    `AkopyanResearch.Completion.PairNormalHomology,
+    `AkopyanResearch.Completion.PairNormalModel,
+    `AkopyanResearch.Completion.PairOrbit,
+    `AkopyanResearch.Completion.PairPathCoordinates,
+    `AkopyanResearch.Completion.PairRelativeHomology,
+    `AkopyanResearch.Completion.PairRepresentation,
+    `AkopyanResearch.Completion.PairSourceProjections,
+    `AkopyanResearch.Completion.PairSphereAction,
+    `AkopyanResearch.Completion.PathFibreEquivalences,
+    `AkopyanResearch.Completion.PathProductCoordinates,
+    `AkopyanResearch.Completion.PhaseExtension,
+    `AkopyanResearch.Completion.ProductConnectivity,
+    `AkopyanResearch.Completion.ProductExpectation,
+    `AkopyanResearch.Completion.ProductHemisphereCover,
+    `AkopyanResearch.Completion.ProductNormalPairKernel,
+    `AkopyanResearch.Completion.ProductNormalThom,
+    `AkopyanResearch.Completion.ProductProjectionIsomorphism,
+    `AkopyanResearch.Completion.ProductSphereKernel,
+    `AkopyanResearch.Completion.ProductSphereProjection,
+    `AkopyanResearch.Completion.ProductSphereThom,
+    `AkopyanResearch.Completion.ProductZeroSphereKernel,
+    `AkopyanResearch.Completion.PuncturedSpace,
+    `AkopyanResearch.Completion.PuncturedSphereHomeomorphism,
+    `AkopyanResearch.Completion.PurePhaseCoordinates,
+    `AkopyanResearch.Completion.QuadraticBoundaryExtension,
+    `AkopyanResearch.Completion.QuadraticComplementCoordinates,
+    `AkopyanResearch.Completion.QuadraticComplementHomology,
+    `AkopyanResearch.Completion.QuadraticConnectivity,
+    `AkopyanResearch.Completion.QuadraticDeletedPairs,
+    `AkopyanResearch.Completion.QuadraticDeletion,
+    `AkopyanResearch.Completion.QuadraticFlatRank,
+    `AkopyanResearch.Completion.QuadraticHomology,
+    `AkopyanResearch.Completion.QuadraticLink,
+    `AkopyanResearch.Completion.QuadraticMayerVietorisSets,
+    `AkopyanResearch.Completion.QuadraticMeridians,
+    `AkopyanResearch.Completion.QuadraticNewPairKernel,
+    `AkopyanResearch.Completion.QuadraticPairCoordinates,
+    `AkopyanResearch.Completion.QuadraticPairCover,
+    `AkopyanResearch.Completion.QuadraticPairEnumeration,
+    `AkopyanResearch.Completion.QuadraticPairHomology,
+    `AkopyanResearch.Completion.QuadraticPairRank,
+    `AkopyanResearch.Completion.QuadraticSourceCoordinates,
+    `AkopyanResearch.Completion.QuadraticStratumHomology,
+    `AkopyanResearch.Completion.RankOneProduct,
+    `AkopyanResearch.Completion.RankOneSplit,
+    `AkopyanResearch.Completion.RelativeComparison,
+    `AkopyanResearch.Completion.RelativeFaceDiagram,
+    `AkopyanResearch.Completion.RelativeHomologyBridge,
+    `AkopyanResearch.Completion.RelativeHomologyConnectivity,
+    `AkopyanResearch.Completion.RelativeHomotopyBasepoint,
+    `AkopyanResearch.Completion.RelativeHurewiczDescent,
+    `AkopyanResearch.Completion.RelativeSimplexBoundary,
+    `AkopyanResearch.Completion.RepresentationSphereInvariants,
+    `AkopyanResearch.Completion.ShortExactCoordinates,
+    `AkopyanResearch.Completion.SignedExactKernel,
+    `AkopyanResearch.Completion.SimplexEmbedding,
+    `AkopyanResearch.Completion.SimplexHurewiczAdd,
+    `AkopyanResearch.Completion.SimplexSkeletonConnectivity,
+    `AkopyanResearch.Completion.SimplexSkeletonRetraction,
+    `AkopyanResearch.Completion.SingleCoordinateModel,
+    `AkopyanResearch.Completion.Sphere13FibreHomology,
+    `AkopyanResearch.Completion.SphereConnectivity,
+    `AkopyanResearch.Completion.SphereHomology,
+    `AkopyanResearch.Completion.SphereNineSourceHomology,
+    `AkopyanResearch.Completion.SphereSourceCover,
+    `AkopyanResearch.Completion.SphereSourceHomology,
+    `AkopyanResearch.Completion.SphereSourceKernel,
+    `AkopyanResearch.Completion.SplitExactKernel,
+    `AkopyanResearch.Completion.TableRealization,
+    `AkopyanResearch.Completion.TableToEmbedding,
+    `AkopyanResearch.Completion.TargetCollapseModel,
+    `AkopyanResearch.Completion.TargetConnectivity,
+    `AkopyanResearch.Completion.TargetFiberModel,
+    `AkopyanResearch.Completion.TargetFibration,
+    `AkopyanResearch.Completion.TargetHighHomology,
+    `AkopyanResearch.Completion.TargetPairCoordinates,
+    `AkopyanResearch.Completion.TargetProjectionHomotopy,
+    `AkopyanResearch.Completion.UniversalSimplexAddition,
+    `AkopyanResearch.Completion.UniversalSimplexBoundary,
+    `AkopyanResearch.CoxeterChamber,
+    `AkopyanResearch.CoxeterTriangulation,
+    `AkopyanResearch.DiskCylinderRetraction,
+    `AkopyanResearch.EquivariantPinch64,
+    `AkopyanResearch.FiniteGenericity,
+    `AkopyanResearch.FiniteRegularization,
+    `AkopyanResearch.FrameTransport,
+    `AkopyanResearch.FramedAnnulus,
+    `AkopyanResearch.InvariantCaps,
+    `AkopyanResearch.MarksArithmetic,
+    `AkopyanResearch.MatchingCombinatorics,
+    `AkopyanResearch.MatchingProjection,
+    `AkopyanResearch.NormalBundleTrivialization,
+    `AkopyanResearch.PairCollapse,
+    `AkopyanResearch.PairCollapseEquivariant,
+    `AkopyanResearch.PairGeometry,
+    `AkopyanResearch.PairNormalChart,
+    `AkopyanResearch.PairNormalFrame,
+    `AkopyanResearch.PairUniversalSource,
+    `AkopyanResearch.PlanarTestGlobal,
+    `AkopyanResearch.PlanarTestJoin,
+    `AkopyanResearch.PlanarTestLocal,
+    `AkopyanResearch.ProperCollapse,
+    `AkopyanResearch.QuadraticArrangement,
+    `AkopyanResearch.QuadraticInterpolation,
+    `AkopyanResearch.QuadraticNaturality,
+    `AkopyanResearch.QuadraticRank,
+    `AkopyanResearch.QuadraticRealization,
+    `AkopyanResearch.QuaternionBelt,
+    `AkopyanResearch.RowSylowGeometry,
+    `AkopyanResearch.SafeQuadraticBridge,
+    `AkopyanResearch.SafeQuadraticRealization,
+    `AkopyanResearch.SplitSphereChart,
+    `AkopyanResearch.TransferArithmetic,
+    `Audit,
+    `Hatcher.Algebra.Homology.Augment,
+    `Hatcher.Excision.AffineChains,
+    `Hatcher.Excision.AffineSubdivision,
+    `Hatcher.Excision.BinaryCover,
+    `Hatcher.Excision.Devissage,
+    `Hatcher.Excision.SingularSubdivision,
+    `Hatcher.Excision.SmallChainEquivalence,
+    `Hatcher.Excision.SmallSimplices,
+    `Hatcher.Excision.SubdivisionDiameter,
+    `Hatcher.MayerVietoris.ChainComplex,
+    `Hatcher.MayerVietoris.Neighborhood,
+    `Hatcher.MayerVietoris.Sequence,
+    `Hatcher.MayerVietoris.ShortExact,
+    `Hatcher.Singular.GoodPair,
+    `Hatcher.Singular.GoodPairExcisionDiagram,
+    `Hatcher.Singular.GoodPairNeighborhoodHomology,
+    `Hatcher.Singular.GoodPairNeighborhoodQuotient,
+    `Hatcher.Singular.GoodPairPointQuotientHomology,
+    `Hatcher.Singular.Homology,
+    `Hatcher.Singular.PointQuotient,
+    `Hatcher.Singular.PointQuotientNeighborhoodContraction,
+    `Hatcher.Singular.PointQuotientNeighborhoodExcision,
+    `Hatcher.Singular.PointQuotientNeighborhoodHomology,
+    `Hatcher.Singular.PointQuotientTopology,
+    `Hatcher.Singular.PointedRelative,
+    `Hatcher.Singular.Reduced,
+    `Hatcher.Singular.ReducedRelative,
+    `Hatcher.Singular.Relative,
+    `Hatcher.Singular.RelativeIsomorphism,
+    `Hatcher.Sphere.HemisphereCharts,
+    `Hatcher.Sphere.HemisphereNeighborhoodCover,
+    `Hatcher.Sphere.RadialDeformationRetract,
+    `Hatcher.Sphere.ZeroSphere,
+    `Hatcher.Topology.StrongDeformationRetract,
+    `PalomarSolution,
+    `RequestProject.Balance,
+    `RequestProject.Boundary,
+    `RequestProject.Cochain,
+    `RequestProject.Construction.Assembly,
+    `RequestProject.Construction.CellCount,
+    `RequestProject.Construction.Chart,
+    `RequestProject.Construction.DetLemmas,
+    `RequestProject.Construction.Frames,
+    `RequestProject.Construction.Good,
+    `RequestProject.Construction.Indep,
+    `RequestProject.Construction.InnerCell,
+    `RequestProject.Construction.Layout,
+    `RequestProject.Construction.Local,
+    `RequestProject.Construction.Map,
+    `RequestProject.Construction.Obstacles,
+    `RequestProject.Construction.PyrAlg,
+    `RequestProject.Construction.PyrCell,
+    `RequestProject.Construction.PyrDet,
+    `RequestProject.Construction.Safety,
+    `RequestProject.Generic,
+    `RequestProject.Reduction,
+    `RequestProject.Solution,
+    `RequestProject.Surgery.Avoid,
+    `RequestProject.Surgery.CancelGood,
+    `RequestProject.Surgery.Clear,
+    `RequestProject.Surgery.Core,
+    `RequestProject.Surgery.Cutoff,
+    `RequestProject.Surgery.Frame,
+    `RequestProject.Surgery.GLPath,
+    `RequestProject.Surgery.Good,
+    `RequestProject.Surgery.Main,
+    `RequestProject.Surgery.PairCancel,
+    `RequestProject.Surgery.PathHomotopy,
+    `RequestProject.Surgery.Separate,
+    `RequestProject.Surgery.Shift,
+    `RequestProject.Surgery.ShiftGood,
+    `RequestProject.Surgery.Transport,
+    `RequestProject.Surgery.ZeroSet,
+    `Solution,
+    `Submission.Approximation.Approx,
+    `Submission.Approximation.Boundary,
+    `Submission.Approximation.Estimate,
+    `Submission.Approximation.Grid,
+    `Submission.Approximation.RegularValue,
+    `Submission.Approximation.Simplex,
+    `Submission.Cohomology.Basic,
+    `Submission.Cohomology.Cochain,
+    `Submission.Cohomology.Cup,
+    `Submission.Cohomology.DualBridge,
+    `Submission.Cohomology.FrontBack,
+    `Submission.Cohomology.Singular,
+    `Submission.ForMathlib.HomotopyGroup.Basic,
+    `Submission.ForMathlib.HomotopyGroup.Contractible,
+    `Submission.ForMathlib.HomotopyGroup.Homotopy,
+    `Submission.ForMathlib.HomotopyGroup.Map,
+    `Submission.ForMathlib.HomotopyGroup.Product,
+    `Submission.ForMathlib.SimplexModel,
+    `Submission.Homology.Basic,
+    `Submission.Homology.Contractible,
+    `Submission.Homology.Excision,
+    `Submission.Homology.HomologyZero,
+    `Submission.Homology.Homotopy,
+    `Submission.Homology.LesTools,
+    `Submission.Homology.MayerVietoris,
+    `Submission.Homology.MayerVietorisIso,
+    `Submission.Homology.MayerVietorisLES,
+    `Submission.Homology.Pair,
+    `Submission.Homology.PairHomotopy,
+    `Submission.Homology.Point,
+    `Submission.Homology.RelMap,
+    `Submission.Homology.RightExact,
+    `Submission.Homology.SimplicialSplitting,
+    `Submission.Homology.SmallSimplices,
+    `Submission.Homology.Sphere,
+    `Submission.Homology.SphereOne,
+    `Submission.Homology.SphereZero,
+    `Submission.Homology.SphereZeroSplit,
+    `Submission.Homology.UCT.Dual,
+    `Submission.Homology.UCT.HomologyClass,
+    `Submission.Homotopy.Connected,
+    `Submission.Homotopy.ContractionData,
+    `Submission.Homotopy.CubePair,
+    `Submission.Homotopy.DiscTrivialisation,
+    `Submission.Homotopy.Fibration,
+    `Submission.Homotopy.FibrationLES,
+    `Submission.Homotopy.HomotopyLesTools,
+    `Submission.Homotopy.PathFibration,
+    `Submission.Homotopy.RelGroup,
+    `Submission.Homotopy.RelMap,
+    `Submission.Homotopy.SingletonPair,
+    `Submission.Hurewicz.AbsoluteComparison,
+    `Submission.Hurewicz.AbsoluteIsomorphism,
+    `Submission.Hurewicz.AbsoluteNaturality,
+    `Submission.Hurewicz.AbsoluteSurjectivity,
+    `Submission.Hurewicz.Compression,
+    `Submission.Hurewicz.ConnectedVanishing,
+    `Submission.Hurewicz.CubeFundamentalClass,
+    `Submission.Hurewicz.CubicalBoundary,
+    `Submission.Hurewicz.CubicalCollapse,
+    `Submission.Hurewicz.CubicalShell,
+    `Submission.Hurewicz.Deformation,
+    `Submission.Hurewicz.DeformationClass,
+    `Submission.Hurewicz.DegreeOne.Affine,
+    `Submission.Hurewicz.FaceHomotopy,
+    `Submission.Hurewicz.NormalizedBoundary,
+    `Submission.Hurewicz.NormalizedSimplex,
+    `Submission.Hurewicz.Prism,
+    `Submission.Hurewicz.RelativeAdditivity,
+    `Submission.Hurewicz.RelativeBoundary,
+    `Submission.Hurewicz.RelativeMap,
+    `Submission.Hurewicz.RelativeNormalization,
+    `Submission.Hurewicz.RelativeRepresentatives,
+    `Submission.Hurewicz.RelativeSimplex,
+    `Submission.Hurewicz.RelativeSimplicialDescent,
+    `Submission.Hurewicz.RelativeSurjectivity,
+    `Submission.Hurewicz.SimplexBall,
+    `Submission.Hurewicz.SimplexCubeClass,
+    `Submission.Hurewicz.SimplexCubeOrientation,
+    `Submission.Hurewicz.SimplexDict,
+    `Submission.Hurewicz.SimplexGlue,
+    `Submission.Hurewicz.SimplexHEP,
+    `Submission.Hurewicz.SimplexHorn,
+    `Submission.Hurewicz.SimplicialAddition,
+    `Submission.Hurewicz.SimplicialDescent,
+    `Submission.Hurewicz.SimplicialIndexShift,
+    `Submission.Hurewicz.SimplicialRelation,
+    `Submission.Hurewicz.SimplicialRelationAt,
+    `Submission.Hurewicz.SimplicialTelescope,
+    `Submission.Hurewicz.SingularKan,
+    `Submission.Hurewicz.SmallRelativeChains,
+    `Submission.Hurewicz.SphereLoopBridge,
+    `Submission.Hurewicz.StickBoundary,
+    `Submission.Hurewicz.StickSimplex,
+    `Submission.Hurewicz.StickSphere,
+    `Submission.Hurewicz.Tower,
+    `Submission.Hurewicz.Vanishing,
+    `Submission.Model.Sphere,
+    `Submission.Model.SphereCompl,
+    `Submission.Model.SphereConnected,
+    `Submission.Model.SuspSphere,
+    `Submission.Model.Suspension,
+    `Submission.SphereGenerator,
+    `Submission.SphereHomologicalDegree,
+    `Submission.SphereHomotopy,
+    `Submission.WhiteheadTheorem.Auxiliary,
+    `Submission.WhiteheadTheorem.CWComplex.Basic,
+    `Submission.WhiteheadTheorem.Compressible.Defs,
+    `Submission.WhiteheadTheorem.Compressible.Disk,
+    `Submission.WhiteheadTheorem.Defs,
+    `Submission.WhiteheadTheorem.Exponential,
+    `Submission.WhiteheadTheorem.HEP.Cofibration,
+    `Submission.WhiteheadTheorem.HEP.Cube,
+    `Submission.WhiteheadTheorem.HEP.CubeJar,
+    `Submission.WhiteheadTheorem.HEP.Retract,
+    `Submission.WhiteheadTheorem.HomotopyGroup.ChangeBasePt,
+    `Submission.WhiteheadTheorem.HomotopyGroup.InducedMaps,
+    `Submission.WhiteheadTheorem.RelHomotopyGroup.Algebra,
+    `Submission.WhiteheadTheorem.RelHomotopyGroup.Compression,
+    `Submission.WhiteheadTheorem.RelHomotopyGroup.Defs,
+    `Submission.WhiteheadTheorem.RelHomotopyGroup.LongExactSeq,
+    `Submission.WhiteheadTheorem.Shapes.Cube,
+    `Submission.WhiteheadTheorem.Shapes.CubeBoundaryMap,
+    `Submission.WhiteheadTheorem.Shapes.Disk,
+    `Submission.WhiteheadTheorem.Shapes.DiskHomeoCube,
+    `Submission.WhiteheadTheorem.Shapes.Jar,
+    `Submission.WhiteheadTheorem.Shapes.MappingCylinder,
+    `Submission.WhiteheadTheorem.Shapes.Maps,
+    `Submission.WhiteheadTheorem.Shapes.Pushout,
+    `Submission.WhiteheadTheorem.Shapes.UnitInterval]
+  let publicEnv := (← getEnv).setExporting true
+  let privateEnv := (← getEnv).setExporting false
+  for moduleName in projectModules do
+    if moduleName != `Audit then
+      unless (privateEnv.getModuleIdx? moduleName).isSome do
+        throwError "Project module is not imported: {moduleName}"
+  let checkAxioms (name : Name) : CommandElabM Unit := do
     let axioms ← Lean.collectAxioms name
-    for axiomName in axioms do
-      unless permitted.contains axiomName do
-        throwError "Unexpected axiom {axiomName} in {name}"
-    logInfo m!"Axiom audit passed for {name}"
+    let forbidden := axioms.toList.filter fun ax => !permitted.contains ax
+    unless forbidden.isEmpty do
+      throwError "Forbidden axioms in {name}: {forbidden}"
+  let moduleNames := privateEnv.header.moduleNames
+  let mut ownedCount : Nat := 0
+  let mut publicCount : Nat := 0
+  let mut theoremCount : Nat := 0
+  let mut definitionCount : Nat := 0
+  let mut opaqueCount : Nat := 0
+  for (name, info) in privateEnv.constants do
+    let owner := match privateEnv.getModuleIdxFor? name with
+      | some index => moduleNames[index]!
+      | none => privateEnv.mainModule
+    if projectModules.contains owner then
+      ownedCount := ownedCount + 1
+      if (publicEnv.find? name).isSome then
+        publicCount := publicCount + 1
+      match info with
+      | .axiomInfo _ => throwError "Actual project axiom is forbidden: {name} (module {owner})"
+      | .thmInfo _ => theoremCount := theoremCount + 1
+      | .defnInfo _ => definitionCount := definitionCount + 1
+      | .opaqueInfo _ => opaqueCount := opaqueCount + 1
+      | _ => pure ()
+      checkAxioms name
+  if ownedCount == 0 then
+    throwError "The project declaration audit is empty"
+  logInfo m!"PROJECT AUDIT OK: {ownedCount} declarations from {projectModules.length} proof-module owners; {publicCount} public, {ownedCount - publicCount} private; {theoremCount} theorems, {definitionCount} definitions, {opaqueCount} opaque declarations; every kind checked against the axiom whitelist"
+  let targets : List Name := [
+    ``Tverberg6R.exists_height,
+    ``Tverberg6R.heightExtension,
+    ``AkopyanSixfold.tverberg_counterexample,
+    ``AkopyanSixfold.fivefold_tverberg_join,
+    ``AkopyanSixfold.exists_isBlocking_5d,
+    ``AkopyanSixfold.convex_partition_counterexample_ge_36,
+    ``AkopyanSixfold.convex_partition_counterexample_gt_17_of_continuous_table,
+    ``AkopyanSixfold.almostSix_ninety_of_relative_lifting,
+    ``AkopyanSixfold.convex_partition_counterexample_gt_17_of_relative_lifting,
+    ``AkopyanResearch.OriginalJoinBridge.exists_fifteen_join_map_with_block_nullhomotopy,
+    ``AkopyanResearch.OriginalJoinCoordinates.exists_fifteen_color_map_with_block_nullhomotopy,
+    ``AkopyanResearch.OriginalPairPath.exists_equivariant_pair_collapse_nullhomotopy,
+    ``AkopyanResearch.PairSphereAction.spherePairEquiv_equivariant,
+    ``AkopyanResearch.LocalLink.exists_linking_sphere_retract,
+    ``AkopyanResearch.ArrangementLink.exists_sphere_retract,
+    ``AkopyanResearch.exists_matching_sphere_retract,
+    ``AkopyanResearch.CoherentComparison.extends_boundary_into_nine_sphere,
+    ``AkopyanResearch.QuadraticFlatRank.scalarRank_dichotomy,
+    ``AkopyanResearch.QuadraticFlatRank.no_three_containing_flat_of_rank_lt_nine,
+    ``AkopyanResearch.QuadraticFlatRank.strict_flat_chain_length_bound,
+    ``AkopyanResearch.QuadraticPairRank.codim_pair_eq_fourteen_iff,
+    ``AkopyanResearch.QuadraticPairRank.codim_pair_eq_sixteen_iff,
+    ``AkopyanResearch.QuadraticPairRank.scalarRank_pair_eq_seven_iff,
+    ``AkopyanResearch.QuadraticPairRank.scalarRank_pair_eq_eight_iff,
+    ``AkopyanResearch.PairRepresentation.exists_pair_labels,
+    ``AkopyanResearch.PairIntersection.intersection_card_four_iff_mixed,
+    ``AkopyanResearch.PairIntersection.matchingWords_eq_of_pure,
+    ``AkopyanResearch.PairOrbit.existsUnique_action_of_unordered_pairs_eq,
+    ``AkopyanResearch.PairOrbit.pairWords_eq_iff_exists_action,
+    ``AkopyanResearch.PairOrbit.card_labelsOverPair,
+    ``AkopyanResearch.SingleCoordinateModel.continuous_singlePart,
+    ``AkopyanResearch.TargetCollapseModel.collapseValues_equivariant,
+    ``AkopyanResearch.TargetCollapseModel.collapseValues_pure,
+    ``AkopyanResearch.PairPathCoordinates.continuous_pairPart,
+    ``AkopyanResearch.PairPathCoordinates.index_spec,
+    ``AkopyanResearch.PairPathCoordinates.exists_index_of_matchings,
+    ``AkopyanResearch.PairNormalModel.range_jointTest_eq_commonEquality,
+    ``AkopyanResearch.PairNormalModel.jointQuotientContinuousEquiv_mk,
+    ``AkopyanResearch.PairNormalModel.exists_actual_joint_values,
+    ``AkopyanResearch.TargetFiberModel.comparison_single,
+    ``AkopyanResearch.TargetFiberModel.comparison_path,
+    ``AkopyanResearch.PairL2Deformation.strong_deformation_retraction,
+    ``AkopyanResearch.PairCollapsedLocus.strong_deformation_retraction,
+    ``AkopyanResearch.JoinMassCoordinates.continuous_fromMass_joint,
+    ``AkopyanResearch.ChosenTargetSections.exists_chosen_fifteen_color_sections,
+    ``AkopyanResearch.ChosenTargetSections.singleSection_enumeration_change,
+    ``AkopyanResearch.ChosenTargetSections.pairSection_equivariant,
+    ``AkopyanResearch.ChosenTargetSections.pairSection_pure,
+    ``AkopyanResearch.MatchingSphereMap.continuous_matchingSphere,
+    ``AkopyanResearch.MatchingSphereMap.matchingSphere_enumeration_change,
+    ``AkopyanResearch.MatchingSphereMap.matchingSphere_liftFace,
+    ``AkopyanResearch.MatchingSphereMap.matchingVector_ne_zero,
+    ``AkopyanResearch.MatchingPairCollapse.collapse_of_initial_differences,
+    ``AkopyanResearch.RelativeComparison.exists_safe_table_of_relative_lifting,
+    ``AkopyanResearch.ConcreteComparisonTarget.sectionMap_natural,
+    ``AkopyanResearch.ConcreteComparison.continuous_comparisonMap,
+    ``AkopyanResearch.ConcreteComparison.comparisonMap_natural,
+    ``AkopyanResearch.ConcreteComparison.exists_safe_table_of_required_lifting,
+    ``Submission.IsNConnected.isZero_homology,
+    ``AkopyanResearch.ArrangementConnectivity.isZero_homology_complement,
+    ``AkopyanResearch.isNConnected_quadComplement,
+    ``AkopyanResearch.isZero_homology_quadComplement,
+    ``AkopyanResearch.PairCofibration.homotopyExtension,
+    ``AkopyanResearch.PairGoodPair.quotientComparison_isIso,
+    ``AkopyanResearch.PairCollapseHomology.originalPairMap_homology_isIso,
+    ``AkopyanResearch.PairCollapseHomology.integralDegree_eq_one_or_neg_one,
+    ``AkopyanResearch.TargetFibration.hasHLP_projection,
+    ``AkopyanResearch.TargetConnectivity.isNConnected,
+    ``AkopyanResearch.TargetConnectivity.homology_vanish,
+    ``AkopyanResearch.LinearMeridian.homologyMap_splitEpi,
+    ``AkopyanResearch.LoopSphereHomology.omegaSphere13_homology_vanish,
+    ``AkopyanResearch.QuadraticComplementHomology.originalComplement_thirteenth_zero,
+    ``AkopyanSixfold.almostSix_ninety,
+    ``AkopyanResearch.FirstHomologyComparison.targetProjection_isIso,
+    ``AkopyanResearch.PairEndpointHomology.collapsedInclusion_isIso,
+    ``AkopyanResearch.ConcreteComparisonHomology.degreeNine_isIso,
+    ``AkopyanResearch.ConcreteComparisonHomology.degreeTwelve_isIso,
+    ``AkopyanResearch.ConcreteComparisonHomology.homology_isIso,
+    ``AkopyanResearch.ConcreteComparisonHomology.cylinder_hrelSet_zero,
+    ``AkopyanResearch.SimplexSkeletonConnectivity.isNConnected_skeleton,
+    ``AkopyanResearch.UniversalSimplexAddition.normalized_boundary_relation,
+    ``AkopyanResearch.UniversalSimplexAddition.relativeHurewicz_injective,
+    ``AkopyanResearch.RelativeHomologyConnectivity.fourteen,
+    ``AkopyanResearch.ConcreteComparisonConnectivity.cylinder_pair_fourteen,
+    ``AkopyanResearch.MappingCylinderLifting.extend,
+    ``AkopyanResearch.MappingCylinderFaceLifting.extend,
+    ``AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting,
+    ``Submission.IsNConnected.absoluteHurewiczAdd_bijective,
+    ``Submission.IsNConnected.relativeHurewiczAdd_bijective_of_contractibleAmbient,
+    ``AkopyanSixfold.convex_partition_counterexample_gt_17]
+  for name in targets do
+    unless (publicEnv.find? name).isSome do
+      throwError "Key theorem is not public: {name}"
+    match privateEnv.find? name with
+    | some (.thmInfo _) => pure ()
+    | _ => throwError "Missing genuine theorem declaration: {name}"
+    checkAxioms name
+    logInfo m!"KEY THEOREM OK {name}"
+  let definitions : List Name := [
+    ``AkopyanResearch.QuadraticSourceCoordinates.singleCoordinatesIso,
+    ``AkopyanResearch.QuadraticSourceCoordinates.collapsedCoordinatesIso,
+    ``AkopyanResearch.TargetPairCoordinates.homologyCoordinatesIso,
+    ``AkopyanResearch.OriginalJoinBridge.originalSelfNullData,
+    ``AkopyanResearch.OriginalJoinCoordinates.coordinateHomeomorph,
+    ``AkopyanResearch.OriginalJoinCoordinates.coordinateMap,
+    ``AkopyanResearch.OriginalPairPath.pairPath,
+    ``AkopyanResearch.QuadraticFlatRank.splitFlat,
+    ``AkopyanResearch.PairOrbit.labelsOverPairEquiv,
+    ``AkopyanResearch.SingleCoordinateModel.coordinatesHomeomorph,
+    ``AkopyanResearch.TargetCollapseModel.collapseValues,
+    ``AkopyanResearch.TargetCollapseModel.pairTargetSphereHomeomorph,
+    ``AkopyanResearch.PairPathCoordinates.homeomorph,
+    ``AkopyanResearch.PairNormalModel.jointQuotientContinuousEquiv,
+    ``AkopyanResearch.TargetFiberModel.homotopyFiberHomeomorph,
+    ``AkopyanResearch.ConcreteComparisonTarget.diagram,
+    ``AkopyanResearch.ConcreteComparison.comparison,
+    ``AkopyanResearch.ConcreteComparison.chosenSection,
+    ``AkopyanResearch.ConcreteComparison.RequiredRelativeLifting,
+    ``AkopyanResearch.NormedLinearThom.relativeThomIso,
+    ``AkopyanResearch.ProductSphereKernel.suspensionIso,
+    ``AkopyanResearch.PairEvaluationEquivalence.pairComparisonHomotopyEquiv,
+    ``AkopyanResearch.PairNormalHomology.collapsedHomologyIso,
+    ``AkopyanResearch.PairRelativeHomology.relativeHomologyIso,
+    ``AkopyanResearch.PairGoodPair.relativeHomologyIso,
+    ``AkopyanResearch.PairCollapseHomology.originalPairMap,
+    ``AkopyanResearch.LoopSphereHomology.omegaSphere13Homology12Iso,
+    ``AkopyanResearch.QuadraticComplementCoordinates.originalNineIso]
+  for name in definitions do
+    unless (publicEnv.find? name).isSome do
+      throwError "Key definition is not public: {name}"
+    match privateEnv.find? name with
+    | some (.defnInfo _) => pure ()
+    | _ => throwError "Missing genuine definition declaration: {name}"
+    checkAxioms name
+    logInfo m!"KEY DEFINITION OK {name}"
 
 -- Print the two public theorem certificates for a human-readable build log.
 #print axioms AkopyanSixfold.tverberg_counterexample
 #print axioms AkopyanSixfold.convex_partition_counterexample
+#print axioms AkopyanSixfold.almostSix_ninety
+#print axioms AkopyanSixfold.convex_partition_counterexample_gt_17
+#print axioms AkopyanResearch.ConcreteComparisonLifting.requiredRelativeLifting
 
 end

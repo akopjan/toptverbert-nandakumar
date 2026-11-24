@@ -1,0 +1,15 @@
+{
+  "recorded_utc": "2026-11-24T06:07:42.722759+00:00",
+  "entries": {
+    "Audit.lean": {
+      "source_sha256": "afb8e230f8d29dcedf29e553931ac60f4bbf9d374ff1ebb7a871f4b20589be8a",
+      "snapshot": "audit-entry-at-verification.lean.txt",
+      "snapshot_sha256": "afb8e230f8d29dcedf29e553931ac60f4bbf9d374ff1ebb7a871f4b20589be8a"
+    },
+    "AkopyanResearch/Completion.lean": {
+      "source_sha256": "cf8dfb444d87e6bcd735dde26d1f484578fadd2f864e7ef8d41b3c265615ae99",
+      "snapshot": "completion-entry-at-verification.lean.txt",
+      "snapshot_sha256": "cf8dfb444d87e6bcd735dde26d1f484578fadd2f864e7ef8d41b3c265615ae99"
+    }
+  }
+}

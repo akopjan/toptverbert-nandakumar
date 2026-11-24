@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-11-24T09:49:45.964276+00:00",
+  "portable_reproducer_sha256": "e4e740e199b1cbf91bb12bd90c7ea031e70af91818d6ebb6e2c144048e0d0790",
+  "result_sha256": "a37c32c6a0787b00ff48f3bc06aa620570b68883e34d2f9f559596b6c05abd18",
+  "historical_result_sha256": "18fe4c5706c9a5f4f0349176bb2b91f5fea2885d0c6a9c4b4683bcd38fe511ae",
+  "historical_driver_sha256": "7b1c4af45c54276f296958d42a1c9be9c5e0af8898a23e34e4682b988969c0f0",
+  "serializer_sha256": "5592f69119576462fbd83893f8d83214122786942844809403956fa44f8bc115",
+  "historical_canonical_declaration_digests_reproduced": true,
+  "historical_declaration_comparisons_reproduced": true,
+  "counts": {
+    "source_files": 419,
+    "compiled_objects": 1257,
+    "all_bound_inputs": 1683,
+    "historical_evidence_files": 24,
+    "hashed_tool_paths": 2
+  },
+  "frozen_main_gate_inputs_checked": 472,
+  "frozen_main_gate_inputs_changed": [],
+  "real_interface_runs": 1,
+  "cli_guard_cases": 3,
+  "full_build_or_kernel_replay_run": false,
+  "historical_bound_evidence_changed": false,
+  "historical_narrative_reproduction_instructions_updated": true,
+  "environment_note": "The workspace installed toolchain was made available by sourcing environment.sh in the parent shell; the reproducer itself uses only lake from inherited PATH and never names that workspace path."
+}

@@ -1,0 +1,176 @@
+{
+  "recorded_utc": "2026-11-24T10:26:08.667287+00:00",
+  "scope": "Working-tree static source and configuration snapshot only. This script does not run or determine the status of builds, owner audits, independent kernels, Comparator, CI or registry acceptance. Read their separately recorded evidence.",
+  "source_scan": {
+    "regular_lean_files": 481,
+    "exclusions": [
+      ".git",
+      ".lake"
+    ],
+    "violations": [],
+    "longest": {
+      "path": "Solution.lean",
+      "sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+      "bytes": 495944,
+      "physical_lines": 9336,
+      "module_header_lexical": true,
+      "admission_tokens": {
+        "sorry": 0,
+        "admit": 0,
+        "axiom": 0
+      }
+    },
+    "compiled_artifacts_outside_lake": [
+      "verification/d18-portable-semantic/SemanticReference.ir",
+      "verification/d18-portable-semantic/SemanticReference.ir.sig",
+      "verification/d18-portable-semantic/SemanticReference.olean",
+      "verification/d18-portable-semantic/SemanticReference.olean.private",
+      "verification/d18-portable-semantic/SemanticReference.olean.server",
+      "verification/d18-portable-semantic/SemanticScopeCheck.ir",
+      "verification/d18-portable-semantic/SemanticScopeCheck.ir.sig",
+      "verification/d18-portable-semantic/SemanticScopeCheck.olean",
+      "verification/d18-portable-semantic/SemanticScopeCheck.olean.private",
+      "verification/d18-portable-semantic/SemanticScopeCheck.olean.server"
+    ],
+    "lfs_pointers": [],
+    "gitmodules_present": false
+  },
+  "challenge": {
+    "physical_lines": 89,
+    "bytes": 3362,
+    "hard_limits_pass": true,
+    "recommended_limits_pass": true,
+    "imports": [
+      "Mathlib"
+    ],
+    "intentional_sorry_tokens": 2,
+    "independence": {
+      "result": "pass",
+      "method": "transitive local source import graph"
+    },
+    "signatures_match_actual_owners": {
+      "AkopyanSixfold.tverberg_counterexample": true,
+      "AkopyanSixfold.convex_partition_counterexample_gt_17": true
+    },
+    "seven_interface_definitions_match_original": {
+      "simplex": true,
+      "DisjointSupports": true,
+      "IsAlmostSixEmbedding": true,
+      "Ambient": true,
+      "Body": true,
+      "unitBall": true,
+      "IsSixPartition": true
+    }
+  },
+  "comparator": {
+    "configuration_pass": true,
+    "configuration": {
+      "challenge_module": "Challenge",
+      "solution_module": "PalomarSolution",
+      "theorem_names": [
+        "AkopyanSixfold.tverberg_counterexample",
+        "AkopyanSixfold.convex_partition_counterexample_gt_17"
+      ],
+      "permitted_axioms": [
+        "propext",
+        "Quot.sound",
+        "Classical.choice"
+      ]
+    },
+    "execution": "not executed or assessed by this static script",
+    "separate_evidence": "verification/d18-comparator/results.json"
+  },
+  "lexical_proof_scan": {
+    "files": 438,
+    "counts": {
+      "sorry": 0,
+      "admit": 0,
+      "axiom": 0
+    },
+    "qualification": "Token scan is not a dependency axiom audit."
+  },
+  "source_import_graph": {
+    "missing_local_imports": [],
+    "publication_closure_size": 418
+  },
+  "dependencies": {
+    "lean_toolchain": "leanprover/lean4:v4.35.0",
+    "mathlib_toolchain": "leanprover/lean4:v4.35.0",
+    "toolchains_match": true,
+    "official_minimum": "v4.35.0-rc2",
+    "pins_valid_shape": true,
+    "packages": [
+      {
+        "name": "mathlib",
+        "url": "https://github.com/leanprover-community/mathlib4.git",
+        "rev": "56a005855ea17e0b0958f73ec801ae140b0a1679"
+      },
+      {
+        "name": "plausible",
+        "url": "https://github.com/leanprover-community/plausible",
+        "rev": "dfa4f38190d07c37e315953e08b90fe2d95b3c24"
+      },
+      {
+        "name": "LeanSearchClient",
+        "url": "https://github.com/leanprover-community/LeanSearchClient",
+        "rev": "d6b4c7be5be75ec4917c873ac50c756dc1436372"
+      },
+      {
+        "name": "importGraph",
+        "url": "https://github.com/leanprover-community/import-graph",
+        "rev": "a41f0e9a4dea23188ea9cc1c41ac9f8bbafe0b93"
+      },
+      {
+        "name": "proofwidgets",
+        "url": "https://github.com/leanprover-community/ProofWidgets4",
+        "rev": "df72b022e558978a1c50264cfc4d7fec86fa8e04"
+      },
+      {
+        "name": "aesop",
+        "url": "https://github.com/leanprover-community/aesop",
+        "rev": "4a174c490d8707121c4a9290800489f105d85e07"
+      },
+      {
+        "name": "Qq",
+        "url": "https://github.com/leanprover-community/quote4",
+        "rev": "dce0ad79c486cb1fb504af04f953c3466b0c6db8"
+      },
+      {
+        "name": "batteries",
+        "url": "https://github.com/leanprover-community/batteries",
+        "rev": "66e469188fe07963e5cf666c7d4433f45b8131c5"
+      },
+      {
+        "name": "Cli",
+        "url": "https://github.com/leanprover/lean4-cli",
+        "rev": "c24fe6078c630e89b489bffe59b3e20ac30d12c8"
+      }
+    ],
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "exactly_one_lakefile": true,
+    "publication_default_target": true
+  },
+  "ci": {
+    "workflow": ".github/workflows/verify.yml",
+    "runner": "ubuntu-22.04",
+    "permissions": {
+      "contents": "read"
+    },
+    "actions": [
+      "actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683",
+      "actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065",
+      "leanprover/lean-action@ba3fdfe5c4476c925da13bf11a005ddb47e47aee"
+    ],
+    "actions_full_sha_pinned": true,
+    "lean_action_inputs_exist_at_pin": true,
+    "observed_execution": "not assessed by this script; configuration checked only"
+  },
+  "administrative": {
+    "root_license_files": [],
+    "root_formalization_yaml_present": false,
+    "confirmed_human_authors": "not verified by this script",
+    "confirmed_human_maintainers": "not verified by this script",
+    "public_repository_and_final_commit": "not verified by this script",
+    "submitter_authorization_relationship": "not verified by this script"
+  }
+}

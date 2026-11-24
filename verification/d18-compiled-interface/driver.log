@@ -1,0 +1,12 @@
+{
+  "outcome": "compiled-interfaces-identical",
+  "types_compared": 9,
+  "definition_values_compared": 7,
+  "differences": [],
+  "input_bytes_unchanged": true,
+  "source_module_count": 419,
+  "declarations_sha256": {
+    "Challenge": "0da75f6ec67460498e6f5a13890e8d06a76dd9dad1739c7f433af31e0b51c3d2",
+    "PalomarSolution": "0da75f6ec67460498e6f5a13890e8d06a76dd9dad1739c7f433af31e0b51c3d2"
+  }
+}

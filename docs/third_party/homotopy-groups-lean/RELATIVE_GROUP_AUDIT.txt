@@ -1,0 +1,3 @@
+RELATIVE GROUP AUDIT OK: 184 declarations, 155 theorems, 1 modules; only propext, Classical.choice, Quot.sound
+'RelHomotopyGroup.group' depends on axioms: [propext, Classical.choice, Quot.sound]
+'RelHomotopyGroup.commGroup' depends on axioms: [propext, Classical.choice, Quot.sound]

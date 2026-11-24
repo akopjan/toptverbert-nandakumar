@@ -1,0 +1,22 @@
+{
+  "scope": "Individual root-owned proof module compilation, before final integrated verification",
+  "passed_modules": [
+    "AkopyanResearch.Completion.FirstHomologyComparison",
+    "AkopyanResearch.Completion.SimplexHurewiczAdd",
+    "AkopyanResearch.Completion.ContractibleSimplexAddition",
+    "AkopyanResearch.Completion.UniversalSimplexAddition"
+  ],
+  "command_template": "python3 tools-runtime/core_lean.py MODULE_PATH.lean (pinned Lean4.35.0, -j1)",
+  "logs": [
+    "first-homology-comparison-v4.log",
+    "simplex-hurewicz-add-v2.log",
+    "contractible-simplex-addition-v3.log",
+    "universal-simplex-addition-v3.log"
+  ],
+  "source_sha256": {
+    "AkopyanResearch.Completion.FirstHomologyComparison": "74b40a46510056bf0a885e5661d91380cc347fe4bfdc8650ac46950888d32014",
+    "AkopyanResearch.Completion.SimplexHurewiczAdd": "c0bdd636583739a742e49161c501b99716753e301972a1fb2d07735c354ffeec",
+    "AkopyanResearch.Completion.ContractibleSimplexAddition": "ffb624aeaa3f529813cbcbfa61ed8e61ee65d45df352f7de3919bbae53903805",
+    "AkopyanResearch.Completion.UniversalSimplexAddition": "f3da86bdd41db5a0b46a158d16c239a419117706db41abef618b55b5fac4a2f5"
+  }
+}

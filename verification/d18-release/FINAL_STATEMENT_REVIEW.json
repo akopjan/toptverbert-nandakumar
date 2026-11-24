@@ -1,0 +1,17 @@
+{
+  "recorded_utc": "2026-11-24T10:04:04.439161+00:00",
+  "scope": "Source-level final statement and reduction review; no new Lean execution",
+  "files_sha256": {
+    "Solution.lean": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+    "AkopyanResearch/Completion/DimensionEighteen.lean": "24f45bfe59787b9308d242083be6163f7852abaec0bc2565cd90fafdaeac7ad8",
+    "AkopyanResearch/Completion/ConcreteReduction.lean": "353cc60d09f0518369641700139ae6e5987567f26ac796057b436489ad075ccb",
+    "AkopyanResearch/Completion/ConcreteComparisonLifting.lean": "390fdbabb29938ad3abaa649c1cf561b1fc0e91e4e8691b5fd4b1aa8eaa7d4f2",
+    "AkopyanResearch/Completion/ConcreteComparisonConnectivity.lean": "cba7c2f7d8ae7a9fedb5988679efc3cbd4ab99334f7c6824ab53502a07f03e65",
+    "AkopyanResearch/Completion/RelativeHomologyConnectivity.lean": "283b3721af387f1127117445d3560560b804cbd8004d35292da53b286c38d9c2",
+    "AkopyanResearch/Completion/ConnectedPair.lean": "95c81865e3881539ce395527edf7103331fc54d65b93f171760fbf245933a34f",
+    "AkopyanResearch/Completion/MappingCylinderFaceLifting.lean": "730a5b802b3446e0afe8900898556dbb02b6e46f1299f43b4878c55f3f8f31f7",
+    "verification/d18-portable-semantic/SemanticReference.lean": "aecc193d3e92f3041b68b573f5a90bd98a0ce5eb2e00114fdbff3a2311d39a79",
+    "verification/d18-portable-semantic/SemanticScopeCheck.lean": "b895d9cdb765e0fb67d3e11acf9665393d6264fcc44a5ab8150813468504c2a9",
+    "verification/d18-release/FINAL_STATEMENT_REVIEW.md": "d03f88ba981ec82386c890992e03c3d6f4042a353e3c8b54d237dff58742abbc"
+  }
+}

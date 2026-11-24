@@ -1,0 +1,17 @@
+{
+  "snapshot": "final-extended (131 sources)",
+  "preserved_files": {
+    "Audit.lean": {
+      "snapshot": "Audit.lean.txt",
+      "sha256": "afb8e230f8d29dcedf29e553931ac60f4bbf9d374ff1ebb7a871f4b20589be8a"
+    },
+    "AkopyanResearch/Completion.lean": {
+      "snapshot": "Completion.lean.txt",
+      "sha256": "cf8dfb444d87e6bcd735dde26d1f484578fadd2f864e7ef8d41b3c265615ae99"
+    },
+    "scripts/sync-audit.py": {
+      "snapshot": "sync-audit.py.txt",
+      "sha256": "67acdde06dce66691881c4bccd4ab022c50ce47538f5fde40836ddaf44cc08d0"
+    }
+  }
+}

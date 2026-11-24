@@ -1,0 +1,8 @@
+{
+  "scope": "Work on the supplied restored archive in the current session; preceding archive-recovery work excluded",
+  "start_utc": "2026-11-24T04:21:26+00:00",
+  "recorded_checkpoint_utc": "2026-11-24T06:21:27+00:00",
+  "elapsed_wall_seconds": 7201,
+  "minimum_two_hours_reached": true,
+  "accounting": "Wall time, not CPU time or sum of parallel agent times. Final packaging and file delivery continue after this checkpoint."
+}

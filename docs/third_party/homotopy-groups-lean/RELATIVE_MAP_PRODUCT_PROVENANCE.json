@@ -1,0 +1,51 @@
+{
+  "repository": "https://github.com/Vilin97/homotopy-groups-lean",
+  "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
+  "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
+  "delegated_modules": [
+    "Submission.Homotopy.ContractionData",
+    "Submission.Model.Sphere",
+    "Submission.Model.SuspSphere",
+    "Submission.Model.Suspension"
+  ],
+  "files": [
+    {
+      "module": "Submission.Homotopy.RelMap",
+      "upstream_path": "Submission/Homotopy/RelMap.lean",
+      "upstream_sha256": "aaeb2a9ffd7a955ce7f66e304331ceb2fc600221f2abf5b36abcad1108f3f903",
+      "port_sha256": "3869f31cdecfe10dd7d2e52de54fb9adec8726bf7c354cc6bdaffdfbea91a778",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations and exposed named helpers.",
+        "Closed the final definitional equality in mapHom.map_mul explicitly by reflexivity after the simplifier."
+      ]
+    },
+    {
+      "module": "Submission.ForMathlib.HomotopyGroup.Product",
+      "upstream_path": "Submission/ForMathlib/HomotopyGroup/Product.lean",
+      "upstream_sha256": "0539bf665ce0a92f077761d26aaabe451ae4dfcf0e997ac11c784c8eba40ef7d",
+      "port_sha256": "64e89ac0403edf4a1c671eba1f2dfa2517993d2ec7bd169916a311d9be227858",
+      "changes": [
+        "Added Lean 4.35 module/public import/expose declarations; preserved the Tau Ceti attribution."
+      ]
+    }
+  ],
+  "audit": {
+    "lean": "4.35.0",
+    "modules": 2,
+    "declarations": 96,
+    "theorems": 69,
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "includes_private_declarations": true,
+    "includes_definitions": true,
+    "result": "pass",
+    "owned_modules": [
+      "Submission.Homotopy.RelMap",
+      "Submission.ForMathlib.HomotopyGroup.Product"
+    ]
+  },
+  "license": "Apache-2.0"
+}

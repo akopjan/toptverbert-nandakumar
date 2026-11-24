@@ -1,0 +1,7 @@
+{
+  "outcome": "compiled-interfaces-identical",
+  "types_compared": 9,
+  "definition_values_compared": 7,
+  "differences": [],
+  "input_bytes_unchanged": true
+}

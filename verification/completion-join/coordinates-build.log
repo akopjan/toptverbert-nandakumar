@@ -1,0 +1,26 @@
+ℹ [3137/3145] Built AkopyanResearch.Completion.PhaseExtension (6.6s)
+info: AkopyanResearch/Completion/PhaseExtension.lean:357:0: 'AkopyanResearch.PhaseExtension.continuous_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:358:0: 'AkopyanResearch.PhaseExtension.continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:359:0: 'AkopyanResearch.PhaseExtension.exists_continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PhaseExtension.lean:360:0: 'AkopyanResearch.PhaseExtension.extension_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3141/3145] Built AkopyanResearch.Completion.PurePhaseCoordinates (3.7s)
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:144:0: 'AkopyanResearch.PurePhaseCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:145:0: 'AkopyanResearch.PurePhaseCoordinates.restrict_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/PurePhaseCoordinates.lean:146:0: 'AkopyanResearch.PurePhaseCoordinates.insert_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3143/3145] Built AkopyanResearch.Completion.JoinRowAction (2.3s)
+info: AkopyanResearch/Completion/JoinRowAction.lean:95:0: 'AkopyanResearch.JoinRowAction.inversionHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinRowAction.lean:96:0: 'AkopyanResearch.JoinRowAction.converted_map_equivariant' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3144/3145] Built AkopyanResearch.Completion.JoinCoordinates (3.9s)
+info: AkopyanResearch/Completion/JoinCoordinates.lean:388:0: 'AkopyanResearch.JoinCoordinates.continuous_toCoordinates' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:389:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_surjective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:390:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_injective' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:391:0: 'AkopyanResearch.JoinCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:392:0: 'AkopyanResearch.JoinCoordinates.toCoordinates_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/JoinCoordinates.lean:393:0: 'AkopyanResearch.JoinCoordinates.unitHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [3145/3145] Built AkopyanResearch.Completion.IteratedJoinCoordinates (3.3s)
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:201:0: 'AkopyanResearch.IteratedJoinCoordinates.homeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:202:0: 'AkopyanResearch.IteratedJoinCoordinates.finHomeomorph' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: AkopyanResearch/Completion/IteratedJoinCoordinates.lean:203:0: 'AkopyanResearch.IteratedJoinCoordinates.finHomeomorph_equivariant' depends on axioms: [propext,
+ Classical.choice,
+ Quot.sound]
+Build completed successfully (3145 jobs).

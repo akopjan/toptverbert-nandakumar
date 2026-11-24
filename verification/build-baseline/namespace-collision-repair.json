@@ -1,0 +1,21 @@
+{
+  "observed_utc": "2026-11-24T04:32:38.361486+00:00",
+  "error": "error: AkopyanResearch.lean:1:0: import AkopyanResearch.EquivariantPinch64 failed, environment already contains 'AkopyanResearch.homToCont' from AkopyanResearch.CoxeterTriangulation",
+  "kind": "duplicate public declaration name during aggregate import",
+  "changes": [
+    {
+      "source": "AkopyanResearch/CoxeterTriangulation.lean",
+      "old_sha256": "9f69e2fe8a7b26b47f11718a5caaa844cb04d7226d9c0d3686edca088dd0a568",
+      "new_sha256": "a008c1869e17be7d5d2b5c428bf60e9179c8ed9d6d9c34c0c9fc4ae21a60d2c9",
+      "identifier_substitutions": 17,
+      "new_identifier": "coxeterHomToCont"
+    },
+    {
+      "source": "AkopyanResearch/EquivariantPinch64.lean",
+      "old_sha256": "2505565bdf2bdfef8e33fad487b3147341ab2ccf9d9bb7820a615829f0671f87",
+      "new_sha256": "645c62b3db1a134065c4b883e371d2291e487dfa37008be5e7b193d78f968ee6",
+      "identifier_substitutions": 8,
+      "new_identifier": "pinchHomToCont"
+    }
+  ]
+}

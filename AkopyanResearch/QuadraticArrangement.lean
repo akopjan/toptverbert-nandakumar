@@ -21,9 +21,19 @@ public import AkopyanResearch.CoxeterTriangulation
    from `DiskCylinderRetraction`.
 4. Global Choquet-Kuhn PL weights `kuhnWeight` on subdivided unit cubes and sequential general-position
    perturbation `exists_extension_ball_complement`, yielding `exists_extension_quadComplement_of_card_le_nine`.
-5. Coherent comparison structures `ComparisonTarget` and `CoherentComparison`, skeleton induction
+5. Legacy conditional comparison structures `ComparisonTarget` and `CoherentComparison`, skeleton induction
    `exists_safe_compatible_quadratic_table_of_coherent_comparison`, and final bridge
    `exists_almostSix_of_coherent_comparison`.
+
+The legacy comparison interface assumes universal boundary extension in its
+target. Combined with its lifting field, this would extend every boundary map
+into the arrangement complement. It is therefore too strong for the intended
+nine-sphere comparison. `Completion.ComparisonContract` proves this consequence,
+and `Completion.QuadraticLink` constructs an actual linking nine-sphere retract.
+`Completion.RelativeComparison` supplies the corrected interface, which tracks
+a homotopy to one chosen natural target section and extends that homotopy too.
+The legacy conditional implications below are retained as mathematical statements;
+they do not assert that such a comparison exists.
 -/
 
 noncomputable section
@@ -2587,6 +2597,9 @@ def compatibleSkeletonTableNine : CompatibleSkeletonTable 9 :=
   let sk8 := hstep 7 (by omega) (by omega) sk7
   hstep 8 (by omega) (by omega) sk8
 
+/-- Legacy universal-extension target. For the intended `k = 9` application,
+use the chosen-section relative interface in `Completion.RelativeComparison`.
+Existence of this structure is not proved here. -/
 structure ComparisonTarget (k : ℕ) where
   Space : Finset (Fin 15) → Type
   topSpace : ∀ S, TopologicalSpace (Space S)
@@ -2607,6 +2620,8 @@ structure ComparisonTarget (k : ℕ) where
 
 attribute [instance] ComparisonTarget.topSpace
 
+/-- Legacy conditional comparison. Its existence, together with the target's
+universal extension field, is stronger than the intended lifting argument. -/
 structure CoherentComparison (k : ℕ) (P : ComparisonTarget k) where
   comp : ∀ (S : Finset (Fin 15)), S.Nonempty → QuadComplement S → P.Space S
   continuous_comp : ∀ (S : Finset (Fin 15)) (hS : S.Nonempty),

@@ -1,0 +1,275 @@
+{
+  "scope": "Four existing local component-control exports, checked only with the approved con-ron binary",
+  "started_utc": "2026-11-24T09:14:19.444238+00:00",
+  "outcome": "all-four-local-component-controls-matched",
+  "official_positive_negative_controls_run": false,
+  "full_palomar_workflow": false,
+  "registry_acceptance": false,
+  "main_export_read": false,
+  "fixture_rebuilt": false,
+  "source_compiler": "Lean 4.35.0 (existing exports)",
+  "approved_release": "v4.36.0-rc1",
+  "checker_path": "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+  "expected_checker_sha256": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "checker_sha256_before": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "copied_files": [
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/scripts/check-components.py",
+      "copy": "historical/check-components.py.txt",
+      "size_bytes": 4068,
+      "sha256": "9b4471780589f8ec981abaf77b9c7f9534074936ab43cda747ec531e75882819"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/component-results.json",
+      "copy": "historical/original-component-results.json",
+      "size_bytes": 10801,
+      "sha256": "184746a61af64bd8506f105d1efd55e8268a3412f429f0ac01104ee286c3796f"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/Challenge.lean",
+      "copy": "inputs/Challenge.lean.txt",
+      "size_bytes": 168,
+      "sha256": "24d1a972d044d4ef26d79bba94f7a15f43c3ca171c7e95ef02c445edbbd04cbc"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/SolutionPositive.lean",
+      "copy": "inputs/SolutionPositive.lean.txt",
+      "size_bytes": 154,
+      "sha256": "2b3fdb58a4151fbe1e8113acb2143c4060a6600a7cbaaa52275627c80f5ba132"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/positive.ndjson",
+      "copy": "inputs/positive.ndjson.txt",
+      "size_bytes": 1012704,
+      "sha256": "f4dc379bfb83b115dbe8d8f9218c4e9ea7310d7461f45cfc170f4678e61127ef"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/logs/con-ron-positive.log",
+      "copy": "historical/con-ron-positive.log",
+      "size_bytes": 48,
+      "sha256": "6087b6ce79092f5db1b6e68e1521b01f2ba73cd76de7375a66330327043bf875"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/SolutionAxiom.lean",
+      "copy": "inputs/SolutionAxiom.lean.txt",
+      "size_bytes": 299,
+      "sha256": "7a3d2f00771ac069053309efe74c1497366f4b1f0a26beadb9243e199b5d3119"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/axiom.ndjson",
+      "copy": "inputs/axiom.ndjson.txt",
+      "size_bytes": 1012769,
+      "sha256": "14d57511249409b9834e6bbf93b1f281899cc15edb7eb13c7230fb3d0fd66b7b"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/logs/con-ron-axiom.log",
+      "copy": "historical/con-ron-axiom.log",
+      "size_bytes": 112,
+      "sha256": "9b7a3484599ab8e51be24b78ada81ba41b869cc9e3288b54900249d8cee69431"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/SolutionSorry.lean",
+      "copy": "inputs/SolutionSorry.lean.txt",
+      "size_bytes": 202,
+      "sha256": "c738b4048b517df4c48277a09329deed6473b74051c6af076d93efbfc679b393"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/sorry.ndjson",
+      "copy": "inputs/sorry.ndjson.txt",
+      "size_bytes": 1014506,
+      "sha256": "fde78dc10ca67e5aa72fab172267d115ca3993c2bb99146ad7ce7b61bb50d0fc"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/logs/con-ron-sorry.log",
+      "copy": "historical/con-ron-sorry.log",
+      "size_bytes": 123,
+      "sha256": "29d4c432dac4bb698d7313fa915e5b10bd1b25708bd931573feb48f54b236291"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/SolutionHypothesis.lean",
+      "copy": "inputs/SolutionHypothesis.lean.txt",
+      "size_bytes": 244,
+      "sha256": "7a83038a780c48f69b773aff8e2d58775e8c6c6bcac0edf297e6d8a8e7353700"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/hypothesis.ndjson",
+      "copy": "inputs/hypothesis.ndjson.txt",
+      "size_bytes": 1012868,
+      "sha256": "9ba804e974b2a8132526b6a0f6b4d28cc14e7fd9587438a846073795601e7da4"
+    },
+    {
+      "source": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/logs/con-ron-hypothesis.log",
+      "copy": "historical/con-ron-hypothesis.log",
+      "size_bytes": 48,
+      "sha256": "6087b6ce79092f5db1b6e68e1521b01f2ba73cd76de7375a66330327043bf875"
+    }
+  ],
+  "cases": [
+    {
+      "case": "positive",
+      "started_utc": "2026-11-24T09:14:19.496795+00:00",
+      "input_original": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/positive.ndjson",
+      "input_copy": "inputs/positive.ndjson.txt",
+      "input_sha256_before": "f4dc379bfb83b115dbe8d8f9218c4e9ea7310d7461f45cfc170f4678e61127ef",
+      "input_size_bytes": 1012704,
+      "actual_export_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_target_record": {
+        "kind": "thm",
+        "line": 740,
+        "has_value": true,
+        "exported_type_id": 557
+      },
+      "expected_outcome": "accept",
+      "expected_offending_axiom": null,
+      "expected_challenge_interface_match": true,
+      "interface_match_checked_in_this_run": false,
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+        "--jobs=4",
+        "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/positive.ndjson"
+      ],
+      "finished_utc": "2026-11-24T09:14:26.648414+00:00",
+      "elapsed_seconds": 7.152,
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "logs/positive.log",
+      "log_sha256": "788d7c540fa8bdfb47b62ed5effb9ff51d092f5569cf90a27029e08285b29f0f",
+      "input_sha256_after": "f4dc379bfb83b115dbe8d8f9218c4e9ea7310d7461f45cfc170f4678e61127ef",
+      "copy_sha256_after": "f4dc379bfb83b115dbe8d8f9218c4e9ea7310d7461f45cfc170f4678e61127ef",
+      "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+      "input_unchanged": true,
+      "checker_unchanged": true,
+      "expected_outcome_matched": true
+    },
+    {
+      "case": "axiom",
+      "started_utc": "2026-11-24T09:14:26.696157+00:00",
+      "input_original": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/axiom.ndjson",
+      "input_copy": "inputs/axiom.ndjson.txt",
+      "input_sha256_before": "14d57511249409b9834e6bbf93b1f281899cc15edb7eb13c7230fb3d0fd66b7b",
+      "input_size_bytes": 1012769,
+      "actual_export_axioms": [
+        "Classical.choice",
+        "Fixture.assumedWitness",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_target_record": {
+        "kind": "thm",
+        "line": 721,
+        "has_value": true,
+        "exported_type_id": 546
+      },
+      "expected_outcome": "decline-for-nonstandard-axiom",
+      "expected_offending_axiom": "Fixture.assumedWitness",
+      "expected_challenge_interface_match": true,
+      "interface_match_checked_in_this_run": false,
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+        "--jobs=4",
+        "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/axiom.ndjson"
+      ],
+      "finished_utc": "2026-11-24T09:14:26.729473+00:00",
+      "elapsed_seconds": 0.033,
+      "exit_code": 2,
+      "timed_out": false,
+      "log": "logs/axiom.log",
+      "log_sha256": "8b3cae5f333a96ddb0a46785b40a36b20e91a29727bb146e1c1f9257c2f992d6",
+      "input_sha256_after": "14d57511249409b9834e6bbf93b1f281899cc15edb7eb13c7230fb3d0fd66b7b",
+      "copy_sha256_after": "14d57511249409b9834e6bbf93b1f281899cc15edb7eb13c7230fb3d0fd66b7b",
+      "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+      "input_unchanged": true,
+      "checker_unchanged": true,
+      "expected_outcome_matched": true
+    },
+    {
+      "case": "sorry",
+      "started_utc": "2026-11-24T09:14:26.775948+00:00",
+      "input_original": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/sorry.ndjson",
+      "input_copy": "inputs/sorry.ndjson.txt",
+      "input_sha256_before": "fde78dc10ca67e5aa72fab172267d115ca3993c2bb99146ad7ce7b61bb50d0fc",
+      "input_size_bytes": 1014506,
+      "actual_export_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext",
+        "sorryAx"
+      ],
+      "actual_target_record": {
+        "kind": "thm",
+        "line": 10932,
+        "has_value": true,
+        "exported_type_id": 7838
+      },
+      "expected_outcome": "decline-for-nonstandard-axiom",
+      "expected_offending_axiom": "sorryAx",
+      "expected_challenge_interface_match": true,
+      "interface_match_checked_in_this_run": false,
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+        "--jobs=4",
+        "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/sorry.ndjson"
+      ],
+      "finished_utc": "2026-11-24T09:14:34.028706+00:00",
+      "elapsed_seconds": 7.253,
+      "exit_code": 2,
+      "timed_out": false,
+      "log": "logs/sorry.log",
+      "log_sha256": "15c739476a55d7a694069601a1ce707532c1987e733765e9a1cbfa2857a5e6be",
+      "input_sha256_after": "fde78dc10ca67e5aa72fab172267d115ca3993c2bb99146ad7ce7b61bb50d0fc",
+      "copy_sha256_after": "fde78dc10ca67e5aa72fab172267d115ca3993c2bb99146ad7ce7b61bb50d0fc",
+      "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+      "input_unchanged": true,
+      "checker_unchanged": true,
+      "expected_outcome_matched": true
+    },
+    {
+      "case": "hypothesis",
+      "started_utc": "2026-11-24T09:14:34.183858+00:00",
+      "input_original": "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/hypothesis.ndjson",
+      "input_copy": "inputs/hypothesis.ndjson.txt",
+      "input_sha256_before": "9ba804e974b2a8132526b6a0f6b4d28cc14e7fd9587438a846073795601e7da4",
+      "input_size_bytes": 1012868,
+      "actual_export_axioms": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "actual_target_record": {
+        "kind": "thm",
+        "line": 724,
+        "has_value": true,
+        "exported_type_id": 552
+      },
+      "expected_outcome": "accept",
+      "expected_offending_axiom": null,
+      "expected_challenge_interface_match": false,
+      "interface_match_checked_in_this_run": false,
+      "command": [
+        "/workspace/scratch/9db1b532943d/tools-runtime/approved-con-ron/bin/con-ron",
+        "--jobs=4",
+        "/workspace/scratch/9db1b532943d/tools-runtime/comparator-fixture/exports/hypothesis.ndjson"
+      ],
+      "interpretation": "The proof has an extra hypothesis and is well typed; kernel acceptance is expected and does not establish the independent challenge statement.",
+      "finished_utc": "2026-11-24T09:14:41.350026+00:00",
+      "elapsed_seconds": 7.164,
+      "exit_code": 0,
+      "timed_out": false,
+      "log": "logs/hypothesis.log",
+      "log_sha256": "788d7c540fa8bdfb47b62ed5effb9ff51d092f5569cf90a27029e08285b29f0f",
+      "input_sha256_after": "9ba804e974b2a8132526b6a0f6b4d28cc14e7fd9587438a846073795601e7da4",
+      "copy_sha256_after": "9ba804e974b2a8132526b6a0f6b4d28cc14e7fd9587438a846073795601e7da4",
+      "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+      "input_unchanged": true,
+      "checker_unchanged": true,
+      "expected_outcome_matched": true
+    }
+  ],
+  "checker_sha256_after": "4e5616d94374cae37324dad2594f6230c2bb2297240249fc78ff508f3bc5acef",
+  "all_expected_outcomes_matched": true,
+  "finished_utc": "2026-11-24T09:14:41.359472+00:00"
+}
