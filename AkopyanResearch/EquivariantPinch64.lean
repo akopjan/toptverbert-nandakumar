@@ -263,15 +263,15 @@ end StereographicHomeo
 
 section BranchAndPinch64
 
-def homToCont {α β : Type*} [TopologicalSpace α] [TopologicalSpace β] (e : α ≃ₜ β) : C(α, β) :=
+def homeoToCont {α β : Type*} [TopologicalSpace α] [TopologicalSpace β] (e : α ≃ₜ β) : C(α, β) :=
   ⟨e, e.continuous⟩
 
-@[simp] lemma homToCont_apply {α β : Type*} [TopologicalSpace α] [TopologicalSpace β]
-    (e : α ≃ₜ β) (x : α) : homToCont e x = e x := rfl
+@[simp] lemma homeoToCont_apply {α β : Type*} [TopologicalSpace α] [TopologicalSpace β]
+    (e : α ≃ₜ β) (x : α) : homeoToCont e x = e x := rfl
 
 def branchCollapse : C(Metric.sphere (0 : Rep10) 1, Metric.sphere (0 : Rep10) 1) :=
-  (homToCont stereoAnchor.symm).comp
-    ((BranchPinch.collapse (E := E9)).comp (homToCont stereoAnchor))
+  (homeoToCont stereoAnchor.symm).comp
+    ((BranchPinch.collapse (E := E9)).comp (homeoToCont stereoAnchor))
 
 def branchCollapseHomotopy :
     ContinuousMap.HomotopyRel (ContinuousMap.id (Metric.sphere (0 : Rep10) 1)) branchCollapse
@@ -351,16 +351,16 @@ def ballAffine (i : Fin 64) : E9 ≃ₜ E9 where
     ((continuous_const : Continuous (fun _ : E9 => (1 / 4 : ℝ))).smul continuous_id)
 
 def ballPinch (i : Fin 64) : C(OnePoint E9, OnePoint E9) :=
-  ((homToCont (Homeomorph.onePointCongr (ballAffine i)).symm).comp
+  ((homeoToCont (Homeomorph.onePointCongr (ballAffine i)).symm).comp
     (BranchPinch.collapse (E := E9))).comp
-    (homToCont (Homeomorph.onePointCongr (ballAffine i)))
+    (homeoToCont (Homeomorph.onePointCongr (ballAffine i)))
 
 @[simp] lemma ballPinch_infty (i : Fin 64) : ballPinch i ∞ = ∞ := by
   simp [ballPinch, BranchPinch.collapse]
 
 lemma ballPinch_outside (i : Fin 64) {y : E9} (hy : pinchRadius ≤ ‖y - pinchCenter i‖) :
     ballPinch i (y : OnePoint E9) = ∞ := by
-  simp only [ballPinch, ContinuousMap.comp_apply, homToCont_apply,
+  simp only [ballPinch, ContinuousMap.comp_apply, homeoToCont_apply,
     Homeomorph.onePointCongr_apply, OnePoint.map_some, BranchPinch.collapse,
     ContinuousMap.coe_mk, BranchPinch.radial_one]
   have hnorm : 1 ≤ ‖ballAffine i y‖ := by
@@ -380,7 +380,7 @@ lemma ballPinch_equivariant (g : P_row) (i : Fin 64) (p : OnePoint E9) :
   induction p using OnePoint.rec with
   | infty => simp
   | coe y =>
-    simp only [ballPinch, ContinuousMap.comp_apply, homToCont_apply,
+    simp only [ballPinch, ContinuousMap.comp_apply, homeoToCont_apply,
       Homeomorph.onePointCongr_apply, Homeomorph.onePointCongr_symm_apply,
       OnePoint.map_some, haff]
     have hrad := BranchPinch.radial_equivariant (permE9 g)
@@ -497,7 +497,7 @@ def pinch64E9 : C(OnePoint E9, OnePoint E9) :=
   ⟨pinch64E9Fun, continuous_pinch64E9Fun⟩
 
 def pinch64 : C(Metric.sphere (0 : Rep10) 1, Metric.sphere (0 : Rep10) 1) :=
-  (homToCont stereoAnchor.symm).comp (pinch64E9.comp (homToCont stereoAnchor))
+  (homeoToCont stereoAnchor.symm).comp (pinch64E9.comp (homeoToCont stereoAnchor))
 
 lemma pinch64_anchorS : pinch64 anchorS = anchorS := by
   change stereoAnchor.symm (pinch64E9Fun (stereoAnchor anchorS)) = anchorS
