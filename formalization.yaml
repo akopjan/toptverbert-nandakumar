@@ -4,21 +4,14 @@ version: "v0.4"
 project:
   name: "Sixfold Tverberg Counterexamples and Convex Equipartition Obstructions"
   description: >-
-    We formalize Theorem A (an almost six-embedding Δ³⁵ → ℝ⁶) from Arseniy
-    Akopyan's manuscript "Sixfold Tverberg counterexamples and convex
-    equipartition obstructions" (paper/manuscript.tex) and extend the
-    manuscript's Theorem B (which establishes a convex six-equipartition
-    obstruction in every dimension d ≥ 24, formalized for d ≥ 36 in the
-    earlier Lean development Solution.lean) to a strengthened unconditional
-    counterexample in every dimension d > 17 (d ≥ 18): there are d − 1
-    continuous functionals on convex bodies and an absolutely continuous
-    probability measure such that no convex partition of the unit ball into
-    six equal-measure parts equalizes all these functionals. The strengthened
-    d > 17 bound is obtained by proving an unconditional almost six-embedding
-    Δ⁸⁹ → ℝ¹⁶ in AkopyanResearch/Completion/DimensionEighteen.lean and
-    combining it with the 5d central blocking marker construction
-    (exists_isBlocking_5d for d ≥ 18) and inward-distance transfer in
-    Solution.lean.
+    We construct a counterexample to the generalized Nandakumar--Ramana Rao
+    problem: in every dimension d > 17, there are d − 1 continuous functionals
+    on convex bodies and a probability measure such that there is no convex
+    partition of the unit ball into six parts of equal measure on which all
+    these functionals are equalized. We also show that the topological Tverberg
+    conjecture fails for sixfold intersections already in ℝ⁶: we construct a
+    continuous map Δ³⁵ → ℝ⁶ whose images of six pairwise disjoint faces never
+    meet.
   authors:
     - "Arseniy Akopyan"
   license: "Apache-2.0"
