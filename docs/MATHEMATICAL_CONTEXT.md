@@ -124,27 +124,41 @@ general arrangement homology formula or an assumed Blakers–Massey theorem.
 No external primary source for this exact table/arrangement construction
 was identified in this review.
 
-## Attribution and historical comments
+## Attribution and provenance
 
-The supplied archive names “Arseniy Akopyan” in the headers of
-`Challenge.lean` and `Solution.lean`. It contains no identified paper,
-bibliography, or original-project licence. Numbered lemma references and
-the unexpanded label `[AKS]` do not identify an external document.
-This evidence does not establish the authorship or publication history
-of every proof in the archive or of the subsequent completion.
+Arseniy Akopyan is the sole human author of both the mathematical manuscript
+([`paper/manuscript.tex`](../paper/manuscript.tex)) and the complete Lean 4
+formalization (both the earlier baseline development and the subsequent
+$d > 17$ completion), as well as the responsible human maintainer of this
+repository under the `Apache-2.0` license ([`LICENSE`](../LICENSE)).
 
-The original `Solution.lean` contains a historical comment describing the
-ninety-vertex input as unresolved at that stage. That source is preserved;
-the unconditional conclusion is added in the completion module named
-above. Neither that old comment nor this literature search is a statement
-that the corresponding mathematical problem remains open.
-
-Code attribution and licences for the imported Lean developments are
-recorded separately in [Submission/UPSTREAM.md](../Submission/UPSTREAM.md)
-and [docs/third_party](third_party). Those dependency licences do not
-establish a licence for the supplied original project. The precise search
-scope and source checks are in the
-[literature review](../verification/d18-publication/LITERATURE_REVIEW.md).
+- **Manuscript vs. strengthened Lean theorem**: In [`paper/manuscript.tex`](../paper/manuscript.tex),
+  Theorem A states the almost-six embedding $\Delta^{35} \to \mathbb{R}^6$,
+  and Theorem B states the convex six-equipartition obstruction for $d \ge 24$.
+  The Lean declaration `AkopyanSixfold.tverberg_counterexample` directly
+  formalizes Theorem A, whereas
+  `AkopyanSixfold.convex_partition_counterexample_gt_17` adapts and strengthens
+  Theorem B from $d \ge 24$ to every integer dimension $d > 17$ ($d \ge 18$)
+  by proving the unconditional almost-six embedding
+  $\Delta^{89} \to \mathbb{R}^{16}$ (`AkopyanSixfold.almostSix_ninety`).
+- **Earlier Lean baseline vs. later completion**: The earlier Lean 4
+  development by Arseniy Akopyan (with AI assistance from Aristotle and
+  Gemini) proved Theorem A in `RequestProject/`, proved the unconditional
+  $d \ge 36$ theorem (`convex_partition_counterexample`), the $5d$ central
+  blocking markers for $d \ge 18$ (`exists_isBlocking_5d`), and the
+  conditional $d \ge 18$ reduction (`convex_partition_counterexample_ge_18`)
+  in `Solution.lean` (preserved byte-for-byte), and established the initial 43
+  quadratic arrangement and equivariant collapse modules in
+  `AkopyanResearch/`. The later completion in `AkopyanResearch/Completion/`
+  (directed and maintained by Arseniy Akopyan with AI assistance from GPT-6
+  Astra Pro) extends that baseline to prove
+  `ConcreteComparisonLifting.requiredRelativeLifting`, `almostSix_ninety`, and
+  the unconditional $d > 17$ theorem.
+- **Imported Lean developments**: Code attribution and Apache-2.0 licenses for
+  the ported `homotopy-groups-lean` (`Submission/`) and `hatcher-at`
+  (`Hatcher/`) modules are recorded in
+  [Submission/UPSTREAM.md](../Submission/UPSTREAM.md) and
+  [docs/third_party](third_party).
 
 ## Primary references
 

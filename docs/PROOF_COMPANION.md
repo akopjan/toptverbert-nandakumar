@@ -965,11 +965,13 @@ in the release README and verification README.
 
 These completed checks are distinct from the registry workflow. The local
 sandboxed Comparator attempt stopped during `bwrap` setup before comparison.
-The official Palomar workflow has not been executed. Submission metadata
-still requires confirmed human authors and maintainers, a project licence,
-and a public repository and immutable commit. The supplied archive's
-attribution is preserved without assigning unverified authorship to the
-completion. No claim of priority or completed publication is made here.
+Root submission metadata in `formalization.yaml` records the confirmed human
+author and responsible maintainer (Arseniy Akopyan, who authored the
+manuscript `paper/manuscript.tex` and directed both the initial Lean
+formalization with Aristotle and Gemini and the $d > 17$ completion with
+GPT-6 Astra Pro), the `Apache-2.0` project license, the distinction between
+the manuscript's $d \ge 24$ Theorem B and the strengthened $d > 17$ theorem,
+and the relationship to the earlier Lean baseline in `Solution.lean`.
 
 ## 12. Mathematical context and references
 

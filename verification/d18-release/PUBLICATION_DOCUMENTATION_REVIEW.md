@@ -73,30 +73,32 @@ and `verification/README.md` required no correction. No proof source,
 script, CI workflow, configuration or metadata draft was changed.
 The companion JSON records the local-link check and reviewed file hashes.
 
-## Remaining human and external requirements
+## Confirmed human authorship, provenance, and external requirements
 
-Before an actual submission, the responsible person must confirm:
+The pre-confirmation draft `verification/d18-publication/formalization.yaml.draft`
+kept `project.authors`, `project.responsible_maintainers` and `project.license`
+empty as historical session placeholders. In the completed repository root
+[`formalization.yaml`](../../formalization.yaml), the author has confirmed and
+recorded all human, licensing, and provenance fields:
 
-- the complete human formalizer list and responsible human maintainers;
-- the project's actual licence, matching SPDX identifier, and exactly one
-  conventional root licence file; upstream Apache-2.0 licences do not decide
-  the licence or ownership of this project's original code;
-- the archive's correct attribution and publication history. The bounded
-  search did not identify a published source of the exact claims and does
-  not establish novelty;
-- the public GitHub repository and immutable release commit;
-- the truthful responsible-author/maintainer relationship or permission to
-  submit, distinct from merely having repository write access.
-
-The draft keeps `project.authors`, `project.responsible_maintainers` and
-`project.license` empty. Its matching metadata report has exit 1, schema
-errors for authors/licence, and additional profile errors for authors,
-maintainers, licence and the missing root licence file. The draft's bytes
-match the validator's recorded SHA-256. These are administrative omissions,
-not extra premises or missing steps of the mathematical proof.
-
-Once those fields are confirmed, complete root `formalization.yaml`,
-validate it, and run the committed checks on the chosen public commit.
+- **Human formalizer and responsible maintainer**: **Arseniy Akopyan** is
+  confirmed as the sole human author of both the mathematical manuscript
+  ([`paper/manuscript.tex`](../../paper/manuscript.tex)) and the Lean 4
+  formalization (both the initial development and the $d > 17$ completion),
+  and as the responsible maintainer of the repository. AI contributions
+  (Aristotle, Gemini, and GPT-6 Astra Pro) are disclosed under
+  `automation.methods`.
+- **License**: Confirmed as `Apache-2.0` in both root [`LICENSE`](../../LICENSE)
+  and `project.license` in [`formalization.yaml`](../../formalization.yaml).
+- **Provenance and relationship to earlier Lean development**: Root
+  [`formalization.yaml`](../../formalization.yaml) distinguishes Theorem A of
+  `paper/manuscript.tex` ($\Delta^{35} \to \mathbb{R}^6$, `formalizes`) from
+  Theorem B of `paper/manuscript.tex` ($d \ge 24$, `adapts`, strengthened to
+  $d > 17$ via $\Delta^{89} \to \mathbb{R}^{16}$), and explicitly records the
+  earlier TopTverberg Lean baseline (`Solution.lean`, `RequestProject/`, and
+  43 modules in `AkopyanResearch/`, `adapts` in `sources` and `builds-on` in
+  `related_formalizations`) alongside the ported `homotopy-groups-lean` and
+  `hatcher-at` libraries.
 The prepared optional manual workflow calls the official verifier at
 `14aa8d6b3c2f14a8540605e37144560b9a00e7e7`; its default unconfirmed
 relationship prevents an unauthorized assertion. No remote run was made.

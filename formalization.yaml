@@ -4,14 +4,21 @@ version: "v0.4"
 project:
   name: "Sixfold Tverberg Counterexamples and Convex Equipartition Obstructions"
   description: >-
-    We construct a counterexample to the generalized Nandakumar--Ramana Rao
-    problem: in every dimension d > 17, there are d − 1 continuous functionals
-    on convex bodies and a probability measure such that there is no convex
-    partition of the unit ball into six parts of equal measure on which all
-    these functionals are equalized. We also show that the topological Tverberg
-    conjecture fails for sixfold intersections already in ℝ⁶: we construct a
-    continuous map Δ³⁵ → ℝ⁶ whose images of six pairwise disjoint faces never
-    meet.
+    We formalize Theorem A (an almost six-embedding Δ³⁵ → ℝ⁶) from Arseniy
+    Akopyan's manuscript "Sixfold Tverberg counterexamples and convex
+    equipartition obstructions" (paper/manuscript.tex) and extend the
+    manuscript's Theorem B (which establishes a convex six-equipartition
+    obstruction in every dimension d ≥ 24, formalized for d ≥ 36 in the
+    earlier Lean development Solution.lean) to a strengthened unconditional
+    counterexample in every dimension d > 17 (d ≥ 18): there are d − 1
+    continuous functionals on convex bodies and an absolutely continuous
+    probability measure such that no convex partition of the unit ball into
+    six equal-measure parts equalizes all these functionals. The strengthened
+    d > 17 bound is obtained by proving an unconditional almost six-embedding
+    Δ⁸⁹ → ℝ¹⁶ in AkopyanResearch/Completion/DimensionEighteen.lean and
+    combining it with the 5d central blocking marker construction
+    (exists_isBlocking_5d for d ≥ 18) and inward-distance transfer in
+    Solution.lean.
   authors:
     - "Arseniy Akopyan"
   license: "Apache-2.0"
@@ -23,40 +30,128 @@ classification:
   msc2020: ["52C35", "55M20", "52A20", "55S91"]
 
 sources:
-  - title: "Sixfold Tverberg counterexamples and convex equipartition obstructions"
+  - title: "Sixfold Tverberg counterexamples and convex equipartition obstructions (Theorem A)"
     authors:
       - "Arseniy Akopyan"
     type: "paper"
-    location: "paper/manuscript.tex, Theorems A and B"
+    location: "paper/manuscript.tex, Theorem A"
     relationship: "formalizes"
     author_endorsement: "participated"
-    year: 2026
     note: >-
-      Theorem A (AkopyanSixfold.tverberg_counterexample) is formalized
-      unconditionally in Solution.lean. Theorem B
-      (AkopyanSixfold.convex_partition_counterexample_gt_17) is formalized
-      completely unconditionally in every dimension d > 17 (d ≥ 18) in
-      AkopyanResearch/Completion/DimensionEighteen.lean (exported via
-      PalomarSolution.lean), combining the unconditional almost six-embedding
-      Δ⁸⁹ → ℝ¹⁶ (AkopyanSixfold.almostSix_ninety) with the 5d central blocking
-      marker construction (exists_isBlocking_5d for d ≥ 18), Blaschke
-      compactness (blaschke_isCompact_subsets_unitBall, exists_eta_of_isBlocking),
-      join-padding, and Hausdorff-continuous inward-distance transfer in
+      Formalizes Theorem A (AkopyanSixfold.tverberg_counterexample, an
+      unconditional almost six-embedding Δ³⁵ → ℝ⁶) in RequestProject/ and
+      Solution.lean. Arseniy Akopyan is both the manuscript author and the
+      human formalizer and responsible maintainer of the entire Lean
+      development.
+  - title: "Sixfold Tverberg counterexamples and convex equipartition obstructions (Theorem B, d ≥ 24, and Section 6 reduction)"
+    authors:
+      - "Arseniy Akopyan"
+    type: "paper"
+    location: "paper/manuscript.tex, Theorem B and Theorem 6.1"
+    relationship: "adapts"
+    author_endorsement: "participated"
+    note: >-
+      Theorem B in paper/manuscript.tex states the convex six-equipartition
+      obstruction for d ≥ 24 (using 5d − 4 blocking markers and Theorem C via
+      [AKS]). The present formalization adapts and strengthens Theorem B from
+      d ≥ 24 to every dimension d > 17 (d ≥ 18)
+      (AkopyanSixfold.convex_partition_counterexample_gt_17) by constructing an
+      unconditional almost six-embedding Δ⁸⁹ → ℝ¹⁶
+      (AkopyanSixfold.almostSix_ninety) via configuration-space comparison and
+      relative Hurewicz lifting in AkopyanResearch/Completion/, and combining
+      it with the 5d central blocking markers (exists_isBlocking_5d for
+      d ≥ 18), Blaschke compactness, and inward-distance transfer in
       Solution.lean.
+  - title: "Earlier TopTverberg Lean 4 development (Solution.lean, RequestProject/, and initial AkopyanResearch/ modules)"
+    authors:
+      - "Arseniy Akopyan"
+    id: "https://github.com/akopjan/toptverbert-nandakumar/tree/e50f3db04b9c2652720d7aa49fcbf0c29524a60a"
+    type: "other"
+    location: "Solution.lean, RequestProject/, AkopyanResearch/ (preserved baseline; see verification/original-specification/Challenge36.lean.txt)"
+    relationship: "adapts"
+    license: "Apache-2.0"
+    author_endorsement: "participated"
+    note: >-
+      The earlier Lean 4 development by Arseniy Akopyan (with AI assistance
+      from Aristotle and Gemini) proved Theorem A unconditionally, proved the
+      unconditional d ≥ 36 convex equipartition obstruction
+      (AkopyanSixfold.convex_partition_counterexample), proved the existence of
+      5d central blocking markers for all d ≥ 18 (exists_isBlocking_5d) and
+      the conditional d ≥ 18 reduction (convex_partition_counterexample_ge_18)
+      in Solution.lean (preserved byte-for-byte, SHA-256
+      41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23), and
+      developed the initial 43 quadratic arrangement and equivariant collapse
+      modules in AkopyanResearch/. The later completion in
+      AkopyanResearch/Completion/ (directed and maintained by Arseniy Akopyan
+      with AI assistance from GPT-6 Astra Pro) extends that baseline by proving
+      the relative lifting theorem (requiredRelativeLifting) and the
+      unconditional Δ⁸⁹ → ℝ¹⁶ embedding (almostSix_ninety) to close the
+      unconditional d > 17 theorem.
+  - title: "homotopy-groups-lean: homotopy groups, Hurewicz and Whitehead infrastructure"
+    authors:
+      - "Vasily Ilin"
+      - "The Tau Ceti contributors (Map.lean and Homotopy.lean)"
+      - "Jiazhen Xia (WhiteheadTheorem)"
+    id: "https://github.com/Vilin97/homotopy-groups-lean/tree/c66523531ff172d7f41913d94e56921e790a1b47"
+    type: "other"
+    location: "Submission/; docs/third_party/homotopy-groups-lean/PROVENANCE.json"
+    relationship: "adapts"
+    license: "Apache-2.0"
+    note: >-
+      Selected proof modules were ported from Lean 4.32.2 to Lean 4.35.0 with
+      original headers and Apache-2.0 license retained to support the relative
+      Hurewicz connectivity step in the d > 17 completion.
+  - title: "hatcher-at: singular homology, excision, Mayer-Vietoris and good pairs"
+    authors:
+      - "Joël Riou"
+      - "Jack McCarthy"
+    id: "https://github.com/Deicyde/hatcher-at/tree/6d729567d1573a7e8785773a55de36d0e3ec5761"
+    type: "other"
+    location: "Hatcher/; docs/third_party/hatcher-at/PROVENANCE.json"
+    relationship: "adapts"
+    license: "Apache-2.0"
+    note: >-
+      Selected modules (including excision sources crediting Joël Riou's
+      excision repository at commit 8b56cd0c8e5f39a7c2f36418c80b298e469596a6)
+      were ported from Lean 4.34.1 to Lean 4.35.0 with original headers and
+      Apache-2.0 license retained to support the singular homology and
+      Mayer-Vietoris calculations in the d > 17 completion.
+
+related_formalizations:
+  - id: "https://github.com/akopjan/toptverbert-nandakumar/tree/e50f3db04b9c2652720d7aa49fcbf0c29524a60a"
+    relationship: "builds-on"
+    note: >-
+      Earlier stage of this formalization by Arseniy Akopyan establishing
+      Theorem A, the unconditional d ≥ 36 theorem, the 5d blocking markers and
+      conditional d ≥ 18 reduction in Solution.lean, and the initial 43
+      AkopyanResearch modules. The present release preserves Solution.lean
+      byte-for-byte and builds on it in AkopyanResearch/Completion/ to prove
+      the unconditional d > 17 theorem.
+  - id: "https://github.com/Vilin97/homotopy-groups-lean/tree/c66523531ff172d7f41913d94e56921e790a1b47"
+    relationship: "builds-on"
+    note: "Ported homotopy-group and Hurewicz infrastructure in Submission/ (see docs/third_party/homotopy-groups-lean/PROVENANCE.json)."
+  - id: "https://github.com/jzxia/WhiteheadTheorem"
+    relationship: "builds-on"
+    note: "Credited secondary source of WhiteheadTheorem files in the pinned homotopy-groups-lean snapshot."
+  - id: "https://github.com/Deicyde/hatcher-at/tree/6d729567d1573a7e8785773a55de36d0e3ec5761"
+    relationship: "builds-on"
+    note: "Ported singular homology, excision, and Mayer-Vietoris proofs in Hatcher/ (see docs/third_party/hatcher-at/PROVENANCE.json)."
+  - id: "https://github.com/joelriou/excision/tree/8b56cd0c8e5f39a7c2f36418c80b298e469596a6"
+    relationship: "builds-on"
+    note: "Secondary excision source credited by the imported Hatcher modules."
 
 status:
   scope: >-
-    Sorry-free Lean 4 formalization of AkopyanSixfold.tverberg_counterexample
-    (unconditional proof of Theorem A: an almost six-embedding Δ³⁵ → ℝ⁶),
-    AkopyanSixfold.almostSix_ninety (unconditional almost six-embedding
-    Δ⁸⁹ → ℝ¹⁶), and AkopyanSixfold.convex_partition_counterexample_gt_17
-    (completely unconditional proof of Theorem B for every d > 17), together
-    with exists_isBlocking_5d (5d central blocking markers for all d ≥ 18),
-    blaschke_isCompact_subsets_unitBall (Blaschke selection theorem),
-    exists_eta_of_isBlocking (Lemma 5.2), central_partition_normal_rank
-    (Lemma 4.2), and convex_partition_counterexample (d ≥ 36) in Solution.lean.
-    Verified under standard Lean 4 axioms [propext, Quot.sound, Classical.choice]
-    without custom axioms or sorry.
+    Sorry-free Lean 4.35.0 formalization of AkopyanSixfold.tverberg_counterexample
+    (unconditional proof of Theorem A from paper/manuscript.tex: an almost
+    six-embedding Δ³⁵ → ℝ⁶), AkopyanSixfold.almostSix_ninety (unconditional
+    almost six-embedding Δ⁸⁹ → ℝ¹⁶), and
+    AkopyanSixfold.convex_partition_counterexample_gt_17 (unconditional convex
+    six-equipartition obstruction for every d > 17, strengthening Theorem B of
+    paper/manuscript.tex from d ≥ 24 and extending the earlier unconditional
+    d ≥ 36 theorem AkopyanSixfold.convex_partition_counterexample in
+    Solution.lean). Verified under standard Lean 4 axioms [propext, Quot.sound,
+    Classical.choice] without custom axioms or sorry.
   sorry_count: 0
   sorry_in_definitions: 0
   axioms:
@@ -65,7 +160,7 @@ status:
     - "Classical.choice"
   main_results:
     - declaration: "AkopyanSixfold.tverberg_counterexample"
-      file: "PalomarSolution.lean"
+      file: "Solution.lean"
       sorry_count: 0
       axioms:
         - "propext"
@@ -73,7 +168,7 @@ status:
         - "Classical.choice"
       comparator_config: "comparator.json"
     - declaration: "AkopyanSixfold.convex_partition_counterexample_gt_17"
-      file: "PalomarSolution.lean"
+      file: "AkopyanResearch/Completion/DimensionEighteen.lean"
       sorry_count: 0
       axioms:
         - "propext"
@@ -83,46 +178,81 @@ status:
 
 fidelity:
   divergences: >-
-    Both AkopyanSixfold.tverberg_counterexample (Theorem A, Δ³⁵ → ℝ⁶) and
-    AkopyanSixfold.convex_partition_counterexample_gt_17 (Theorem B, for all
-    d > 17) are formalized completely unconditionally without any extra
-    hypotheses in Challenge.lean. Note that the explicit uniform quantifier
-    over measures is proved internally in convex_partition_of_embedding_and_blocking
-    rather than exposed as a separate conjunct in Challenge.lean.
+    AkopyanSixfold.tverberg_counterexample formalizes Theorem A of
+    paper/manuscript.tex (Δ³⁵ → ℝ⁶) unconditionally. Theorem B of
+    paper/manuscript.tex states the convex six-equipartition obstruction for
+    d ≥ 24 (using 5d − 4 central blocking markers and Theorem C via [AKS]),
+    and the earlier Lean baseline in Solution.lean proved it unconditionally
+    for d ≥ 36 (via a fivefold join of Theorem A) together with a conditional
+    reduction for d ≥ 18 (convex_partition_counterexample_ge_18, conditional on
+    an almost six-embedding Δ⁸⁹ → ℝ¹⁶). The present completion in
+    AkopyanResearch/Completion/DimensionEighteen.lean strengthens the
+    unconditional dimension bound beyond both d ≥ 36 and the manuscript's
+    d ≥ 24 theorem to every integer dimension d > 17 (d ≥ 18) by proving the
+    unconditional almost six-embedding Δ⁸⁹ → ℝ¹⁶ (AkopyanSixfold.almostSix_ninety)
+    and discharging the hypothesis of convex_partition_counterexample_ge_18.
+    Note also that the uniform concentrated-measure quantifier is proved
+    internally in convex_partition_of_embedding_and_blocking rather than
+    exposed as a separate conjunct in Challenge.lean.
 
 automation:
   methods:
     - method: "agent"
-      models: ["Aristotle", "Gemini", "GPT"]
+      models: ["Aristotle", "Gemini"]
       framework: "AI-assisted Lean 4 formalization"
       tool_setup: >-
-        Theorem A proof closure in RequestProject/ assisted by Aristotle;
-        join-padding, Blaschke selection, normal rank ≤ 5, RREF, blocking
-        point existence for d ≥ 18, inward-distance transfer, quadratic
-        arrangement modules, and relative lifting completion assisted by
-        Gemini and GPT.
+        Initial formalization phase directed by Arseniy Akopyan: Theorem A
+        proof closure in RequestProject/ assisted by Aristotle; join-padding,
+        Blaschke selection, normal rank ≤ 5, rank-4 RREF reduction, rank-5
+        tree parametrization, 5d central blocking point existence for d ≥ 18,
+        inward-distance transfer in Solution.lean, and the initial 43
+        quadratic arrangement and equivariant collapse modules in
+        AkopyanResearch/ assisted by Gemini.
+    - method: "agent"
+      models: ["GPT-6 Astra Pro"]
+      framework: "ChatGPT multi-agent workspace"
+      tool_setup: >-
+        Completion phase directed by Arseniy Akopyan: configuration-space
+        comparison, Mayer-Vietoris and tubular homology calculations, ported
+        homotopy/homology infrastructure (Submission/ and Hatcher/), relative
+        Hurewicz connectivity, ConcreteComparisonLifting.requiredRelativeLifting,
+        AkopyanSixfold.almostSix_ninety (Δ⁸⁹ → ℝ¹⁶), and
+        AkopyanSixfold.convex_partition_counterexample_gt_17 (d > 17) in
+        AkopyanResearch/Completion/, together with the all-owner Audit.lean.
+  notes: >-
+    Arseniy Akopyan is the sole human author of both the mathematical
+    manuscript (paper/manuscript.tex) and the Lean 4 formalization (both the
+    initial development and the d > 17 completion), as well as the responsible
+    human maintainer of this repository. AI systems (Aristotle, Gemini, and
+    GPT-6 Astra Pro) contributed under his direction as disclosed above.
 
 review:
-  status: "self-assessed"
+  status: "author-verified and agent-reviewed; complete Lean build, all-owner axiom audit, compiled-interface comparison, and exported-proof kernel checks passed"
+  notes: >-
+    Verified by the author (Arseniy Akopyan) and automated audit suites
+    (Audit.lean across all 438 proof-module owners and 16,765 declarations,
+    scripts/check-statements.py, and independent kernel replays with Lean
+    checker, NanoDa, and con-ron).
 
 alignment:
   namespace: "AkopyanSixfold"
   statements:
     - source: "Sixfold Tverberg counterexamples and convex equipartition obstructions (paper/manuscript.tex), Theorem A"
       lean: "AkopyanSixfold.tverberg_counterexample"
-      module: "Challenge"
-      status: "proved (unconditional)"
+      module: "Solution"
+      status: "proved (unconditional; formalizes Theorem A)"
       note: >-
-        Unconditional proof of an almost six-embedding Δ³⁵ → ℝ⁶.
-    - source: "Sixfold Tverberg counterexamples and convex equipartition obstructions (paper/manuscript.tex), Theorem B"
+        Unconditional proof of an almost six-embedding Δ³⁵ → ℝ⁶, exported via
+        PalomarSolution.lean and compared against Challenge.lean.
+    - source: "Sixfold Tverberg counterexamples and convex equipartition obstructions (paper/manuscript.tex), Theorem B (d ≥ 24) and earlier Lean baseline (Solution.lean, d ≥ 36 and conditional d ≥ 18)"
       lean: "AkopyanSixfold.convex_partition_counterexample_gt_17"
-      module: "Challenge"
-      status: "proved (unconditional for d > 17)"
+      module: "AkopyanResearch.Completion.DimensionEighteen"
+      status: "proved (unconditional for d > 17; adapts and strengthens Theorem B from d ≥ 24 to d ≥ 18)"
       note: >-
-        Formalizes Theorem B unconditionally for every d > 17 (d ≥ 18),
-        combining the unconditional almost six-embedding Δ⁸⁹ → ℝ¹⁶
-        (AkopyanSixfold.almostSix_ninety) with 5d central blocking markers
-        (exists_isBlocking_5d for d ≥ 18), Blaschke selection
-        (blaschke_isCompact_subsets_unitBall and exists_eta_of_isBlocking),
-        join-padding to Δ^(5d-1) → ℝ^(d-2), and Hausdorff-continuous
-        inward-distance transfer.
+        Strengthens the manuscript's Theorem B (d ≥ 24) and extends the
+        earlier Lean baseline in Solution.lean (unconditional d ≥ 36 and
+        conditional d ≥ 18) to an unconditional proof for every dimension
+        d > 17 by proving the almost six-embedding Δ⁸⁹ → ℝ¹⁶
+        (AkopyanSixfold.almostSix_ninety) in
+        AkopyanResearch/Completion/DimensionEighteen.lean and combining it
+        with exists_isBlocking_5d (d ≥ 18) in Solution.lean.

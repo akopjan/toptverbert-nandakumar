@@ -240,69 +240,36 @@ declarations. An intentional Challenge hole is separate
 from a hole in a Solution proof. These are the official
 [Comparator requirements](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md#23-comparator-configuration).
 
-## Administrative requirements
+## Administrative requirements and confirmed root metadata
 
-The new [`formalization.yaml.draft`](formalization.yaml.draft) uses v0.4 and
-the actual A+B18 declaration/module names. It intentionally remains outside
-the repository root. The schema check in
-[`METADATA_VALIDATION.json`](METADATA_VALIDATION.json) fails exactly the
-empty author list and empty licence; Palomar additionally requires the
-currently empty responsible-maintainer list. This failure is deliberate,
-not a metadata certificate.
+The historical pre-confirmation draft [`formalization.yaml.draft`](formalization.yaml.draft)
+left human authorship and license fields blank during the automated completion
+session. Those fields have now been confirmed by the author and recorded in
+the root [`formalization.yaml`](../../formalization.yaml):
 
-The validation is now reproducible offline:
-
-```sh
-python3 -m pip install -r verification/d18-publication/requirements.txt
-python3 verification/d18-publication/check_readiness.py
-python3 verification/d18-publication/validate_metadata.py
-```
-
-After the Python dependencies are installed, both checks use local inputs;
-the metadata validator makes no network request and runs no proof checker.
-It binds the exact draft, official cached schema, taxonomies and observed
-gate reports by SHA-256. Its exit code is currently **1**, correctly reporting
-the two unresolved schema fields and the additional profile requirements.
-Exit 0 is reserved for passing its implemented checks; it would not itself
-establish authorship, licence ownership or registry acceptance. See
-[`README.md`](README.md) for the commands, scope and exit-code contract.
-
-Before submission, the responsible person must supply or confirm:
-
-1. **Human formalizer names and responsible human maintainers.** The source
-   header credit to Arseniy Akopyan and the upstream credits are preserved,
-   but they do not determine the complete authorship of this completion.
-   Models and agents belong in `automation`, not the human lists.
-2. **The repository licence.** There is currently no conventional root
-   licence file. Add exactly one valid root licence file and set the matching
-   unambiguous SPDX identifier in `project.license`. The Apache-2.0 licences
-   of imported libraries do not by themselves determine the licence of the
-   original project or grant authority to choose it.
-3. **Mathematical source provenance.** Confirm the source credit and
-   whether the exact result has an identified publication, is unpublished,
-   or is being claimed as new. The bounded literature review did not
-   identify a published source of the exact claims; this does not establish
-   priority. The draft identifies the supplied archive by a rechecked
-   SHA-256 and uses source-based `adapts` provenance. It neither invents an
-   original paper nor claims source-author endorsement. See
-   [`MATHEMATICAL_CONTEXT.md`](../../docs/MATHEMATICAL_CONTEXT.md) and
-   [`LITERATURE_REVIEW.md`](LITERATURE_REVIEW.md).
-4. **A public GitHub repository and final immutable commit.** Commit the
-   finished proof, dependency manifest, exact comparator configuration,
-   metadata, licence and provenance records. The ordinary substantive
-   project does not need `repository.substantive_formalization`, which is
-   reserved for a thin wrapper.
-5. **A truthful submission relationship.** The submitter must be a
-   responsible author/maintainer of the substantive formalization or have
-   approval from one. Repository write access is a separate check and does
-   not establish that relationship. No such identity or approval has been
-   invented in this draft.
-6. **Final metadata and checks.** The completed mathematical gates and the
-   audited axiom list are already recorded in the draft. Supply the confirmed
-   administrative fields, validate the completed metadata, and place it at
-   root as `formalization.yaml`. Rerun the source preflight and project gates
-   at the chosen public commit, then record the actual official workflow
-   outcome without treating the local sandbox failure as a pass.
+1. **Human formalizer and responsible maintainer**: **Arseniy Akopyan** is
+   confirmed as the sole human author of the mathematical manuscript
+   ([`paper/manuscript.tex`](../../paper/manuscript.tex)), the initial Lean 4
+   formalization (`RequestProject/`, `Solution.lean`, and initial
+   `AkopyanResearch/` modules, developed with AI assistance from Aristotle and
+   Gemini), and the $d > 17$ completion (`AkopyanResearch/Completion/`,
+   developed with AI assistance from GPT-6 Astra Pro), as well as the
+   responsible maintainer of the repository. AI models are disclosed under
+   `automation.methods`.
+2. **Repository license**: Confirmed as `Apache-2.0` in both root
+   [`LICENSE`](../../LICENSE) and `project.license` in
+   [`formalization.yaml`](../../formalization.yaml).
+3. **Mathematical and formalization provenance**: Root
+   [`formalization.yaml`](../../formalization.yaml) distinguishes Theorem A of
+   [`paper/manuscript.tex`](../../paper/manuscript.tex) ($\Delta^{35} \to \mathbb{R}^6$,
+   `relationship: formalizes`) from Theorem B of the manuscript ($d \ge 24$,
+   `relationship: adapts`, strengthened in Lean to $d > 17$ via the
+   unconditional $\Delta^{89} \to \mathbb{R}^{16}$ embedding
+   `AkopyanSixfold.almostSix_ninety`), and records the earlier TopTverberg
+   Lean baseline (`Solution.lean` for $d \ge 36$ and conditional $d \ge 18$,
+   `relationship: adapts` in `sources` and `builds-on` in
+   `related_formalizations`) alongside the ported `homotopy-groups-lean` and
+   `hatcher-at` libraries.
 
 These requirements come from the official
 [metadata and provenance rules](https://github.com/PalomarRegistry/PalomarPolicy/blob/main/CONTRIBUTING.md#31-fields-checked-mechanically),
