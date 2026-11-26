@@ -343,7 +343,7 @@ theorem homotopicWith_const_isMapOfPairs_of_unique_pi
 noncomputable def _root_.TopCat.Cyl.stretchToWall :
     C(I × (disk.{u} (n + 1)), I × (disk.{u} (n + 1))) := by
   let β : C((disk.{u} (n + 1)) × I, ℝ) :=
-    { toFun := fun ⟨⟨x, hx⟩, t⟩ ↦ max (2 * ‖x‖) (2 - t)
+    { toFun := fun p ↦ max (2 * ‖p.1.down.1‖) (2 - p.2)
       continuous_toFun := by fun_prop }
   refine
     { toFun := fun ⟨t, ⟨x, hx⟩⟩ ↦
@@ -614,7 +614,7 @@ theorem isCompressible_mapCyl_domIncl_of_isWeakHomotopyEquiv
       -- (domIncl f).hom = (domInclFromTop f).comp (domInclToTop f)
       (ofHom <| MapCyl.domInclFromTop φ) F := ⟨sq.w⟩
     let l := com.sq_hasLift sq' |>.hasLift.some
-    let inv : C(MapCyl.top φ, X) := toContinuousMap (MapCyl.domHomeoTop φ).symm
+    let inv : C(MapCyl.top φ, X) := ContinuousMap.ofClass (MapCyl.domHomeoTop φ).symm
     use l.l ≫ ofHom inv
     · have := congrArg₂ CategoryStruct.comp l.fac_left (Eq.refl (ofHom inv))
       convert this using 1

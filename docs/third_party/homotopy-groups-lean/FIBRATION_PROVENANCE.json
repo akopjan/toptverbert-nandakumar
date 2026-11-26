@@ -2,8 +2,8 @@
   "repository": "https://github.com/Vilin97/homotopy-groups-lean",
   "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
   "upstream_lean": "4.32.2",
-  "port_lean": "4.35.0",
-  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "port_lean": "4.36.0-rc2",
+  "mathlib_revision": "9d581dfff2e41de989072ea63abf3daf69311520",
   "license": "Apache-2.0",
   "recorded_utc": "2026-11-24T08:26:57.527749+00:00",
   "files": [

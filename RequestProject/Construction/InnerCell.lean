@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.CellCount
 public import RequestProject.Construction.Safety
 

@@ -32,7 +32,8 @@ PROOF_REPLACEMENTS = [
     '  exact AkopyanSixfold.convex_partition_counterexample_gt_17 d hd\n',
 ]
 SOURCE_REPLACEMENTS = [
-    ('public import Mathlib\n', 'public import Mathlib\npublic import PalomarSolution\n', 1),
+    ('public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace\n',
+     'public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace\npublic import PalomarSolution\n', 1),
     ('namespace AkopyanSixfold\n', 'namespace AkopyanChallengeAudit\n', 1),
     ('end AkopyanSixfold\n', 'end AkopyanChallengeAudit\n', 1),
 ]

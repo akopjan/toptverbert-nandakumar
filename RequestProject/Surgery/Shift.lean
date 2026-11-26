@@ -1,7 +1,7 @@
 module
 
-public import Mathlib
 public import RequestProject.Surgery.ZeroSet
+public import Mathlib.Analysis.Normed.Group.Lemmas
 public import RequestProject.Surgery.Cutoff
 
 @[expose] public section

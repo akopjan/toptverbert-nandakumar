@@ -1,7 +1,0 @@
-ℹ [3137/3138] Replayed AkopyanResearch.Completion.PhaseExtension
-info: AkopyanResearch/Completion/PhaseExtension.lean:357:0: 'AkopyanResearch.PhaseExtension.continuous_projection' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: AkopyanResearch/Completion/PhaseExtension.lean:358:0: 'AkopyanResearch.PhaseExtension.continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: AkopyanResearch/Completion/PhaseExtension.lean:359:0: 'AkopyanResearch.PhaseExtension.exists_continuous_extension' depends on axioms: [propext, Classical.choice, Quot.sound]
-info: AkopyanResearch/Completion/PhaseExtension.lean:360:0: 'AkopyanResearch.PhaseExtension.extension_relabel' depends on axioms: [propext, Classical.choice, Quot.sound]
-✔ [3138/3138] Built AkopyanResearch.Completion.JoinVertexMap (8.0s)
-Build completed successfully (3138 jobs).

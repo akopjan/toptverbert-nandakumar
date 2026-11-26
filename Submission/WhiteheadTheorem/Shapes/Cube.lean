@@ -323,21 +323,19 @@ the sides of `⊔I^(n+1)`, i.e.,
 the closure of the complement of the top and bottom faces of `∂I^(n+1)`. -/
 def inclToBoundaryJarSides {n : ℕ} : C((∂I^n) × I, ⊔I^(n+1)) where
   toFun := fun yt ↦
-    ⟨ (toContinuousMap splitAtLastComm.symm |>.comp <|
+    ⟨ (ContinuousMap.ofClass splitAtLastComm.symm |>.comp <|
         ContinuousMap.prodMap (boundaryIncl n) (ContinuousMap.id _)) yt,
     by
       obtain ⟨⟨y, ⟨i, hyi⟩⟩, t⟩ := yt
-      constructor
-      · use i.castSucc
-        simp [splitAtLastComm, splitAtLast, homeoNeqLast, boundaryIncl]
-        simpa [Fin.castSucc_ne_last]
-      · intro _; use i.castSucc
-        simp [splitAtLastComm, splitAtLast, homeoNeqLast, boundaryIncl]
-        simpa [Fin.castSucc_ne_last, Fin.castSucc_lt_last]  ⟩
+      have hcoord : (splitAtLast.symm ⟨t, y⟩) i.castSucc = 0 ∨
+          (splitAtLast.symm ⟨t, y⟩) i.castSucc = 1 := by
+        rw [splitAtLast_symm_apply_eq_of_neq_last t y i.castSucc (Fin.castSucc_ne_last i)]
+        exact hyi
+      exact ⟨⟨i.castSucc, hcoord⟩, fun _ => ⟨i.castSucc, Fin.castSucc_lt_last i, hcoord⟩⟩ ⟩
   continuous_toFun := by
     refine Continuous.subtype_mk ?_ _
-    simp only [ContinuousMap.coe_comp, ContinuousMap.coe_coe, Homeomorph.comp_continuous_iff]
-    apply ContinuousMapClass.map_continuous
+    exact splitAtLastComm.symm.continuous.comp
+      ((boundaryIncl n).prodMap (ContinuousMap.id _)).continuous
 
 /-- The inclusion `(y, t) ↦ (y₀, y₁, …, yₙ₋₁, t)` to the sides of
 the $(n+1)$-dimensional cube. -/
@@ -388,24 +386,17 @@ lemma cubeBoundaryIncl_apply_down_eq {n : ℕ} (y : I^Fin n) (hy : y ∈ ∂I^n)
 
 /-- `cubeSplitAtLast` -/
 def cubeSplitAtLast {n : ℕ} : 𝕀 (n + 1) ≅ TopCat.of (I × 𝕀 n) where
-  hom := ofHom ⟨fun ⟨y⟩ ↦ ⟨(Cube.splitAtLast y).fst, ⟨(Cube.splitAtLast y).snd⟩⟩, by fun_prop⟩
-  inv := ofHom ⟨fun ⟨t, ⟨y⟩⟩ ↦ ⟨Cube.splitAtLast.symm ⟨t, y⟩⟩, by fun_prop⟩
+  hom := ofHom ⟨fun p ↦ ((Cube.splitAtLast p.down).fst, ULift.up.{u} (Cube.splitAtLast p.down).snd), by fun_prop⟩
+  inv := ofHom ⟨fun p ↦ ULift.up.{u} (Cube.splitAtLast.symm (p.1, p.2.down)), by fun_prop⟩
   hom_inv_id := by
-    ext ⟨y⟩
-    simp only [hom_comp, ContinuousMap.comp_apply, hom_id,
-      ContinuousMap.id_apply]
-    change ULift.up _ = _
-    simp only [Prod.mk.eta, Homeomorph.symm_apply_apply]
-    rfl
+    refine TopCat.hom_ext <| ContinuousMap.ext fun ⟨y⟩ => ?_
+    exact congrArg ULift.up.{u} (Cube.splitAtLast.symm_apply_apply y)
   inv_hom_id := by
-    ext ⟨t, ⟨y⟩⟩
-    all_goals simp only [hom_comp, ContinuousMap.comp_apply,
-        hom_id, ContinuousMap.id_apply]
-    · congr 1
-      change (Cube.splitAtLast (Cube.splitAtLast.symm _)).fst = _
-      simp only [Homeomorph.apply_symm_apply]
-    · change ({ down := (Cube.splitAtLast (Cube.splitAtLast.symm (t, y))).2 } : ULift _) = _
-      simp only [Homeomorph.apply_symm_apply]
+    refine TopCat.hom_ext <| ContinuousMap.ext fun ⟨t, ⟨y⟩⟩ => Prod.ext ?_ (congrArg ULift.up.{u} ?_)
+    · change (Cube.splitAtLast (Cube.splitAtLast.symm (t, y))).fst = t
+      exact congrArg Prod.fst (Cube.splitAtLast.apply_symm_apply (t, y))
+    · change (Cube.splitAtLast (Cube.splitAtLast.symm (t, y))).snd = y
+      exact congrArg Prod.snd (Cube.splitAtLast.apply_symm_apply (t, y))
 
 /-- This lemma should be applied before expanding the `match` expression. -/
 @[simp↓]

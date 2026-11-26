@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 public import AkopyanResearch.PlanarTestLocal
 public import AkopyanResearch.InvariantCaps
 

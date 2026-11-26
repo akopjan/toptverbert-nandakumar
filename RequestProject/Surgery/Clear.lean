@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Surgery.Separate
 
 @[expose] public section

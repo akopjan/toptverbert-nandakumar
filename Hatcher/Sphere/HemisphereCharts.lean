@@ -23,7 +23,7 @@ universe u
 
 /-- The raw metric model underlying `TopCat.sphere n`.  This name is used only
 to state the single `ULift` bridge and the geometry behind it. -/
-abbrev RawSphere (n : ℕ) :=
+noncomputable abbrev RawSphere (n : ℕ) :=
   Metric.sphere (0 : EuclideanSpace ℝ (Fin (n + 1))) 1
 
 /-- The single explicit bridge from Mathlib's public `TopCat.sphere` to its
@@ -491,7 +491,7 @@ theorem rawNorthChart_ne_zero_iff (n : ℕ)
         (h.trans (rawNorthChart_northPole n).symm))
     exact hx
 
-def rawOverlap (n : ℕ) : Set (RawSphere (n + 1)) :=
+noncomputable def rawOverlap (n : ℕ) : Set (RawSphere (n + 1)) :=
   ({rawSouthPole n}ᶜ : Set _) ∩ ({rawNorthPole n}ᶜ : Set _)
 
 /-- The overlap of the two opposite-pole neighborhoods. -/

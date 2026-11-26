@@ -1,7 +1,8 @@
 module
 
 public import Mathlib.Analysis.InnerProductSpace.Continuous
-public import Mathlib.Tactic
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Ring
 
 
 @[expose] public section

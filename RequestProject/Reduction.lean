@@ -1,6 +1,18 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.Analysis.Normed.Group.Continuity
+public import Mathlib.Analysis.Normed.Group.Real
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Logic.Equiv.Fin.Basic
+public import Mathlib.Topology.Algebra.Monoid
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 
 @[expose] public section
 
@@ -261,7 +273,7 @@ theorem avgHeight_continuousOn (H : (Fin 6 → ℝ) → Table) (hH : ContinuousO
   have hE : Filter.Tendsto E (nhdsWithin x0 Δ) (nhds 0) := by
     have hcont : ContinuousWithinAt E Δ x0 := by
       simp only [E]
-      exact tendsto_finset_sum _ fun w _ =>
+      exact tendsto_finsetSum _ fun w _ =>
         (((continuous_apply w).continuousWithinAt.comp (hHc x0 hx0)
           (Set.mapsTo_univ _ _)).sub continuousWithinAt_const).abs
     have h0 : E x0 = 0 := by simp [E, l0]

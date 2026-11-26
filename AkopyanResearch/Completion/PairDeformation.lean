@@ -3,7 +3,7 @@ module
 public import Mathlib.Analysis.Normed.Module.Basic
 public import Mathlib.Analysis.Normed.Group.Continuity
 public import Mathlib.Topology.Constructions.SumProd
-public import Mathlib.Tactic
+public import Mathlib.Tactic.NormNum
 
 /-!
 # A concrete retraction of the pair complement

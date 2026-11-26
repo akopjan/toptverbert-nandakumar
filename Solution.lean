@@ -1,6 +1,32 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Calculus.FDeriv.Mul
+public import Mathlib.Analysis.Calculus.FDeriv.Pi
+public import Mathlib.Analysis.Convex.Body
+public import Mathlib.Analysis.InnerProductSpace.Dual
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Analysis.LocallyConvex.Separation
+public import Mathlib.LinearAlgebra.AffineSpace.FiniteDimensional
+public import Mathlib.LinearAlgebra.Dimension.OrzechProperty
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.MeasureTheory.Function.Jacobian
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+public import Mathlib.Topology.MetricSpace.Closeds
+public import Mathlib.Topology.MetricSpace.HausdorffDistance
+public import Mathlib.Topology.Sets.VietorisTopology
+public import Mathlib.Tactic.Abel
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.GCongr
+public import Mathlib.Tactic.Lift
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
+public import Mathlib.Tactic.Zify
 public import RequestProject.Solution
 public import AkopyanResearch.SafeQuadraticRealization
 
@@ -204,7 +230,7 @@ theorem join_almostSixEmbedding {m n p q : ℕ}
           funext fun x => by simp [f, hk0, hkp, t]
         rw [hfun]
         exact continuousOn_perspective (fun v => (continuous_apply _).continuousOn)
-          (fun _ hx v => hx.1 _) hg₁.1 ⟨k.1 - 1, hkp⟩
+          (by intro _ hx v; exact hx.1 _) hg₁.1 ⟨k.1 - 1, hkp⟩
       · have hfun :
             (fun x => f x k) = fun x =>
               let s' := ∑ w, w₂ x w
@@ -212,7 +238,7 @@ theorem join_almostSixEmbedding {m n p q : ℕ}
           funext fun x => by simp [f, hk0, hkp, s]
         rw [hfun]
         exact continuousOn_perspective (fun w => (continuous_apply _).continuousOn)
-          (fun _ hx w => hx.1 _) hg₂.1 ⟨k.1 - 1 - p, by have := k.isLt; omega⟩
+          (by intro _ hx w; exact hx.1 _) hg₂.1 ⟨k.1 - 1 - p, by have := k.isLt; omega⟩
   · intro x hx hdisj
     by_contra h_all
     push Not at h_all
@@ -6416,6 +6442,8 @@ private lemma open_quadrant_subset_one_Kopen {c : Fin 6 → Fin 6 → E4}
     ∃ α : Fin 6, {y ∈ Metric.ball p_r δ | 0 < ⟪n₁, y⟫_ℝ ∧ 0 < ⟪n₂, y⟫_ℝ} ⊆ Kopen c α := by
   let Q : Set E4 := {y | y ∈ Metric.ball p_r δ ∧ 0 < ⟪n₁, y⟫_ℝ ∧ 0 < ⟪n₂, y⟫_ℝ}
   have hQ_conv : Convex ℝ Q := by
+    dsimp only [Q]
+    rw [Set.ofPred_and]
     refine (convex_ball p_r δ).inter ?_
     intro x hx y hy a b ha hb hab
     have ha' := hx.1; have hb' := hy.1

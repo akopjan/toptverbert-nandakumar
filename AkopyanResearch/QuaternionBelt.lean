@@ -4,7 +4,12 @@ public import Mathlib.Analysis.Quaternion
 public import Mathlib.Analysis.SpecialFunctions.Sqrt
 public import Mathlib.Analysis.Normed.Module.FiniteDimension
 public import Mathlib.LinearAlgebra.UnitaryGroup
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
 
 
 @[expose] public section

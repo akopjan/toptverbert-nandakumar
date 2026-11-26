@@ -2,7 +2,8 @@ module
 
 public import Mathlib.Algebra.Ring.Basic
 public import Mathlib.Algebra.Module.LinearMap.End
-public import Mathlib.Tactic
+public import Mathlib.Tactic.NoncommRing
+public import Mathlib.Tactic.Ring
 
 
 @[expose] public section

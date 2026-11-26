@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Verify pinned dependencies, all project modules, and the complete owner audit.
-# Requirements: Bash, Python 3.11+, and Lean/Lake 4.35.0 on PATH.
+# Requirements: Bash, Python 3.11+, and Lean/Lake 4.36.0-rc2 on PATH.
 set -euo pipefail
 
 project_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd -P)"

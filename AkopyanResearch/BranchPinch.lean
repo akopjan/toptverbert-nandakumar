@@ -4,7 +4,13 @@ public import Mathlib.Topology.Compactification.OnePoint.Basic
 public import Mathlib.Analysis.Normed.Module.FiniteDimension
 public import Mathlib.Topology.Constructions.SumProd
 public import Mathlib.Topology.Homotopy.Basic
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 
 
 @[expose] public section

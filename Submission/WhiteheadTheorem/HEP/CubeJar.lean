@@ -153,7 +153,7 @@ lemma backFlrCover_closed (n : ℕ) : ∀ k, IsClosed (backFlrCover n k) := by
 
 /-- `backIsoCube` -/
 def backIsoCube (n : ℕ) : back n ≃ₜ (I^ Fin (n + 1)) where
-  toFun := fun ⟨⟨⟨y, _⟩, t⟩, hy⟩ ↦ Cube.splitAtLast.symm ⟨t, (Cube.splitAtLast y).snd⟩
+  toFun := fun x ↦ Cube.splitAtLast.symm ⟨x.1.2, (Cube.splitAtLast x.1.1.down.1).snd⟩
   invFun := fun y ↦
     let y' := Cube.splitAtLast.symm ⟨1, (Cube.splitAtLast y).snd⟩
     haveI : y' (Fin.last n) = 1 := by unfold y'; rw [Cube.splitAtLast_symm_apply_last]
@@ -185,8 +185,8 @@ open cubeBoundaryJar
 
 /-- `jarBotMap` -/
 def jarBotMap : C(bot n, Y) where
-  toFun := fun ⟨⟨⟨y, _⟩⟩, hy⟩ ↦
-    let y' : I^ Fin (n + 1) := Cube.splitAtLast.symm ⟨1, (Cube.splitAtLast y).snd⟩
+  toFun := fun x ↦
+    let y' : I^ Fin (n + 1) := Cube.splitAtLast.symm ⟨1, (Cube.splitAtLast x.1.down.1).snd⟩
     haveI : y' ∈ ∂I^ (n + 1) := by
       use Fin.last _; right; unfold y'; rw [Cube.splitAtLast_symm_apply_last]
     f ⟨⟨y', ‹_›⟩⟩
@@ -194,14 +194,14 @@ def jarBotMap : C(bot n, Y) where
 
 /-- `jarSidesMap` -/
 def jarSidesMap : C(sides n, Y) where
-  toFun := fun ⟨⟨⟨y, _⟩⟩, hy⟩ ↦
-    let y' : I^ Fin (n + 1) := Cube.splitAtLast.symm ⟨1, (Cube.splitAtLast y).snd⟩
+  toFun := fun x ↦
+    let y' : I^ Fin (n + 1) := Cube.splitAtLast.symm ⟨1, (Cube.splitAtLast x.1.down.1).snd⟩
     haveI : y' ∈ ⊔I^ (n + 1) := by
       apply Cube.mem_boundaryJar_of_lt_last
-      obtain ⟨i, hin, hi⟩ := hy; use i, hin
+      obtain ⟨i, hin, hi⟩ := x.2; use i, hin
       unfold y'
       rwa [Cube.splitAtLast_symm_apply_eq_of_neq_last _ _ _ (Fin.lt_last_iff_ne_last.mp hin)]
-    h ⟨⟨⟨y', ‹_›⟩⟩, (Cube.splitAtLast y).fst⟩
+    h ⟨⟨⟨y', ‹_›⟩⟩, (Cube.splitAtLast x.1.down.1).fst⟩
   continuous_toFun := by simp only [Set.coe_ofPred, Set.mem_ofPred_eq]; fun_prop
 
 /-- `botSidesCoverMapVec` -/
@@ -268,7 +268,7 @@ noncomputable def backMap
 
 /-- `flrMap` -/
 def flrMap : C(flr n, Y) where
-  toFun := fun ⟨⟨⟨y, _⟩, t⟩, hy⟩ ↦ h ⟨⟨y, hy⟩, t⟩
+  toFun := fun x ↦ h ⟨⟨⟨x.1.1.down.1, x.2⟩⟩, x.1.2⟩
   continuous_toFun := by fun_prop
 
 /-- `backFlrCoverMapVec` -/

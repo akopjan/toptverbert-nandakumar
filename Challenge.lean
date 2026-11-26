@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Convex.Body
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
 
 @[expose] public section
 

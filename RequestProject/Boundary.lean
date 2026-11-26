@@ -1,5 +1,6 @@
 module
 
+public import Mathlib.LinearAlgebra.Matrix.Nondegenerate
 public import RequestProject.Generic
 
 @[expose] public section

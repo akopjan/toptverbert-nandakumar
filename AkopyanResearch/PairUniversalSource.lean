@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.Data.Fintype.Perm
+public import Mathlib.GroupTheory.Index
+public import Mathlib.Tactic.DeriveFintype
+public import Mathlib.Tactic.Abel
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
 public import AkopyanResearch.ColoredChainContraction
 public import AkopyanResearch.CochainAnnihilator
 

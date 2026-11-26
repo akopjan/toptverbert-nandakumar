@@ -1,7 +1,16 @@
 module
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
+public import Mathlib.Algebra.Order.BigOperators.Group.Finset
+public import Mathlib.Basic.Real.Basic
 public import Mathlib.Topology.Algebra.Order.Field
+public import Mathlib.Topology.Instances.Real.Lemmas
 public import Mathlib.Topology.Piecewise
-public import Mathlib.Tactic
+public import Mathlib.Topology.UnitInterval
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 
 @[expose] public section
 

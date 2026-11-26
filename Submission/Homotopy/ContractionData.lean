@@ -292,11 +292,11 @@ noncomputable def capContraction (ε h : ℝ) (hε : ε ^ 2 = 1) (hh : -1 ≤ h)
 
 variable (m) in
 /-- The enlarged lower hemisphere `{z ∈ S^{m+1} | z_last ≤ 1/3}`. -/
-def sphLowerCap : Set (Sph (m + 1)) := sphCap m (-1) (1 / 3)
+noncomputable def sphLowerCap : Set (Sph (m + 1)) := sphCap m (-1) (1 / 3)
 
 variable (m) in
 /-- The enlarged upper hemisphere `{z ∈ S^{m+1} | -1/3 ≤ z_last}`. -/
-def sphUpperCap : Set (Sph (m + 1)) := sphCap m 1 (1 / 3)
+noncomputable def sphUpperCap : Set (Sph (m + 1)) := sphCap m 1 (1 / 3)
 
 theorem mem_sphLowerCap {z : Sph (m + 1)} : z ∈ sphLowerCap m ↔ sphHeight z ≤ 1 / 3 := by
   rw [sphLowerCap, mem_sphCap]; constructor <;> intro h <;> linarith
@@ -391,7 +391,7 @@ theorem sphUpperCap_eq_image :
 
 variable (m) in
 /-- The intersection of the two enlarged hemispheres: the belt `{|z_last| ≤ 1/3}`. -/
-def sphBelt : Set (Sph (m + 1)) := sphLowerCap m ∩ sphUpperCap m
+noncomputable def sphBelt : Set (Sph (m + 1)) := sphLowerCap m ∩ sphUpperCap m
 
 theorem mem_sphBelt {z : Sph (m + 1)} :
     z ∈ sphBelt m ↔ -(1 / 3) ≤ sphHeight z ∧ sphHeight z ≤ 1 / 3 := by

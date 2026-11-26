@@ -1,6 +1,12 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Lift
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 public import RequestProject.Surgery.Main
 public import AkopyanResearch.PlanarTestGlobal
 

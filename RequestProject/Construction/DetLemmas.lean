@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.LinearAlgebra.Matrix.Block
 public import RequestProject.Cochain
 
 @[expose] public section

@@ -1,6 +1,13 @@
 module
 
-public import Mathlib
+public import Mathlib.LinearAlgebra.Matrix.Transvection
+public import Mathlib.Topology.Connected.PathConnected
+public import Mathlib.Topology.Instances.Matrix
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.SplitIfs
 
 @[expose] public section
 
@@ -120,7 +127,7 @@ lemma rot_sq_eq {i : Fin (k + 1)} (hi : i ≠ 0) :
   all_goals (try subst ha0); (try subst hb0); (try subst hai); (try subst hbi)
   all_goals simp only [transvection_mul_apply_same, transvection_mul_apply_of_ne,
     mul_transvection_apply_same, mul_transvection_apply_of_ne, ne_eq, not_false_eq_true, *]
-  all_goals simp [transvection, one_apply, single_apply, diagonal_apply, Function.update_apply,
+  all_goals simp [transvection, Matrix.one_apply, single_apply, diagonal_apply, Function.update_apply,
     eq_comm, *]
   all_goals first
     | (intro h; subst h; simp_all)

@@ -1,8 +1,13 @@
 module
 
+public import Mathlib.Algebra.BigOperators.Field
 public import Mathlib.Analysis.Convex.StdSimplex
 public import Mathlib.Topology.Order.Lattice
-public import Mathlib.Tactic
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.SplitIfs
 
 /-!
 # Retraction onto the codimension-two skeleton of a simplex
@@ -75,7 +80,7 @@ theorem continuous_weight (i : Index n) : Continuous (fun p : Simplex n => weigh
 
 @[fun_prop]
 theorem continuous_mass : Continuous (mass n) :=
-  continuous_finset_sum _ (fun i _ => continuous_weight n i)
+  continuous_finsetSum _ (fun i _ => continuous_weight n i)
 
 theorem mass_nonneg (p : Simplex n) : 0 ≤ mass n p :=
   Finset.sum_nonneg fun i _ => weight_nonneg n p i

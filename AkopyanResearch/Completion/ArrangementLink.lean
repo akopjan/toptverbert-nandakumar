@@ -1,5 +1,8 @@
 module
 
+public import Mathlib.Analysis.InnerProductSpace.PiL2
+public import Mathlib.Analysis.Normed.Module.FiniteDimension
+public import Mathlib.Topology.Algebra.Module.FiniteDimension
 public import AkopyanResearch.Completion.LocalLink
 public import RequestProject.Surgery.Avoid
 

@@ -1,1 +1,0 @@
-error: AkopyanResearch.lean:1:0: import AkopyanResearch.EquivariantPinch64 failed, environment already contains 'AkopyanResearch.homToCont' from AkopyanResearch.CoxeterTriangulation

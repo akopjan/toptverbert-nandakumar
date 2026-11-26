@@ -2,6 +2,7 @@ module
 
 public import AkopyanResearch.RowSylowGeometry
 public import AkopyanResearch.CoxeterChamber
+public import Mathlib.LinearAlgebra.Complex.FiniteDimensional
 public import Mathlib.Topology.Covering.FundamentalGroupCircle
 
 @[expose] public section

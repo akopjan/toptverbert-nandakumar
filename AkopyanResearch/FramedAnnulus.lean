@@ -4,7 +4,7 @@ public import Mathlib.Analysis.InnerProductSpace.Basic
 public import Mathlib.Analysis.InnerProductSpace.Continuous
 public import Mathlib.LinearAlgebra.LinearIndependent.Basic
 public import Mathlib.Topology.Instances.Real.Lemmas
-public import Mathlib.Tactic
+public import Mathlib.Tactic.FunProp
 
 
 @[expose] public section

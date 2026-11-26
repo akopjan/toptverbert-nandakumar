@@ -2,6 +2,8 @@ module
 
 public import AkopyanResearch.Completion.LoopProduct13Coordinates
 public import AkopyanResearch.Completion.FiniteProductTopology
+public import Mathlib.Algebra.Category.Grp.Biproducts
+public import Mathlib.Algebra.Category.Grp.Zero
 
 /-!
 # Homology coordinates for finite products of loop thirteen-spheres

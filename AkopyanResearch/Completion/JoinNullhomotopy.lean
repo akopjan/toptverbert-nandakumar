@@ -2,7 +2,8 @@ module
 
 public import AkopyanResearch.Completion.EquivariantJoinStep
 public import Mathlib.Topology.Homotopy.Basic
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Lift
+public import Mathlib.Tactic.Linarith
 
 /-!
 # Subgroup nullhomotopies through an explicit join step

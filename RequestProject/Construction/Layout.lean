@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Positivity
 public import RequestProject.Reduction
 
 @[expose] public section

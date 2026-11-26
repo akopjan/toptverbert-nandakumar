@@ -2,7 +2,7 @@
   "repository": "https://github.com/Deicyde/hatcher-at",
   "revision": "6d729567d1573a7e8785773a55de36d0e3ec5761",
   "upstream_lean": "4.34.1",
-  "port_lean": "4.35.0",
+  "port_lean": "4.36.0-rc2",
   "license": "Apache-2.0",
   "files": [
     {
@@ -39,7 +39,7 @@
       "module": "Hatcher.Excision.BinaryCover",
       "upstream_path": "Hatcher/Excision/BinaryCover.lean",
       "upstream_sha256": "6772915b57d2946e3b9740fd529007dbe487bdcfb1d10ffe870f079d1d3cf219",
-      "port_sha256": "f7019a38f77d10cdcfcbd7b206541a478fefd03e3be315e9ce77362e9c590271",
+      "port_sha256": "8b40acc708525ac2cfaed74271f0e0ba8439cfc34ec15511a26f26dc3eaa2e63",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Made private helpers public for Lean 4.35 module visibility: mono_toSSetMap_of_injective."
@@ -148,7 +148,7 @@
       "module": "Hatcher.Singular.GoodPairExcisionDiagram",
       "upstream_path": "Hatcher/Singular/GoodPairExcisionDiagram.lean",
       "upstream_sha256": "1996e202002c7f4468b1109e022ad7bb04d3493241cae9c720d8bf2c3768dee1",
-      "port_sha256": "2c57298f6bfb61a65ea6dccd8037e143dd5d7ae5d3ea90346552ed1236891c0b",
+      "port_sha256": "41b15222a2cbc664e2c4840d90d1b91934d6762fefebddfc71bb8d7773abcd53",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations."
       ]
@@ -289,7 +289,7 @@
       "module": "Hatcher.Sphere.HemisphereCharts",
       "upstream_path": "Hatcher/Sphere/HemisphereCharts.lean",
       "upstream_sha256": "aeeeecfa27c600ff5289a5834cc960dd1ac04693c1476b717d9de08b66eb4256",
-      "port_sha256": "7bb684f97eef42c9ba490d9a7287162a834ddee5b7d84c487303338a6e58cf3e",
+      "port_sha256": "74f0a570607a72cbdb6155c5c10ceca49c379b64f284632ca8c3753040938abe",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Made private helpers public for Lean 4.35 module visibility: rawNorthPole, rawSouthPole, rawNorthHemisphere, rawSouthHemisphere, rawEquator, rawStereographicChart, rawStereographicChart_apply, rawStereographicChart_symm_apply_coe, inner_stereographic'_symm, inner_rawStereographicChart, rawNorthHemisphere_chart_iff, rawSouthHemisphere_chart_iff, rawEquator_chart_iff, nestedSubtypeHomeomorph, rawNorthHemisphere_subset_northNeighborhood, rawSouthHemisphere_subset_southNeighborhood, rawEquator_subset_northNeighborhood, rawEquator_subset_southNeighborhood, northNeighborhoodRawHomeomorph, southNeighborhoodRawHomeomorph, northHemisphereRawHomeomorph, southHemisphereRawHomeomorph, equatorRawHomeomorph, rawNorthHemisphereHomeomorph, rawSouthHemisphereHomeomorph, rawNorthPoleInNorthNeighborhood, rawNorthChart_northPole, rawNorthChart_ne_zero_iff, rawOverlap, overlapRawHomeomorph, rawOverlapHomeomorph, rawEquatorHomeomorph, radiusTwoSphereHomeomorphRawSphere."
@@ -299,7 +299,7 @@
       "module": "Hatcher.Sphere.HemisphereNeighborhoodCover",
       "upstream_path": "Hatcher/Sphere/HemisphereNeighborhoodCover.lean",
       "upstream_sha256": "37e9223b2c1f9555ce2a1add2d921a1db0c233e22fe9a9fcba034c49dc4adbf6",
-      "port_sha256": "9c784da5c525d34da602772d33fcb1b04da35a10ceb5fc3cdc756f0386007ad2",
+      "port_sha256": "33ac937519fe67ca48cf121b44b38a036a8e03d189cf1b8ac76188ba6dcfb506",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Made private helpers public for Lean 4.35 module visibility: strongDeformationRetractOfHomeomorphSquare, northHemisphereStrongDeformationRetract, southHemisphereStrongDeformationRetract, equatorStrongDeformationRetract, hemisphereIntersectionStrongDeformationRetract, radiusTwoSpherePoint."
@@ -320,7 +320,7 @@
       "module": "Hatcher.Sphere.ZeroSphere",
       "upstream_path": "Hatcher/Sphere/ZeroSphere.lean",
       "upstream_sha256": "b4da4bf91689fff9cc2fd544b253fdd57cdbb0e60658040c58c42d043bcffc1e",
-      "port_sha256": "49f84f361d78fef458a71bc0cc2b4cf4aba82439daae6badecef55172a6e9553",
+      "port_sha256": "7b5b458d1c3f9be727e83a042e41071ade74bf469348c0dfbc364d052b6e9fcc",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Made private helpers public for Lean 4.35 module visibility: RawZeroSphere, rawZeroSpherePoint, rawZeroSpherePoint_cases, rawZeroSphereEquivBool, rawZeroSphereHomeomorphBool, zeroSphereHomeomorphTwoPoint."
@@ -336,7 +336,7 @@
       ]
     }
   ],
-  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "mathlib_revision": "9d581dfff2e41de989072ea63abf3daf69311520",
   "authors": [
     "Joël Riou",
     "Jack McCarthy"
@@ -347,7 +347,7 @@
     "note": "Attribution preserved in the relevant excision file headers."
   },
   "base_audit": {
-    "lean": "4.35.0",
+    "lean": "4.36.0-rc2",
     "modules": 12,
     "declarations": 745,
     "theorems": 609,

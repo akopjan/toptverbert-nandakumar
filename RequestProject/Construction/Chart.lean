@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Convex.Basic
+public import Mathlib.Tactic.LinearCombination
+public import Mathlib.Tactic.Positivity
 public import RequestProject.Reduction
 
 @[expose] public section

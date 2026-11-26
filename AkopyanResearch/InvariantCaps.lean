@@ -1,8 +1,11 @@
 module
 
+public import Mathlib.Basic.Real.Basic
 public import Mathlib.Data.Finset.Card
 public import Mathlib.Data.Fintype.Powerset
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Zify
 
 
 @[expose] public section

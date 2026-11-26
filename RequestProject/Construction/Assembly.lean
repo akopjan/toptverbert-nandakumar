@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.Safety
 public import RequestProject.Construction.Chart
 public import RequestProject.Construction.Obstacles

@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.Layout
 public import RequestProject.Boundary
 public import RequestProject.Surgery.Core
@@ -160,28 +159,28 @@ lemma continuous_zetaT (k : Fin 6) (A : Finset (Fin 6)) : Continuous (zetaT k A)
     refine continuous_const.div ?_ (fun x => (zden_pos k A x).ne')
     unfold zden
     exact continuous_const.max ((continuous_pp.comp (continuous_alp k)).add
-      (continuous_finset_sum _ fun t _ => continuous_pp.comp (continuous_gam k A t)))
+      (continuous_finsetSum _ fun t _ => continuous_pp.comp (continuous_gam k A t)))
   have h_vec : Continuous (fun x =>
       pp (alp k x) • (Pi.single (k.succAbove 0) 1 : Fin 6 → ℝ) +
       ∑ t, pp (gam k A t x) • (Pi.single (sig k A (k.succAbove t)) 1 : Fin 6 → ℝ)) :=
     ((continuous_pp.comp (continuous_alp k)).smul continuous_const).add
-      (continuous_finset_sum _ fun t _ =>
+      (continuous_finsetSum _ fun t _ =>
         (continuous_pp.comp (continuous_gam k A t)).smul continuous_const)
   exact h_scalar.smul h_vec
 
 lemma continuous_rho : Continuous rho := by
   unfold rho
   refine Continuous.add ?_ ?_
-  · exact (continuous_const.sub (continuous_finset_sum _ fun p _ => continuous_chi _ _)).smul
+  · exact (continuous_const.sub (continuous_finsetSum _ fun p _ => continuous_chi _ _)).smul
       continuous_thetaT
-  · exact continuous_finset_sum _ fun p _ => (continuous_chi _ _).smul (continuous_zetaT _ _)
+  · exact continuous_finsetSum _ fun p _ => (continuous_chi _ _).smul (continuous_zetaT _ _)
 
 lemma continuous_mhat (k : Fin 6) (A : Finset (Fin 6)) : Continuous (mhat k A) :=
   continuous_pp.comp (continuous_mn5 fun t => continuous_gam k A t)
 
 lemma continuous_F0 (q : Fin 6 → Fin 6 → ℝ) : Continuous (F0 q) := by
   unfold F0
-  exact ((continuous_H0 q).comp continuous_rho).add (continuous_finset_sum _ fun p _ =>
+  exact ((continuous_H0 q).comp continuous_rho).add (continuous_finsetSum _ fun p _ =>
     (continuous_const.mul (continuous_mhat _ _)).smul continuous_const)
 
 end

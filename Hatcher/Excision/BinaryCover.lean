@@ -127,15 +127,15 @@ def deletedSubsetPairHom :
     TopPair.of
         (TopCat.ofHom
           (ContinuousMap.inclusion
-            (Set.inter_subset_right : A \ Z ⊆ Zᶜ)))
+            (fun {_} hx => Set.mem_compl hx.2 : A \ Z ⊆ Zᶜ)))
         (IsEmbedding.inclusion
-          (Set.inter_subset_right : A \ Z ⊆ Zᶜ)) ⟶
+          (fun {_} hx => Set.mem_compl hx.2 : A \ Z ⊆ Zᶜ)) ⟶
       TopPair.ofSubset A :=
   TopPair.ofHom
     (TopCat.ofHom ⟨Subtype.val, continuous_subtype_val⟩)
     (TopCat.ofHom
       (ContinuousMap.inclusion
-        (Set.inter_subset_left : A \ Z ⊆ A)))
+        (Set.sdiff_subset : A \ Z ⊆ A)))
     rfl
 
 /-- The deleted-subset pair map is definitionally the binary-cover pair map
@@ -168,7 +168,7 @@ theorem deletedSubsetHomologyMap_isIso_of_closure_subset_interior
       (deletedSubsetPairHom A Z)) := by
   rw [deletedSubsetPairHom_eq_coverPairHom A Z
     (deletedSubsetCoverCondition A Z h)]
-  infer_instance
+  exact coverHomologyMap_isIso (deletedSubsetCoverCondition A Z h) R n
 
 /-- The `IsIso` instance for deleted-subset excision. The excision hypothesis
 is packaged as a `Fact` because the canonical map itself is proof-independent. -/

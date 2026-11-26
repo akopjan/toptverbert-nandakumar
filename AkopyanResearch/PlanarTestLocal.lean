@@ -2,7 +2,10 @@ module
 
 public import Mathlib.Geometry.Manifold.Instances.Sphere
 public import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
-public import Mathlib.Tactic
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
 
 
 @[expose] public section

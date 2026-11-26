@@ -4,7 +4,7 @@ public import AkopyanResearch.BoundaryRegularization
 public import Mathlib.Analysis.Normed.Operator.BoundedLinearMaps
 public import Mathlib.Analysis.Normed.Group.Constructions
 public import Mathlib.Topology.Instances.Discrete
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Linarith
 
 
 @[expose] public section

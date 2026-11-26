@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Field
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Lift
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.SplitIfs
+public import Mathlib.Topology.Compactness.Compact
+public import Mathlib.Topology.Instances.Real.Lemmas
 public import AkopyanResearch.Completion.ProductExpectation
 public import AkopyanResearch.Completion.MatchingExtraction
 
@@ -28,6 +36,7 @@ abbrev Simplex (I : Type*) [Fintype I] :=
   {x : I → ℝ // (∀ i, 0 ≤ x i) ∧ (∑ i, x i) = 1}
 
 instance simplex_compactSpace (I : Type*) [Fintype I] : CompactSpace (Simplex I) := by
+  change CompactSpace ↥({x : I → ℝ | (∀ i, 0 ≤ x i) ∧ (∑ i, x i) = 1} : Set (I → ℝ))
   apply isCompact_iff_compactSpace.mp
   have hclosed : IsClosed {x : I → ℝ | (∀ i, 0 ≤ x i) ∧ (∑ i, x i) = 1} := by
     have hnonneg := isClosed_iInter (fun i : I =>

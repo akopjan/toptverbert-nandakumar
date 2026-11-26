@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.PyrAlg
 
 @[expose] public section

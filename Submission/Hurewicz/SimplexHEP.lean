@@ -149,7 +149,9 @@ corresponds to the image of the boundary inclusion of the disk. -/
 theorem mem_bdry_iff_mem_range (x : stdSimplex ℝ (Fin (j + 1))) :
     x ∈ bdry j ↔
       simplexHomeoDisk' j x ∈ Set.range (TopCat.diskBoundaryIncl.{0} j).hom := by
-  rw [range_diskBoundaryIncl, Set.mem_setOf_eq, simplexHomeoDisk'_down]
+  rw [range_diskBoundaryIncl]
+  change x ∈ bdry j ↔ ‖((simplexHomeoDisk' j x).down : EuclideanSpace ℝ (Fin j))‖ = 1
+  rw [simplexHomeoDisk'_down]
   exact mem_bdry.trans (norm_simplexHomeoBall_eq_one_iff x).symm
 
 /-- **Compression of a simplex into `A` rel its boundary.**  If all the relative homotopy groups

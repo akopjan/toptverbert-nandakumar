@@ -39,10 +39,10 @@ def complementNeighborhoodPair (h : GoodPairData P) : TopPair.{w} :=
   TopPair.of
     (TopCat.ofHom
       (ContinuousMap.inclusion
-        (Set.inter_subset_right :
+        (fun {_} hx => Set.mem_compl hx.2 :
           h.V \ Set.range P.map ⊆ (Set.range P.map)ᶜ)))
     (Topology.IsEmbedding.inclusion
-      (Set.inter_subset_right :
+      (fun {_} hx => Set.mem_compl hx.2 :
         h.V \ Set.range P.map ⊆ (Set.range P.map)ᶜ))
 
 /-- The target complement pair
@@ -52,11 +52,11 @@ def pointQuotientComplementNeighborhoodPair (h : GoodPairData P) :
   TopPair.of
     (TopCat.ofHom
       (ContinuousMap.inclusion
-        (Set.inter_subset_right :
+        (fun {_} hx => Set.mem_compl hx.2 :
           h.pointQuotientNeighborhood \ {pointQuotientPoint P} ⊆
             ({pointQuotientPoint P} : Set (pointQuotient P))ᶜ)))
     (Topology.IsEmbedding.inclusion
-      (Set.inter_subset_right :
+      (fun {_} hx => Set.mem_compl hx.2 :
         h.pointQuotientNeighborhood \ {pointQuotientPoint P} ⊆
           ({pointQuotientPoint P} : Set (pointQuotient P))ᶜ))
 

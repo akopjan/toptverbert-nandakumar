@@ -1,7 +1,10 @@
 module
 
 public import Mathlib.Analysis.InnerProductSpace.Projection.FiniteDimensional
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Abel
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.NormNum
 
 
 @[expose] public section

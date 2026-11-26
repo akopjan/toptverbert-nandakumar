@@ -1,7 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/scratch/9db1b532943d/akopyan-completion/verification/d18-compiled-interface/compare_compiled_interfaces.py.txt", line 198, in <module>
-    sys.exit(main())
-             ^^^^^^
-  File "/workspace/scratch/9db1b532943d/akopyan-completion/verification/d18-compiled-interface/compare_compiled_interfaces.py.txt", line 138, in main
-    raise RuntimeError(f'{module} inspection failed; see its log')
-RuntimeError: PalomarSolution inspection failed; see its log

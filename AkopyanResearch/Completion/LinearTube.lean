@@ -71,6 +71,8 @@ def Tube : Set E := {x | (coordinates L x).1.val ∉ Z ∧
   ‖(coordinates L x).2‖ < radius L Z (coordinates L x).1}
 
 theorem isOpen_tube (hZ : IsClosed Z) : IsOpen (Tube L Z) := by
+  unfold Tube
+  rw [Set.ofPred_and]
   apply IsOpen.inter
   · exact hZ.isOpen_compl.preimage (continuous_subtype_val.comp
       (continuous_fst.comp (coordinates L).continuous))

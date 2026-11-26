@@ -35,6 +35,7 @@ instance : CompactSpace PairSpace := by
 
 set_option backward.isDefEq.respectTransparency false in
 instance : CompactSpace UnitDirections := by
+  change CompactSpace ↥({w : Comm6 | ‖w‖ = 1} : Set Comm6)
   apply isCompact_iff_compactSpace.mp
   change IsCompact ({w : Comm6 | ‖w‖ = 1} : Set Comm6)
   simpa only [Metric.sphere, dist_zero_right] using isCompact_sphere (0 : Comm6) 1

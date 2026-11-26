@@ -2,7 +2,7 @@ module
 public import Mathlib.Algebra.Order.BigOperators.Group.Finset
 public import Mathlib.Data.Fintype.Perm
 public import Mathlib.Basic.Real.Basic
-public import Mathlib.Tactic
+public import Mathlib.Tactic.SplitIfs
 
 @[expose] public section
 

@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.LinearAlgebra.Dimension.Constructions
+public import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
 public import RequestProject.Boundary
 
 @[expose] public section

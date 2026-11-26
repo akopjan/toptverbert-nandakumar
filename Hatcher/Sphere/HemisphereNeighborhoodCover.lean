@@ -192,10 +192,10 @@ theorem equatorNonempty (n : ℕ) : Nonempty (equator n) :=
 
 /-- A point of the literal intersection of the two closed hemispheres. -/
 noncomputable def hemisphereIntersectionPoint (n : ℕ) :
-    ↑(northHemisphere n ∩ southHemisphere n) :=
-  ⟨equatorPoint n, by
-    rw [hemisphere_intersection]
-    exact (equatorPoint n).2⟩
+    ↑(northHemisphere.{u} n ∩ southHemisphere.{u} n) :=
+  ⟨(equatorPoint.{u} n).1, by
+    rw [hemisphere_intersection.{u}]
+    exact (equatorPoint.{u} n).2⟩
 
 /-- The intersection of the two closed hemispheres is nonempty, as required
 at the terminal end of the reduced Mayer--Vietoris sequence. -/

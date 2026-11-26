@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Normed.Module.Basic
+public import Mathlib.Tactic.Abel
+public import Mathlib.Tactic.Lift
 public import RequestProject.Surgery.GLPath
 
 @[expose] public section
@@ -86,7 +88,7 @@ lemma norm_lin_le (c : Fin (k+1) → V) (x : ℝ × (Fin k → ℝ)) :
 lemma continuous_lin :
     Continuous (fun p : (Fin (k+1) → V) × (ℝ × (Fin k → ℝ)) => lin p.1 p.2) := by
   unfold lin
-  refine continuous_finset_sum _ fun i _ => ?_
+  refine continuous_finsetSum _ fun i _ => ?_
   exact ((continuous_apply i).comp (continuous_toVec.comp continuous_snd)).smul
     ((continuous_apply i).comp continuous_fst)
 
@@ -147,7 +149,7 @@ lemma exists_frame_path (Q : V →ₗ[ℝ] (Fin (k+1) → ℝ)) (a b : Fin (k+1)
     rw [this, Matrix.mulVec_mulVec, Matrix.mul_nonsing_inv _ (Ne.isUnit ha), Matrix.one_mulVec]
   have hsec_cont : Continuous sec := by
     unfold sec
-    refine continuous_finset_sum _ fun i _ => ?_
+    refine continuous_finsetSum _ fun i _ => ?_
     exact ((continuous_apply i).comp (continuous_const.matrix_mulVec continuous_id)).smul
       continuous_const
   let lift : Matrix (Fin (k+1)) (Fin (k+1)) ℝ → (Fin (k+1) → V) :=

@@ -1,6 +1,0 @@
-module
-
-public theorem Fixture.successorWitness (n : Nat) : ∃ m : Nat, m = n + 1 := by
-  exact ⟨n + 1, rfl⟩
-
-#print axioms Fixture.successorWitness

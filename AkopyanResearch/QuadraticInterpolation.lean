@@ -1,10 +1,11 @@
 module
 
+public import Mathlib.Algebra.Module.Pi
 public import Mathlib.Basic.Real.Basic
 public import Mathlib.LinearAlgebra.Span.Basic
 public import Mathlib.Data.Finset.Card
 public import Mathlib.Algebra.BigOperators.Pi
-public import Mathlib.Tactic
+public import Aesop
 
 
 @[expose] public section

@@ -1,6 +1,8 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Normed.Operator.Basic
+public import Mathlib.LinearAlgebra.Matrix.DotProduct
+public import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
 public import RequestProject.Surgery.PairCancel
 
 @[expose] public section

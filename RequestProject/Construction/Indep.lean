@@ -1,6 +1,7 @@
 module
 
-public import Mathlib
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.LinearAlgebra.Matrix.ToLinearEquiv
 public import RequestProject.Balance
 
 @[expose] public section

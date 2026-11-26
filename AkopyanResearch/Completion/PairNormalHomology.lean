@@ -66,8 +66,10 @@ theorem safe_iff_tests (x : RawNormal) :
   simp only [ne_eq, Prod.mk.injEq, not_and_or]
 
 def normalHomeomorph :
-    Normal ≃ₜ LinearPairComplementHomology.Complement firstTest secondTest :=
-  Homeomorph.setCongr (Set.ext safe_iff_tests)
+    Normal ≃ₜ LinearPairComplementHomology.Complement firstTest secondTest := by
+  change ↥({x : RawNormal | PairDeformation.Safe x} : Set RawNormal) ≃ₜ
+    ↥({x : RawNormal | firstTest x ≠ 0 ∧ secondTest x ≠ 0} : Set RawNormal)
+  exact Homeomorph.setCongr (Set.ext safe_iff_tests)
 
 universe u v
 variable {C : Type u} [Category.{v} C] [Abelian C] [HasCoproducts.{0} C]

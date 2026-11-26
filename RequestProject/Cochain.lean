@@ -1,6 +1,17 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.Algebra.Ring.Commute
+public import Mathlib.Data.Fin.Tuple.Basic
+public import Mathlib.Data.Finset.Max
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
+public import Mathlib.LinearAlgebra.Matrix.Nondegenerate
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
 
 @[expose] public section
 

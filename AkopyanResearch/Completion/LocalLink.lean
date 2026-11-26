@@ -1,6 +1,10 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Normed.Operator.Basic
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Topology.MetricSpace.Basic
 
 /-!
 # Explicit normal spheres in a subspace-arrangement complement

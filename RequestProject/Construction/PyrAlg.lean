@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.Local
 public import RequestProject.Construction.Indep
 

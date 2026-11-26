@@ -27,7 +27,10 @@ def mapVertices (f : V → W) (x : Join C V) : Join C W := by
   classical
   refine ⟨fun i => ∑ v : V, if f v = i.2 then x.val (i.1, v) else 0, ?_, ?_, ?_⟩
   · intro i
-    exact Finset.sum_nonneg fun v _ => ite_nonneg (x.property.1 _) le_rfl
+    refine Finset.sum_nonneg fun v _ => ?_
+    split_ifs
+    · exact x.property.1 _
+    · exact le_rfl
   · calc
       (∑ i : C × W, ∑ v : V, if f v = i.2 then x.val (i.1, v) else 0) =
           ∑ c : C, ∑ v : V, ∑ w : W, if f v = w then x.val (c, v) else 0 := by

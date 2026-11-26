@@ -124,7 +124,7 @@ theorem homotopic_of_levelHomotopy_along_null_loop {f g : Ω^ (Fin n) X x₀}
   let Fb : C((𝕀 n) × I, X) :=  -- bottom `fun ⟨⟨y⟩, t⟩ ↦ H.toFun ⟨t, y⟩`
     H.toContinuousMap.comp <|
     ((ContinuousMap.id _).prodMap ⟨ULift.down, continuous_uliftDown⟩).comp ContinuousMap.prodSwap
-  let Fs : C(((∂𝕀 n) × I) × I, X) := ⟨fun ⟨⟨⟨y⟩, t⟩, s⟩ ↦ pnull.some ⟨s, t⟩, by fun_prop⟩ -- sides
+  let Fs : C(((∂𝕀 n) × I) × I, X) := ⟨fun p ↦ pnull.some (p.2, p.1.2), by fun_prop⟩ -- sides
   have : Fb ∘ ((TopCat.cubeBoundaryIncl n).hom.prodMap (ContinuousMap.id I)) =
       Fs ∘ fun x ↦ (x, 0) := by
     funext ⟨y, t⟩

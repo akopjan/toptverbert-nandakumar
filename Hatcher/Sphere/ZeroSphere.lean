@@ -28,7 +28,7 @@ namespace Hatcher.Sphere
 
 universe w
 
-abbrev RawZeroSphere :=
+noncomputable abbrev RawZeroSphere :=
   Metric.sphere (0 : EuclideanSpace ℝ (Fin 1)) 1
 
 noncomputable def rawZeroSpherePoint (b : Bool) : RawZeroSphere :=

@@ -31,11 +31,11 @@ jobs:
           import pathlib
           import re
           root = pathlib.Path('.')
-          assert (root / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.35.0'
+          assert (root / 'lean-toolchain').read_text().strip() == 'leanprover/lean4:v4.36.0-rc2'
           manifest = json.loads((root / 'lake-manifest.json').read_text())
           packages = manifest['packages']
           mathlib = next(p for p in packages if p['name'] == 'mathlib')
-          assert mathlib['rev'] == '56a005855ea17e0b0958f73ec801ae140b0a1679'
+          assert mathlib['rev'] == '9d581dfff2e41de989072ea63abf3daf69311520'
           for package in packages:
               assert package['type'] == 'git', package
               assert re.fullmatch('[0-9a-f]{40}', package['rev']), package

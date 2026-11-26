@@ -4,7 +4,10 @@ public import Mathlib.Algebra.BigOperators.Fin
 public import Mathlib.Basic.Real.Basic
 public import Mathlib.Data.Fin.SuccPred
 public import Mathlib.Data.Fin.Tuple.Sort
-public import Mathlib.Tactic
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Ring
 
 
 @[expose] public section

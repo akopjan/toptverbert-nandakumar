@@ -1,7 +1,7 @@
 {
   "archived_file": "Challenge36.lean.txt",
   "original_challenge_sha256": "cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05",
-  "unchanged_solution_sha256": "41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23",
+  "unchanged_solution_sha256": "19b398c31f613a13421760c4713b021e7a94d3fb6ad018f490c0e02861e6d5f8",
   "original_theorems": [
     "AkopyanSixfold.tverberg_counterexample",
     "AkopyanSixfold.convex_partition_counterexample"

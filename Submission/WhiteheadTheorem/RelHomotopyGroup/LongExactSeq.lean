@@ -156,7 +156,7 @@ noncomputable def g'
     Ω^ (Fin (n+1)) X a :=
   let g'' := kerBdSubsetImJStar.g'' _ _ _ _ f' hf0
   let H : HomotopyRel .. := Quotient.eq.mp hf0 |>.some
-  ⟨g''.comp (toContinuousMap Cube.splitAtLast),
+  ⟨g''.comp (ContinuousMap.ofClass Cube.splitAtLast),
   fun y ⟨i, hi⟩ ↦ by
     by_cases hin : i = Fin.last n  -- y n = 0 ∨ y n = 1
     · rw [hin] at hi
@@ -269,7 +269,7 @@ theorem kerBdSubsetImJStar (f : π_rel (n + 1) X A a) :
   change jStar' .. = _
   exact Quotient.eq.mpr <| Nonempty.intro <|
     { toFun := ContinuousMap.comp (kerBdSubsetImJStar.G'' _ _ _ _ f' hf0) <|
-        ContinuousMap.prodMap (ContinuousMap.id _) (toContinuousMap Cube.splitAtLast)
+        ContinuousMap.prodMap (ContinuousMap.id _) (ContinuousMap.ofClass Cube.splitAtLast)
       continuous_toFun := ContinuousMap.continuous _
       map_zero_left y := by  -- G₀ = g'
         simp only [comp_apply, prodMap_apply, coe_id, ContinuousMap.coe_coe, Prod.map_apply, id_eq,
@@ -366,7 +366,7 @@ theorem ker_iStar_supset_im_bd (f : π_ n A a) :
   apply Eq.symm
   -- `0 = i* ∂ g` via the homotopy `g'`.
   exact Quotient.eq.mpr <| Nonempty.intro <|
-    { toFun := g'.val.comp (toContinuousMap Cube.splitAtLast.symm)
+    { toFun := g'.val.comp (ContinuousMap.ofClass Cube.splitAtLast.symm)
       continuous_toFun := ContinuousMap.continuous _
       map_zero_left y := by
         simp only [comp_apply, ContinuousMap.coe_coe, GenLoop.const, const_apply]
@@ -403,7 +403,7 @@ theorem ker_iStar_subset_im_bd (f : π_ n A a) :
   change iStar' .. = _ at hf0
   let H' : HomotopyRel .. := Quotient.eq.mp hf0.symm |>.some
   let H : RelGenLoop (n + 1) X A a :=
-    ⟨ H'.toContinuousMap.comp (toContinuousMap Cube.splitAtLast),
+    ⟨ H'.toContinuousMap.comp (ContinuousMap.ofClass Cube.splitAtLast),
       by
         apply RelGenLoop.mem_of_boundaryLid_and_boundaryJar
         · -- `H'` maps the top face into `A`

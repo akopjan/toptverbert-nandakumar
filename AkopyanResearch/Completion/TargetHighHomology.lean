@@ -15,6 +15,7 @@ then computed by the actual critical-pair path coordinates.
 
 @[expose] public section
 set_option autoImplicit false
+set_option maxHeartbeats 1000000
 set_option backward.isDefEq.respectTransparency false
 set_option backward.defeqAttrib.useBackward true
 noncomputable section

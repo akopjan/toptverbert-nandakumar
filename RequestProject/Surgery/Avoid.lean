@@ -1,6 +1,16 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.Module.Submodule.Union
+public import Mathlib.Analysis.Convex.Segment
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.LinearAlgebra.Dimension.Constructions
+public import Mathlib.LinearAlgebra.FiniteDimensional.Lemmas
+public import Mathlib.LinearAlgebra.LinearIndependent.Basic
+public import Mathlib.Order.Interval.Set.Infinite
+public import Mathlib.Tactic.Abel
+public import Mathlib.Tactic.GCongr
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.Ring
 
 @[expose] public section
 

@@ -1,6 +1,9 @@
 module
 
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Pi
+public import Mathlib.Algebra.BigOperators.Ring.Finset
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Basic.Real.Basic
 
 /-!
 # Finite product expectations and active coordinates

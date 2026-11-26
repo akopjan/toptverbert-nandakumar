@@ -1,2 +1,0 @@
-usage: check-statements.py [-h] [--output-dir OUTPUT_DIR]
-check-statements.py: error: Statement-audit artifacts must be written under verification/.

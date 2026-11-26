@@ -42,18 +42,18 @@ def affineContraction {T : Type w} [TopologicalSpace T]
     rw [← add_smul, sub_add_cancel, one_smul, e.symm_apply_apply]
 
 abbrev Sphere (n : ℕ) : Type w := TopCat.sphere.{w} (n + 1)
-abbrev basepoint (n : ℕ) : Sphere.{w} n := ProductHemisphereCover.commonPoint n
-abbrev Total (n : ℕ) : Type w := Submission.PathSpace (Sphere.{w} n) (basepoint n)
+abbrev basepoint (n : ℕ) : Sphere.{w} n := ProductHemisphereCover.commonPoint.{w} n
+abbrev Total (n : ℕ) : Type w := Submission.PathSpace (Sphere.{w} n) (basepoint.{w} n)
 abbrev Fibre (n : ℕ) : Type w :=
-  Submission.PathFibre (Sphere.{w} n) (basepoint n) (basepoint n)
+  Submission.PathFibre (Sphere.{w} n) (basepoint.{w} n) (basepoint.{w} n)
 
 def northBase (n : ℕ) : Hatcher.Sphere.northNeighborhood.{w} n :=
-  ⟨basepoint n, Hatcher.Sphere.northHemisphere_subset_northNeighborhood n
-    (ProductHemisphereCover.northPoint n).property⟩
+  ⟨basepoint.{w} n, Hatcher.Sphere.northHemisphere_subset_northNeighborhood.{w} n
+    (ProductHemisphereCover.northPoint.{w} n).property⟩
 
 def southBase (n : ℕ) : Hatcher.Sphere.southNeighborhood.{w} n :=
-  ⟨basepoint n, Hatcher.Sphere.southHemisphere_subset_southNeighborhood n
-    (ProductHemisphereCover.southPoint n).property⟩
+  ⟨basepoint.{w} n, Hatcher.Sphere.southHemisphere_subset_southNeighborhood.{w} n
+    (ProductHemisphereCover.southPoint.{w} n).property⟩
 
 def northContraction (n : ℕ) :
     Submission.ContractionData (Hatcher.Sphere.northNeighborhood.{w} n) (northBase n) :=

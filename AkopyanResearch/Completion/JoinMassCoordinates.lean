@@ -33,7 +33,10 @@ def fromMass (z : Mass C) (σ : C → V) : Join C V :=
   ⟨fun i => if i.2 = σ i.1 then z.val i.1 else 0, by
     refine ⟨?_, ?_, ?_⟩
     · intro i
-      exact ite_nonneg (z.property.1 i.1) le_rfl
+      dsimp only
+      split_ifs
+      · exact z.property.1 i.1
+      · exact le_rfl
     · rw [Fintype.sum_prod_type]
       simpa using z.property.2
     · intro c a b ha hb

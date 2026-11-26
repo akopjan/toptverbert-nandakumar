@@ -50,8 +50,8 @@ The challenge is specified in `Challenge.lean` and checked by the Palomar Compar
 ## Verification
 
 ### Prerequisites
-- Lean 4 toolchain `leanprover/lean4:v4.35.0`
-- Mathlib `v4.35.0` (`56a005855ea17e0b0958f73ec801ae140b0a1679`)
+- Lean 4 toolchain `leanprover/lean4:v4.36.0-rc2`
+- Mathlib `v4.36.0-rc2` (`9d581dfff2e41de989072ea63abf3daf69311520`)
 
 ### Build & Check
 ```bash

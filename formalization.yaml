@@ -72,7 +72,7 @@ sources:
       5d central blocking markers for all d ≥ 18 (exists_isBlocking_5d) and
       the conditional d ≥ 18 reduction (convex_partition_counterexample_ge_18)
       in Solution.lean (preserved byte-for-byte, SHA-256
-      41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23), and
+      19b398c31f613a13421760c4713b021e7a94d3fb6ad018f490c0e02861e6d5f8), and
       developed the initial 43 quadratic arrangement and equivariant collapse
       modules in AkopyanResearch/. The later completion in
       AkopyanResearch/Completion/ (directed and maintained by Arseniy Akopyan
@@ -91,7 +91,7 @@ sources:
     relationship: "adapts"
     license: "Apache-2.0"
     note: >-
-      Selected proof modules were ported from Lean 4.32.2 to Lean 4.35.0 with
+      Selected proof modules were ported from Lean 4.32.2 to Lean 4.36.0-rc2 with
       original headers and Apache-2.0 license retained to support the relative
       Hurewicz connectivity step in the d > 17 completion.
   - title: "hatcher-at: singular homology, excision, Mayer-Vietoris and good pairs"
@@ -106,7 +106,7 @@ sources:
     note: >-
       Selected modules (including excision sources crediting Joël Riou's
       excision repository at commit 8b56cd0c8e5f39a7c2f36418c80b298e469596a6)
-      were ported from Lean 4.34.1 to Lean 4.35.0 with original headers and
+      were ported from Lean 4.34.1 to Lean 4.36.0-rc2 with original headers and
       Apache-2.0 license retained to support the singular homology and
       Mayer-Vietoris calculations in the d > 17 completion.
 
@@ -135,7 +135,7 @@ related_formalizations:
 
 status:
   scope: >-
-    Sorry-free Lean 4.35.0 formalization of AkopyanSixfold.tverberg_counterexample
+    Sorry-free Lean 4.36.0-rc2 formalization of AkopyanSixfold.tverberg_counterexample
     (unconditional proof of Theorem A from paper/manuscript.tex: an almost
     six-embedding Δ³⁵ → ℝ⁶), AkopyanSixfold.almostSix_ninety (unconditional
     almost six-embedding Δ⁸⁹ → ℝ¹⁶), and

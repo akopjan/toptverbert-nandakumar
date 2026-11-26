@@ -2,7 +2,6 @@ module
 
 public import Mathlib.LinearAlgebra.Pi
 public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-public import Mathlib.Tactic
 
 
 @[expose] public section

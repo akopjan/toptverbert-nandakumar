@@ -2,8 +2,8 @@
   "repository": "https://github.com/Vilin97/homotopy-groups-lean",
   "revision": "c66523531ff172d7f41913d94e56921e790a1b47",
   "upstream_source_root": "examples/submissions/sphere_lower_homotopy_subsingleton",
-  "port_lean": "4.35.0",
-  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "port_lean": "4.36.0-rc2",
+  "mathlib_revision": "9d581dfff2e41de989072ea63abf3daf69311520",
   "license": "Apache-2.0",
   "files": [
     {
@@ -38,7 +38,7 @@
       "module": "Submission.Homotopy.ContractionData",
       "upstream_path": "Submission/Homotopy/ContractionData.lean",
       "upstream_sha256": "0c990451941bbdb240e32251e8d5ccedb7557580fd20f8378a860f730eac68fa",
-      "port_sha256": "e17a489039652f07bf0874c009645ae3365972e40e7860bb798a519612356464",
+      "port_sha256": "f3c3eebd2de81b032fae6582ab01698b6ddc9907621391ed3aeeb5a021d6bdf7",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Replaced deprecated Set.mem_setOf_eq by Set.mem_ofPred_eq."

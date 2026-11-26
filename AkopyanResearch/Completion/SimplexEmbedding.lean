@@ -1,5 +1,15 @@
 module
-public import Mathlib
+public import Mathlib.Algebra.BigOperators.Fin
+public import Mathlib.Basic.Real.Basic
+public import Mathlib.Data.Fintype.BigOperators
+public import Mathlib.Data.Fin.Tuple.Basic
+public import Mathlib.Logic.Equiv.Fin.Basic
+public import Mathlib.Tactic.Continuity
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Topology.Algebra.Module.Basic
+public import Mathlib.Topology.Constructions
+public import Mathlib.Topology.Instances.Real.Lemmas
+public import Mathlib.Topology.TietzeExtension
 
 @[expose] public section
 

@@ -1,7 +1,7 @@
 module
 
 public import Mathlib.LinearAlgebra.Finsupp.LinearCombination
-public import Mathlib.Tactic
+public import Mathlib.Tactic.Abel
 
 
 @[expose] public section

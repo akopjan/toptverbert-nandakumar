@@ -60,8 +60,10 @@ theorem test_joint_zero (b : Bool) (x : commonEquality)
   · exact Prod.ext hg hf
 
 def orderedComplementHomeomorph (b : Bool) :
-    CommonComplement ≃ₜ LinearPairComplementHomology.Complement (test b) (test (!b)) :=
-  Homeomorph.setCongr (by
+    CommonComplement ≃ₜ LinearPairComplementHomology.Complement (test b) (test (!b)) := by
+  change ↥({x : commonEquality | x.val.1 ≠ 0 ∧ x.val.2 ≠ 0} : Set commonEquality) ≃ₜ
+    ↥({x : commonEquality | test b x ≠ 0 ∧ test (!b) x ≠ 0} : Set commonEquality)
+  exact Homeomorph.setCongr (by
     ext x
     cases b <;> simp [test, firstTest, secondTest, firstLinear, secondLinear, and_comm])
 

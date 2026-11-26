@@ -39,7 +39,7 @@ PROOF_THEOREMS = {
 }
 INTERFACE_NAMES = ('simplex', 'DisjointSupports', 'IsAlmostSixEmbedding',
                    'Ambient', 'Body', 'unitBall', 'IsSixPartition')
-ORIGINAL_SOLUTION_SHA256 = '41225428eeac553dc40649334f81dbdf25414cdebf141cb1618ddcd014544d23'
+ORIGINAL_SOLUTION_SHA256 = '19b398c31f613a13421760c4713b021e7a94d3fb6ad018f490c0e02861e6d5f8'
 ORIGINAL_CHALLENGE36_SHA256 = 'cfd2f4648eee325094309614e72c032d7822cb1c23f09e941b86c36c667cff05'
 
 
@@ -290,6 +290,9 @@ def main() -> int:
         try:
             stripped[name] = strip_comments_and_strings(source)
             check_delimiters(source)
+            umbrella = imports(source) & {'Mathlib', 'Mathlib.Tactic'}
+            if umbrella:
+                errors.append(f'{source_paths[name]}: umbrella imports are disallowed: {sorted(umbrella)}')
         except ValueError as exc:
             errors.append(f'{name}: {exc}')
 
@@ -299,15 +302,15 @@ def main() -> int:
         errors.append('Duplicate Lake library targets')
     if 'Audit' not in libraries or 'Audit' not in lakefile.get('defaultTargets', []):
         errors.append('Axiom audit is not in default Lake targets')
-    if lakefile.get('require', [{}])[0].get('rev') != 'v4.35.0':
+    if lakefile.get('require', [{}])[0].get('rev') != 'v4.36.0-rc2':
         errors.append('Mathlib version differs from the pinned Lean toolchain')
-    if (ROOT / 'lean-toolchain').read_text().strip() != 'leanprover/lean4:v4.35.0':
-        errors.append('Lean toolchain version differs from 4.35.0')
+    if (ROOT / 'lean-toolchain').read_text().strip() != 'leanprover/lean4:v4.36.0-rc2':
+        errors.append('Lean toolchain version differs from 4.36.0-rc2')
     try:
         manifest = json.loads((ROOT / 'lake-manifest.json').read_text())
         dependencies = {entry['name']: entry for entry in manifest['packages']}
-        if dependencies['mathlib']['rev'] != '56a005855ea17e0b0958f73ec801ae140b0a1679':
-            errors.append('Manifest does not pin the verified Mathlib v4.35.0 commit')
+        if dependencies['mathlib']['rev'] != '9d581dfff2e41de989072ea63abf3daf69311520':
+            errors.append('Manifest does not pin the verified Mathlib v4.36.0-rc2 commit')
         for name, dependency in dependencies.items():
             if dependency.get('type') != 'git' or not re.fullmatch(r'[0-9a-f]{40}', dependency.get('rev', '')):
                 errors.append(f'Dependency {name} is not pinned to a full git commit')

@@ -2,7 +2,7 @@ module
 
 public import Mathlib.Data.Nat.Choose.Basic
 public import Mathlib.Algebra.BigOperators.Group.Finset.Basic
-public import Mathlib.Tactic
+public import Mathlib.Tactic.NormNum
 
 
 @[expose] public section

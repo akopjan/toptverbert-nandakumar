@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.Map
 
 @[expose] public section

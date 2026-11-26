@@ -30,7 +30,7 @@
     }
   ],
   "audit": {
-    "lean": "4.35.0",
+    "lean": "4.36.0-rc2",
     "modules": 2,
     "declarations": 96,
     "theorems": 69,

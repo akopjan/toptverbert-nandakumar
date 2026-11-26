@@ -93,11 +93,14 @@ theorem partialComplement_homology_zero (hS : S.Nonempty)
 
 def fullComplementHomeomorph :
     QuadComplement S ≃ₜ ↥(partialComplementSet S Finset.univ) :=
-  originalComplementHomeomorph.trans (Homeomorph.setCongr (by
-    ext x
-    change (∀ m : MatchingIndex S, x ∉ atomSet S m) ↔
-      ∀ m ∈ (Finset.univ : Finset (MatchingIndex S)), x ∉ atomSet S m
-    simp))
+  originalComplementHomeomorph.trans (by
+    change ↥({x : OpenAmbient S | ∀ m : MatchingIndex S, x ∉ atomSet S m} : Set (OpenAmbient S)) ≃ₜ
+      ↥(partialComplementSet S Finset.univ)
+    exact Homeomorph.setCongr (by
+      ext x
+      change (∀ m : MatchingIndex S, x ∉ atomSet S m) ↔
+        ∀ m ∈ (Finset.univ : Finset (MatchingIndex S)), x ∉ atomSet S m
+      simp))
 
 /-- The statement is evaluated on the original source of the comparison
 map, not on a substituted complement. -/

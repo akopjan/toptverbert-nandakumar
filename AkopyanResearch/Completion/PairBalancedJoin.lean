@@ -164,6 +164,7 @@ theorem surjective_joinMap
 
 instance unitSphere_compact {E : Type*} [NormedAddCommGroup E] [ProperSpace E] :
     CompactSpace (UnitSphere E) := by
+  change CompactSpace ↥({x : E | ‖x‖ = 1} : Set E)
   apply isCompact_iff_compactSpace.mp
   change IsCompact ({x : E | ‖x‖ = 1} : Set E)
   simpa only [Metric.sphere, dist_zero_right] using isCompact_sphere (0 : E) 1

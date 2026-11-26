@@ -1,6 +1,15 @@
 module
 
-public import Mathlib
+public import Mathlib.Analysis.Complex.Circle
+public import Mathlib.Analysis.SpecialFunctions.Complex.Circle
+public import Mathlib.Topology.Homotopy.Basic
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.FinCases
+public import Mathlib.Tactic.Linarith
+public import Mathlib.Tactic.NormNum
+public import Mathlib.Tactic.Positivity
+public import Mathlib.Tactic.Ring
+public import Mathlib.Tactic.Zify
 public import AkopyanResearch.PlanarTestGlobal
 public import AkopyanResearch.MarksArithmetic
 

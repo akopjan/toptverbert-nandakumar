@@ -1,6 +1,5 @@
 module
 
-public import Mathlib
 public import RequestProject.Construction.InnerCell
 
 @[expose] public section

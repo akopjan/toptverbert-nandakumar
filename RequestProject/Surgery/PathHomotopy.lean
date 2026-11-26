@@ -1,6 +1,14 @@
 module
 
-public import Mathlib
+public import Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+public import Mathlib.Analysis.Convex.Contractible
+public import Mathlib.Analysis.Convex.PathConnected
+public import Mathlib.Analysis.Normed.Module.Convex
+public import Mathlib.Topology.Algebra.Module.FiniteDimension
+public import Mathlib.Topology.MetricSpace.Thickening
+public import Mathlib.Tactic.FieldSimp
+public import Mathlib.Tactic.FunProp
+public import Mathlib.Tactic.Positivity
 public import RequestProject.Surgery.Avoid
 
 @[expose] public section

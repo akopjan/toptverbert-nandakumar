@@ -160,13 +160,13 @@ def productSubsetProjectionHomotopyEquiv {X : Type u} [TopologicalSpace X]
   (productSubtypeHomeomorph Z A).toHomotopyEquiv.trans (projectionHomotopyEquiv Z a)
 
 def commonPoint (n : ℕ) : (TopCat.sphere.{u} (n + 1) : Type u) :=
-  (Hatcher.Sphere.hemisphereIntersectionPoint n).val
+  (Hatcher.Sphere.hemisphereIntersectionPoint.{u} n).val
 
 def northPoint (n : ℕ) : Hatcher.Sphere.northHemisphere.{u} n :=
-  ⟨commonPoint n, (Hatcher.Sphere.hemisphereIntersectionPoint n).property.1⟩
+  ⟨commonPoint.{u} n, (Hatcher.Sphere.hemisphereIntersectionPoint.{u} n).property.1⟩
 
 def southPoint (n : ℕ) : Hatcher.Sphere.southHemisphere.{u} n :=
-  ⟨commonPoint n, (Hatcher.Sphere.hemisphereIntersectionPoint n).property.2⟩
+  ⟨commonPoint.{u} n, (Hatcher.Sphere.hemisphereIntersectionPoint.{u} n).property.2⟩
 
 def northProjectionEquiv (Z : Type u) [TopologicalSpace Z] (n : ℕ) :
     (Set.univ ×ˢ Hatcher.Sphere.northHemisphere n :

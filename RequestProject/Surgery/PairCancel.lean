@@ -1,6 +1,6 @@
 module
 
-public import Mathlib
+public import Mathlib.Tactic.Continuity
 public import RequestProject.Surgery.Frame
 public import RequestProject.Surgery.Cutoff
 
@@ -93,7 +93,7 @@ theorem pair_cancel {ι : Type*} [Fintype ι]
     · rw [hJ1' u hu', clamp01_of_one_le hu', hJ1' 1 le_rfl]
     · rw [clamp01_of_mem ⟨hu.le, hu'.le⟩]
   have hJn : Continuous fun u => ∑ i, ‖J u i‖ :=
-    continuous_finset_sum _ fun i _ => ((continuous_apply i).comp hJc).norm
+    continuous_finsetSum _ fun i _ => ((continuous_apply i).comp hJc).norm
   obtain ⟨CJ0, hCJ0⟩ := (isCompact_Icc (a := (0:ℝ)) (b := 1)).exists_bound_of_continuousOn
     hJn.continuousOn
   obtain ⟨CJ, hCJdef⟩ : ∃ CJ, CJ = max CJ0 1 := ⟨_, rfl⟩

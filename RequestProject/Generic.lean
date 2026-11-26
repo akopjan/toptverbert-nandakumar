@@ -1,5 +1,8 @@
 module
 
+public import Mathlib.Algebra.MvPolynomial.CommRing
+public import Mathlib.Algebra.MvPolynomial.Funext
+public import Mathlib.LinearAlgebra.Matrix.Determinant.Basic
 public import RequestProject.Reduction
 
 @[expose] public section

@@ -28,7 +28,7 @@
       "module": "Submission.WhiteheadTheorem.Auxiliary",
       "upstream_path": "Submission/WhiteheadTheorem/Auxiliary.lean",
       "upstream_sha256": "9cdb36eda55d7282d23206078e1f2f19647c1403375c8364ad7860b4db0be442",
-      "port_sha256": "0de4b575ca5ba1d6e0924c7f779a1f1bf31a688cac846f3fe8afd97c62dcfb3d",
+      "port_sha256": "a03f4577bd1d89bae24b510b25348141118ed904d8bee2069d73cab12a63d0ec",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Used Set.finite_range.bddAbove with the same finite set."
@@ -112,7 +112,7 @@
       "module": "Submission.WhiteheadTheorem.Shapes.Cube",
       "upstream_path": "Submission/WhiteheadTheorem/Shapes/Cube.lean",
       "upstream_sha256": "a60d32699b78cab664f860d58649c56e29ad80984562ba6c8ddf2ed76a56b80a",
-      "port_sha256": "fd1b23241980ab683e6e3c3c9ad5bebaa0f0c29fc595ba08386d1b01f13e1b31",
+      "port_sha256": "115753ef075fb17282b9fee3aa65dbd996dbf5982c3dbbf226aca27c3b08e88c",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Marked the cube boundary implicitly reducible and closed a changed simplifier normal form by reflexivity."
@@ -169,7 +169,7 @@
       "module": "Submission.WhiteheadTheorem.Shapes.MappingCylinder",
       "upstream_path": "Submission/WhiteheadTheorem/Shapes/MappingCylinder.lean",
       "upstream_sha256": "db1d38bf05a3d94ff7c1ed09513f2183ae6610def42efb74c489032952edaa87",
-      "port_sha256": "ba40a9d703e2727bd90575f0dc725239afaa35b47cac8564b5f59b6fe2a840f1",
+      "port_sha256": "cbcbc7e63528dcf91d77c068dc64f7350b7d4d98b2d0881327bf5cd1038df634",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations."
       ]
@@ -197,7 +197,7 @@
       "module": "Submission.WhiteheadTheorem.HomotopyGroup.ChangeBasePt",
       "upstream_path": "Submission/WhiteheadTheorem/HomotopyGroup/ChangeBasePt.lean",
       "upstream_sha256": "57eb4d86770e8a8f49a750e2e0e47e9b0224bffafcd238208a3e3818545985f2",
-      "port_sha256": "52377e71cb9532ea615759185789bbd5e3bb5c177a4902327c1d85e6025d3ef4",
+      "port_sha256": "a7ce8ff491c40e2ac4e74c5ed0734e6fc0bd781b01c9f802691d04e86be23b73",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Localized reducibility of explicit cube/loop models and replaced definitional endpoint equalities by reflexivity."
@@ -207,7 +207,7 @@
       "module": "Submission.WhiteheadTheorem.HEP.Retract",
       "upstream_path": "Submission/WhiteheadTheorem/HEP/Retract.lean",
       "upstream_sha256": "1b745575e2a4132c34e4ccf7b0cca4c4a407bc4e059dc5f24466c0412e3c1938",
-      "port_sha256": "eafd421c6ac40278885a46ad6ec834e9fa94f9603d7d6f7a8bc205874ce27cd2",
+      "port_sha256": "acea0dc70de274148216dd9871062052ed2a2c1da2dbb680af403433a5a2f9eb",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations."
       ]
@@ -216,7 +216,7 @@
       "module": "Submission.WhiteheadTheorem.RelHomotopyGroup.Compression",
       "upstream_path": "Submission/WhiteheadTheorem/RelHomotopyGroup/Compression.lean",
       "upstream_sha256": "824447acd12772870e21d1bed09895e519c85f7359a60b0e2cbd8f6289d5e6b0",
-      "port_sha256": "88b026b1d06c3adcb5048bc306939983b0031e53a7ac3ba67fc928a402ca7d68",
+      "port_sha256": "054be6399efc6eb2f671804b2ce63d4c139b513eec9284a2328075ddac9abe39",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations."
       ]
@@ -225,7 +225,7 @@
       "module": "Submission.WhiteheadTheorem.RelHomotopyGroup.LongExactSeq",
       "upstream_path": "Submission/WhiteheadTheorem/RelHomotopyGroup/LongExactSeq.lean",
       "upstream_sha256": "05b0b8c255ac7bc2a26f74260672d741a4427da64d7f2affa3851958b9141b17",
-      "port_sha256": "54ead9555fd5d474b485d446fe0ca3e3b4f068ca336c26091c8e3c68725dc549",
+      "port_sha256": "9cc610c19ec570843d4248c78f349fe019841d059f345331078dacaf1fc263ba",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Localized reducibility of explicit homotopy-group and cube models for Lean 4.35 elaboration."
@@ -235,7 +235,7 @@
       "module": "Submission.WhiteheadTheorem.HEP.CubeJar",
       "upstream_path": "Submission/WhiteheadTheorem/HEP/CubeJar.lean",
       "upstream_sha256": "d2eda2490688775e8de98405610cd1ca31e0de42acb44dc4ee52e63081fbf443",
-      "port_sha256": "192a128918a2f77c58b9253ce27edb996162b9c8c77f2dc57d77e498aaefb0b2",
+      "port_sha256": "923afa5322a5ee2a52d8be581c71f05234278c0b27b6d91d92c4fdacaa445598",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Localized reducibility of cube/jar models and updated Set.ofPred lemma names."
@@ -245,7 +245,7 @@
       "module": "Submission.WhiteheadTheorem.Compressible.Disk",
       "upstream_path": "Submission/WhiteheadTheorem/Compressible/Disk.lean",
       "upstream_sha256": "fa9ce61330e7a474e4f76d552d4bc8209ef97235b884c24c4818668302e97d32",
-      "port_sha256": "9d56779efd4dc5d92fbe8b971807fe2d5862247042c7f18ce3106f0eaf81b98f",
+      "port_sha256": "173df64611e9c702743d144c2556907d092ce876e9507554bb2579ddbb4adbd8",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Localized reducibility of cube/disk/homotopy models, updated Set.ofPred lemma names, and stated the lift factorization as transitivity with the commuting square."
@@ -255,7 +255,7 @@
       "module": "Submission.Hurewicz.SimplexHEP",
       "upstream_path": "Submission/Hurewicz/SimplexHEP.lean",
       "upstream_sha256": "af2b7ce2c99c7951662b4d888897c3076a56c7f24648ac6b7f3f92c3bfcd0344",
-      "port_sha256": "356fbbd222fbe429bd5aadb2a7dafdf063b356870d41fece9935c77cd02d68eb",
+      "port_sha256": "f71f811f2c2adbd28b2f6066979a795f3a32cd74c171a1843ccdb0c4049caf6a",
       "changes": [
         "Added Lean 4.35 module/public import/expose declarations.",
         "Narrowed the aggregate WhiteheadTheorem import to HEP.Cofibration and Compressible.Disk.",
@@ -443,11 +443,11 @@
     }
   ],
   "upstream_lean": "4.32.2",
-  "port_lean": "4.35.0",
+  "port_lean": "4.36.0-rc2",
   "license": "Apache-2.0",
-  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "mathlib_revision": "9d581dfff2e41de989072ea63abf3daf69311520",
   "audit": {
-    "lean": "4.35.0",
+    "lean": "4.36.0-rc2",
     "modules": 59,
     "declarations": 2302,
     "theorems": 1602,
